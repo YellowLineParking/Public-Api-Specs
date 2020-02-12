@@ -1,0 +1,3352 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Reference",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.appyway.com/v1/reference"
+    }
+  ],
+  "paths": {
+    "/changeCountrySpecialDays": {
+      "post": {
+        "tags": [
+          "Countries"
+        ],
+        "summary": "Change Country Special Days",
+        "description": "Change Country Special Days",
+        "operationId": "post-changecountryspecialdays",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeCountrySpecialDaysCommand"
+              },
+              "example": {
+                "specialDays": [
+                  {
+                    "id": "string",
+                    "name": "string",
+                    "isHoliday": true,
+                    "dates": [
+                      "2020-01-20T00:00:00"
+                    ]
+                  }
+                ],
+                "id": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeCountrySpecialDaysCommand"
+              },
+              "example": {
+                "specialDays": [
+                  {
+                    "id": "string",
+                    "name": "string",
+                    "isHoliday": true,
+                    "dates": [
+                      "2020-01-20T00:00:00"
+                    ]
+                  }
+                ],
+                "id": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeCountrySpecialDaysCommand"
+              },
+              "example": {
+                "specialDays": [
+                  {
+                    "id": "string",
+                    "name": "string",
+                    "isHoliday": true,
+                    "dates": [
+                      "2020-01-20T00:00:00"
+                    ]
+                  }
+                ],
+                "id": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StringOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestResponse"
+                },
+                "example": {
+                  "success": true,
+                  "message": "string",
+                  "errors": [
+                    {
+                      "property": "string",
+                      "code": "string",
+                      "message": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/changeRegionVenues": {
+      "post": {
+        "tags": [
+          "Regions"
+        ],
+        "summary": "Change Region Venues",
+        "description": "Change Region Venues",
+        "operationId": "post-changeregionvenues",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeRegionVenuesCommand"
+              },
+              "example": {
+                "venues": [
+                  {
+                    "id": "string",
+                    "name": "string",
+                    "eventsMustSupplyHours": true,
+                    "events": [
+                      {
+                        "name": "string",
+                        "date": "2020-01-20T00:00:00",
+                        "start": "2024-03-14T00:00:00",
+                        "end": "2024-03-14T00:00:00"
+                      }
+                    ]
+                  }
+                ],
+                "id": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeRegionVenuesCommand"
+              },
+              "example": {
+                "venues": [
+                  {
+                    "id": "string",
+                    "name": "string",
+                    "eventsMustSupplyHours": true,
+                    "events": [
+                      {
+                        "name": "string",
+                        "date": "2020-01-20T00:00:00",
+                        "start": "2024-03-14T00:00:00",
+                        "end": "2024-03-14T00:00:00"
+                      }
+                    ]
+                  }
+                ],
+                "id": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeRegionVenuesCommand"
+              },
+              "example": {
+                "venues": [
+                  {
+                    "id": "string",
+                    "name": "string",
+                    "eventsMustSupplyHours": true,
+                    "events": [
+                      {
+                        "name": "string",
+                        "date": "2020-01-20T00:00:00",
+                        "start": "2024-03-14T00:00:00",
+                        "end": "2024-03-14T00:00:00"
+                      }
+                    ]
+                  }
+                ],
+                "id": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StringOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestResponse"
+                },
+                "example": {
+                  "success": true,
+                  "message": "string",
+                  "errors": [
+                    {
+                      "property": "string",
+                      "code": "string",
+                      "message": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllActivityTypes": {
+      "post": {
+        "tags": [
+          "ActivityTypes"
+        ],
+        "summary": "Fetch All Activity Types",
+        "description": "Returns a list with all the activity types.",
+        "operationId": "post-fetchallactivitytypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthorityTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string",
+                      "canHaveRestrictions": true,
+                      "canHaveShape": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllAuthorityTypes": {
+      "post": {
+        "tags": [
+          "AuthorityTypes"
+        ],
+        "summary": "Fetch All Authority Types",
+        "description": "Returns a list with all the authority types.",
+        "operationId": "post-fetchallauthoritytypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthorityTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string",
+                      "canHaveRestrictions": true,
+                      "canHaveShape": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllBaseMaps": {
+      "post": {
+        "tags": [
+          "BaseMaps"
+        ],
+        "summary": "Fetch All Base Maps",
+        "description": "Return a list with all supported base maps and availability for supported countries.",
+        "operationId": "post-fetchallbasemaps",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseMapIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string",
+                      "availableInCountries": [
+                        "string"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllCountries": {
+      "post": {
+        "tags": [
+          "Countries"
+        ],
+        "summary": "Fetch All Countries",
+        "description": "Returns a list with all the supported countries.",
+        "operationId": "post-fetchallcountries",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CountryIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": "string",
+                      "name": "string",
+                      "specialDays": [
+                        {
+                          "id": "string",
+                          "name": "string",
+                          "isHoliday": true,
+                          "dates": [
+                            "2020-01-20T00:00:00"
+                          ]
+                        }
+                      ],
+                      "bounds": [
+                        [
+                          0
+                        ]
+                      ],
+                      "defaultBaseMapId": 0,
+                      "entitlementTypes": [
+                        0
+                      ],
+                      "restrictionTypes": [
+                        0
+                      ],
+                      "assetTypes": [
+                        0
+                      ],
+                      "countryCode": "string",
+                      "currencyCode": "string",
+                      "languageCode": "string",
+                      "hasMetricSpeedLimits": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllEntitlementTypes": {
+      "post": {
+        "tags": [
+          "EntitlementTypes"
+        ],
+        "summary": "Fetch All Entitlement Types",
+        "description": "Returns a list with all the entitlement types.",
+        "operationId": "post-fetchallentitlementtypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EntitlementTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string",
+                      "code": "string",
+                      "restrictionTypeIds": [
+                        0
+                      ],
+                      "applicableExemptionTypeIds": [
+                        0
+                      ],
+                      "hasTariff": true,
+                      "restrictionTypeLegalNames": [
+                        {
+                          "restrictionTypeId": 0,
+                          "legalName": "string"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllExceptionTypes": {
+      "post": {
+        "tags": [
+          "ExceptionTypes"
+        ],
+        "summary": "Fetch All Exception Types",
+        "description": "Returns a list with all the exception types.",
+        "operationId": "post-fetchallexceptiontypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExceptionTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllExemptionTimeTypes": {
+      "post": {
+        "tags": [
+          "ExemptionTimeTypes"
+        ],
+        "summary": "Fetch All Exemption Time Types",
+        "description": "Returns a list with all the exemption time types.",
+        "operationId": "post-fetchallexemptiontimetypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExemptionTimeTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllExemptionTypes": {
+      "post": {
+        "tags": [
+          "ExemptionTypes"
+        ],
+        "summary": "Fetch All Exemption Types",
+        "description": "Returns a list with all the exemption types.",
+        "operationId": "post-fetchallexemptiontypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExemptionTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllFacilityTypes": {
+      "post": {
+        "tags": [
+          "FacilityTypes"
+        ],
+        "summary": "Fetch All Facility Types",
+        "description": "Returns a list with all the facility types.",
+        "operationId": "post-fetchallfacilitytypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FacilityTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllFuelTypes": {
+      "post": {
+        "tags": [
+          "FuelTypes"
+        ],
+        "summary": "Fetch All Fuel Types",
+        "description": "Returns a list with all the fuel types.",
+        "operationId": "post-fetchallfueltypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuelTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllMovingExceptionTypes": {
+      "post": {
+        "tags": [
+          "MovingExceptionTypes"
+        ],
+        "summary": "Fetch All Moving Exception Types",
+        "description": "Returns a list with all the moving exception types.",
+        "operationId": "post-fetchallmovingexceptiontypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovingExceptionTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string",
+                      "applicableRestrictionTypes": [
+                        {
+                          "movingRestrictionTypeId": 0,
+                          "movingRestrictionTypeOptionIds": [
+                            0
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllMovingRestrictionTypes": {
+      "post": {
+        "tags": [
+          "MovingRestrictionTypes"
+        ],
+        "summary": "Fetch All Moving Restriction Types",
+        "description": "Returns a list with all the moving restriction types.",
+        "operationId": "post-fetchallmovingrestrictiontypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovingRestrictionTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string",
+                      "property": "string",
+                      "unit": "string",
+                      "options": [
+                        {
+                          "id": 0,
+                          "name": "string",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllNoteVisibilityTypes": {
+      "post": {
+        "tags": [
+          "NoteVisibilityTypes"
+        ],
+        "summary": "Fetch All Note Visibility Types",
+        "description": "Returns a list with all the note visibility types.",
+        "operationId": "post-fetchallnotevisibilitytypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NoteVisibilityTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllOnStreetParkingTypes": {
+      "post": {
+        "tags": [
+          "OnStreetParkingTypes"
+        ],
+        "summary": "Fetch All On-Street Parking Types",
+        "description": "Returns a list with all the on-street parking types.",
+        "operationId": "post-fetchallonstreetparkingtypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OnStreetParkingTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllPaymentMethods": {
+      "post": {
+        "tags": [
+          "PaymentMethods"
+        ],
+        "summary": "Fetch All Payment Methods",
+        "description": "Returns a list with all the supported payment methods.",
+        "operationId": "post-fetchallpaymentmethods",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaymentMethodIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllPaymentProviders": {
+      "post": {
+        "tags": [
+          "PaymentProviders"
+        ],
+        "summary": "Fetch All Payment Providers",
+        "description": "Returns a list with all the supported payment providers.",
+        "operationId": "post-fetchallpaymentproviders",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaymentProviderIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": "string",
+                      "name": "string",
+                      "paymentsUrl": "string",
+                      "paymentsTelephone": "string",
+                      "paymentsAppDeepLinks": {}
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllPermittedVehicles": {
+      "post": {
+        "tags": [
+          "PermittedVehicles"
+        ],
+        "summary": "Fetch All Permitted Vehicles",
+        "description": "Returns a list with all the permitted vehicles and associated moving restriction types.",
+        "operationId": "post-fetchallpermittedvehicles",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermittedVehicleIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "restrictionTypeIds": [
+                        0
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllPermitTypes": {
+      "post": {
+        "tags": [
+          "PermitTypes"
+        ],
+        "summary": "Fetch All Permit Types",
+        "description": "Returns a list with all the permit types.",
+        "operationId": "post-fetchallpermittypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PermitTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllRegions": {
+      "post": {
+        "tags": [
+          "Regions"
+        ],
+        "summary": "Fetch All Regions",
+        "description": "Returns a list with all the supported country regions.",
+        "operationId": "post-fetchallregions",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegionIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": "string",
+                      "countryId": "string",
+                      "name": "string",
+                      "venues": [
+                        {
+                          "id": "string",
+                          "name": "string",
+                          "eventsMustSupplyHours": true,
+                          "events": [
+                            {
+                              "name": "string",
+                              "date": "2020-01-20T00:00:00",
+                              "start": "2024-03-14T00:00:00",
+                              "end": "2024-03-14T00:00:00"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllRestrictionTypes": {
+      "post": {
+        "tags": [
+          "RestrictionTypes"
+        ],
+        "summary": "Fetch All Restriction Types",
+        "description": "Returns a list with all the restriction types.",
+        "operationId": "post-fetchallrestrictiontypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RestrictionTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string",
+                      "code": "string",
+                      "canHaveNoLoadingRules": true,
+                      "canHaveTariff": true,
+                      "canHaveEmptyEntitlements": true,
+                      "defaultWidth": 0,
+                      "isTroItem": true,
+                      "legalName": "string",
+                      "hasBayCount": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllVehicleTypes": {
+      "post": {
+        "tags": [
+          "VehicleTypes"
+        ],
+        "summary": "Fetch All Vehicle Types",
+        "description": "Returns a list with all the vehicle types.",
+        "operationId": "post-fetchallvehicletypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VehicleTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "name": "string",
+                      "description": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchAllZoneTypes": {
+      "post": {
+        "tags": [
+          "ZoneTypes"
+        ],
+        "summary": "Fetch All Zone Types",
+        "description": "Returns a list with all the zone types.",
+        "operationId": "post-fetchallzonetypes",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ZoneTypeIReadOnlyCollectionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": [
+                    {
+                      "id": 0,
+                      "code": "string",
+                      "name": "string",
+                      "description": "string",
+                      "canHaveRestrictions": true,
+                      "canHaveShape": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchCountryById": {
+      "post": {
+        "tags": [
+          "Countries"
+        ],
+        "summary": "Fetch Country By Id",
+        "description": "Returns a country object if a valid identifier is provided.",
+        "operationId": "post-fetchcountrybyid",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchCountryByIdQuery"
+              },
+              "example": {
+                "id": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchCountryByIdQuery"
+              },
+              "example": {
+                "id": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchCountryByIdQuery"
+              },
+              "example": {
+                "id": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CountryOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": {
+                    "id": "string",
+                    "name": "string",
+                    "specialDays": [
+                      {
+                        "id": "string",
+                        "name": "string",
+                        "isHoliday": true,
+                        "dates": [
+                          "2020-01-20T00:00:00"
+                        ]
+                      }
+                    ],
+                    "bounds": [
+                      [
+                        0
+                      ]
+                    ],
+                    "defaultBaseMapId": 0,
+                    "entitlementTypes": [
+                      0
+                    ],
+                    "restrictionTypes": [
+                      0
+                    ],
+                    "assetTypes": [
+                      0
+                    ],
+                    "countryCode": "string",
+                    "currencyCode": "string",
+                    "languageCode": "string",
+                    "hasMetricSpeedLimits": true
+                  }
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestResponse"
+                },
+                "example": {
+                  "success": true,
+                  "message": "string",
+                  "errors": [
+                    {
+                      "property": "string",
+                      "code": "string",
+                      "message": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/fetchRegionById": {
+      "post": {
+        "tags": [
+          "Regions"
+        ],
+        "summary": "Fetches a Region By Id",
+        "description": "Returns a country region object if a valid identifier is provided.",
+        "operationId": "post-fetchregionbyid",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchRegionByIdQuery"
+              },
+              "example": {
+                "id": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchRegionByIdQuery"
+              },
+              "example": {
+                "id": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchRegionByIdQuery"
+              },
+              "example": {
+                "id": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegionOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": {
+                    "id": "string",
+                    "countryId": "string",
+                    "name": "string",
+                    "venues": [
+                      {
+                        "id": "string",
+                        "name": "string",
+                        "eventsMustSupplyHours": true,
+                        "events": [
+                          {
+                            "name": "string",
+                            "date": "2020-01-20T00:00:00",
+                            "start": "2024-03-14T00:00:00",
+                            "end": "2024-03-14T00:00:00"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestResponse"
+                },
+                "example": {
+                  "success": true,
+                  "message": "string",
+                  "errors": [
+                    {
+                      "property": "string",
+                      "code": "string",
+                      "message": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/ping": {
+      "get": {
+        "tags": [
+          "Status"
+        ],
+        "summary": "Ping",
+        "description": "Returns Status (pong) of the Reference service",
+        "operationId": "get-ping",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StringOkResponse"
+                },
+                "example": {
+                  "success": true,
+                  "result": "string"
+                }
+              }
+            }
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ActivityType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "ActivityType Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates what a vehicle operator can do at an OSP"
+      },
+      "AllReferenceTypes": {
+        "type": "object",
+        "properties": {
+          "activityTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivityType"
+            },
+            "description": "Activity Types types",
+            "nullable": true
+          },
+          "authorityTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AuthorityType"
+            },
+            "description": "Authority types",
+            "nullable": true
+          },
+          "baseMaps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BaseMap"
+            },
+            "description": "Base maps",
+            "nullable": true
+          },
+          "countries": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Country"
+            },
+            "description": "Countries",
+            "nullable": true
+          },
+          "entitlementTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EntitlementType"
+            },
+            "description": "Entitlement types",
+            "nullable": true
+          },
+          "exceptionTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExceptionType"
+            },
+            "description": "Exception types",
+            "nullable": true
+          },
+          "movingExceptionTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovingExceptionType"
+            },
+            "description": "Exception types for moving traffic features",
+            "nullable": true
+          },
+          "exemptionTimeTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExemptionTimeType"
+            },
+            "description": "Exemption time types",
+            "nullable": true
+          },
+          "exemptionTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExemptionType"
+            },
+            "description": "Exemption types",
+            "nullable": true
+          },
+          "facilityTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FacilityType"
+            },
+            "description": "Facility types",
+            "nullable": true
+          },
+          "fuelTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FuelType"
+            },
+            "description": "Fuel types",
+            "nullable": true
+          },
+          "noteVisibilityTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NoteVisibilityType"
+            },
+            "description": "Note visibility types",
+            "nullable": true
+          },
+          "onStreetParkingTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OnStreetParkingType"
+            },
+            "description": "On-Street Parking Types",
+            "nullable": true
+          },
+          "paymentMethods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PaymentMethod"
+            },
+            "description": "Payment methods",
+            "nullable": true
+          },
+          "paymentProviders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PaymentProvider"
+            },
+            "description": "Payment Providers",
+            "nullable": true
+          },
+          "permittedVehicles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermittedVehicle"
+            },
+            "description": "Permitted vehicles",
+            "nullable": true
+          },
+          "permitTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermitType"
+            },
+            "description": "Permit types",
+            "nullable": true
+          },
+          "regions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Region"
+            },
+            "description": "Regions",
+            "nullable": true
+          },
+          "restrictionTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RestrictionType"
+            },
+            "description": "Restriction types",
+            "nullable": true
+          },
+          "movingRestrictionTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovingRestrictionType"
+            },
+            "description": "Restriction types for moving traffic features",
+            "nullable": true
+          },
+          "vehicleTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VehicleType"
+            },
+            "description": "Vehicle types",
+            "nullable": true
+          },
+          "zoneTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ZoneType"
+            },
+            "description": "Zone types",
+            "nullable": true
+          },
+          "orderBenefitTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrderBenefitType"
+            },
+            "nullable": true
+          },
+          "assetTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AssetType"
+            },
+            "nullable": true
+          },
+          "assetSubtypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AssetSubtype"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "A result with all the reference types"
+      },
+      "AllReferenceTypesOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/AllReferenceTypes"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApplicableRestrictionType": {
+        "type": "object",
+        "properties": {
+          "movingRestrictionTypeId": {
+            "type": "integer",
+            "description": "Id of the moving restriction type this exception type is applicable to",
+            "format": "int32"
+          },
+          "movingRestrictionTypeOptionIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Moving restriction option ids",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AssetSubtype": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "assetTypeId": {
+            "type": "integer",
+            "description": "Identifier of the asset type to which this subtype applies",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "description": "Full name including the asset type",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AssetSubtypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AssetSubtype"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AssetType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "code": {
+            "type": "string",
+            "description": "Code",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "legalName": {
+            "type": "string",
+            "description": "Legal name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          },
+          "defaultWidth": {
+            "type": "number",
+            "description": "Indicates the default width of this asset type in meters.",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AssetTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AssetType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuthorityType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          },
+          "canHaveRestrictions": {
+            "type": "boolean",
+            "description": "Indicates whether authorities of this type can have default restrictions"
+          },
+          "canHaveShape": {
+            "type": "boolean",
+            "description": "Indicates whether authorities of this type can have a shape"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuthorityTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AuthorityType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BadRequestResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Error"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BaseMap": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          },
+          "availableInCountries": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Indicates in which countries this base map has tiles available",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BaseMapIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BaseMap"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeCountrySpecialDaysCommand": {
+        "required": [
+          "id",
+          "specialDays"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "maxLength": 36,
+            "minLength": 1,
+            "type": "string",
+            "description": "Unique identifier of the country"
+          },
+          "specialDays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SpecialDay"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeRegionVenuesCommand": {
+        "required": [
+          "id",
+          "venues"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "maxLength": 36,
+            "minLength": 1,
+            "type": "string",
+            "description": "Unique identifier of the region"
+          },
+          "venues": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Venue"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "Country": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier of the country",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the country",
+            "nullable": true
+          },
+          "specialDays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SpecialDay"
+            },
+            "description": "List of holidays and named days that apply to this country.",
+            "nullable": true
+          },
+          "bounds": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "format": "double"
+              }
+            },
+            "description": "A rectangular area indicating roughly where the country is situated",
+            "nullable": true
+          },
+          "defaultBaseMapId": {
+            "type": "integer",
+            "description": "The default basemap to use for this country",
+            "format": "int32"
+          },
+          "entitlementTypes": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Entitlement types available in this country",
+            "nullable": true
+          },
+          "restrictionTypes": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Restriction types available in this country",
+            "nullable": true
+          },
+          "assetTypes": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Asset types available in this country",
+            "nullable": true
+          },
+          "countryCode": {
+            "type": "string",
+            "description": "ISO 3166-1 alpha-3 country code for this country",
+            "nullable": true
+          },
+          "currencyCode": {
+            "type": "string",
+            "description": "ISO 4217 currency code for this country",
+            "nullable": true
+          },
+          "languageCode": {
+            "type": "string",
+            "description": "BCP 47 language tag for this country",
+            "nullable": true
+          },
+          "hasMetricSpeedLimits": {
+            "type": "boolean",
+            "description": "Whether this country uses the metric system for speed limits"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CountryIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Country"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CountryOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/Country"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EntitlementType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          },
+          "code": {
+            "type": "string",
+            "description": "Shorthand code that represents this entitlement.",
+            "nullable": true
+          },
+          "restrictionTypeIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Indicates the restriction types that this entitlement can apply to",
+            "nullable": true
+          },
+          "applicableExemptionTypeIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Indicates the exemption types that can apply to this entitlement",
+            "nullable": true
+          },
+          "hasTariff": {
+            "type": "boolean",
+            "description": "Indicates whether this entitlement needs a tariff"
+          },
+          "restrictionTypeLegalNames": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RestrictionTypeLegalName"
+            },
+            "description": "Indicates the legal names of the restriction type that this entitlement can apply to",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates the condition on which availability of an OSP depends"
+      },
+      "EntitlementTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EntitlementType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "property": {
+            "type": "string",
+            "nullable": true
+          },
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Event": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the event",
+            "nullable": true
+          },
+          "date": {
+            "type": "string",
+            "description": "Date when the event takes place",
+            "example": "2020-01-20T00:00:00"
+          },
+          "start": {
+            "type": "string",
+            "description": "Start time of the event",
+            "nullable": true,
+            "example": "00:00:00"
+          },
+          "end": {
+            "type": "string",
+            "description": "End time of the event",
+            "nullable": true,
+            "example": "00:00:00"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExceptionType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates how operating hours can be altered because of holidays or named days"
+      },
+      "ExceptionTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExceptionType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExemptionTimeType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates the different definitions of when an exemption can be active"
+      },
+      "ExemptionTimeTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExemptionTimeType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExemptionType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates what exemption there could be for a specific activity, vehicle or person"
+      },
+      "ExemptionTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExemptionType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FacilityType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates a facility that is available at an OSP"
+      },
+      "FacilityTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FacilityType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchCountryByIdQuery": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "maxLength": 36,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchRegionByIdQuery": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "maxLength": 36,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FuelType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates the type of fuel"
+      },
+      "FuelTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FuelType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovingExceptionType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          },
+          "applicableRestrictionTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApplicableRestrictionType"
+            },
+            "description": "Applicable restriction types",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovingExceptionTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovingExceptionType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovingRestrictionType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          },
+          "property": {
+            "type": "string",
+            "description": "Property",
+            "nullable": true
+          },
+          "unit": {
+            "type": "string",
+            "description": "Unit",
+            "nullable": true
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovingRestrictionTypeOption"
+            },
+            "description": "Options",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovingRestrictionTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovingRestrictionType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovingRestrictionTypeOption": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NoteVisibilityType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates when a note should be displayed or not"
+      },
+      "NoteVisibilityTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NoteVisibilityType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OnStreetParkingType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Represents a type of On-Street Parking entity"
+      },
+      "OnStreetParkingTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OnStreetParkingType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrderBenefitType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Order Benefit Type Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates Order Benefit Type on which an order can be categorised with"
+      },
+      "OrderBenefitTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrderBenefitType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaymentDeepLinks": {
+        "type": "object",
+        "properties": {
+          "schemas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Deep link schemas (eg: ringgo://, etc)",
+            "nullable": true
+          },
+          "packageName": {
+            "type": "string",
+            "description": "Deep link package name (only applies to android, eg: co.uk.ringgo.android)",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaymentMethod": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates the method that you pay for a stay at a Parking Entity"
+      },
+      "PaymentMethodIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PaymentMethod"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaymentProvider": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "description": "Provider name",
+            "nullable": true
+          },
+          "paymentsUrl": {
+            "type": "string",
+            "description": "URL for taking payments (if online payments are supported)",
+            "nullable": true
+          },
+          "paymentsTelephone": {
+            "type": "string",
+            "description": "Phone number for taking payments (if pay-by-phone is supported)",
+            "nullable": true
+          },
+          "paymentsAppDeepLinks": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/PaymentDeepLinks"
+            },
+            "description": "Payment Mobile apps deep links by platform",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates the payment provider that you can use to pay for an stay at a Parking Entity"
+      },
+      "PaymentProviderIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PaymentProvider"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PermitType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates a permit a vehicle operator has"
+      },
+      "PermitTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermitType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PermittedVehicle": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "restrictionTypeIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Identifiers of the Ylp.Reference.Contracts.Model.RestrictionTypes that this vehicle type is applicable to.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates what vehicle types are permitted to use a feature such as a bus or cycle lane."
+      },
+      "PermittedVehicleIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermittedVehicle"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Region": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier of the region",
+            "nullable": true
+          },
+          "countryId": {
+            "type": "string",
+            "description": "Id of the Country this region belongs to",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the region",
+            "nullable": true
+          },
+          "venues": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Venue"
+            },
+            "description": "A list of venues that are available in the region. Venues are linked to zones and will affect the operating hours on dates where there's an event at the venue",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegionIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Region"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/Region"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RestrictionType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          },
+          "code": {
+            "type": "string",
+            "description": "Shorthand code that represents this entitlement.",
+            "nullable": true
+          },
+          "canHaveNoLoadingRules": {
+            "type": "boolean",
+            "description": "Indicates whether there could be a loading rule attached to this restriction type"
+          },
+          "canHaveTariff": {
+            "type": "boolean",
+            "description": "Indicates whether there could be a tariff attached to this restriction type"
+          },
+          "canHaveEmptyEntitlements": {
+            "type": "boolean",
+            "description": "Indicates whether there could be empty entitlements attached to this restriction type"
+          },
+          "defaultWidth": {
+            "type": "number",
+            "description": "Indicates the default width of this restriction type in meters.",
+            "format": "double"
+          },
+          "isTroItem": {
+            "type": "boolean",
+            "description": "Indicates that this restriction type is classed as part of Traffic Regulation Orders."
+          },
+          "legalName": {
+            "type": "string",
+            "description": "The restriction type's alternative name used on legal traffic order documents.",
+            "nullable": true
+          },
+          "hasBayCount": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RestrictionTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RestrictionType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RestrictionTypeLegalName": {
+        "type": "object",
+        "properties": {
+          "restrictionTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "legalName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ServerTimeResult": {
+        "type": "object",
+        "properties": {
+          "utcNow": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ServerTimeResultOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/ServerTimeResult"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SpecialDay": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "isHoliday": {
+            "type": "boolean",
+            "description": "Indicates whether this day is considered a holiday"
+          },
+          "dates": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "ISO-8601 date pattern",
+              "example": "2020-01-20T00:00:00"
+            },
+            "description": "Dates on which this day is in effect",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StringOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VehicleType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "VehicleType unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Indicates the type of vehicle"
+      },
+      "VehicleTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VehicleType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Venue": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier of the region venue",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the venue",
+            "nullable": true
+          },
+          "eventsMustSupplyHours": {
+            "type": "boolean",
+            "description": "Indicates whether an event at this venue supplies the hours or whether it should take the hours from the applicable operating hours"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Event"
+            },
+            "description": "List of events that will take place at this venue",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ZoneType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier",
+            "format": "int32"
+          },
+          "code": {
+            "type": "string",
+            "description": "Code",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "Description",
+            "nullable": true
+          },
+          "canHaveRestrictions": {
+            "type": "boolean",
+            "description": "Indicates whether zones of this type can have default restrictions"
+          },
+          "canHaveShape": {
+            "type": "boolean",
+            "description": "Indicates whether zones of this type can have a shape"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ZoneTypeIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ZoneType"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "apiKey": {
+        "name": "API-KEY",
+        "in": "header",
+        "type": "apiKey"
+      },
+      "oAuth2": {
+        "flows": {
+          "authorizationCode": {
+            "scopes": {},
+            "authorizationUrl": "https://auth.appyway.com/authorize",
+            "tokenUrl": "https://auth.appyway.com/oauth/token"
+          }
+        },
+        "type": "oauth2"
+      }
+    },
+    "responses": {
+      "TooManyRequests": {
+        "description": "Too many requests"
+      },
+      "Unauthorized": {
+        "description": "Unauthorized"
+      },
+      "Forbidden": {
+        "description": "Forbidden"
+      }
+    }
+  },
+  "security": [
+    {
+      "apiKey": []
+    },
+    {
+      "oAuth2": []
+    }
+  ]
+}

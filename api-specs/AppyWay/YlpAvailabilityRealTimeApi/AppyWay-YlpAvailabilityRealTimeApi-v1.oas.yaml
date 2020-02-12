@@ -1,0 +1,340 @@
+openapi: 3.0.1
+info:
+  title: Availability RealTime
+  version: "1.0"
+servers:
+- url: https://api.appyway.com/v1/availability-realtime
+paths:
+  /ping:
+    get:
+      tags:
+      - Status
+      summary: Ping
+      description: Returns Status (pong) of the Availability Realtime service
+      operationId: get-ping
+      responses:
+        "200":
+          description: Success
+        "429":
+          $ref: '#/components/responses/TooManyRequests'
+        "401":
+          $ref: '#/components/responses/Unauthorized'
+        "403":
+          $ref: '#/components/responses/Forbidden'
+  /queries/fetchAvailabilityByEntityIds:
+    post:
+      tags:
+      - Availability
+      summary: Fetch realtime availability by entity Ids
+      description: Returns the availability for the list of given entity Ids.
+      operationId: post-queries-fetchavailabilitybyentityids
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FetchAvailabilityByEntityIdsQuery'
+            example:
+              ids:
+              - string
+          text/json:
+            schema:
+              $ref: '#/components/schemas/FetchAvailabilityByEntityIdsQuery'
+            example:
+              ids:
+              - string
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/FetchAvailabilityByEntityIdsQuery'
+            example:
+              ids:
+              - string
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ParkingAvailabilityIReadOnlyCollectionOkResponse'
+              example:
+                success: true
+                result:
+                - entityId: string
+                  entityType: 1
+                  dataSourceType: 0
+                  groupId: string
+                  totalSpaces: 0
+                  availableSpaces: 0
+                  parentId: string
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestResponse'
+              example:
+                success: true
+                message: string
+                errors:
+                - property: string
+                  code: string
+                  message: string
+        "401":
+          $ref: '#/components/responses/Unauthorized'
+        "403":
+          $ref: '#/components/responses/Forbidden'
+        "429":
+          $ref: '#/components/responses/TooManyRequests'
+components:
+  schemas:
+    AvailabilityGroupKey:
+      type: object
+      properties:
+        entityId:
+          type: string
+          description: Unique identifier for the entity related to the group
+          nullable: true
+        groupId:
+          type: string
+          description: Group Id of the aggregation carried out on the entity.
+          nullable: true
+      additionalProperties: false
+    BadRequestResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        message:
+          type: string
+          nullable: true
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/Error'
+          nullable: true
+      additionalProperties: false
+    DataSourceType:
+      enum:
+      - 0
+      - 1
+      - 2
+      - 4
+      type: integer
+      description: |+
+        Enumeration for the different data source types
+
+        *Unknown (0) - Unknown
+        *Sensor (1) - Sensor
+        *Barrier (2) - Barrier
+        *Camera (4) - Camera
+      format: int32
+    EntityType:
+      enum:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      type: integer
+      description: |+
+        Enumeration for the different types of Entity
+
+        *OnStreet (1) - An on street parking area
+        *CarPark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.
+        *Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of OnStreet and Carpark entities.
+        A zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may
+        define rules parking entities that can be overridden by individual entities.
+        *Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.
+        *CarParkFloor (5) - An off-street parking facility (car park) floor.
+        *CarParkBay (6) - An off-street parking facility (car park) bay.
+      format: int32
+    Error:
+      type: object
+      properties:
+        property:
+          type: string
+          nullable: true
+        code:
+          type: string
+          nullable: true
+        message:
+          type: string
+          nullable: true
+      additionalProperties: false
+    FetchAvailabilityByEntityIdsQuery:
+      type: object
+      properties:
+        ids:
+          type: array
+          items:
+            type: string
+          description: List of Ids of entities to get real time availability for
+          nullable: true
+      additionalProperties: false
+    FetchAvailabilityByGroupAndEntityIdsQuery:
+      type: object
+      properties:
+        keys:
+          type: array
+          items:
+            $ref: '#/components/schemas/AvailabilityGroupKey'
+          description: Availability aggregation group key formed by the group id and entity id
+          nullable: true
+        ? type: array
+          items:
+            $ref: '#/components/schemas/AvailabilityGroupKey'
+          description: Availability aggregation group key formed by the group id and entity id
+          nullable: true
+        : 
+      additionalProperties: false
+    FetchAvailabilityForAllSourceTypesByEntityIdsQuery:
+      type: object
+      properties:
+        ids:
+          type: array
+          items:
+            type: string
+          description: List of Ids of entities to get real time availability for
+          nullable: true
+      additionalProperties: false
+    FetchAvailabilityForAllSourceTypesByGroupAndEntityIdsQuery:
+      type: object
+      properties:
+        keys:
+          type: array
+          items:
+            $ref: '#/components/schemas/AvailabilityGroupKey'
+          description: Availability aggregation group key formed by the group id and entity id
+          nullable: true
+        ? type: array
+          items:
+            $ref: '#/components/schemas/AvailabilityGroupKey'
+          description: Availability aggregation group key formed by the group id and entity id
+          nullable: true
+        : 
+      additionalProperties: false
+    FetchH3AvailabilityByCentreAndViewportSizeQuery:
+      type: object
+      properties:
+        viewportCenter:
+          type: object
+          properties:
+            lat:
+              type: number
+              description: Latitude
+              format: double
+            lng:
+              type: number
+              description: Longitude
+              format: double
+          additionalProperties: false
+        viewportSize:
+          type: integer
+          format: int32
+        h3Resolution:
+          type: integer
+          format: int32
+      additionalProperties: false
+    H3Availability:
+      type: object
+      properties:
+        h3Index:
+          type: string
+          nullable: true
+        availabilityRatio:
+          type: number
+          format: float
+        normalizedRatio:
+          type: number
+          format: float
+      additionalProperties: false
+    H3AvailabilityIReadOnlyCollectionOkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/H3Availability'
+          nullable: true
+      additionalProperties: false
+    LatLng:
+      type: object
+      properties:
+        lat:
+          type: number
+          description: Latitude
+          format: double
+        lng:
+          type: number
+          description: Longitude
+          format: double
+      additionalProperties: false
+    ParkingAvailability:
+      type: object
+      properties:
+        entityId:
+          type: string
+          description: Unique identifier for this entity
+          nullable: true
+        entityType:
+          $ref: '#/components/schemas/EntityType'
+        dataSourceType:
+          $ref: '#/components/schemas/DataSourceType'
+        groupId:
+          type: string
+          description: Aggregation Group Id
+          nullable: true
+        totalSpaces:
+          type: integer
+          description: Total Vehicle Spaces for the Entity
+          format: int32
+        availableSpaces:
+          type: integer
+          description: Available Vehicle Spaces for the Entity
+          format: int32
+          nullable: true
+        parentId:
+          type: string
+          description: OnStreetParking will have a ParentId as the AuthorityId, CarPark will have a ParentId as the CarParkId
+          nullable: true
+      additionalProperties: false
+      description: Parking Availability model for our Entities
+    ParkingAvailabilityIReadOnlyCollectionOkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/ParkingAvailability'
+          nullable: true
+      additionalProperties: false
+  securitySchemes:
+    apiKey:
+      name: API-KEY
+      in: header
+      type: apiKey
+    oAuth2:
+      flows:
+        authorizationCode:
+          scopes: {}
+          authorizationUrl: https://auth.appyway.com/authorize
+          tokenUrl: https://auth.appyway.com/oauth/token
+      type: oauth2
+  responses:
+    TooManyRequests:
+      description: Too many requests
+    Unauthorized:
+      description: Unauthorized
+    Forbidden:
+      description: Forbidden
+security:
+- apiKey: []
+- oAuth2: []
+
