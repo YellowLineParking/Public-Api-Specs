@@ -307,7 +307,7 @@ paths:
       tags:
       - Parking
       summary: Fetch event dates by id
-      description: Searches for event dates with the supplied ID.
+      description: Searches for event dates with the supplied entity ID.
       operationId: post-fetcheventdatesbyid
       requestBody:
         content:
@@ -316,22 +316,22 @@ paths:
               $ref: '#/components/schemas/FetchEventDatesByIdQuery'
             example:
               entityId: string
-              startDate: 2020-01-20T00:00:00.0000000
-              endDate: 2020-01-20T00:00:00.0000000
+              startDate: 2020-01-20
+              endDate: 2020-01-20
           text/json:
             schema:
               $ref: '#/components/schemas/FetchEventDatesByIdQuery'
             example:
               entityId: string
-              startDate: 2020-01-20T00:00:00.0000000
-              endDate: 2020-01-20T00:00:00.0000000
+              startDate: 2020-01-20
+              endDate: 2020-01-20
           application/*+json:
             schema:
               $ref: '#/components/schemas/FetchEventDatesByIdQuery'
             example:
               entityId: string
-              startDate: 2020-01-20T00:00:00.0000000
-              endDate: 2020-01-20T00:00:00.0000000
+              startDate: 2020-01-20
+              endDate: 2020-01-20
       responses:
         "200":
           description: Success
@@ -347,7 +347,7 @@ paths:
                   entityETag: string
                   timeZoneId: string
                   eventDates:
-                  - 2020-01-20T00:00:00.0000000
+                  - 2020-01-20
         "401":
           $ref: '#/components/responses/Unauthorized'
         "403":
@@ -368,7 +368,7 @@ paths:
       tags:
       - Parking
       summary: Fetch operating hours by id
-      description: Searches for operating hours with the supplied ID.
+      description: Searches for operating hours with the supplied entity ID.
       operationId: post-fetchoperatinghoursbyid
       requestBody:
         content:
@@ -379,18 +379,18 @@ paths:
               entityId: string
               includeNotApplicableOperatingHours: true
               dates:
-              - 2020-01-20T00:00:00.0000000
+              - 2020-01-20
               includeClosedPeriods: true
               includeApplicableOperatingHoursDetail: true
-              date: 2020-01-20T00:00:00.0000000
+              date: 2020-01-20
               vehicleOperatorContext:
                 vehicleTypeId: 0
                 activityTypeId: 0
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
-              endDate: 2020-01-20T00:00:00.0000000
-              startDate: 2020-01-20T00:00:00.0000000
+              endDate: 2020-01-20
+              startDate: 2020-01-20
           text/json:
             schema:
               $ref: '#/components/schemas/FetchOperatingHoursByIdQuery'
@@ -398,18 +398,18 @@ paths:
               entityId: string
               includeNotApplicableOperatingHours: true
               dates:
-              - 2020-01-20T00:00:00.0000000
+              - 2020-01-20
               includeClosedPeriods: true
               includeApplicableOperatingHoursDetail: true
-              date: 2020-01-20T00:00:00.0000000
+              date: 2020-01-20
               vehicleOperatorContext:
                 vehicleTypeId: 0
                 activityTypeId: 0
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
-              endDate: 2020-01-20T00:00:00.0000000
-              startDate: 2020-01-20T00:00:00.0000000
+              endDate: 2020-01-20
+              startDate: 2020-01-20
           application/*+json:
             schema:
               $ref: '#/components/schemas/FetchOperatingHoursByIdQuery'
@@ -417,18 +417,18 @@ paths:
               entityId: string
               includeNotApplicableOperatingHours: true
               dates:
-              - 2020-01-20T00:00:00.0000000
+              - 2020-01-20
               includeClosedPeriods: true
               includeApplicableOperatingHoursDetail: true
-              date: 2020-01-20T00:00:00.0000000
+              date: 2020-01-20
               vehicleOperatorContext:
                 vehicleTypeId: 0
                 activityTypeId: 0
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
-              endDate: 2020-01-20T00:00:00.0000000
-              startDate: 2020-01-20T00:00:00.0000000
+              endDate: 2020-01-20
+              startDate: 2020-01-20
       responses:
         "200":
           description: Success
@@ -453,10 +453,9 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-03-14T00:00:00.0000000
-                      end: 2024-03-14T00:00:00.0000000
-                      isFree: true
-                      date: 2020-01-20T00:00:00.0000000
+                    - start: 2024-06-05
+                      end: 2024-06-05
+                      date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
                   - paymentMethodIds:
@@ -471,10 +470,9 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-03-14T00:00:00.0000000
-                      end: 2024-03-14T00:00:00.0000000
-                      isFree: true
-                      date: 2020-01-20T00:00:00.0000000
+                    - start: 2024-06-05
+                      end: 2024-06-05
+                      date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
                   - paymentMethodIds:
@@ -489,10 +487,9 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-03-14T00:00:00.0000000
-                      end: 2024-03-14T00:00:00.0000000
-                      isFree: true
-                      date: 2020-01-20T00:00:00.0000000
+                    - start: 2024-06-05
+                      end: 2024-06-05
+                      date: 2020-01-20
                       status: 1
                   closedPeriods:
                   - start: 2020-01-20T00:00:00.0000000+00:00
@@ -517,7 +514,7 @@ paths:
       tags:
       - Parking
       summary: Fetch operating hours by ids
-      description: Searches for operating hours with the supplied IDs.
+      description: Searches for operating hours with the supplied entities IDs.
       operationId: post-fetchoperatinghoursbyids
       requestBody:
         content:
@@ -533,11 +530,11 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
-              date: 2020-01-20T00:00:00.0000000
-              startDate: 2020-01-20T00:00:00.0000000
-              endDate: 2020-01-20T00:00:00.0000000
+              date: 2020-01-20
+              startDate: 2020-01-20
+              endDate: 2020-01-20
               dates:
-              - 2020-01-20T00:00:00.0000000
+              - 2020-01-20
               includeNotApplicableOperatingHours: true
               includeApplicableOperatingHoursDetail: true
               includeClosedPeriods: true
@@ -553,11 +550,11 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
-              date: 2020-01-20T00:00:00.0000000
-              startDate: 2020-01-20T00:00:00.0000000
-              endDate: 2020-01-20T00:00:00.0000000
+              date: 2020-01-20
+              startDate: 2020-01-20
+              endDate: 2020-01-20
               dates:
-              - 2020-01-20T00:00:00.0000000
+              - 2020-01-20
               includeNotApplicableOperatingHours: true
               includeApplicableOperatingHoursDetail: true
               includeClosedPeriods: true
@@ -573,11 +570,11 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
-              date: 2020-01-20T00:00:00.0000000
-              startDate: 2020-01-20T00:00:00.0000000
-              endDate: 2020-01-20T00:00:00.0000000
+              date: 2020-01-20
+              startDate: 2020-01-20
+              endDate: 2020-01-20
               dates:
-              - 2020-01-20T00:00:00.0000000
+              - 2020-01-20
               includeNotApplicableOperatingHours: true
               includeApplicableOperatingHoursDetail: true
               includeClosedPeriods: true
@@ -587,11 +584,11 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ParkingEntityOperatingHoursResultOkResponse'
+                $ref: '#/components/schemas/ParkingEntityOperatingHoursResultIReadOnlyCollectionOkResponse'
               example:
                 success: true
                 result:
-                  entityId: string
+                - entityId: string
                   entityType: 1
                   entityETag: string
                   timeZoneId: string
@@ -605,10 +602,9 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-03-14T00:00:00.0000000
-                      end: 2024-03-14T00:00:00.0000000
-                      isFree: true
-                      date: 2020-01-20T00:00:00.0000000
+                    - start: 2024-06-05
+                      end: 2024-06-05
+                      date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
                   - paymentMethodIds:
@@ -623,10 +619,9 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-03-14T00:00:00.0000000
-                      end: 2024-03-14T00:00:00.0000000
-                      isFree: true
-                      date: 2020-01-20T00:00:00.0000000
+                    - start: 2024-06-05
+                      end: 2024-06-05
+                      date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
                   - paymentMethodIds:
@@ -641,10 +636,9 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-03-14T00:00:00.0000000
-                      end: 2024-03-14T00:00:00.0000000
-                      isFree: true
-                      date: 2020-01-20T00:00:00.0000000
+                    - start: 2024-06-05
+                      end: 2024-06-05
+                      date: 2020-01-20
                       status: 1
                   closedPeriods:
                   - start: 2020-01-20T00:00:00.0000000+00:00
@@ -2045,7 +2039,7 @@ paths:
       tags:
       - Status
       summary: Ping
-      description: Returns Status (pong) of the Explorer service
+      description: Returns Status (pong) of service
       operationId: get-ping
       responses:
         "200":
@@ -2319,11 +2313,11 @@ components:
         start:
           type: string
           description: ISO-8601 date/time pattern, extended as required to accommodate nanoseconds.
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20T00:00:00
         end:
           type: string
           description: ISO-8601 date/time pattern, extended as required to accommodate nanoseconds.
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20T00:00:00
       additionalProperties: false
     Error:
       type: object
@@ -2391,11 +2385,11 @@ components:
         startDate:
           type: string
           description: 'Start date for which to retrieve the event dates provided in local format: YYYY-MM-DD (eg: 2021-01-01).'
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20
         endDate:
           type: string
           description: 'End date for which to retrieve the event dates provided in local format: YYYY-MM-DD (eg: 2021-01-03).'
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20
       additionalProperties: false
     FetchLocationCodesByAuthorityIdsQuery:
       required:
@@ -2443,27 +2437,27 @@ components:
           type: string
           description: 'The date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).'
           nullable: true
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20
         startDate:
           type: string
           description: |-
             Start date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).
             Date takes precedence if set.
           nullable: true
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20
         endDate:
           type: string
           description: |-
             End date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).
             Date takes precedence if set.
           nullable: true
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20
         dates:
           type: array
           items:
             type: string
             description: ISO-8601 date pattern
-            example: 2020-01-20T00:00:00.0000000
+            example: 2020-01-20
           description: |-
             Dates for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).
             Date, StartDate and EndDate takes precedence if set.
@@ -2493,27 +2487,27 @@ components:
           type: string
           description: 'The date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).'
           nullable: true
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20
         startDate:
           type: string
           description: |-
             Start date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).
             Date takes precedence if set.
           nullable: true
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20
         endDate:
           type: string
           description: |-
             End date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).
             Date takes precedence if set.
           nullable: true
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20
         dates:
           type: array
           items:
             type: string
             description: ISO-8601 date pattern
-            example: 2020-01-20T00:00:00.0000000
+            example: 2020-01-20
           description: |-
             Dates for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).
             Date, StartDate and EndDate takes precedence if set.
@@ -3869,17 +3863,12 @@ components:
             The local time of the day that the period ends
             Returned in local time format: hh:mm:ss (eg: 19:20:30)
           example: 00:00:00
-        isFree:
-          type: boolean
-          description: Specify if it is free for the open period
-          readOnly: true
-          deprecated: true
         date:
           type: string
           description: |-
             The local date that the period belongs
             Returned in local format: YYYY-MM-DD (eg: 2021-01-01)
-          example: 2020-01-20T00:00:00.0000000
+          example: 2020-01-20
         status:
           $ref: '#/components/schemas/OpenPeriodStatus'
       additionalProperties: false
@@ -4083,7 +4072,7 @@ components:
           items:
             type: string
             description: ISO-8601 date pattern
-            example: 2020-01-20T00:00:00.0000000
+            example: 2020-01-20
           description: List of event dates for this parking entity.
           nullable: true
       additionalProperties: false
@@ -4150,6 +4139,18 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/DateTimeRange'
+          nullable: true
+      additionalProperties: false
+    ParkingEntityOperatingHoursResultIReadOnlyCollectionOkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/ParkingEntityOperatingHoursResult'
           nullable: true
       additionalProperties: false
     ParkingEntityOperatingHoursResultOkResponse:
@@ -4653,7 +4654,9 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/ZoneDefaultApplicableTime'
-          description: "All the time windows for which this zone default applies which intersect the requested period. \r\nAny window that applies for at least part of the requested period will be returned."
+          description: |-
+            All the time windows for which this zone default applies which intersect the requested period. 
+            Any window that applies for at least part of the requested period will be returned.
           nullable: true
         notApplicableTimes:
           type: array
@@ -4800,7 +4803,19 @@ components:
       - 9
       - 10
       type: integer
-      description: "Different types of Zone\n\n*ControlledParkingZone (1) - An ordinary zone in which authority-defined restrictions are in place.\r\n*RestrictedParkingZone (2) - A zone in which parking is never allowed.\r\n*FreeParking (3) - A zone in which parking is always allowed.\r\n*Private (4) - A region not under authority control (such as a shopping centre).\r\n*CongestionCharge (5) - A region in which congestion charges apply.\r\n*Container (7) - A zone that exists to contain On Street Parking entities that don't really belong in a zone.\r\n*ResidentsParkingScheme (8) - A zone in which a resident's permit parking scheme applies\r\n*PermitParkingArea (9) - Area of residential streets where parking is reserved for permit holders Gn++n++ a sign at the entrance to the street will show that parking is for permit holders only. \r\nPPAs may not have signs or bay markings within them. Sometimes there may be small plates to remind motorists of the controls in place\r\n*PedestrianZone (10) - Pedestrian area where no parking is allowed\r\n"
+      description: |+
+        Different types of Zone
+
+        *ControlledParkingZone (1) - An ordinary zone in which authority-defined restrictions are in place.
+        *RestrictedParkingZone (2) - A zone in which parking is never allowed.
+        *FreeParking (3) - A zone in which parking is always allowed.
+        *Private (4) - A region not under authority control (such as a shopping centre).
+        *CongestionCharge (5) - A region in which congestion charges apply.
+        *Container (7) - A zone that exists to contain On Street Parking entities that don't really belong in a zone.
+        *ResidentsParkingScheme (8) - A zone in which a resident's permit parking scheme applies
+        *PermitParkingArea (9) - Area of residential streets where parking is reserved for permit holders Gn++n++ a sign at the entrance to the street will show that parking is for permit holders only. 
+        PPAs may not have signs or bay markings within them. Sometimes there may be small plates to remind motorists of the controls in place
+        *PedestrianZone (10) - Pedestrian area where no parking is allowed
       format: int32
   securitySchemes:
     apiKey:

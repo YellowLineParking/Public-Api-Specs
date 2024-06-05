@@ -26,7 +26,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/AuthorityListResult"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -224,7 +228,8 @@
             "in": "query",
             "description": "Format - date-time (as date-time in RFC3339). The date at which you wish to view the restrictions",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "date-time"
             }
           }
         ],
@@ -236,7 +241,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/AuthoritySnapshotInfoDocResult"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -444,8 +453,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-03-14T00:00:00",
-                                      "end": "2024-03-14T00:00:00"
+                                      "start": "2024-06-05",
+                                      "end": "2024-06-05"
                                     }
                                   ],
                                   "firstDate": {
@@ -463,7 +472,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-03-14T00:00:00"
+                                "noReturnUntil": "2024-06-05"
                               }
                             ],
                             "eventDays": [
@@ -480,8 +489,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-03-14T00:00:00",
-                                      "end": "2024-03-14T00:00:00"
+                                      "start": "2024-06-05",
+                                      "end": "2024-06-05"
                                     }
                                   ],
                                   "firstDate": {
@@ -499,7 +508,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-03-14T00:00:00"
+                                "noReturnUntil": "2024-06-05"
                               }
                             ]
                           }
@@ -546,8 +555,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-03-14T00:00:00",
-                                        "end": "2024-03-14T00:00:00"
+                                        "start": "2024-06-05",
+                                        "end": "2024-06-05"
                                       }
                                     ],
                                     "firstDate": {
@@ -565,7 +574,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-03-14T00:00:00"
+                                  "noReturnUntil": "2024-06-05"
                                 }
                               ],
                               "eventDays": [
@@ -582,8 +591,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-03-14T00:00:00",
-                                        "end": "2024-03-14T00:00:00"
+                                        "start": "2024-06-05",
+                                        "end": "2024-06-05"
                                       }
                                     ],
                                     "firstDate": {
@@ -601,7 +610,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-03-14T00:00:00"
+                                  "noReturnUntil": "2024-06-05"
                                 }
                               ]
                             },
@@ -624,8 +633,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-03-14T00:00:00",
-                                            "end": "2024-03-14T00:00:00"
+                                            "start": "2024-06-05",
+                                            "end": "2024-06-05"
                                           }
                                         ],
                                         "firstDate": {
@@ -643,7 +652,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-03-14T00:00:00"
+                                      "noReturnUntil": "2024-06-05"
                                     }
                                   ],
                                   "eventDays": [
@@ -660,8 +669,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-03-14T00:00:00",
-                                            "end": "2024-03-14T00:00:00"
+                                            "start": "2024-06-05",
+                                            "end": "2024-06-05"
                                           }
                                         ],
                                         "firstDate": {
@@ -679,7 +688,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-03-14T00:00:00"
+                                      "noReturnUntil": "2024-06-05"
                                     }
                                   ]
                                 }
@@ -733,8 +742,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2024-03-14T00:00:00",
-                              "timeTo": "2024-03-14T00:00:00",
+                              "timeFrom": "2024-06-05",
+                              "timeTo": "2024-06-05",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -1004,8 +1013,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-03-14T00:00:00",
-                                      "end": "2024-03-14T00:00:00"
+                                      "start": "2024-06-05",
+                                      "end": "2024-06-05"
                                     }
                                   ],
                                   "firstDate": {
@@ -1023,7 +1032,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-03-14T00:00:00"
+                                "noReturnUntil": "2024-06-05"
                               }
                             ],
                             "eventDays": [
@@ -1040,8 +1049,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-03-14T00:00:00",
-                                      "end": "2024-03-14T00:00:00"
+                                      "start": "2024-06-05",
+                                      "end": "2024-06-05"
                                     }
                                   ],
                                   "firstDate": {
@@ -1059,7 +1068,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-03-14T00:00:00"
+                                "noReturnUntil": "2024-06-05"
                               }
                             ]
                           }
@@ -1106,8 +1115,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-03-14T00:00:00",
-                                        "end": "2024-03-14T00:00:00"
+                                        "start": "2024-06-05",
+                                        "end": "2024-06-05"
                                       }
                                     ],
                                     "firstDate": {
@@ -1125,7 +1134,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-03-14T00:00:00"
+                                  "noReturnUntil": "2024-06-05"
                                 }
                               ],
                               "eventDays": [
@@ -1142,8 +1151,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-03-14T00:00:00",
-                                        "end": "2024-03-14T00:00:00"
+                                        "start": "2024-06-05",
+                                        "end": "2024-06-05"
                                       }
                                     ],
                                     "firstDate": {
@@ -1161,7 +1170,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-03-14T00:00:00"
+                                  "noReturnUntil": "2024-06-05"
                                 }
                               ]
                             },
@@ -1184,8 +1193,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-03-14T00:00:00",
-                                            "end": "2024-03-14T00:00:00"
+                                            "start": "2024-06-05",
+                                            "end": "2024-06-05"
                                           }
                                         ],
                                         "firstDate": {
@@ -1203,7 +1212,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-03-14T00:00:00"
+                                      "noReturnUntil": "2024-06-05"
                                     }
                                   ],
                                   "eventDays": [
@@ -1220,8 +1229,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-03-14T00:00:00",
-                                            "end": "2024-03-14T00:00:00"
+                                            "start": "2024-06-05",
+                                            "end": "2024-06-05"
                                           }
                                         ],
                                         "firstDate": {
@@ -1239,7 +1248,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-03-14T00:00:00"
+                                      "noReturnUntil": "2024-06-05"
                                     }
                                   ]
                                 }
@@ -1293,8 +1302,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2024-03-14T00:00:00",
-                              "timeTo": "2024-03-14T00:00:00",
+                              "timeFrom": "2024-06-05",
+                              "timeTo": "2024-06-05",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -1387,7 +1396,8 @@
             "description": "Format - uuid. The ID of the authority.",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -1395,7 +1405,12 @@
             "in": "query",
             "description": "The set of moving restriction IDs. If left empty will export all allowed restrictions",
             "schema": {
-              "type": "array"
+              "uniqueItems": true,
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
             }
           }
         ],
@@ -1430,7 +1445,8 @@
             "description": "Format - uuid. The ID of the authority.",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -1438,7 +1454,12 @@
             "in": "query",
             "description": "The set of static restriction IDs. If left empty will export all allowed restrictions",
             "schema": {
-              "type": "array"
+              "uniqueItems": true,
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
             }
           }
         ],
@@ -1450,7 +1471,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/GeoJsonExportStreamResultOkResponse"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -1503,7 +1528,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/BadRequestResponse"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -1574,7 +1603,12 @@
             "in": "query",
             "description": "The set of static restriction IDs. If left empty will export all allowed restrictions",
             "schema": {
-              "type": "array"
+              "uniqueItems": true,
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
             }
           }
         ],
@@ -1610,7 +1644,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/AuthorityIReadOnlyCollectionOkResponse"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -1838,7 +1876,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/FullAuthorityOkResponse"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -2037,7 +2079,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/BadRequestResponse"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -2141,7 +2187,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/AuthoritySnapshotInfoDocOkResponse"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -2349,8 +2399,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-03-14T00:00:00",
-                                      "end": "2024-03-14T00:00:00"
+                                      "start": "2024-06-05",
+                                      "end": "2024-06-05"
                                     }
                                   ],
                                   "firstDate": {
@@ -2368,7 +2418,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-03-14T00:00:00"
+                                "noReturnUntil": "2024-06-05"
                               }
                             ],
                             "eventDays": [
@@ -2385,8 +2435,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-03-14T00:00:00",
-                                      "end": "2024-03-14T00:00:00"
+                                      "start": "2024-06-05",
+                                      "end": "2024-06-05"
                                     }
                                   ],
                                   "firstDate": {
@@ -2404,7 +2454,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-03-14T00:00:00"
+                                "noReturnUntil": "2024-06-05"
                               }
                             ]
                           }
@@ -2451,8 +2501,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-03-14T00:00:00",
-                                        "end": "2024-03-14T00:00:00"
+                                        "start": "2024-06-05",
+                                        "end": "2024-06-05"
                                       }
                                     ],
                                     "firstDate": {
@@ -2470,7 +2520,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-03-14T00:00:00"
+                                  "noReturnUntil": "2024-06-05"
                                 }
                               ],
                               "eventDays": [
@@ -2487,8 +2537,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-03-14T00:00:00",
-                                        "end": "2024-03-14T00:00:00"
+                                        "start": "2024-06-05",
+                                        "end": "2024-06-05"
                                       }
                                     ],
                                     "firstDate": {
@@ -2506,7 +2556,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-03-14T00:00:00"
+                                  "noReturnUntil": "2024-06-05"
                                 }
                               ]
                             },
@@ -2529,8 +2579,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-03-14T00:00:00",
-                                            "end": "2024-03-14T00:00:00"
+                                            "start": "2024-06-05",
+                                            "end": "2024-06-05"
                                           }
                                         ],
                                         "firstDate": {
@@ -2548,7 +2598,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-03-14T00:00:00"
+                                      "noReturnUntil": "2024-06-05"
                                     }
                                   ],
                                   "eventDays": [
@@ -2565,8 +2615,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-03-14T00:00:00",
-                                            "end": "2024-03-14T00:00:00"
+                                            "start": "2024-06-05",
+                                            "end": "2024-06-05"
                                           }
                                         ],
                                         "firstDate": {
@@ -2584,7 +2634,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-03-14T00:00:00"
+                                      "noReturnUntil": "2024-06-05"
                                     }
                                   ]
                                 }
@@ -2638,8 +2688,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2024-03-14T00:00:00",
-                              "timeTo": "2024-03-14T00:00:00",
+                              "timeFrom": "2024-06-05",
+                              "timeTo": "2024-06-05",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -2909,8 +2959,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-03-14T00:00:00",
-                                      "end": "2024-03-14T00:00:00"
+                                      "start": "2024-06-05",
+                                      "end": "2024-06-05"
                                     }
                                   ],
                                   "firstDate": {
@@ -2928,7 +2978,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-03-14T00:00:00"
+                                "noReturnUntil": "2024-06-05"
                               }
                             ],
                             "eventDays": [
@@ -2945,8 +2995,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-03-14T00:00:00",
-                                      "end": "2024-03-14T00:00:00"
+                                      "start": "2024-06-05",
+                                      "end": "2024-06-05"
                                     }
                                   ],
                                   "firstDate": {
@@ -2964,7 +3014,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-03-14T00:00:00"
+                                "noReturnUntil": "2024-06-05"
                               }
                             ]
                           }
@@ -3011,8 +3061,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-03-14T00:00:00",
-                                        "end": "2024-03-14T00:00:00"
+                                        "start": "2024-06-05",
+                                        "end": "2024-06-05"
                                       }
                                     ],
                                     "firstDate": {
@@ -3030,7 +3080,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-03-14T00:00:00"
+                                  "noReturnUntil": "2024-06-05"
                                 }
                               ],
                               "eventDays": [
@@ -3047,8 +3097,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-03-14T00:00:00",
-                                        "end": "2024-03-14T00:00:00"
+                                        "start": "2024-06-05",
+                                        "end": "2024-06-05"
                                       }
                                     ],
                                     "firstDate": {
@@ -3066,7 +3116,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-03-14T00:00:00"
+                                  "noReturnUntil": "2024-06-05"
                                 }
                               ]
                             },
@@ -3089,8 +3139,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-03-14T00:00:00",
-                                            "end": "2024-03-14T00:00:00"
+                                            "start": "2024-06-05",
+                                            "end": "2024-06-05"
                                           }
                                         ],
                                         "firstDate": {
@@ -3108,7 +3158,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-03-14T00:00:00"
+                                      "noReturnUntil": "2024-06-05"
                                     }
                                   ],
                                   "eventDays": [
@@ -3125,8 +3175,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-03-14T00:00:00",
-                                            "end": "2024-03-14T00:00:00"
+                                            "start": "2024-06-05",
+                                            "end": "2024-06-05"
                                           }
                                         ],
                                         "firstDate": {
@@ -3144,7 +3194,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-03-14T00:00:00"
+                                      "noReturnUntil": "2024-06-05"
                                     }
                                   ]
                                 }
@@ -3198,8 +3248,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2024-03-14T00:00:00",
-                              "timeTo": "2024-03-14T00:00:00",
+                              "timeFrom": "2024-06-05",
+                              "timeTo": "2024-06-05",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -3272,7 +3322,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/BadRequestResponse"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -3336,7 +3390,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/WfsStreamActionResultOkResponse"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -3365,7 +3423,11 @@
                 "schema": {
                   "$ref": "#/components/schemas/BadRequestResponse"
                 },
-                "example": null
+                "examples": {
+                  "default": {
+                    "value": null
+                  }
+                }
               },
               "application/json": {
                 "schema": {
@@ -4246,7 +4308,8 @@
             "type": "boolean"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Car park model used by Explorer."
       },
       "CarParkCmsBlobResult": {
         "type": "object",
@@ -4349,7 +4412,6 @@
           2
         ],
         "type": "integer",
-        "description": "\n\n*Sensor (0)\r\n*Barrier (1)\r\n*Counter (2)\r\n",
         "format": "int32"
       },
       "ChangeSet": {
@@ -4421,10 +4483,16 @@
           19,
           20,
           21,
-          22
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
         ],
         "type": "integer",
-        "description": "\n\n*OperatingHoursSetAssignment (0)\r\n*TariffSetAssignment (1)\r\n*ExemptionSetAssignment (2)\r\n*ExceptionSetAssignment (3)\r\n*GeoSpatial (4)\r\n*BayCount (5)\r\n*StreetName (6)\r\n*AddRestriction (7)\r\n*RemoveRestriction (8)\r\n*LocationCode (9)\r\n*Tags (10)\r\n*SensorIds (11)\r\n*VenueId (12)\r\n*ZoneType (13)\r\n*ZoneName (14)\r\n*ParentZoneId (15)\r\n*MovingFeature (16)\r\n*OperatingHoursSetDefinition (17)\r\n*TariffSetDefinition (18)\r\n*ExemptionSetDefinition (19)\r\n*ExceptionSetDefinition (20)\r\n*AssetSubtype (21)\r\n*EmissionsBandSetDefinition (22)\r\n",
+        "description": "\n\n*OperatingHoursSetAssignment (0)\r\n*TariffSetAssignment (1)\r\n*ExemptionSetAssignment (2)\r\n*ExceptionSetAssignment (3)\r\n*GeoSpatial (4)\r\n*BayCount (5)\r\n*StreetName (6)\r\n*AddRestriction (7)\r\n*RemoveRestriction (8)\r\n*LocationCode (9)\r\n*Tags (10)\r\n*SensorIds (11)\r\n*VenueId (12)\r\n*ZoneType (13)\r\n*ZoneName (14)\r\n*ParentZoneId (15)\r\n*MovingFeature (16)\r\n*OperatingHoursSetDefinition (17)\r\n*TariffSetDefinition (18)\r\n*ExemptionSetDefinition (19)\r\n*ExceptionSetDefinition (20)\r\n*AssetSubtype (21)\r\n*EmissionsBandSetDefinition (22)\r\n*PaymentMethod (23)\r\n*SurfaceType (24)\r\n*CarParkAttributes (25)\r\n*CarParkInfo (26)\r\n*CarParkBayCounts (27)\r\n*EntityDocuments (28)\r\n",
         "format": "int32"
       },
       "Crs": {
@@ -4514,6 +4582,24 @@
         "type": "integer",
         "description": "\n\n*Maps (0) - Represents the 'Proposed Order' and 'Made Order' map documents. Older documents will include the Written Order document at the beginning. This is always system-generated and there should only be one document of this type per state change.\r\n*PublicNoticeDocument (1) - Represents the 'Notice of Proposal' and 'Notice of Making' documents. May be uploaded by a user but is also system-generated.\r\n*WrittenOrderDocument (2) - Represents the order's motivation text. Users may opt to generate this from a template  but they may also upload their own instead or in addition to the system-generated document.\r\n*SupportingDocument (3) - Represents a general user-uploaded document.\r\n",
         "format": "int32"
+      },
+      "DownloadEntityDocumentQuery": {
+        "type": "object",
+        "properties": {
+          "authorityId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "entityId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "documentId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
       },
       "ElectricConnectionCms": {
         "type": "object",
@@ -4683,8 +4769,7 @@
         "properties": {
           "setGuid": {
             "type": "string",
-            "format": "uuid",
-            "readOnly": true
+            "format": "uuid"
           },
           "setId": {
             "type": "string",
@@ -4727,6 +4812,92 @@
         },
         "additionalProperties": false
       },
+      "EntityDocumentMetadata": {
+        "type": "object",
+        "properties": {
+          "documentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "entityId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "creationDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPublic": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EntityDocumentMetadataListOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EntityDocumentMetadata"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EntityDocumentMetadataUpdate": {
+        "type": "object",
+        "properties": {
+          "documentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EntityDocumentMetadataUpdateRequest": {
+        "type": "object",
+        "properties": {
+          "entityId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "authorityId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "metadatas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EntityDocumentMetadataUpdate"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "EntityType": {
         "enum": [
           0,
@@ -4738,10 +4909,11 @@
           6,
           7,
           8,
-          9
+          9,
+          10
         ],
         "type": "integer",
-        "description": "\n\n*Authority (0)\r\n*Zone (1)\r\n*Osp (2)\r\n*OperatingHourSet (3)\r\n*TariffSet (4)\r\n*ExemptionSet (5)\r\n*ExceptionSet (6)\r\n*MovingFeature (7)\r\n*Asset (8)\r\n*EmissionsBandSet (9)\r\n",
+        "description": "\n\n*Authority (0)\r\n*Zone (1)\r\n*Osp (2)\r\n*OperatingHourSet (3)\r\n*TariffSet (4)\r\n*ExemptionSet (5)\r\n*ExceptionSet (6)\r\n*MovingFeature (7)\r\n*Asset (8)\r\n*EmissionsBandSet (9)\r\n*CarPark (10)\r\n",
         "format": "int32"
       },
       "Error": {
@@ -4790,8 +4962,7 @@
         "properties": {
           "setGuid": {
             "type": "string",
-            "format": "uuid",
-            "readOnly": true
+            "format": "uuid"
           },
           "setId": {
             "type": "string",
@@ -4854,8 +5025,7 @@
         "properties": {
           "setGuid": {
             "type": "string",
-            "format": "uuid",
-            "readOnly": true
+            "format": "uuid"
           },
           "setId": {
             "type": "string",
@@ -5011,6 +5181,28 @@
           "reportId": {
             "type": "string",
             "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchEntityDocumentsMetadataQuery": {
+        "type": "object",
+        "properties": {
+          "authorityId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "entityId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "documentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -5520,6 +5712,24 @@
         },
         "additionalProperties": false
       },
+      "GuidListOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "GuidResult": {
         "type": "object",
         "properties": {
@@ -5625,8 +5835,7 @@
         "properties": {
           "setGuid": {
             "type": "string",
-            "format": "uuid",
-            "readOnly": true
+            "format": "uuid"
           },
           "setId": {
             "type": "string",
@@ -5651,8 +5860,7 @@
         "properties": {
           "setGuid": {
             "type": "string",
-            "format": "uuid",
-            "readOnly": true
+            "format": "uuid"
           },
           "setId": {
             "type": "string",
@@ -5840,10 +6048,11 @@
           16,
           17,
           18,
-          19
+          19,
+          20
         ],
         "type": "integer",
-        "description": "\n\n*WeightLimitEnvironmental (0)\r\n*HeightLimit (1)\r\n*WidthLimit (2)\r\n*LengthLimit (3)\r\n*SpeedLimit (4)\r\n*ProhibitedTurn (5)\r\n*ProhibitedEntry (6)\r\n*PrescribedTurn (7)\r\n*OneWay (8)\r\n*CycleLane (9)\r\n*BusLane (10)\r\n*YellowBoxJunction (11)\r\n*PlayStreetZone (12)\r\n*PedestrianZone (13)\r\n*PedestrianAndCycleZone (14)\r\n*SpeedLimitZone (15)\r\n*ProhibitedAccess (16)\r\n*ProhibitedOvertaking (17)\r\n*BusGate (18)\r\n*WeightLimitStructural (19)\r\n",
+        "description": "\n\n*WeightLimitEnvironmental (0)\r\n*HeightLimit (1)\r\n*WidthLimit (2)\r\n*LengthLimit (3)\r\n*SpeedLimit (4)\r\n*ProhibitedTurn (5)\r\n*ProhibitedEntry (6)\r\n*PrescribedTurn (7)\r\n*OneWay (8)\r\n*CycleLane (9)\r\n*BusLane (10)\r\n*YellowBoxJunction (11)\r\n*PlayStreetZone (12)\r\n*PedestrianZone (13)\r\n*PedestrianAndCycleZone (14)\r\n*SpeedLimitZone (15)\r\n*ProhibitedAccess (16)\r\n*ProhibitedOvertaking (17)\r\n*BusGate (18)\r\n*WeightLimitStructural (19)\r\n*HighOccupancyVehicleLane (20)\r\n",
         "format": "int32"
       },
       "NewOrder": {
@@ -5913,6 +6122,16 @@
         },
         "additionalProperties": false
       },
+      "OkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
       "OperatingHoursCms": {
         "type": "object",
         "properties": {
@@ -5940,8 +6159,7 @@
         "properties": {
           "setGuid": {
             "type": "string",
-            "format": "uuid",
-            "readOnly": true
+            "format": "uuid"
           },
           "setId": {
             "type": "string",
@@ -7384,7 +7602,6 @@
           7
         ],
         "type": "integer",
-        "description": "\n\n*Surface (1)\r\n*MultiStory (2)\r\n*Underground (3)\r\n*SingleStory (4)\r\n*Mechanical (5)\r\n*Undercover (6)\r\n*Roof (7)\r\n",
         "format": "int32"
       },
       "Suspension": {
@@ -7691,8 +7908,7 @@
         "properties": {
           "setGuid": {
             "type": "string",
-            "format": "uuid",
-            "readOnly": true
+            "format": "uuid"
           },
           "setId": {
             "type": "string",

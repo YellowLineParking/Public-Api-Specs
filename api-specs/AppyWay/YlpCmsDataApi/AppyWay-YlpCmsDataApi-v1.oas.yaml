@@ -19,7 +19,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/AuthorityListResult'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/AuthorityListResult'
@@ -153,7 +155,10 @@ paths:
       tags:
       - Authorities
       summary: Get Full Authority By Slug
-      description: "Returns an object which has the location of the documents containing the full restrictions of an authority <br /> \r\n            The documentation provided here shows the model you will find at these locations. The initial object contains only the URL's. <br />\r\n            You will have to fetch the documents from the returned authority URL's"
+      description: |-
+        Returns an object which has the location of the documents containing the full restrictions of an authority <br /> 
+                    The documentation provided here shows the model you will find at these locations. The initial object contains only the URL's. <br />
+                    You will have to fetch the documents from the returned authority URL's
       operationId: get-authorities-getfullbyslug
       parameters:
       - name: slug
@@ -166,6 +171,7 @@ paths:
         description: Format - date-time (as date-time in RFC3339). The date at which you wish to view the restrictions
         schema:
           type: string
+          format: date-time
       responses:
         "200":
           description: Success
@@ -173,7 +179,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/AuthoritySnapshotInfoDocResult'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/AuthoritySnapshotInfoDocResult'
@@ -311,8 +319,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-03-14T00:00:00.0000000
-                              end: 2024-03-14T00:00:00.0000000
+                            - start: 2024-06-05
+                              end: 2024-06-05
                             firstDate:
                               month: 0
                               day: 0
@@ -324,7 +332,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-03-14T00:00:00.0000000
+                          noReturnUntil: 2024-06-05
                         eventDays:
                         - ruleTime:
                             months:
@@ -334,8 +342,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-03-14T00:00:00.0000000
-                              end: 2024-03-14T00:00:00.0000000
+                            - start: 2024-06-05
+                              end: 2024-06-05
                             firstDate:
                               month: 0
                               day: 0
@@ -347,7 +355,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-03-14T00:00:00.0000000
+                          noReturnUntil: 2024-06-05
                     exemptionsSets:
                     - setGuid: string
                       setId: string
@@ -377,8 +385,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-03-14T00:00:00.0000000
-                                end: 2024-03-14T00:00:00.0000000
+                              - start: 2024-06-05
+                                end: 2024-06-05
                               firstDate:
                                 month: 0
                                 day: 0
@@ -390,7 +398,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-03-14T00:00:00.0000000
+                            noReturnUntil: 2024-06-05
                           eventDays:
                           - ruleTime:
                               months:
@@ -400,8 +408,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-03-14T00:00:00.0000000
-                                end: 2024-03-14T00:00:00.0000000
+                              - start: 2024-06-05
+                                end: 2024-06-05
                               firstDate:
                                 month: 0
                                 day: 0
@@ -413,7 +421,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-03-14T00:00:00.0000000
+                            noReturnUntil: 2024-06-05
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -427,8 +435,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-03-14T00:00:00.0000000
-                                  end: 2024-03-14T00:00:00.0000000
+                                - start: 2024-06-05
+                                  end: 2024-06-05
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -440,7 +448,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-03-14T00:00:00.0000000
+                              noReturnUntil: 2024-06-05
                             eventDays:
                             - ruleTime:
                                 months:
@@ -450,8 +458,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-03-14T00:00:00.0000000
-                                  end: 2024-03-14T00:00:00.0000000
+                                - start: 2024-06-05
+                                  end: 2024-06-05
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -463,7 +471,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-03-14T00:00:00.0000000
+                              noReturnUntil: 2024-06-05
                     tariffSets:
                     - setGuid: string
                       setId: string
@@ -497,8 +505,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-03-14T00:00:00.0000000
-                        timeTo: 2024-03-14T00:00:00.0000000
+                        timeFrom: 2024-06-05
+                        timeTo: 2024-06-05
                         firstDate:
                           month: 0
                           day: 0
@@ -674,8 +682,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-03-14T00:00:00.0000000
-                              end: 2024-03-14T00:00:00.0000000
+                            - start: 2024-06-05
+                              end: 2024-06-05
                             firstDate:
                               month: 0
                               day: 0
@@ -687,7 +695,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-03-14T00:00:00.0000000
+                          noReturnUntil: 2024-06-05
                         eventDays:
                         - ruleTime:
                             months:
@@ -697,8 +705,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-03-14T00:00:00.0000000
-                              end: 2024-03-14T00:00:00.0000000
+                            - start: 2024-06-05
+                              end: 2024-06-05
                             firstDate:
                               month: 0
                               day: 0
@@ -710,7 +718,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-03-14T00:00:00.0000000
+                          noReturnUntil: 2024-06-05
                     exemptionsSets:
                     - setGuid: string
                       setId: string
@@ -740,8 +748,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-03-14T00:00:00.0000000
-                                end: 2024-03-14T00:00:00.0000000
+                              - start: 2024-06-05
+                                end: 2024-06-05
                               firstDate:
                                 month: 0
                                 day: 0
@@ -753,7 +761,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-03-14T00:00:00.0000000
+                            noReturnUntil: 2024-06-05
                           eventDays:
                           - ruleTime:
                               months:
@@ -763,8 +771,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-03-14T00:00:00.0000000
-                                end: 2024-03-14T00:00:00.0000000
+                              - start: 2024-06-05
+                                end: 2024-06-05
                               firstDate:
                                 month: 0
                                 day: 0
@@ -776,7 +784,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-03-14T00:00:00.0000000
+                            noReturnUntil: 2024-06-05
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -790,8 +798,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-03-14T00:00:00.0000000
-                                  end: 2024-03-14T00:00:00.0000000
+                                - start: 2024-06-05
+                                  end: 2024-06-05
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -803,7 +811,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-03-14T00:00:00.0000000
+                              noReturnUntil: 2024-06-05
                             eventDays:
                             - ruleTime:
                                 months:
@@ -813,8 +821,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-03-14T00:00:00.0000000
-                                  end: 2024-03-14T00:00:00.0000000
+                                - start: 2024-06-05
+                                  end: 2024-06-05
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -826,7 +834,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-03-14T00:00:00.0000000
+                              noReturnUntil: 2024-06-05
                     tariffSets:
                     - setGuid: string
                       setId: string
@@ -860,8 +868,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-03-14T00:00:00.0000000
-                        timeTo: 2024-03-14T00:00:00.0000000
+                        timeFrom: 2024-06-05
+                        timeTo: 2024-06-05
                         firstDate:
                           month: 0
                           day: 0
@@ -920,11 +928,16 @@ paths:
         required: true
         schema:
           type: string
+          format: uuid
       - name: restrictions
         in: query
         description: The set of moving restriction IDs. If left empty will export all allowed restrictions
         schema:
+          uniqueItems: true
           type: array
+          items:
+            type: integer
+            format: int32
       responses:
         "200":
           description: Success
@@ -948,11 +961,16 @@ paths:
         required: true
         schema:
           type: string
+          format: uuid
       - name: restrictions
         in: query
         description: The set of static restriction IDs. If left empty will export all allowed restrictions
         schema:
+          uniqueItems: true
           type: array
+          items:
+            type: integer
+            format: int32
       responses:
         "200":
           description: Success
@@ -960,7 +978,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/GeoJsonExportStreamResultOkResponse'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/GeoJsonExportStreamResultOkResponse'
@@ -999,7 +1019,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/BadRequestResponse'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/BadRequestResponse'
@@ -1044,7 +1066,11 @@ paths:
         in: query
         description: The set of static restriction IDs. If left empty will export all allowed restrictions
         schema:
+          uniqueItems: true
           type: array
+          items:
+            type: integer
+            format: int32
       responses:
         "200":
           description: Success
@@ -1068,7 +1094,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/AuthorityIReadOnlyCollectionOkResponse'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/AuthorityIReadOnlyCollectionOkResponse'
@@ -1233,7 +1261,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/FullAuthorityOkResponse'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/FullAuthorityOkResponse'
@@ -1378,7 +1408,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/BadRequestResponse'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/BadRequestResponse'
@@ -1410,7 +1442,10 @@ paths:
       tags:
       - Authorities
       summary: Fetch Full Authority By Slug
-      description: "Returns an object which has the location of the documents containing the full restrictions of an authority <br /> \r\n            The documentation provided here shows the model you will find at these locations. The initial object contains only the URL's. <br />\r\n            You will have to fetch the documents from the returned authority URL's"
+      description: |-
+        Returns an object which has the location of the documents containing the full restrictions of an authority <br /> 
+                    The documentation provided here shows the model you will find at these locations. The initial object contains only the URL's. <br />
+                    You will have to fetch the documents from the returned authority URL's
       operationId: post-fetchfullauthorityinfobyslug
       requestBody:
         content:
@@ -1445,7 +1480,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/AuthoritySnapshotInfoDocOkResponse'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/AuthoritySnapshotInfoDocOkResponse'
@@ -1583,8 +1620,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-03-14T00:00:00.0000000
-                              end: 2024-03-14T00:00:00.0000000
+                            - start: 2024-06-05
+                              end: 2024-06-05
                             firstDate:
                               month: 0
                               day: 0
@@ -1596,7 +1633,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-03-14T00:00:00.0000000
+                          noReturnUntil: 2024-06-05
                         eventDays:
                         - ruleTime:
                             months:
@@ -1606,8 +1643,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-03-14T00:00:00.0000000
-                              end: 2024-03-14T00:00:00.0000000
+                            - start: 2024-06-05
+                              end: 2024-06-05
                             firstDate:
                               month: 0
                               day: 0
@@ -1619,7 +1656,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-03-14T00:00:00.0000000
+                          noReturnUntil: 2024-06-05
                     exemptionsSets:
                     - setGuid: string
                       setId: string
@@ -1649,8 +1686,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-03-14T00:00:00.0000000
-                                end: 2024-03-14T00:00:00.0000000
+                              - start: 2024-06-05
+                                end: 2024-06-05
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1662,7 +1699,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-03-14T00:00:00.0000000
+                            noReturnUntil: 2024-06-05
                           eventDays:
                           - ruleTime:
                               months:
@@ -1672,8 +1709,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-03-14T00:00:00.0000000
-                                end: 2024-03-14T00:00:00.0000000
+                              - start: 2024-06-05
+                                end: 2024-06-05
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1685,7 +1722,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-03-14T00:00:00.0000000
+                            noReturnUntil: 2024-06-05
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -1699,8 +1736,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-03-14T00:00:00.0000000
-                                  end: 2024-03-14T00:00:00.0000000
+                                - start: 2024-06-05
+                                  end: 2024-06-05
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1712,7 +1749,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-03-14T00:00:00.0000000
+                              noReturnUntil: 2024-06-05
                             eventDays:
                             - ruleTime:
                                 months:
@@ -1722,8 +1759,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-03-14T00:00:00.0000000
-                                  end: 2024-03-14T00:00:00.0000000
+                                - start: 2024-06-05
+                                  end: 2024-06-05
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1735,7 +1772,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-03-14T00:00:00.0000000
+                              noReturnUntil: 2024-06-05
                     tariffSets:
                     - setGuid: string
                       setId: string
@@ -1769,8 +1806,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-03-14T00:00:00.0000000
-                        timeTo: 2024-03-14T00:00:00.0000000
+                        timeFrom: 2024-06-05
+                        timeTo: 2024-06-05
                         firstDate:
                           month: 0
                           day: 0
@@ -1946,8 +1983,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-03-14T00:00:00.0000000
-                              end: 2024-03-14T00:00:00.0000000
+                            - start: 2024-06-05
+                              end: 2024-06-05
                             firstDate:
                               month: 0
                               day: 0
@@ -1959,7 +1996,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-03-14T00:00:00.0000000
+                          noReturnUntil: 2024-06-05
                         eventDays:
                         - ruleTime:
                             months:
@@ -1969,8 +2006,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-03-14T00:00:00.0000000
-                              end: 2024-03-14T00:00:00.0000000
+                            - start: 2024-06-05
+                              end: 2024-06-05
                             firstDate:
                               month: 0
                               day: 0
@@ -1982,7 +2019,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-03-14T00:00:00.0000000
+                          noReturnUntil: 2024-06-05
                     exemptionsSets:
                     - setGuid: string
                       setId: string
@@ -2012,8 +2049,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-03-14T00:00:00.0000000
-                                end: 2024-03-14T00:00:00.0000000
+                              - start: 2024-06-05
+                                end: 2024-06-05
                               firstDate:
                                 month: 0
                                 day: 0
@@ -2025,7 +2062,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-03-14T00:00:00.0000000
+                            noReturnUntil: 2024-06-05
                           eventDays:
                           - ruleTime:
                               months:
@@ -2035,8 +2072,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-03-14T00:00:00.0000000
-                                end: 2024-03-14T00:00:00.0000000
+                              - start: 2024-06-05
+                                end: 2024-06-05
                               firstDate:
                                 month: 0
                                 day: 0
@@ -2048,7 +2085,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-03-14T00:00:00.0000000
+                            noReturnUntil: 2024-06-05
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -2062,8 +2099,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-03-14T00:00:00.0000000
-                                  end: 2024-03-14T00:00:00.0000000
+                                - start: 2024-06-05
+                                  end: 2024-06-05
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -2075,7 +2112,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-03-14T00:00:00.0000000
+                              noReturnUntil: 2024-06-05
                             eventDays:
                             - ruleTime:
                                 months:
@@ -2085,8 +2122,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-03-14T00:00:00.0000000
-                                  end: 2024-03-14T00:00:00.0000000
+                                - start: 2024-06-05
+                                  end: 2024-06-05
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -2098,7 +2135,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-03-14T00:00:00.0000000
+                              noReturnUntil: 2024-06-05
                     tariffSets:
                     - setGuid: string
                       setId: string
@@ -2132,8 +2169,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-03-14T00:00:00.0000000
-                        timeTo: 2024-03-14T00:00:00.0000000
+                        timeFrom: 2024-06-05
+                        timeTo: 2024-06-05
                         firstDate:
                           month: 0
                           day: 0
@@ -2178,7 +2215,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/BadRequestResponse'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/BadRequestResponse'
@@ -2219,7 +2258,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/WfsStreamActionResultOkResponse'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/WfsStreamActionResultOkResponse'
@@ -2238,7 +2279,9 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/BadRequestResponse'
-              example: 
+              examples:
+                default:
+                  value: 
             application/json:
               schema:
                 $ref: '#/components/schemas/BadRequestResponse'
@@ -2868,6 +2911,7 @@ components:
         registrationEnabled:
           type: boolean
       additionalProperties: false
+      description: Car park model used by Explorer.
     CarParkCmsBlobResult:
       type: object
       properties:
@@ -2943,12 +2987,6 @@ components:
       - 1
       - 2
       type: integer
-      description: |2+
-
-
-        *Sensor (0)
-        *Barrier (1)
-        *Counter (2)
       format: int32
     ChangeSet:
       type: object
@@ -3016,6 +3054,12 @@ components:
       - 20
       - 21
       - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
       type: integer
       description: |2+
 
@@ -3043,6 +3087,12 @@ components:
         *ExceptionSetDefinition (20)
         *AssetSubtype (21)
         *EmissionsBandSetDefinition (22)
+        *PaymentMethod (23)
+        *SurfaceType (24)
+        *CarParkAttributes (25)
+        *CarParkInfo (26)
+        *CarParkBayCounts (27)
+        *EntityDocuments (28)
       format: int32
     Crs:
       type: object
@@ -3127,6 +3177,19 @@ components:
         *WrittenOrderDocument (2) - Represents the order's motivation text. Users may opt to generate this from a template  but they may also upload their own instead or in addition to the system-generated document.
         *SupportingDocument (3) - Represents a general user-uploaded document.
       format: int32
+    DownloadEntityDocumentQuery:
+      type: object
+      properties:
+        authorityId:
+          type: string
+          format: uuid
+        entityId:
+          type: string
+          format: uuid
+        documentId:
+          type: string
+          format: uuid
+      additionalProperties: false
     ElectricConnectionCms:
       type: object
       properties:
@@ -3258,7 +3321,6 @@ components:
         setGuid:
           type: string
           format: uuid
-          readOnly: true
         setId:
           type: string
           nullable: true
@@ -3288,6 +3350,68 @@ components:
             format: int32
           nullable: true
       additionalProperties: false
+    EntityDocumentMetadata:
+      type: object
+      properties:
+        documentId:
+          type: string
+          format: uuid
+        entityId:
+          type: string
+          format: uuid
+        creationDate:
+          type: string
+          format: date-time
+        type:
+          type: integer
+          format: int32
+          nullable: true
+        fileName:
+          type: string
+          nullable: true
+        isPublic:
+          type: boolean
+      additionalProperties: false
+    EntityDocumentMetadataListOkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/EntityDocumentMetadata'
+          nullable: true
+      additionalProperties: false
+    EntityDocumentMetadataUpdate:
+      type: object
+      properties:
+        documentId:
+          type: string
+          format: uuid
+        fileName:
+          type: string
+          nullable: true
+        type:
+          type: integer
+          format: int32
+      additionalProperties: false
+    EntityDocumentMetadataUpdateRequest:
+      type: object
+      properties:
+        entityId:
+          type: string
+          format: uuid
+        authorityId:
+          type: string
+          format: uuid
+        metadatas:
+          type: array
+          items:
+            $ref: '#/components/schemas/EntityDocumentMetadataUpdate'
+          nullable: true
+      additionalProperties: false
     EntityType:
       enum:
       - 0
@@ -3300,6 +3424,7 @@ components:
       - 7
       - 8
       - 9
+      - 10
       type: integer
       description: |2+
 
@@ -3314,6 +3439,7 @@ components:
         *MovingFeature (7)
         *Asset (8)
         *EmissionsBandSet (9)
+        *CarPark (10)
       format: int32
     Error:
       type: object
@@ -3351,7 +3477,6 @@ components:
         setGuid:
           type: string
           format: uuid
-          readOnly: true
         setId:
           type: string
           nullable: true
@@ -3400,7 +3525,6 @@ components:
         setGuid:
           type: string
           format: uuid
-          readOnly: true
         setId:
           type: string
           nullable: true
@@ -3513,6 +3637,22 @@ components:
         reportId:
           type: string
           format: uuid
+      additionalProperties: false
+    FetchEntityDocumentsMetadataQuery:
+      type: object
+      properties:
+        authorityId:
+          type: string
+          format: uuid
+        entityId:
+          type: string
+          format: uuid
+        documentIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+          nullable: true
       additionalProperties: false
     FetchFullAuthorityBySlugQuery:
       type: object
@@ -3890,6 +4030,19 @@ components:
             format: uuid
           nullable: true
       additionalProperties: false
+    GuidListOkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        result:
+          type: array
+          items:
+            type: string
+            format: uuid
+          nullable: true
+      additionalProperties: false
     GuidResult:
       type: object
       properties:
@@ -3968,7 +4121,6 @@ components:
         setGuid:
           type: string
           format: uuid
-          readOnly: true
         setId:
           type: string
           description: GUID of the applicable set.
@@ -3988,7 +4140,6 @@ components:
         setGuid:
           type: string
           format: uuid
-          readOnly: true
         setId:
           type: string
           description: GUID of the applicable set.
@@ -4129,6 +4280,7 @@ components:
       - 17
       - 18
       - 19
+      - 20
       type: integer
       description: |2+
 
@@ -4153,6 +4305,7 @@ components:
         *ProhibitedOvertaking (17)
         *BusGate (18)
         *WeightLimitStructural (19)
+        *HighOccupancyVehicleLane (20)
       format: int32
     NewOrder:
       type: object
@@ -4203,6 +4356,13 @@ components:
           type: string
           nullable: true
       additionalProperties: false
+    OkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+      additionalProperties: false
     OperatingHoursCms:
       type: object
       properties:
@@ -4225,7 +4385,6 @@ components:
         setGuid:
           type: string
           format: uuid
-          readOnly: true
         setId:
           type: string
           nullable: true
@@ -5345,16 +5504,6 @@ components:
       - 6
       - 7
       type: integer
-      description: |2+
-
-
-        *Surface (1)
-        *MultiStory (2)
-        *Underground (3)
-        *SingleStory (4)
-        *Mechanical (5)
-        *Undercover (6)
-        *Roof (7)
       format: int32
     Suspension:
       type: object
@@ -5615,7 +5764,6 @@ components:
         setGuid:
           type: string
           format: uuid
-          readOnly: true
         setId:
           type: string
           nullable: true
@@ -5768,7 +5916,21 @@ components:
       - 11
       - 12
       type: integer
-      description: "Known zone types.\n\n*ControlledParkingZone (1) - An ordinary zone in which authority-defined restrictions are in place.\r\n*RestrictedParkingZone (2) - A zone in which parking is never allowed.\r\n*FreeParking (3) - A zone in which parking is always allowed.\r\n*Private (4) - A region not under authority control (such as a shopping centre).\r\n*CongestionCharge (5) - A region in which congestion charges apply.\r\n*Container (7) - A zone that exists to contain OSPs that don't really belong in a zone.\r\n*ResidentsParkingScheme (8) - Same structure as a controlled parking zone\r\n*PermitParkingArea (9) - Area of residential streets where parking is reserved for permit holders Gn++n++ a sign at the entrance to the street will show that parking is for permit holders only. \r\nPPAs may not have signs or bay markings within them. Sometimes there may be small plates to remind motorists of the controls in place\r\n*PedestrianZone (10) - Area where no parking is allowed\r\n*PedestrianAndCycleZone (11) - Area where no parking is allowed\r\n*Estate (12) - A housing estate under authority control.\r\n"
+      description: |+
+        Known zone types.
+
+        *ControlledParkingZone (1) - An ordinary zone in which authority-defined restrictions are in place.
+        *RestrictedParkingZone (2) - A zone in which parking is never allowed.
+        *FreeParking (3) - A zone in which parking is always allowed.
+        *Private (4) - A region not under authority control (such as a shopping centre).
+        *CongestionCharge (5) - A region in which congestion charges apply.
+        *Container (7) - A zone that exists to contain OSPs that don't really belong in a zone.
+        *ResidentsParkingScheme (8) - Same structure as a controlled parking zone
+        *PermitParkingArea (9) - Area of residential streets where parking is reserved for permit holders Gn++n++ a sign at the entrance to the street will show that parking is for permit holders only. 
+        PPAs may not have signs or bay markings within them. Sometimes there may be small plates to remind motorists of the controls in place
+        *PedestrianZone (10) - Area where no parking is allowed
+        *PedestrianAndCycleZone (11) - Area where no parking is allowed
+        *Estate (12) - A housing estate under authority control.
       format: int32
   securitySchemes:
     apiKey:

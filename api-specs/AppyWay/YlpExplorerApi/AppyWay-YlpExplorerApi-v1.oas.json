@@ -483,7 +483,7 @@
           "Parking"
         ],
         "summary": "Fetch event dates by id",
-        "description": "Searches for event dates with the supplied ID.",
+        "description": "Searches for event dates with the supplied entity ID.",
         "operationId": "post-fetcheventdatesbyid",
         "requestBody": {
           "content": {
@@ -493,8 +493,8 @@
               },
               "example": {
                 "entityId": "string",
-                "startDate": "2020-01-20T00:00:00",
-                "endDate": "2020-01-20T00:00:00"
+                "startDate": "2020-01-20",
+                "endDate": "2020-01-20"
               }
             },
             "text/json": {
@@ -503,8 +503,8 @@
               },
               "example": {
                 "entityId": "string",
-                "startDate": "2020-01-20T00:00:00",
-                "endDate": "2020-01-20T00:00:00"
+                "startDate": "2020-01-20",
+                "endDate": "2020-01-20"
               }
             },
             "application/*+json": {
@@ -513,8 +513,8 @@
               },
               "example": {
                 "entityId": "string",
-                "startDate": "2020-01-20T00:00:00",
-                "endDate": "2020-01-20T00:00:00"
+                "startDate": "2020-01-20",
+                "endDate": "2020-01-20"
               }
             }
           }
@@ -535,7 +535,7 @@
                     "entityETag": "string",
                     "timeZoneId": "string",
                     "eventDates": [
-                      "2020-01-20T00:00:00"
+                      "2020-01-20"
                     ]
                   }
                 }
@@ -574,7 +574,7 @@
           "Parking"
         ],
         "summary": "Fetch operating hours by id",
-        "description": "Searches for operating hours with the supplied ID.",
+        "description": "Searches for operating hours with the supplied entity ID.",
         "operationId": "post-fetchoperatinghoursbyid",
         "requestBody": {
           "content": {
@@ -586,11 +586,11 @@
                 "entityId": "string",
                 "includeNotApplicableOperatingHours": true,
                 "dates": [
-                  "2020-01-20T00:00:00"
+                  "2020-01-20"
                 ],
                 "includeClosedPeriods": true,
                 "includeApplicableOperatingHoursDetail": true,
-                "date": "2020-01-20T00:00:00",
+                "date": "2020-01-20",
                 "vehicleOperatorContext": {
                   "vehicleTypeId": 0,
                   "activityTypeId": 0,
@@ -601,8 +601,8 @@
                     }
                   ]
                 },
-                "endDate": "2020-01-20T00:00:00",
-                "startDate": "2020-01-20T00:00:00"
+                "endDate": "2020-01-20",
+                "startDate": "2020-01-20"
               }
             },
             "text/json": {
@@ -613,11 +613,11 @@
                 "entityId": "string",
                 "includeNotApplicableOperatingHours": true,
                 "dates": [
-                  "2020-01-20T00:00:00"
+                  "2020-01-20"
                 ],
                 "includeClosedPeriods": true,
                 "includeApplicableOperatingHoursDetail": true,
-                "date": "2020-01-20T00:00:00",
+                "date": "2020-01-20",
                 "vehicleOperatorContext": {
                   "vehicleTypeId": 0,
                   "activityTypeId": 0,
@@ -628,8 +628,8 @@
                     }
                   ]
                 },
-                "endDate": "2020-01-20T00:00:00",
-                "startDate": "2020-01-20T00:00:00"
+                "endDate": "2020-01-20",
+                "startDate": "2020-01-20"
               }
             },
             "application/*+json": {
@@ -640,11 +640,11 @@
                 "entityId": "string",
                 "includeNotApplicableOperatingHours": true,
                 "dates": [
-                  "2020-01-20T00:00:00"
+                  "2020-01-20"
                 ],
                 "includeClosedPeriods": true,
                 "includeApplicableOperatingHoursDetail": true,
-                "date": "2020-01-20T00:00:00",
+                "date": "2020-01-20",
                 "vehicleOperatorContext": {
                   "vehicleTypeId": 0,
                   "activityTypeId": 0,
@@ -655,8 +655,8 @@
                     }
                   ]
                 },
-                "endDate": "2020-01-20T00:00:00",
-                "startDate": "2020-01-20T00:00:00"
+                "endDate": "2020-01-20",
+                "startDate": "2020-01-20"
               }
             }
           }
@@ -693,10 +693,9 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2024-03-14T00:00:00",
-                            "end": "2024-03-14T00:00:00",
-                            "isFree": true,
-                            "date": "2020-01-20T00:00:00",
+                            "start": "2024-06-05",
+                            "end": "2024-06-05",
+                            "date": "2020-01-20",
                             "status": 1
                           }
                         ]
@@ -725,10 +724,9 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2024-03-14T00:00:00",
-                            "end": "2024-03-14T00:00:00",
-                            "isFree": true,
-                            "date": "2020-01-20T00:00:00",
+                            "start": "2024-06-05",
+                            "end": "2024-06-05",
+                            "date": "2020-01-20",
                             "status": 1
                           }
                         ]
@@ -757,10 +755,9 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2024-03-14T00:00:00",
-                            "end": "2024-03-14T00:00:00",
-                            "isFree": true,
-                            "date": "2020-01-20T00:00:00",
+                            "start": "2024-06-05",
+                            "end": "2024-06-05",
+                            "date": "2020-01-20",
                             "status": 1
                           }
                         ]
@@ -768,8 +765,8 @@
                     ],
                     "closedPeriods": [
                       {
-                        "start": "2020-01-20T00:00:00+00:00",
-                        "end": "2020-01-20T00:00:00+00:00"
+                        "start": "2020-01-20T00:00:00.0000000+00:00",
+                        "end": "2020-01-20T00:00:00.0000000+00:00"
                       }
                     ]
                   }
@@ -809,7 +806,7 @@
           "Parking"
         ],
         "summary": "Fetch operating hours by ids",
-        "description": "Searches for operating hours with the supplied IDs.",
+        "description": "Searches for operating hours with the supplied entities IDs.",
         "operationId": "post-fetchoperatinghoursbyids",
         "requestBody": {
           "content": {
@@ -831,11 +828,11 @@
                     }
                   ]
                 },
-                "date": "2020-01-20T00:00:00",
-                "startDate": "2020-01-20T00:00:00",
-                "endDate": "2020-01-20T00:00:00",
+                "date": "2020-01-20",
+                "startDate": "2020-01-20",
+                "endDate": "2020-01-20",
                 "dates": [
-                  "2020-01-20T00:00:00"
+                  "2020-01-20"
                 ],
                 "includeNotApplicableOperatingHours": true,
                 "includeApplicableOperatingHoursDetail": true,
@@ -860,11 +857,11 @@
                     }
                   ]
                 },
-                "date": "2020-01-20T00:00:00",
-                "startDate": "2020-01-20T00:00:00",
-                "endDate": "2020-01-20T00:00:00",
+                "date": "2020-01-20",
+                "startDate": "2020-01-20",
+                "endDate": "2020-01-20",
                 "dates": [
-                  "2020-01-20T00:00:00"
+                  "2020-01-20"
                 ],
                 "includeNotApplicableOperatingHours": true,
                 "includeApplicableOperatingHoursDetail": true,
@@ -889,11 +886,11 @@
                     }
                   ]
                 },
-                "date": "2020-01-20T00:00:00",
-                "startDate": "2020-01-20T00:00:00",
-                "endDate": "2020-01-20T00:00:00",
+                "date": "2020-01-20",
+                "startDate": "2020-01-20",
+                "endDate": "2020-01-20",
                 "dates": [
-                  "2020-01-20T00:00:00"
+                  "2020-01-20"
                 ],
                 "includeNotApplicableOperatingHours": true,
                 "includeApplicableOperatingHoursDetail": true,
@@ -908,112 +905,111 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ParkingEntityOperatingHoursResultOkResponse"
+                  "$ref": "#/components/schemas/ParkingEntityOperatingHoursResultIReadOnlyCollectionOkResponse"
                 },
                 "example": {
                   "success": true,
-                  "result": {
-                    "entityId": "string",
-                    "entityType": 1,
-                    "entityETag": "string",
-                    "timeZoneId": "string",
-                    "operatingHours": [
-                      {
-                        "paymentMethodIds": [
-                          0
-                        ],
-                        "permittedContext": {
-                          "vehicleTypeId": 0,
-                          "activityTypeId": 0,
-                          "fuelTypeId": 0,
-                          "permits": [
+                  "result": [
+                    {
+                      "entityId": "string",
+                      "entityType": 1,
+                      "entityETag": "string",
+                      "timeZoneId": "string",
+                      "operatingHours": [
+                        {
+                          "paymentMethodIds": [
+                            0
+                          ],
+                          "permittedContext": {
+                            "vehicleTypeId": 0,
+                            "activityTypeId": 0,
+                            "fuelTypeId": 0,
+                            "permits": [
+                              {
+                                "permitTypeId": 0
+                              }
+                            ]
+                          },
+                          "openPeriods": [
                             {
-                              "permitTypeId": 0
+                              "start": "2024-06-05",
+                              "end": "2024-06-05",
+                              "date": "2020-01-20",
+                              "status": 1
                             }
                           ]
-                        },
-                        "openPeriods": [
-                          {
-                            "start": "2024-03-14T00:00:00",
-                            "end": "2024-03-14T00:00:00",
-                            "isFree": true,
-                            "date": "2020-01-20T00:00:00",
-                            "status": 1
-                          }
-                        ]
-                      }
-                    ],
-                    "notApplicableOperatingHours": [
-                      {
-                        "paymentMethodIds": [
-                          0
-                        ],
-                        "requirements": {
-                          "vehicleTypeIds": [
+                        }
+                      ],
+                      "notApplicableOperatingHours": [
+                        {
+                          "paymentMethodIds": [
                             0
                           ],
-                          "activityTypeIds": [
-                            0
-                          ],
-                          "fuelTypeIds": [
-                            0
-                          ],
-                          "permits": [
+                          "requirements": {
+                            "vehicleTypeIds": [
+                              0
+                            ],
+                            "activityTypeIds": [
+                              0
+                            ],
+                            "fuelTypeIds": [
+                              0
+                            ],
+                            "permits": [
+                              {
+                                "permitTypeId": 0
+                              }
+                            ]
+                          },
+                          "openPeriods": [
                             {
-                              "permitTypeId": 0
+                              "start": "2024-06-05",
+                              "end": "2024-06-05",
+                              "date": "2020-01-20",
+                              "status": 1
                             }
                           ]
-                        },
-                        "openPeriods": [
-                          {
-                            "start": "2024-03-14T00:00:00",
-                            "end": "2024-03-14T00:00:00",
-                            "isFree": true,
-                            "date": "2020-01-20T00:00:00",
-                            "status": 1
-                          }
-                        ]
-                      }
-                    ],
-                    "applicableOperatingHoursDetail": [
-                      {
-                        "paymentMethodIds": [
-                          0
-                        ],
-                        "requirements": {
-                          "vehicleTypeIds": [
+                        }
+                      ],
+                      "applicableOperatingHoursDetail": [
+                        {
+                          "paymentMethodIds": [
                             0
                           ],
-                          "activityTypeIds": [
-                            0
-                          ],
-                          "fuelTypeIds": [
-                            0
-                          ],
-                          "permits": [
+                          "requirements": {
+                            "vehicleTypeIds": [
+                              0
+                            ],
+                            "activityTypeIds": [
+                              0
+                            ],
+                            "fuelTypeIds": [
+                              0
+                            ],
+                            "permits": [
+                              {
+                                "permitTypeId": 0
+                              }
+                            ]
+                          },
+                          "openPeriods": [
                             {
-                              "permitTypeId": 0
+                              "start": "2024-06-05",
+                              "end": "2024-06-05",
+                              "date": "2020-01-20",
+                              "status": 1
                             }
                           ]
-                        },
-                        "openPeriods": [
-                          {
-                            "start": "2024-03-14T00:00:00",
-                            "end": "2024-03-14T00:00:00",
-                            "isFree": true,
-                            "date": "2020-01-20T00:00:00",
-                            "status": 1
-                          }
-                        ]
-                      }
-                    ],
-                    "closedPeriods": [
-                      {
-                        "start": "2020-01-20T00:00:00+00:00",
-                        "end": "2020-01-20T00:00:00+00:00"
-                      }
-                    ]
-                  }
+                        }
+                      ],
+                      "closedPeriods": [
+                        {
+                          "start": "2020-01-20T00:00:00.0000000+00:00",
+                          "end": "2020-01-20T00:00:00.0000000+00:00"
+                        }
+                      ]
+                    }
+                  ]
                 }
               }
             }
@@ -3164,7 +3160,7 @@
           "Status"
         ],
         "summary": "Ping",
-        "description": "Returns Status (pong) of the Explorer service",
+        "description": "Returns Status (pong) of service",
         "operationId": "get-ping",
         "responses": {
           "200": {
@@ -3613,12 +3609,12 @@
           "startDate": {
             "type": "string",
             "description": "Start date for which to retrieve the event dates provided in local format: YYYY-MM-DD (eg: 2021-01-01).",
-            "example": "2020-01-20T00:00:00"
+            "example": "2020-01-20"
           },
           "endDate": {
             "type": "string",
             "description": "End date for which to retrieve the event dates provided in local format: YYYY-MM-DD (eg: 2021-01-03).",
-            "example": "2020-01-20T00:00:00"
+            "example": "2020-01-20"
           }
         },
         "additionalProperties": false
@@ -3685,26 +3681,26 @@
             "type": "string",
             "description": "The date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).",
             "nullable": true,
-            "example": "2020-01-20T00:00:00"
+            "example": "2020-01-20"
           },
           "startDate": {
             "type": "string",
             "description": "Start date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).\r\nDate takes precedence if set.",
             "nullable": true,
-            "example": "2020-01-20T00:00:00"
+            "example": "2020-01-20"
           },
           "endDate": {
             "type": "string",
             "description": "End date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\r\nDate takes precedence if set.",
             "nullable": true,
-            "example": "2020-01-20T00:00:00"
+            "example": "2020-01-20"
           },
           "dates": {
             "type": "array",
             "items": {
               "type": "string",
               "description": "ISO-8601 date pattern",
-              "example": "2020-01-20T00:00:00"
+              "example": "2020-01-20"
             },
             "description": "Dates for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\r\nDate, StartDate and EndDate takes precedence if set.",
             "nullable": true
@@ -3742,26 +3738,26 @@
             "type": "string",
             "description": "The date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).",
             "nullable": true,
-            "example": "2020-01-20T00:00:00"
+            "example": "2020-01-20"
           },
           "startDate": {
             "type": "string",
             "description": "Start date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).\r\nDate takes precedence if set.",
             "nullable": true,
-            "example": "2020-01-20T00:00:00"
+            "example": "2020-01-20"
           },
           "endDate": {
             "type": "string",
             "description": "End date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\r\nDate takes precedence if set.",
             "nullable": true,
-            "example": "2020-01-20T00:00:00"
+            "example": "2020-01-20"
           },
           "dates": {
             "type": "array",
             "items": {
               "type": "string",
               "description": "ISO-8601 date pattern",
-              "example": "2020-01-20T00:00:00"
+              "example": "2020-01-20"
             },
             "description": "Dates for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\r\nDate, StartDate and EndDate takes precedence if set.",
             "nullable": true
@@ -5051,16 +5047,10 @@
             "description": "The local time of the day that the period ends\r\nReturned in local time format: hh:mm:ss (eg: 19:20:30)",
             "example": "00:00:00"
           },
-          "isFree": {
-            "type": "boolean",
-            "description": "Specify if it is free for the open period",
-            "readOnly": true,
-            "deprecated": true
-          },
           "date": {
             "type": "string",
             "description": "The local date that the period belongs\r\nReturned in local format: YYYY-MM-DD (eg: 2021-01-01)",
-            "example": "2020-01-20T00:00:00"
+            "example": "2020-01-20"
           },
           "status": {
             "$ref": "#/components/schemas/OpenPeriodStatus"
@@ -5254,7 +5244,7 @@
             "items": {
               "type": "string",
               "description": "ISO-8601 date pattern",
-              "example": "2020-01-20T00:00:00"
+              "example": "2020-01-20"
             },
             "description": "List of event dates for this parking entity.",
             "nullable": true
@@ -5337,6 +5327,23 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/DateTimeRange"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParkingEntityOperatingHoursResultIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ParkingEntityOperatingHoursResult"
             },
             "nullable": true
           }
