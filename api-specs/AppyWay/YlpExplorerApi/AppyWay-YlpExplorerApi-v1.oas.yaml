@@ -80,62 +80,6 @@ paths:
                 message: string
         "429":
           $ref: '#/components/responses/TooManyRequests'
-  /fetchCapabilitiesByIds:
-    post:
-      tags:
-      - Parking
-      summary: Fetch parking entities capabilities by IDs
-      description: Fetch parking entities capabilities by IDs
-      operationId: post-fetchcapabilitiesbyids
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/FetchCapabilitiesByIdsQuery'
-            example:
-              ids:
-              - string
-          text/json:
-            schema:
-              $ref: '#/components/schemas/FetchCapabilitiesByIdsQuery'
-            example:
-              ids:
-              - string
-          application/*+json:
-            schema:
-              $ref: '#/components/schemas/FetchCapabilitiesByIdsQuery'
-            example:
-              ids:
-              - string
-      responses:
-        "200":
-          description: Success
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/StringStringIReadOnlyCollectionIDictionaryOkResponse'
-              example:
-                success: true
-                result: {}
-        "400":
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/BadRequestResponse'
-              example:
-                success: true
-                message: string
-                errors:
-                - property: string
-                  code: string
-                  message: string
-        "401":
-          $ref: '#/components/responses/Unauthorized'
-        "403":
-          $ref: '#/components/responses/Forbidden'
-        "429":
-          $ref: '#/components/responses/TooManyRequests'
   /fetchEntitiesByIds:
     post:
       tags:
@@ -453,8 +397,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-06-05
-                      end: 2024-06-05
+                    - start: 2024-06-11
+                      end: 2024-06-11
                       date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
@@ -470,8 +414,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-06-05
-                      end: 2024-06-05
+                    - start: 2024-06-11
+                      end: 2024-06-11
                       date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
@@ -487,8 +431,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-06-05
-                      end: 2024-06-05
+                    - start: 2024-06-11
+                      end: 2024-06-11
                       date: 2020-01-20
                       status: 1
                   closedPeriods:
@@ -602,8 +546,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-06-05
-                      end: 2024-06-05
+                    - start: 2024-06-11
+                      end: 2024-06-11
                       date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
@@ -619,8 +563,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-06-05
-                      end: 2024-06-05
+                    - start: 2024-06-11
+                      end: 2024-06-11
                       date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
@@ -636,8 +580,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-06-05
-                      end: 2024-06-05
+                    - start: 2024-06-11
+                      end: 2024-06-11
                       date: 2020-01-20
                       status: 1
                   closedPeriods:
@@ -3878,12 +3822,12 @@ components:
       - 2
       - 3
       type: integer
-      description: |2+
+      description: |+
+        Indicates the status of an open period
 
-
-        *Free (1)
-        *Paid (2)
-        *Mixed (3)
+        *Free (1) - Free period
+        *Paid (2) - Paid period
+        *Mixed (3) - Mixed (free or paid depending on tariff)
       format: int32
     OperatingHours:
       type: object
@@ -4139,6 +4083,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/DateTimeRange'
+          description: Closed periods
           nullable: true
       additionalProperties: false
     ParkingEntityOperatingHoursResultIReadOnlyCollectionOkResponse:
