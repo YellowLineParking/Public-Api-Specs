@@ -182,7 +182,7 @@
           4
         ],
         "type": "integer",
-        "description": "Enumeration for the different data source types\n\n*Unknown (0) - Unknown\r\n*Sensor (1) - Sensor\r\n*Barrier (2) - Barrier\r\n*Camera (4) - Camera\r\n",
+        "description": "Enumeration for the different data source types\n\n*Unknown (0) - Unknown\n*Sensor (1) - Sensor\n*Barrier (2) - Barrier\n*Camera (4) - Camera\n",
         "format": "int32"
       },
       "EntityType": {
@@ -195,7 +195,7 @@
           6
         ],
         "type": "integer",
-        "description": "Enumeration for the different types of Entity\n\n*OnStreet (1) - An on street parking area\r\n*CarPark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\r\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of OnStreet and Carpark entities.\r\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\r\ndefine rules parking entities that can be overridden by individual entities.\r\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\r\n*CarParkFloor (5) - An off-street parking facility (car park) floor.\r\n*CarParkBay (6) - An off-street parking facility (car park) bay.\r\n",
+        "description": "Enumeration for the different types of Entity\n\n*OnStreet (1) - An on street parking area\n*CarPark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of OnStreet and Carpark entities.\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\ndefine rules parking entities that can be overridden by individual entities.\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\n*CarParkFloor (5) - An off-street parking facility (car park) floor.\n*CarParkBay (6) - An off-street parking facility (car park) bay.\n",
         "format": "int32"
       },
       "Error": {

@@ -603,8 +603,8 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2024-07-03",
-                            "end": "2024-07-03",
+                            "start": "2024-07-25",
+                            "end": "2024-07-25",
                             "date": "2020-01-20",
                             "status": 1
                           }
@@ -634,8 +634,8 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2024-07-03",
-                            "end": "2024-07-03",
+                            "start": "2024-07-25",
+                            "end": "2024-07-25",
                             "date": "2020-01-20",
                             "status": 1
                           }
@@ -665,8 +665,8 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2024-07-03",
-                            "end": "2024-07-03",
+                            "start": "2024-07-25",
+                            "end": "2024-07-25",
                             "date": "2020-01-20",
                             "status": 1
                           }
@@ -842,8 +842,8 @@
                           },
                           "openPeriods": [
                             {
-                              "start": "2024-07-03",
-                              "end": "2024-07-03",
+                              "start": "2024-07-25",
+                              "end": "2024-07-25",
                               "date": "2020-01-20",
                               "status": 1
                             }
@@ -873,8 +873,8 @@
                           },
                           "openPeriods": [
                             {
-                              "start": "2024-07-03",
-                              "end": "2024-07-03",
+                              "start": "2024-07-25",
+                              "end": "2024-07-25",
                               "date": "2020-01-20",
                               "status": 1
                             }
@@ -904,8 +904,8 @@
                           },
                           "openPeriods": [
                             {
-                              "start": "2024-07-03",
-                              "end": "2024-07-03",
+                              "start": "2024-07-25",
+                              "end": "2024-07-25",
                               "date": "2020-01-20",
                               "status": 1
                             }
@@ -1086,7 +1086,7 @@
           "Parking"
         ],
         "summary": "Fetch a parking quote by id",
-        "description": "Searches for a parking result with the supplied ID. Result indicates whether parking is allowed at the location.\r\nIf parking is allowed for all or part of the requested window,\r\nthe result contains a list of quotes containing information such as price, payment methods, maximum stay and no return policy.",
+        "description": "Searches for a parking result with the supplied ID. Result indicates whether parking is allowed at the location.\nIf parking is allowed for all or part of the requested window,\nthe result contains a list of quotes containing information such as price, payment methods, maximum stay and no return policy.",
         "operationId": "post-fetchparkingquotebyid",
         "requestBody": {
           "content": {
@@ -1253,7 +1253,7 @@
           "Parking"
         ],
         "summary": "Fetch parking quotes by ids",
-        "description": "Searches for a parking result with the supplied IDs. Result indicates whether parking is allowed at the location.\r\nIf parking is allowed for all or part of the requested window,\r\nthe result contains a list of quotes containing information such as price, payment methods, maximum stay and no return policy.",
+        "description": "Searches for a parking result with the supplied IDs. Result indicates whether parking is allowed at the location.\nIf parking is allowed for all or part of the requested window,\nthe result contains a list of quotes containing information such as price, payment methods, maximum stay and no return policy.",
         "operationId": "post-fetchparkingquotesbyids",
         "requestBody": {
           "content": {
@@ -1876,7 +1876,7 @@
           "Parking"
         ],
         "summary": "Find parking entities by centre and viewport size",
-        "description": "This query creates a square viewport with the centre at ViewportCentre and side length of ViewportSize.\r\nIt then returns a list of all the parking entities within the bounds of that polygon, along with their distance from the DistanceCalculationLocation if supplied,\r\nor the viewport centre if not. Entities are ordered by this distance.",
+        "description": "This query creates a square viewport with the centre at ViewportCentre and side length of ViewportSize.\nIt then returns a list of all the parking entities within the bounds of that polygon, along with their distance from the DistanceCalculationLocation if supplied,\nor the viewport centre if not. Entities are ordered by this distance.",
         "operationId": "post-findparkingentitiesbycentreandviewportsize",
         "requestBody": {
           "content": {
@@ -2100,7 +2100,7 @@
           "Parking"
         ],
         "summary": "Find parking entities by viewport",
-        "description": "This query creates a custom viewport from the supplied GeoJson polygon.\r\nIt then returns a list of all the parking entities within the bounds of that polygon, along with their distance from the DistanceCalculationLocation if supplied,\r\nor the viewport centre if not. Entities are ordered by this distance.",
+        "description": "This query creates a custom viewport from the supplied GeoJson polygon.\nIt then returns a list of all the parking entities within the bounds of that polygon, along with their distance from the DistanceCalculationLocation if supplied,\nor the viewport centre if not. Entities are ordered by this distance.",
         "operationId": "post-findparkingentitiesbyviewport",
         "requestBody": {
           "content": {
@@ -3133,7 +3133,7 @@
           },
           "eTag": {
             "type": "string",
-            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\r\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\r\nnot match the requested tag - i.e. just those entities that have changed.",
+            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\nnot match the requested tag - i.e. just those entities that have changed.",
             "nullable": true
           },
           "notes": {
@@ -3170,6 +3170,37 @@
         },
         "additionalProperties": false,
         "description": "Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly."
+      },
+      "AuthorityHeader": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuthorityHeaderIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AuthorityHeader"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "AuthorityLocationCodes": {
         "type": "object",
@@ -3246,7 +3277,7 @@
           },
           "entityETag": {
             "type": "string",
-            "description": "The Etag of the current latest version of the Authority referred to by this result. This allows\r\nclients to determine if they have the latest version of the authority in their local cache and only\r\nrequest the entity if it is missing.",
+            "description": "The Etag of the current latest version of the Authority referred to by this result. This allows\nclients to determine if they have the latest version of the authority in their local cache and only\nrequest the entity if it is missing.",
             "nullable": true
           }
         },
@@ -3279,7 +3310,7 @@
           2
         ],
         "type": "integer",
-        "description": "Enumeration for the different types of base maps\n\n*OrdnanceSurvey (1) - Ordnance Survey: Realistic mapping\r\n*OpenStreetMaps (2) - Open street map.\r\n",
+        "description": "Enumeration for the different types of base maps\n\n*OrdnanceSurvey (1) - Ordnance Survey: Realistic mapping\n*OpenStreetMaps (2) - Open street map.\n",
         "format": "int32"
       },
       "CarPark": {
@@ -3297,7 +3328,7 @@
           },
           "eTag": {
             "type": "string",
-            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\r\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\r\nnot match the requested tag - i.e. just those entities that have changed.",
+            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\nnot match the requested tag - i.e. just those entities that have changed.",
             "nullable": true
           },
           "address": {
@@ -3458,6 +3489,10 @@
         "additionalProperties": false,
         "description": "Provides information about the geometry contained in the feature"
       },
+      "FetchAllAuthoritiesHeadersQuery": {
+        "type": "object",
+        "additionalProperties": false
+      },
       "FetchAllIndicesDefinitionsQuery": {
         "type": "object",
         "additionalProperties": false
@@ -3595,13 +3630,13 @@
           },
           "startDate": {
             "type": "string",
-            "description": "Start date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).\r\nDate takes precedence if set.",
+            "description": "Start date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).\nDate takes precedence if set.",
             "nullable": true,
             "example": "2020-01-20"
           },
           "endDate": {
             "type": "string",
-            "description": "End date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\r\nDate takes precedence if set.",
+            "description": "End date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\nDate takes precedence if set.",
             "nullable": true,
             "example": "2020-01-20"
           },
@@ -3612,7 +3647,7 @@
               "description": "ISO-8601 date pattern",
               "example": "2020-01-20"
             },
-            "description": "Dates for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\r\nDate, StartDate and EndDate takes precedence if set.",
+            "description": "Dates for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\nDate, StartDate and EndDate takes precedence if set.",
             "nullable": true
           },
           "includeNotApplicableOperatingHours": {
@@ -3652,13 +3687,13 @@
           },
           "startDate": {
             "type": "string",
-            "description": "Start date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).\r\nDate takes precedence if set.",
+            "description": "Start date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-01).\nDate takes precedence if set.",
             "nullable": true,
             "example": "2020-01-20"
           },
           "endDate": {
             "type": "string",
-            "description": "End date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\r\nDate takes precedence if set.",
+            "description": "End date for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\nDate takes precedence if set.",
             "nullable": true,
             "example": "2020-01-20"
           },
@@ -3669,7 +3704,7 @@
               "description": "ISO-8601 date pattern",
               "example": "2020-01-20"
             },
-            "description": "Dates for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\r\nDate, StartDate and EndDate takes precedence if set.",
+            "description": "Dates for which to retrieve the operating hours provided in local format: YYYY-MM-DD (eg: 2021-01-03).\nDate, StartDate and EndDate takes precedence if set.",
             "nullable": true
           },
           "includeNotApplicableOperatingHours": {
@@ -3695,7 +3730,7 @@
             "items": {
               "$ref": "#/components/schemas/MapEntityType"
             },
-            "description": "If supplied, entities that have the given Map Entity types will be excluded from the response. Passing Zone or Authority\r\nentity types will result in a Bad Request response.\n\n*OnStreet (1) - An on-street parking area\r\n*Carpark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\r\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of On-Street and Car park entities.\r\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\r\ndefine rules parking entities that can be overridden by individual entities.\r\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\r\n",
+            "description": "If supplied, entities that have the given Map Entity types will be excluded from the response. Passing Zone or Authority\nentity types will result in a Bad Request response.\n\n*OnStreet (1) - An on-street parking area\n*Carpark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of On-Street and Car park entities.\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\ndefine rules parking entities that can be overridden by individual entities.\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\n",
             "nullable": true
           },
           "featureTags": {
@@ -3729,7 +3764,7 @@
             "items": {
               "$ref": "#/components/schemas/OnStreetParkingType"
             },
-            "description": "If supplied, only on-street parking entities that have the given On Street Parking types will be included in the response. If null,\r\nall types will be returned.\n\n*StandardBay (1) - Standard bay (paid or free)\r\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\r\n*MotorcycleBay (3) - Designated motorcycle bay\r\n*ElectricBay (4) - A bay designated for electric vehicles only\r\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\r\n*CoachBay (6) - A bay with space for a coach\r\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\r\n*TaxiBay (8) - Taxi bay\r\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\r\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\r\n*SingleYellowLine (11) - Single yellow line\r\n*DoubleYellowLine (12) - Double yellow line\r\n*SingleRedLine (13) - Single red line\r\n*DoubleRedLine (14) - Double red line\r\n*SingleYellowKerbMark (15) - Single yellow kerb marks\r\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\r\n*KeepClearLine (17) - Keep Clear lines\r\n*DroppedKerbDriveway (18) - A dropped kerb driveway\r\n*RedRouteBay (19) - Red route bay\r\n*BusStop (20) - Bus stop\r\n*BusinessBay (21) - A business bay\r\n*DoctorBay (22) - A doctor's bay\r\n*HospitalBay (23) - An hospital bay\r\n*MarketTraderBay (24) - A market trader bay\r\n*HotelBay (25) - A Hotel bay\r\n*PoliceBay (26) - A police bay\r\n*RnliBay (27) - An RNLI bay\r\n*SupremeCourtBay (28) - Supreme court bay\r\n*AmbulanceBay (29) - An ambulance bay\r\n*CycleHireBay (30) - Cycle hire bay\r\n*CycleHangar (31) - Cycle hangar\r\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\r\n*MobileLibraryBay (33) - A mobile library bay\r\n*DiplomatBay (34) - A diplomat bay\r\n*FireBrigade (35) - Fire brigade\r\n*CycleRack (36) - Cycle rack\r\n*SchoolKeepClearLine (37) - School keep clear line\r\n*None (-1) - Standard bay (paid or free)\r\n",
+            "description": "If supplied, only on-street parking entities that have the given On Street Parking types will be included in the response. If null,\nall types will be returned.\n\n*StandardBay (1) - Standard bay (paid or free)\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\n*MotorcycleBay (3) - Designated motorcycle bay\n*ElectricBay (4) - A bay designated for electric vehicles only\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\n*CoachBay (6) - A bay with space for a coach\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\n*TaxiBay (8) - Taxi bay\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\n*SingleYellowLine (11) - Single yellow line\n*DoubleYellowLine (12) - Double yellow line\n*SingleRedLine (13) - Single red line\n*DoubleRedLine (14) - Double red line\n*SingleYellowKerbMark (15) - Single yellow kerb marks\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\n*KeepClearLine (17) - Keep Clear lines\n*DroppedKerbDriveway (18) - A dropped kerb driveway\n*RedRouteBay (19) - Red route bay\n*BusStop (20) - Bus stop\n*BusinessBay (21) - A business bay\n*DoctorBay (22) - A doctor's bay\n*HospitalBay (23) - An hospital bay\n*MarketTraderBay (24) - A market trader bay\n*HotelBay (25) - A Hotel bay\n*PoliceBay (26) - A police bay\n*RnliBay (27) - An RNLI bay\n*SupremeCourtBay (28) - Supreme court bay\n*AmbulanceBay (29) - An ambulance bay\n*CycleHireBay (30) - Cycle hire bay\n*CycleHangar (31) - Cycle hangar\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\n*MobileLibraryBay (33) - A mobile library bay\n*DiplomatBay (34) - A diplomat bay\n*FireBrigade (35) - Fire brigade\n*CycleRack (36) - Cycle rack\n*SchoolKeepClearLine (37) - School keep clear line\n*None (-1) - Standard bay (paid or free)\n",
             "nullable": true
           }
         },
@@ -3792,12 +3827,12 @@
           "startTime": {
             "minLength": 1,
             "type": "string",
-            "description": "Start of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "Start of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "endTime": {
             "type": "string",
-            "description": "End of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "End of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "duration": {
@@ -3821,7 +3856,7 @@
           "startTime": {
             "minLength": 1,
             "type": "string",
-            "description": "Start of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "Start of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "ids": {
@@ -3834,7 +3869,7 @@
           },
           "endTime": {
             "type": "string",
-            "description": "End of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "End of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "duration": {
@@ -3872,7 +3907,7 @@
           "startTime": {
             "minLength": 1,
             "type": "string",
-            "description": "Start of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "Start of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "entityId": {
@@ -3882,7 +3917,7 @@
           },
           "endTime": {
             "type": "string",
-            "description": "End of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "End of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "duration": {
@@ -3926,12 +3961,12 @@
           "startTime": {
             "minLength": 1,
             "type": "string",
-            "description": "Start of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "Start of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "endTime": {
             "type": "string",
-            "description": "End of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "End of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "onStreetParkingTypeIds": {
@@ -3939,7 +3974,7 @@
             "items": {
               "$ref": "#/components/schemas/OnStreetParkingType"
             },
-            "description": "On-Street Parking types for which to return state. Optional. If omitted, defaults are returned for all the on-street parking types\r\nin the zone for which they are defined.\n\n*StandardBay (1) - Standard bay (paid or free)\r\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\r\n*MotorcycleBay (3) - Designated motorcycle bay\r\n*ElectricBay (4) - A bay designated for electric vehicles only\r\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\r\n*CoachBay (6) - A bay with space for a coach\r\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\r\n*TaxiBay (8) - Taxi bay\r\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\r\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\r\n*SingleYellowLine (11) - Single yellow line\r\n*DoubleYellowLine (12) - Double yellow line\r\n*SingleRedLine (13) - Single red line\r\n*DoubleRedLine (14) - Double red line\r\n*SingleYellowKerbMark (15) - Single yellow kerb marks\r\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\r\n*KeepClearLine (17) - Keep Clear lines\r\n*DroppedKerbDriveway (18) - A dropped kerb driveway\r\n*RedRouteBay (19) - Red route bay\r\n*BusStop (20) - Bus stop\r\n*BusinessBay (21) - A business bay\r\n*DoctorBay (22) - A doctor's bay\r\n*HospitalBay (23) - An hospital bay\r\n*MarketTraderBay (24) - A market trader bay\r\n*HotelBay (25) - A Hotel bay\r\n*PoliceBay (26) - A police bay\r\n*RnliBay (27) - An RNLI bay\r\n*SupremeCourtBay (28) - Supreme court bay\r\n*AmbulanceBay (29) - An ambulance bay\r\n*CycleHireBay (30) - Cycle hire bay\r\n*CycleHangar (31) - Cycle hangar\r\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\r\n*MobileLibraryBay (33) - A mobile library bay\r\n*DiplomatBay (34) - A diplomat bay\r\n*FireBrigade (35) - Fire brigade\r\n*CycleRack (36) - Cycle rack\r\n*SchoolKeepClearLine (37) - School keep clear line\r\n*None (-1) - Standard bay (paid or free)\r\n",
+            "description": "On-Street Parking types for which to return state. Optional. If omitted, defaults are returned for all the on-street parking types\nin the zone for which they are defined.\n\n*StandardBay (1) - Standard bay (paid or free)\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\n*MotorcycleBay (3) - Designated motorcycle bay\n*ElectricBay (4) - A bay designated for electric vehicles only\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\n*CoachBay (6) - A bay with space for a coach\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\n*TaxiBay (8) - Taxi bay\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\n*SingleYellowLine (11) - Single yellow line\n*DoubleYellowLine (12) - Double yellow line\n*SingleRedLine (13) - Single red line\n*DoubleRedLine (14) - Double red line\n*SingleYellowKerbMark (15) - Single yellow kerb marks\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\n*KeepClearLine (17) - Keep Clear lines\n*DroppedKerbDriveway (18) - A dropped kerb driveway\n*RedRouteBay (19) - Red route bay\n*BusStop (20) - Bus stop\n*BusinessBay (21) - A business bay\n*DoctorBay (22) - A doctor's bay\n*HospitalBay (23) - An hospital bay\n*MarketTraderBay (24) - A market trader bay\n*HotelBay (25) - A Hotel bay\n*PoliceBay (26) - A police bay\n*RnliBay (27) - An RNLI bay\n*SupremeCourtBay (28) - Supreme court bay\n*AmbulanceBay (29) - An ambulance bay\n*CycleHireBay (30) - Cycle hire bay\n*CycleHangar (31) - Cycle hangar\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\n*MobileLibraryBay (33) - A mobile library bay\n*DiplomatBay (34) - A diplomat bay\n*FireBrigade (35) - Fire brigade\n*CycleRack (36) - Cycle rack\n*SchoolKeepClearLine (37) - School keep clear line\n*None (-1) - Standard bay (paid or free)\n",
             "nullable": true
           },
           "includeNotApplicableTimes": {
@@ -4034,7 +4069,7 @@
               }
             },
             "additionalProperties": false,
-            "description": "Custom location within the viewport from which to calculate distances for returned entities. Optional. If omitted, distances will be calculated\r\nfrom the centre of the viewport. This field is useful if you want to display or order entities by distance from a given point that is not the centre of your requested viewport."
+            "description": "Custom location within the viewport from which to calculate distances for returned entities. Optional. If omitted, distances will be calculated\nfrom the centre of the viewport. This field is useful if you want to display or order entities by distance from a given point that is not the centre of your requested viewport."
           },
           "geometryPreference": {
             "$ref": "#/components/schemas/GeometryPreference"
@@ -4047,12 +4082,12 @@
             "items": {
               "$ref": "#/components/schemas/OnStreetParkingType"
             },
-            "description": "If supplied, only on-street parking entities that have the given On-Street Parking types will be included in the response. If null,\r\nall types will be returned.\n\n*StandardBay (1) - Standard bay (paid or free)\r\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\r\n*MotorcycleBay (3) - Designated motorcycle bay\r\n*ElectricBay (4) - A bay designated for electric vehicles only\r\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\r\n*CoachBay (6) - A bay with space for a coach\r\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\r\n*TaxiBay (8) - Taxi bay\r\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\r\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\r\n*SingleYellowLine (11) - Single yellow line\r\n*DoubleYellowLine (12) - Double yellow line\r\n*SingleRedLine (13) - Single red line\r\n*DoubleRedLine (14) - Double red line\r\n*SingleYellowKerbMark (15) - Single yellow kerb marks\r\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\r\n*KeepClearLine (17) - Keep Clear lines\r\n*DroppedKerbDriveway (18) - A dropped kerb driveway\r\n*RedRouteBay (19) - Red route bay\r\n*BusStop (20) - Bus stop\r\n*BusinessBay (21) - A business bay\r\n*DoctorBay (22) - A doctor's bay\r\n*HospitalBay (23) - An hospital bay\r\n*MarketTraderBay (24) - A market trader bay\r\n*HotelBay (25) - A Hotel bay\r\n*PoliceBay (26) - A police bay\r\n*RnliBay (27) - An RNLI bay\r\n*SupremeCourtBay (28) - Supreme court bay\r\n*AmbulanceBay (29) - An ambulance bay\r\n*CycleHireBay (30) - Cycle hire bay\r\n*CycleHangar (31) - Cycle hangar\r\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\r\n*MobileLibraryBay (33) - A mobile library bay\r\n*DiplomatBay (34) - A diplomat bay\r\n*FireBrigade (35) - Fire brigade\r\n*CycleRack (36) - Cycle rack\r\n*SchoolKeepClearLine (37) - School keep clear line\r\n*None (-1) - Standard bay (paid or free)\r\n",
+            "description": "If supplied, only on-street parking entities that have the given On-Street Parking types will be included in the response. If null,\nall types will be returned.\n\n*StandardBay (1) - Standard bay (paid or free)\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\n*MotorcycleBay (3) - Designated motorcycle bay\n*ElectricBay (4) - A bay designated for electric vehicles only\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\n*CoachBay (6) - A bay with space for a coach\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\n*TaxiBay (8) - Taxi bay\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\n*SingleYellowLine (11) - Single yellow line\n*DoubleYellowLine (12) - Double yellow line\n*SingleRedLine (13) - Single red line\n*DoubleRedLine (14) - Double red line\n*SingleYellowKerbMark (15) - Single yellow kerb marks\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\n*KeepClearLine (17) - Keep Clear lines\n*DroppedKerbDriveway (18) - A dropped kerb driveway\n*RedRouteBay (19) - Red route bay\n*BusStop (20) - Bus stop\n*BusinessBay (21) - A business bay\n*DoctorBay (22) - A doctor's bay\n*HospitalBay (23) - An hospital bay\n*MarketTraderBay (24) - A market trader bay\n*HotelBay (25) - A Hotel bay\n*PoliceBay (26) - A police bay\n*RnliBay (27) - An RNLI bay\n*SupremeCourtBay (28) - Supreme court bay\n*AmbulanceBay (29) - An ambulance bay\n*CycleHireBay (30) - Cycle hire bay\n*CycleHangar (31) - Cycle hangar\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\n*MobileLibraryBay (33) - A mobile library bay\n*DiplomatBay (34) - A diplomat bay\n*FireBrigade (35) - Fire brigade\n*CycleRack (36) - Cycle rack\n*SchoolKeepClearLine (37) - School keep clear line\n*None (-1) - Standard bay (paid or free)\n",
             "nullable": true
           }
         },
         "additionalProperties": false,
-        "description": "Request for searching for Parking Entities for a square viewport. The viewport is defined by the latitude and longitude of\r\nthe centre point and the length of one side."
+        "description": "Request for searching for Parking Entities for a square viewport. The viewport is defined by the latitude and longitude of\nthe centre point and the length of one side."
       },
       "FindParkingEntitiesByViewportFilters": {
         "type": "object",
@@ -4062,7 +4097,7 @@
             "items": {
               "$ref": "#/components/schemas/MapEntityType"
             },
-            "description": "If supplied, entities that have the given Map Entity types will be excluded from the response. Passing Zone or Authority\r\nentity types will result in a Bad Request response.\n\n*OnStreet (1) - An on-street parking area\r\n*Carpark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\r\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of On-Street and Car park entities.\r\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\r\ndefine rules parking entities that can be overridden by individual entities.\r\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\r\n",
+            "description": "If supplied, entities that have the given Map Entity types will be excluded from the response. Passing Zone or Authority\nentity types will result in a Bad Request response.\n\n*OnStreet (1) - An on-street parking area\n*Carpark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of On-Street and Car park entities.\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\ndefine rules parking entities that can be overridden by individual entities.\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\n",
             "nullable": true
           }
         },
@@ -4118,7 +4153,7 @@
               }
             },
             "additionalProperties": false,
-            "description": "Custom location within the viewport from which to calculate distances for returned entities. Optional. If omitted, distances will be calculated\r\nfrom the centre of the viewport. This field is useful if you want to display or order entities by distance from a given point that is not the centre of your requested viewport."
+            "description": "Custom location within the viewport from which to calculate distances for returned entities. Optional. If omitted, distances will be calculated\nfrom the centre of the viewport. This field is useful if you want to display or order entities by distance from a given point that is not the centre of your requested viewport."
           },
           "geometryPreference": {
             "$ref": "#/components/schemas/GeometryPreference"
@@ -4128,7 +4163,7 @@
             "items": {
               "$ref": "#/components/schemas/OnStreetParkingType"
             },
-            "description": "If supplied, only on-street parking entities that have the given On-Street Parking types will be included in the response. If null,\r\nall types will be returned.\n\n*StandardBay (1) - Standard bay (paid or free)\r\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\r\n*MotorcycleBay (3) - Designated motorcycle bay\r\n*ElectricBay (4) - A bay designated for electric vehicles only\r\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\r\n*CoachBay (6) - A bay with space for a coach\r\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\r\n*TaxiBay (8) - Taxi bay\r\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\r\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\r\n*SingleYellowLine (11) - Single yellow line\r\n*DoubleYellowLine (12) - Double yellow line\r\n*SingleRedLine (13) - Single red line\r\n*DoubleRedLine (14) - Double red line\r\n*SingleYellowKerbMark (15) - Single yellow kerb marks\r\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\r\n*KeepClearLine (17) - Keep Clear lines\r\n*DroppedKerbDriveway (18) - A dropped kerb driveway\r\n*RedRouteBay (19) - Red route bay\r\n*BusStop (20) - Bus stop\r\n*BusinessBay (21) - A business bay\r\n*DoctorBay (22) - A doctor's bay\r\n*HospitalBay (23) - An hospital bay\r\n*MarketTraderBay (24) - A market trader bay\r\n*HotelBay (25) - A Hotel bay\r\n*PoliceBay (26) - A police bay\r\n*RnliBay (27) - An RNLI bay\r\n*SupremeCourtBay (28) - Supreme court bay\r\n*AmbulanceBay (29) - An ambulance bay\r\n*CycleHireBay (30) - Cycle hire bay\r\n*CycleHangar (31) - Cycle hangar\r\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\r\n*MobileLibraryBay (33) - A mobile library bay\r\n*DiplomatBay (34) - A diplomat bay\r\n*FireBrigade (35) - Fire brigade\r\n*CycleRack (36) - Cycle rack\r\n*SchoolKeepClearLine (37) - School keep clear line\r\n*None (-1) - Standard bay (paid or free)\r\n",
+            "description": "If supplied, only on-street parking entities that have the given On-Street Parking types will be included in the response. If null,\nall types will be returned.\n\n*StandardBay (1) - Standard bay (paid or free)\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\n*MotorcycleBay (3) - Designated motorcycle bay\n*ElectricBay (4) - A bay designated for electric vehicles only\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\n*CoachBay (6) - A bay with space for a coach\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\n*TaxiBay (8) - Taxi bay\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\n*SingleYellowLine (11) - Single yellow line\n*DoubleYellowLine (12) - Double yellow line\n*SingleRedLine (13) - Single red line\n*DoubleRedLine (14) - Double red line\n*SingleYellowKerbMark (15) - Single yellow kerb marks\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\n*KeepClearLine (17) - Keep Clear lines\n*DroppedKerbDriveway (18) - A dropped kerb driveway\n*RedRouteBay (19) - Red route bay\n*BusStop (20) - Bus stop\n*BusinessBay (21) - A business bay\n*DoctorBay (22) - A doctor's bay\n*HospitalBay (23) - An hospital bay\n*MarketTraderBay (24) - A market trader bay\n*HotelBay (25) - A Hotel bay\n*PoliceBay (26) - A police bay\n*RnliBay (27) - An RNLI bay\n*SupremeCourtBay (28) - Supreme court bay\n*AmbulanceBay (29) - An ambulance bay\n*CycleHireBay (30) - Cycle hire bay\n*CycleHangar (31) - Cycle hangar\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\n*MobileLibraryBay (33) - A mobile library bay\n*DiplomatBay (34) - A diplomat bay\n*FireBrigade (35) - Fire brigade\n*CycleRack (36) - Cycle rack\n*SchoolKeepClearLine (37) - School keep clear line\n*None (-1) - Standard bay (paid or free)\n",
             "nullable": true
           },
           "filters": {
@@ -4193,7 +4228,7 @@
           "startTime": {
             "minLength": 1,
             "type": "string",
-            "description": "Start of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "Start of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "viewportCenter": {
@@ -4221,7 +4256,7 @@
           },
           "endTime": {
             "type": "string",
-            "description": "End of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "End of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "distanceCalculationLocation": {
@@ -4239,7 +4274,7 @@
               }
             },
             "additionalProperties": false,
-            "description": "Custom location within the viewport from which to calculate distances for returned results. Optional. If omitted, distances will be calculated\r\nfrom the centre of the viewport. This field is useful if you want to display or order results by distance from a given point that is not the centre of your requested viewport."
+            "description": "Custom location within the viewport from which to calculate distances for returned results. Optional. If omitted, distances will be calculated\nfrom the centre of the viewport. This field is useful if you want to display or order results by distance from a given point that is not the centre of your requested viewport."
           },
           "duration": {
             "type": "string",
@@ -4255,7 +4290,7 @@
           }
         },
         "additionalProperties": false,
-        "description": "Request for searching for Parking Quotes for a square viewport. The viewport is defined by the latitude and longitude of\r\nthe centre point and the length of one side."
+        "description": "Request for searching for Parking Quotes for a square viewport. The viewport is defined by the latitude and longitude of\nthe centre point and the length of one side."
       },
       "FindParkingQuotesByViewportFilters": {
         "type": "object",
@@ -4265,7 +4300,7 @@
             "items": {
               "$ref": "#/components/schemas/MapEntityType"
             },
-            "description": "If supplied, entities that have the given Map Entity types will be excluded from the response. Passing Zone or Authority\r\nentity types will result in a Bad Request response.\n\n*OnStreet (1) - An on-street parking area\r\n*Carpark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\r\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of On-Street and Car park entities.\r\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\r\ndefine rules parking entities that can be overridden by individual entities.\r\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\r\n",
+            "description": "If supplied, entities that have the given Map Entity types will be excluded from the response. Passing Zone or Authority\nentity types will result in a Bad Request response.\n\n*OnStreet (1) - An on-street parking area\n*Carpark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of On-Street and Car park entities.\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\ndefine rules parking entities that can be overridden by individual entities.\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\n",
             "nullable": true
           },
           "excludePaidParking": {
@@ -4308,7 +4343,7 @@
           "startTime": {
             "minLength": 1,
             "type": "string",
-            "description": "Start of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "Start of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "viewport": {
@@ -4347,7 +4382,7 @@
           },
           "endTime": {
             "type": "string",
-            "description": "End of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "End of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "distanceCalculationLocation": {
@@ -4365,7 +4400,7 @@
               }
             },
             "additionalProperties": false,
-            "description": "Custom location within the viewport from which to calculate distances for returned results. Optional. If omitted, distances will be calculated\r\nfrom the centre of the viewport. This field is useful if you want to display or order results by distance from a given point that is not the centre of your requested viewport."
+            "description": "Custom location within the viewport from which to calculate distances for returned results. Optional. If omitted, distances will be calculated\nfrom the centre of the viewport. This field is useful if you want to display or order results by distance from a given point that is not the centre of your requested viewport."
           },
           "vehicleOperatorContext": {
             "$ref": "#/components/schemas/VehicleOperatorContext"
@@ -4456,12 +4491,12 @@
           "startTime": {
             "minLength": 1,
             "type": "string",
-            "description": "Start of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "Start of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "endTime": {
             "type": "string",
-            "description": "End of the window for which to retrieve state. Required.\r\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "End of the window for which to retrieve state. Required.\nDates/times should be provided in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time"
           },
           "onStreetParkingTypeIds": {
@@ -4469,7 +4504,7 @@
             "items": {
               "$ref": "#/components/schemas/OnStreetParkingType"
             },
-            "description": "On Street Parking types for which to return state. Optional. If omitted, defaults are returned for all the on-street parking types\r\nin the zone for which they are defined.\n\n*StandardBay (1) - Standard bay (paid or free)\r\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\r\n*MotorcycleBay (3) - Designated motorcycle bay\r\n*ElectricBay (4) - A bay designated for electric vehicles only\r\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\r\n*CoachBay (6) - A bay with space for a coach\r\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\r\n*TaxiBay (8) - Taxi bay\r\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\r\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\r\n*SingleYellowLine (11) - Single yellow line\r\n*DoubleYellowLine (12) - Double yellow line\r\n*SingleRedLine (13) - Single red line\r\n*DoubleRedLine (14) - Double red line\r\n*SingleYellowKerbMark (15) - Single yellow kerb marks\r\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\r\n*KeepClearLine (17) - Keep Clear lines\r\n*DroppedKerbDriveway (18) - A dropped kerb driveway\r\n*RedRouteBay (19) - Red route bay\r\n*BusStop (20) - Bus stop\r\n*BusinessBay (21) - A business bay\r\n*DoctorBay (22) - A doctor's bay\r\n*HospitalBay (23) - An hospital bay\r\n*MarketTraderBay (24) - A market trader bay\r\n*HotelBay (25) - A Hotel bay\r\n*PoliceBay (26) - A police bay\r\n*RnliBay (27) - An RNLI bay\r\n*SupremeCourtBay (28) - Supreme court bay\r\n*AmbulanceBay (29) - An ambulance bay\r\n*CycleHireBay (30) - Cycle hire bay\r\n*CycleHangar (31) - Cycle hangar\r\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\r\n*MobileLibraryBay (33) - A mobile library bay\r\n*DiplomatBay (34) - A diplomat bay\r\n*FireBrigade (35) - Fire brigade\r\n*CycleRack (36) - Cycle rack\r\n*SchoolKeepClearLine (37) - School keep clear line\r\n*None (-1) - Standard bay (paid or free)\r\n",
+            "description": "On Street Parking types for which to return state. Optional. If omitted, defaults are returned for all the on-street parking types\nin the zone for which they are defined.\n\n*StandardBay (1) - Standard bay (paid or free)\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\n*MotorcycleBay (3) - Designated motorcycle bay\n*ElectricBay (4) - A bay designated for electric vehicles only\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\n*CoachBay (6) - A bay with space for a coach\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\n*TaxiBay (8) - Taxi bay\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\n*SingleYellowLine (11) - Single yellow line\n*DoubleYellowLine (12) - Double yellow line\n*SingleRedLine (13) - Single red line\n*DoubleRedLine (14) - Double red line\n*SingleYellowKerbMark (15) - Single yellow kerb marks\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\n*KeepClearLine (17) - Keep Clear lines\n*DroppedKerbDriveway (18) - A dropped kerb driveway\n*RedRouteBay (19) - Red route bay\n*BusStop (20) - Bus stop\n*BusinessBay (21) - A business bay\n*DoctorBay (22) - A doctor's bay\n*HospitalBay (23) - An hospital bay\n*MarketTraderBay (24) - A market trader bay\n*HotelBay (25) - A Hotel bay\n*PoliceBay (26) - A police bay\n*RnliBay (27) - An RNLI bay\n*SupremeCourtBay (28) - Supreme court bay\n*AmbulanceBay (29) - An ambulance bay\n*CycleHireBay (30) - Cycle hire bay\n*CycleHangar (31) - Cycle hangar\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\n*MobileLibraryBay (33) - A mobile library bay\n*DiplomatBay (34) - A diplomat bay\n*FireBrigade (35) - Fire brigade\n*CycleRack (36) - Cycle rack\n*SchoolKeepClearLine (37) - School keep clear line\n*None (-1) - Standard bay (paid or free)\n",
             "nullable": true
           },
           "distanceCalculationLocation": {
@@ -4487,7 +4522,7 @@
               }
             },
             "additionalProperties": false,
-            "description": "Custom location within the viewport from which to calculate distances for returned results. Optional. If omitted, distances will be calculated\r\nfrom the centre of the viewport. This field is useful if you want to display or order results by distance from a given point that is not the centre of your requested viewport."
+            "description": "Custom location within the viewport from which to calculate distances for returned results. Optional. If omitted, distances will be calculated\nfrom the centre of the viewport. This field is useful if you want to display or order results by distance from a given point that is not the centre of your requested viewport."
           },
           "includeNotApplicableTimes": {
             "type": "boolean",
@@ -4505,7 +4540,7 @@
           4
         ],
         "type": "integer",
-        "description": "The different policies that may apply to sections of the kerb within a given area where no specific data is present.\n\n*Restricted (1) - Unspecified sections of kerb are restricted (no parking) for everyone.\r\n*LikelyRestricted (2) - Unspecified sections of kerb are likely to be restricted (no parking) for everyone.\r\n*LikelyUnrestricted (3) - Unspecified sections of kerb are likely to be unrestricted (free parking)\r\n*Unknown (4) - We cannot say with confidence whether or not unspecified kerb sections are restricted.\r\n",
+        "description": "The different policies that may apply to sections of the kerb within a given area where no specific data is present.\n\n*Restricted (1) - Unspecified sections of kerb are restricted (no parking) for everyone.\n*LikelyRestricted (2) - Unspecified sections of kerb are likely to be restricted (no parking) for everyone.\n*LikelyUnrestricted (3) - Unspecified sections of kerb are likely to be unrestricted (free parking)\n*Unknown (4) - We cannot say with confidence whether or not unspecified kerb sections are restricted.\n",
         "format": "int32"
       },
       "Geometry": {
@@ -4592,7 +4627,7 @@
             "items": {
               "$ref": "#/components/schemas/GeometryType"
             },
-            "description": "List of the types of geometries you want to receive for this basemap\n\n*POI (1) - Point of interest: A single point, will be of type \"Point\"\r\n*Kerb (2) - Single line along the kerbedge, will be of type \"LineString\"\r\n*Outline (3) - A complete representation of the parking area, will be of type \"Polygon\". Only available for Ordnance Survey base maps\r\n",
+            "description": "List of the types of geometries you want to receive for this basemap\n\n*POI (1) - Point of interest: A single point, will be of type \"Point\"\n*Kerb (2) - Single line along the kerbedge, will be of type \"LineString\"\n*Outline (3) - A complete representation of the parking area, will be of type \"Polygon\". Only available for Ordnance Survey base maps\n",
             "nullable": true
           }
         },
@@ -4659,7 +4694,7 @@
           3
         ],
         "type": "integer",
-        "description": "Different types of geometries that can be returned\n\n*POI (1) - Point of interest: A single point, will be of type \"Point\"\r\n*Kerb (2) - Single line along the kerbedge, will be of type \"LineString\"\r\n*Outline (3) - A complete representation of the parking area, will be of type \"Polygon\". Only available for Ordnance Survey base maps\r\n",
+        "description": "Different types of geometries that can be returned\n\n*POI (1) - Point of interest: A single point, will be of type \"Point\"\n*Kerb (2) - Single line along the kerbedge, will be of type \"LineString\"\n*Outline (3) - A complete representation of the parking area, will be of type \"Polygon\". Only available for Ordnance Survey base maps\n",
         "format": "int32"
       },
       "IndexDefinition": {
@@ -4729,7 +4764,7 @@
           },
           "entityETag": {
             "type": "string",
-            "description": "The Etag of the current latest version of the Parking Entity referred to by this result. This allows\r\nclients to determine if they have the latest version of the parking entity in their local cache and only\r\nrequest the entity if it is missing.",
+            "description": "The Etag of the current latest version of the Parking Entity referred to by this result. This allows\nclients to determine if they have the latest version of the parking entity in their local cache and only\nrequest the entity if it is missing.",
             "nullable": true
           }
         },
@@ -4787,7 +4822,7 @@
           4
         ],
         "type": "integer",
-        "description": "Enumeration for the different types of Map Entity - objects returned by the API that can be drawn on a map.\n\n*OnStreet (1) - An on-street parking area\r\n*Carpark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\r\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of On-Street and Car park entities.\r\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\r\ndefine rules parking entities that can be overridden by individual entities.\r\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\r\n",
+        "description": "Enumeration for the different types of Map Entity - objects returned by the API that can be drawn on a map.\n\n*OnStreet (1) - An on-street parking area\n*Carpark (2) - An off-street parking facility (car park) including surface and multi-storey car parks.\n*Zone (3) - A zone is an area defined by the local authority that acts as a container for a set of On-Street and Car park entities.\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\ndefine rules parking entities that can be overridden by individual entities.\n*Authority (4) - Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.\n",
         "format": "int32"
       },
       "NotFoundResponse": {
@@ -4831,7 +4866,7 @@
           },
           "eTag": {
             "type": "string",
-            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\r\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\r\nnot match the requested tag - i.e. just those entities that have changed.",
+            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\nnot match the requested tag - i.e. just those entities that have changed.",
             "nullable": true
           },
           "address": {
@@ -4878,7 +4913,7 @@
             "items": {
               "$ref": "#/components/schemas/OnStreetParkingType"
             },
-            "description": "The types of road markings represented by this entity. This property is only present for On Street Parking entities.\n\n*StandardBay (1) - Standard bay (paid or free)\r\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\r\n*MotorcycleBay (3) - Designated motorcycle bay\r\n*ElectricBay (4) - A bay designated for electric vehicles only\r\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\r\n*CoachBay (6) - A bay with space for a coach\r\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\r\n*TaxiBay (8) - Taxi bay\r\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\r\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\r\n*SingleYellowLine (11) - Single yellow line\r\n*DoubleYellowLine (12) - Double yellow line\r\n*SingleRedLine (13) - Single red line\r\n*DoubleRedLine (14) - Double red line\r\n*SingleYellowKerbMark (15) - Single yellow kerb marks\r\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\r\n*KeepClearLine (17) - Keep Clear lines\r\n*DroppedKerbDriveway (18) - A dropped kerb driveway\r\n*RedRouteBay (19) - Red route bay\r\n*BusStop (20) - Bus stop\r\n*BusinessBay (21) - A business bay\r\n*DoctorBay (22) - A doctor's bay\r\n*HospitalBay (23) - An hospital bay\r\n*MarketTraderBay (24) - A market trader bay\r\n*HotelBay (25) - A Hotel bay\r\n*PoliceBay (26) - A police bay\r\n*RnliBay (27) - An RNLI bay\r\n*SupremeCourtBay (28) - Supreme court bay\r\n*AmbulanceBay (29) - An ambulance bay\r\n*CycleHireBay (30) - Cycle hire bay\r\n*CycleHangar (31) - Cycle hangar\r\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\r\n*MobileLibraryBay (33) - A mobile library bay\r\n*DiplomatBay (34) - A diplomat bay\r\n*FireBrigade (35) - Fire brigade\r\n*CycleRack (36) - Cycle rack\r\n*SchoolKeepClearLine (37) - School keep clear line\r\n*None (-1) - Standard bay (paid or free)\r\n",
+            "description": "The types of road markings represented by this entity. This property is only present for On Street Parking entities.\n\n*StandardBay (1) - Standard bay (paid or free)\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\n*MotorcycleBay (3) - Designated motorcycle bay\n*ElectricBay (4) - A bay designated for electric vehicles only\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\n*CoachBay (6) - A bay with space for a coach\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\n*TaxiBay (8) - Taxi bay\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\n*SingleYellowLine (11) - Single yellow line\n*DoubleYellowLine (12) - Double yellow line\n*SingleRedLine (13) - Single red line\n*DoubleRedLine (14) - Double red line\n*SingleYellowKerbMark (15) - Single yellow kerb marks\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\n*KeepClearLine (17) - Keep Clear lines\n*DroppedKerbDriveway (18) - A dropped kerb driveway\n*RedRouteBay (19) - Red route bay\n*BusStop (20) - Bus stop\n*BusinessBay (21) - A business bay\n*DoctorBay (22) - A doctor's bay\n*HospitalBay (23) - An hospital bay\n*MarketTraderBay (24) - A market trader bay\n*HotelBay (25) - A Hotel bay\n*PoliceBay (26) - A police bay\n*RnliBay (27) - An RNLI bay\n*SupremeCourtBay (28) - Supreme court bay\n*AmbulanceBay (29) - An ambulance bay\n*CycleHireBay (30) - Cycle hire bay\n*CycleHangar (31) - Cycle hangar\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\n*MobileLibraryBay (33) - A mobile library bay\n*DiplomatBay (34) - A diplomat bay\n*FireBrigade (35) - Fire brigade\n*CycleRack (36) - Cycle rack\n*SchoolKeepClearLine (37) - School keep clear line\n*None (-1) - Standard bay (paid or free)\n",
             "nullable": true
           },
           "facilityTypeIds": {
@@ -4941,7 +4976,7 @@
           -1
         ],
         "type": "integer",
-        "description": "Indicates the type of on an OnStreet bay.\n\n*StandardBay (1) - Standard bay (paid or free)\r\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\r\n*MotorcycleBay (3) - Designated motorcycle bay\r\n*ElectricBay (4) - A bay designated for electric vehicles only\r\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\r\n*CoachBay (6) - A bay with space for a coach\r\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\r\n*TaxiBay (8) - Taxi bay\r\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\r\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\r\n*SingleYellowLine (11) - Single yellow line\r\n*DoubleYellowLine (12) - Double yellow line\r\n*SingleRedLine (13) - Single red line\r\n*DoubleRedLine (14) - Double red line\r\n*SingleYellowKerbMark (15) - Single yellow kerb marks\r\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\r\n*KeepClearLine (17) - Keep Clear lines\r\n*DroppedKerbDriveway (18) - A dropped kerb driveway\r\n*RedRouteBay (19) - Red route bay\r\n*BusStop (20) - Bus stop\r\n*BusinessBay (21) - A business bay\r\n*DoctorBay (22) - A doctor's bay\r\n*HospitalBay (23) - An hospital bay\r\n*MarketTraderBay (24) - A market trader bay\r\n*HotelBay (25) - A Hotel bay\r\n*PoliceBay (26) - A police bay\r\n*RnliBay (27) - An RNLI bay\r\n*SupremeCourtBay (28) - Supreme court bay\r\n*AmbulanceBay (29) - An ambulance bay\r\n*CycleHireBay (30) - Cycle hire bay\r\n*CycleHangar (31) - Cycle hangar\r\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\r\n*MobileLibraryBay (33) - A mobile library bay\r\n*DiplomatBay (34) - A diplomat bay\r\n*FireBrigade (35) - Fire brigade\r\n*CycleRack (36) - Cycle rack\r\n*SchoolKeepClearLine (37) - School keep clear line\r\n*None (-1) - Standard bay (paid or free)\r\n",
+        "description": "Indicates the type of on an OnStreet bay.\n\n*StandardBay (1) - Standard bay (paid or free)\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\n*MotorcycleBay (3) - Designated motorcycle bay\n*ElectricBay (4) - A bay designated for electric vehicles only\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\n*CoachBay (6) - A bay with space for a coach\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\n*TaxiBay (8) - Taxi bay\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\n*SingleYellowLine (11) - Single yellow line\n*DoubleYellowLine (12) - Double yellow line\n*SingleRedLine (13) - Single red line\n*DoubleRedLine (14) - Double red line\n*SingleYellowKerbMark (15) - Single yellow kerb marks\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\n*KeepClearLine (17) - Keep Clear lines\n*DroppedKerbDriveway (18) - A dropped kerb driveway\n*RedRouteBay (19) - Red route bay\n*BusStop (20) - Bus stop\n*BusinessBay (21) - A business bay\n*DoctorBay (22) - A doctor's bay\n*HospitalBay (23) - An hospital bay\n*MarketTraderBay (24) - A market trader bay\n*HotelBay (25) - A Hotel bay\n*PoliceBay (26) - A police bay\n*RnliBay (27) - An RNLI bay\n*SupremeCourtBay (28) - Supreme court bay\n*AmbulanceBay (29) - An ambulance bay\n*CycleHireBay (30) - Cycle hire bay\n*CycleHangar (31) - Cycle hangar\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\n*MobileLibraryBay (33) - A mobile library bay\n*DiplomatBay (34) - A diplomat bay\n*FireBrigade (35) - Fire brigade\n*CycleRack (36) - Cycle rack\n*SchoolKeepClearLine (37) - School keep clear line\n*None (-1) - Standard bay (paid or free)\n",
         "format": "int32"
       },
       "OpenPeriod": {
@@ -4949,17 +4984,17 @@
         "properties": {
           "start": {
             "type": "string",
-            "description": "The local time of the day that the period starts\r\nReturned in local time format: hh:mm:ss (eg: 19:20:30)",
+            "description": "The local time of the day that the period starts\nReturned in local time format: hh:mm:ss (eg: 19:20:30)",
             "example": "00:00:00"
           },
           "end": {
             "type": "string",
-            "description": "The local time of the day that the period ends\r\nReturned in local time format: hh:mm:ss (eg: 19:20:30)",
+            "description": "The local time of the day that the period ends\nReturned in local time format: hh:mm:ss (eg: 19:20:30)",
             "example": "00:00:00"
           },
           "date": {
             "type": "string",
-            "description": "The local date that the period belongs\r\nReturned in local format: YYYY-MM-DD (eg: 2021-01-01)",
+            "description": "The local date that the period belongs\nReturned in local format: YYYY-MM-DD (eg: 2021-01-01)",
             "example": "2020-01-20"
           },
           "status": {
@@ -4975,7 +5010,7 @@
           3
         ],
         "type": "integer",
-        "description": "Indicates the status of an open period\n\n*Free (1) - Free period\r\n*Paid (2) - Paid period\r\n*Mixed (3) - Mixed (free or paid depending on tariff)\r\n",
+        "description": "Indicates the status of an open period\n\n*Free (1) - Free period\n*Paid (2) - Paid period\n*Mixed (3) - Mixed (free or paid depending on tariff)\n",
         "format": "int32"
       },
       "OperatingHours": {
@@ -5039,7 +5074,7 @@
           3
         ],
         "type": "integer",
-        "description": "Enum to indicate the different scenarios whereby parking may be allowed or denied.\n\n*FullSession (1) - Parking is allowed for the whole of the requested window\r\n*TruncatedSession (2) - Parking is allowed for part of the requested window only\r\n*NoParking (3) - Parking is not allowed.\r\n",
+        "description": "Enum to indicate the different scenarios whereby parking may be allowed or denied.\n\n*FullSession (1) - Parking is allowed for the whole of the requested window\n*TruncatedSession (2) - Parking is allowed for part of the requested window only\n*NoParking (3) - Parking is not allowed.\n",
         "format": "int32"
       },
       "ParkingEntity": {
@@ -5060,7 +5095,7 @@
           },
           "eTag": {
             "type": "string",
-            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\r\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\r\nnot match the requested tag - i.e. just those entities that have changed.",
+            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\nnot match the requested tag - i.e. just those entities that have changed.",
             "nullable": true
           },
           "address": {
@@ -5107,7 +5142,7 @@
             "items": {
               "$ref": "#/components/schemas/OnStreetParkingType"
             },
-            "description": "The types of road markings represented by this entity. This property is only present for On Street Parking entities.\n\n*StandardBay (1) - Standard bay (paid or free)\r\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\r\n*MotorcycleBay (3) - Designated motorcycle bay\r\n*ElectricBay (4) - A bay designated for electric vehicles only\r\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\r\n*CoachBay (6) - A bay with space for a coach\r\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\r\n*TaxiBay (8) - Taxi bay\r\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\r\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\r\n*SingleYellowLine (11) - Single yellow line\r\n*DoubleYellowLine (12) - Double yellow line\r\n*SingleRedLine (13) - Single red line\r\n*DoubleRedLine (14) - Double red line\r\n*SingleYellowKerbMark (15) - Single yellow kerb marks\r\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\r\n*KeepClearLine (17) - Keep Clear lines\r\n*DroppedKerbDriveway (18) - A dropped kerb driveway\r\n*RedRouteBay (19) - Red route bay\r\n*BusStop (20) - Bus stop\r\n*BusinessBay (21) - A business bay\r\n*DoctorBay (22) - A doctor's bay\r\n*HospitalBay (23) - An hospital bay\r\n*MarketTraderBay (24) - A market trader bay\r\n*HotelBay (25) - A Hotel bay\r\n*PoliceBay (26) - A police bay\r\n*RnliBay (27) - An RNLI bay\r\n*SupremeCourtBay (28) - Supreme court bay\r\n*AmbulanceBay (29) - An ambulance bay\r\n*CycleHireBay (30) - Cycle hire bay\r\n*CycleHangar (31) - Cycle hangar\r\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\r\n*MobileLibraryBay (33) - A mobile library bay\r\n*DiplomatBay (34) - A diplomat bay\r\n*FireBrigade (35) - Fire brigade\r\n*CycleRack (36) - Cycle rack\r\n*SchoolKeepClearLine (37) - School keep clear line\r\n*None (-1) - Standard bay (paid or free)\r\n",
+            "description": "The types of road markings represented by this entity. This property is only present for On Street Parking entities.\n\n*StandardBay (1) - Standard bay (paid or free)\n*DisabledBay (2) - A bay requiring a disabled badge / permit during restricted hours\n*MotorcycleBay (3) - Designated motorcycle bay\n*ElectricBay (4) - A bay designated for electric vehicles only\n*CarClubBay (5) - A bay designated for Car Club members only during restricted hours\n*CoachBay (6) - A bay with space for a coach\n*LoadingBay (7) - A bay that allows Loading Only during restricted hours\n*TaxiBay (8) - Taxi bay\n*ResidentBay (9) - A bay designated for resident permit holders during restricted hours\n*SpecialBay (10) - A bay with special restrictions, e.g. RNLI, High Court or Ambulance bays\n*SingleYellowLine (11) - Single yellow line\n*DoubleYellowLine (12) - Double yellow line\n*SingleRedLine (13) - Single red line\n*DoubleRedLine (14) - Double red line\n*SingleYellowKerbMark (15) - Single yellow kerb marks\n*DoubleYellowKerbMark (16) - Double yellow kerb marks\n*KeepClearLine (17) - Keep Clear lines\n*DroppedKerbDriveway (18) - A dropped kerb driveway\n*RedRouteBay (19) - Red route bay\n*BusStop (20) - Bus stop\n*BusinessBay (21) - A business bay\n*DoctorBay (22) - A doctor's bay\n*HospitalBay (23) - An hospital bay\n*MarketTraderBay (24) - A market trader bay\n*HotelBay (25) - A Hotel bay\n*PoliceBay (26) - A police bay\n*RnliBay (27) - An RNLI bay\n*SupremeCourtBay (28) - Supreme court bay\n*AmbulanceBay (29) - An ambulance bay\n*CycleHireBay (30) - Cycle hire bay\n*CycleHangar (31) - Cycle hangar\n*AdvisorySchoolKeepClearLine (32) - Advisory school keep clear line\n*MobileLibraryBay (33) - A mobile library bay\n*DiplomatBay (34) - A diplomat bay\n*FireBrigade (35) - Fire brigade\n*CycleRack (36) - Cycle rack\n*SchoolKeepClearLine (37) - School keep clear line\n*None (-1) - Standard bay (paid or free)\n",
             "nullable": true
           },
           "facilityTypeIds": {
@@ -5141,7 +5176,7 @@
           },
           "entityETag": {
             "type": "string",
-            "description": "The Etag of the current latest version of the Parking Entity referred to by this result. This allows\r\nclients to determine if they have the latest version of the parking entity in their local cache and only\r\nrequest the entity if it is missing.",
+            "description": "The Etag of the current latest version of the Parking Entity referred to by this result. This allows\nclients to determine if they have the latest version of the parking entity in their local cache and only\nrequest the entity if it is missing.",
             "nullable": true
           },
           "timeZoneId": {
@@ -5201,7 +5236,7 @@
           },
           "entityETag": {
             "type": "string",
-            "description": "The Etag of the current latest version of the Parking Entity referred to by this result. This allows\r\nclients to determine if they have the latest version of the parking entity in their local cache and only\r\nrequest the entity if it is missing.",
+            "description": "The Etag of the current latest version of the Parking Entity referred to by this result. This allows\nclients to determine if they have the latest version of the parking entity in their local cache and only\nrequest the entity if it is missing.",
             "nullable": true
           },
           "timeZoneId": {
@@ -5214,7 +5249,7 @@
             "items": {
               "$ref": "#/components/schemas/OperatingHours"
             },
-            "description": "List of operating hours for this parking entity. If the context of the search means that there are multiple operating hours returned,\r\none list of operating hours will be generated for each payment methods, bay types and vehicle operator\r\ncontext for which they are valid.",
+            "description": "List of operating hours for this parking entity. If the context of the search means that there are multiple operating hours returned,\none list of operating hours will be generated for each payment methods, bay types and vehicle operator\ncontext for which they are valid.",
             "nullable": true
           },
           "notApplicableOperatingHours": {
@@ -5290,7 +5325,7 @@
             "items": {
               "$ref": "#/components/schemas/ParkingQuote"
             },
-            "description": "List of quotes for parking at this parking entity. If the context of the search means that there are multiple prices returned,\r\none quote will be generated for each price and the quotes will be decorated with the payment methods, bay types and vehicle operator\r\ncontext for which they are valid. If parking is not allowed, no quotes are returned.",
+            "description": "List of quotes for parking at this parking entity. If the context of the search means that there are multiple prices returned,\none quote will be generated for each price and the quotes will be decorated with the payment methods, bay types and vehicle operator\ncontext for which they are valid. If parking is not allowed, no quotes are returned.",
             "nullable": true
           },
           "distance": {
@@ -5304,7 +5339,7 @@
           },
           "entityETag": {
             "type": "string",
-            "description": "The Etag of the current latest version of the Parking Entity referred to by this result. This allows\r\nclients to determine if they have the latest version of the parking entity in their local cache and only\r\nrequest the entity if it is missing.",
+            "description": "The Etag of the current latest version of the Parking Entity referred to by this result. This allows\nclients to determine if they have the latest version of the parking entity in their local cache and only\nrequest the entity if it is missing.",
             "nullable": true
           }
         },
@@ -5339,25 +5374,25 @@
           },
           "minCost": {
             "type": "number",
-            "description": "Minimum cost for parking. This is the minimum amount the user will pay for parking,\r\nregardless of when they leave the space.",
+            "description": "Minimum cost for parking. This is the minimum amount the user will pay for parking,\nregardless of when they leave the space.",
             "format": "float",
             "nullable": true
           },
           "minStayUntil": {
             "type": "string",
-            "description": "The amount of time that the vehicle operator is entitled to stay in the space if they pay the amount\r\nspecified in the MinCost field, i.e. the minimum duration that must be paid for in order to park.",
+            "description": "The amount of time that the vehicle operator is entitled to stay in the space if they pay the amount\nspecified in the MinCost field, i.e. the minimum duration that must be paid for in order to park.",
             "format": "date-time",
             "nullable": true
           },
           "canExtendUntil": {
             "type": "string",
-            "description": "The maximum time until which the user can park. This value ignores the requested window and is the\r\nlatest time the user is able to remain parked in the space if they were to extend their session\r\nbeyond the requested window.\r\nDates/times are returned in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "The maximum time until which the user can park. This value ignores the requested window and is the\nlatest time the user is able to remain parked in the space if they were to extend their session\nbeyond the requested window.\nDates/times are returned in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time",
             "nullable": true
           },
           "pricedUntil": {
             "type": "string",
-            "description": "The maximum time until which the user can park for the price specified in the 'cost' field. The\r\n'cost' field is the cost for the requested time window, but that price may entitle the user to\r\npark longer than requested, in which case this field holds the time that the cost will entitle\r\nthem to park.\r\nDates/times are returned in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "The maximum time until which the user can park for the price specified in the 'cost' field. The\n'cost' field is the cost for the requested time window, but that price may entitle the user to\npark longer than requested, in which case this field holds the time that the cost will entitle\nthem to park.\nDates/times are returned in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time",
             "nullable": true
           },
@@ -5375,7 +5410,7 @@
           },
           "becomesFreeAt": {
             "type": "string",
-            "description": "If the user has to pay to park at the start of the requested time window, this returns the first time at which\r\nthe user can park for free. If the bay is free parking from the start of the window OR free parking is never available in the bay, BecomesFreeAt will be null.",
+            "description": "If the user has to pay to park at the start of the requested time window, this returns the first time at which\nthe user can park for free. If the bay is free parking from the start of the window OR free parking is never available in the bay, BecomesFreeAt will be null.",
             "format": "date-time",
             "nullable": true
           },
@@ -5398,7 +5433,7 @@
           },
           "rulesApplyUntil": {
             "type": "string",
-            "description": "The date and time until the rules on which this quote is based apply.\r\nDates/times are returned in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
+            "description": "The date and time until the rules on which this quote is based apply.\nDates/times are returned in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)",
             "format": "date-time",
             "nullable": true
           },
@@ -5692,7 +5727,7 @@
           4
         ],
         "type": "integer",
-        "description": "\n\n*Restricted (1) - Unspecified sections of kerb are restricted (no parking) for everyone.\r\n*LikelyRestricted (2) - Unspecified sections of kerb are likely to be restricted (no parking) for everyone.\r\n*LikelyUnrestricted (3) - Unspecified sections of kerb are likely to be unrestricted (free parking)\r\n*Unknown (4) - We cannot say with confidence whether or not unspecified kerb sections are restricted.\r\n",
+        "description": "\n\n*Restricted (1) - Unspecified sections of kerb are restricted (no parking) for everyone.\n*LikelyRestricted (2) - Unspecified sections of kerb are likely to be restricted (no parking) for everyone.\n*LikelyUnrestricted (3) - Unspecified sections of kerb are likely to be unrestricted (free parking)\n*Unknown (4) - We cannot say with confidence whether or not unspecified kerb sections are restricted.\n",
         "format": "int32"
       },
       "SurchargeCriteria": {
@@ -5727,7 +5762,7 @@
           }
         },
         "additionalProperties": false,
-        "description": "Details of a surcharge that may be applied to a parking charge, including the amount of the surcharge\r\nand the criteria under which it is applied."
+        "description": "Details of a surcharge that may be applied to a parking charge, including the amount of the surcharge\nand the criteria under which it is applied."
       },
       "SurchargeValueType": {
         "enum": [
@@ -5735,7 +5770,7 @@
           2
         ],
         "type": "integer",
-        "description": "Indicates how clients should interpret the value in a SurchargeDetails object - as a flat rate (absolute cost) or percentage of the original charge\n\n*FlatRate (1) - The value should be interpreted as an absolute amount\r\n*Percentage (2) - The value should be interpreted as a percentage of the original cost (before surcharge)\r\n",
+        "description": "Indicates how clients should interpret the value in a SurchargeDetails object - as a flat rate (absolute cost) or percentage of the original charge\n\n*FlatRate (1) - The value should be interpreted as an absolute amount\n*Percentage (2) - The value should be interpreted as a percentage of the original cost (before surcharge)\n",
         "format": "int32"
       },
       "VehicleOperatorContext": {
@@ -5769,7 +5804,7 @@
           }
         },
         "additionalProperties": false,
-        "description": "A set of values that pertain to the driver looking to park (their vehicle, permits, intended activity)\r\nthat affect whether or not they can park and/or the price they pay if they do."
+        "description": "A set of values that pertain to the driver looking to park (their vehicle, permits, intended activity)\nthat affect whether or not they can park and/or the price they pay if they do."
       },
       "VehicleOperatorRequirements": {
         "type": "object",
@@ -5827,7 +5862,7 @@
           },
           "eTag": {
             "type": "string",
-            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\r\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\r\nnot match the requested tag - i.e. just those entities that have changed.",
+            "description": "ETag for the entity. The ETag is specific to each version of this entity and changes whenever the entity data changes. Clients can\nsend the eTags of cached entities to the server when requesting data and the server can return only entities for which the current ETag does\nnot match the requested tag - i.e. just those entities that have changed.",
             "nullable": true
           },
           "geometry": {
@@ -5859,7 +5894,7 @@
           }
         },
         "additionalProperties": false,
-        "description": "A zone is an area defined by the local authority that acts as a container for a set of OnStreet and CarPark entities.\r\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\r\ndefine rules parking entities that can be overridden by individual entities."
+        "description": "A zone is an area defined by the local authority that acts as a container for a set of OnStreet and CarPark entities.\nA zone may define common parking rules that are applicable generally across parts of the kerb (e.g. Single Yellow Lines) and may\ndefine rules parking entities that can be overridden by individual entities."
       },
       "ZoneDefault": {
         "type": "object",
@@ -5872,7 +5907,7 @@
             "items": {
               "$ref": "#/components/schemas/ZoneDefaultApplicableTime"
             },
-            "description": "All the time windows for which this zone default applies which intersect the requested period. \r\nAny window that applies for at least part of the requested period will be returned.",
+            "description": "All the time windows for which this zone default applies which intersect the requested period. \nAny window that applies for at least part of the requested period will be returned.",
             "nullable": true
           },
           "notApplicableTimes": {
@@ -5937,7 +5972,7 @@
           },
           "entityETag": {
             "type": "string",
-            "description": "The Etag of the current latest version of the Zone referred to by this result. This allows\r\nclients to determine if they have the latest version of the zone in their local cache and only\r\nrequest the entity if it is missing.",
+            "description": "The Etag of the current latest version of the Zone referred to by this result. This allows\nclients to determine if they have the latest version of the zone in their local cache and only\nrequest the entity if it is missing.",
             "nullable": true
           },
           "zoneType": {
@@ -6021,7 +6056,7 @@
           },
           "entityETag": {
             "type": "string",
-            "description": "The Etag of the current latest version of the Zone referred to by this result. This allows\r\nclients to determine if they have the latest version of the zone in their local cache and only\r\nrequest the entity if it is missing.",
+            "description": "The Etag of the current latest version of the Zone referred to by this result. This allows\nclients to determine if they have the latest version of the zone in their local cache and only\nrequest the entity if it is missing.",
             "nullable": true
           },
           "zoneType": {
@@ -6037,7 +6072,7 @@
           },
           "distance": {
             "type": "number",
-            "description": "How far away the zone is, in meters. Distances are relative to the DistanceCalculationLocation if supplied in the query, otherwise they are relative to the centre of the viewport.\r\nIf the DistanceCalculationLocation / viewport centre is inside the zone, this value will be zero. Otherwise it will be the direct distance to the nearest point on the zone boundary.",
+            "description": "How far away the zone is, in meters. Distances are relative to the DistanceCalculationLocation if supplied in the query, otherwise they are relative to the centre of the viewport.\nIf the DistanceCalculationLocation / viewport centre is inside the zone, this value will be zero. Otherwise it will be the direct distance to the nearest point on the zone boundary.",
             "format": "double",
             "nullable": true
           }
@@ -6058,7 +6093,7 @@
           10
         ],
         "type": "integer",
-        "description": "Different types of Zone\n\n*ControlledParkingZone (1) - An ordinary zone in which authority-defined restrictions are in place.\r\n*RestrictedParkingZone (2) - A zone in which parking is never allowed.\r\n*FreeParking (3) - A zone in which parking is always allowed.\r\n*Private (4) - A region not under authority control (such as a shopping centre).\r\n*CongestionCharge (5) - A region in which congestion charges apply.\r\n*Container (7) - A zone that exists to contain On Street Parking entities that don't really belong in a zone.\r\n*ResidentsParkingScheme (8) - A zone in which a resident's permit parking scheme applies\r\n*PermitParkingArea (9) - Area of residential streets where parking is reserved for permit holders Gn++n++ a sign at the entrance to the street will show that parking is for permit holders only. \r\nPPAs may not have signs or bay markings within them. Sometimes there may be small plates to remind motorists of the controls in place\r\n*PedestrianZone (10) - Pedestrian area where no parking is allowed\r\n",
+        "description": "Different types of Zone\n\n*ControlledParkingZone (1) - An ordinary zone in which authority-defined restrictions are in place.\n*RestrictedParkingZone (2) - A zone in which parking is never allowed.\n*FreeParking (3) - A zone in which parking is always allowed.\n*Private (4) - A region not under authority control (such as a shopping centre).\n*CongestionCharge (5) - A region in which congestion charges apply.\n*Container (7) - A zone that exists to contain On Street Parking entities that don't really belong in a zone.\n*ResidentsParkingScheme (8) - A zone in which a resident's permit parking scheme applies\n*PermitParkingArea (9) - Area of residential streets where parking is reserved for permit holders Gn++n++ a sign at the entrance to the street will show that parking is for permit holders only. \nPPAs may not have signs or bay markings within them. Sometimes there may be small plates to remind motorists of the controls in place\n*PedestrianZone (10) - Pedestrian area where no parking is allowed\n",
         "format": "int32"
       }
     },

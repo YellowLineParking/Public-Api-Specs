@@ -397,8 +397,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-07-03
-                      end: 2024-07-03
+                    - start: 2024-07-25
+                      end: 2024-07-25
                       date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
@@ -414,8 +414,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-07-03
-                      end: 2024-07-03
+                    - start: 2024-07-25
+                      end: 2024-07-25
                       date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
@@ -431,8 +431,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-07-03
-                      end: 2024-07-03
+                    - start: 2024-07-25
+                      end: 2024-07-25
                       date: 2020-01-20
                       status: 1
                   closedPeriods:
@@ -546,8 +546,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-07-03
-                      end: 2024-07-03
+                    - start: 2024-07-25
+                      end: 2024-07-25
                       date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
@@ -563,8 +563,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-07-03
-                      end: 2024-07-03
+                    - start: 2024-07-25
+                      end: 2024-07-25
                       date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
@@ -580,8 +580,8 @@ paths:
                       permits:
                       - permitTypeId: 0
                     openPeriods:
-                    - start: 2024-07-03
-                      end: 2024-07-03
+                    - start: 2024-07-25
+                      end: 2024-07-25
                       date: 2020-01-20
                       status: 1
                   closedPeriods:
@@ -2060,6 +2060,28 @@ components:
           nullable: true
       additionalProperties: false
       description: Defines the area controlled by a particular local authority. Authorities may contain zones and may also contain parking entities directly.
+    AuthorityHeader:
+      type: object
+      properties:
+        id:
+          type: string
+          nullable: true
+        name:
+          type: string
+          nullable: true
+      additionalProperties: false
+    AuthorityHeaderIReadOnlyCollectionOkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/AuthorityHeader'
+          nullable: true
+      additionalProperties: false
     AuthorityLocationCodes:
       type: object
       properties:
@@ -2142,7 +2164,7 @@ components:
       - 1
       - 2
       type: integer
-      description: |+
+      description: |
         Enumeration for the different types of base maps
 
         *OrdnanceSurvey (1) - Ordnance Survey: Realistic mapping
@@ -2283,6 +2305,9 @@ components:
           $ref: '#/components/schemas/BasemapTranslation'
       additionalProperties: false
       description: Provides information about the geometry contained in the feature
+    FetchAllAuthoritiesHeadersQuery:
+      type: object
+      additionalProperties: false
     FetchAllIndicesDefinitionsQuery:
       type: object
       additionalProperties: false
@@ -2473,7 +2498,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/MapEntityType'
-          description: |+
+          description: |
             If supplied, entities that have the given Map Entity types will be excluded from the response. Passing Zone or Authority
             entity types will result in a Bad Request response.
 
@@ -2507,7 +2532,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/OnStreetParkingType'
-          description: |+
+          description: |
             If supplied, only on-street parking entities that have the given On Street Parking types will be included in the response. If null,
             all types will be returned.
 
@@ -2721,7 +2746,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/OnStreetParkingType'
-          description: |+
+          description: |
             On-Street Parking types for which to return state. Optional. If omitted, defaults are returned for all the on-street parking types
             in the zone for which they are defined.
 
@@ -2844,7 +2869,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/OnStreetParkingType'
-          description: |+
+          description: |
             If supplied, only on-street parking entities that have the given On-Street Parking types will be included in the response. If null,
             all types will be returned.
 
@@ -2898,7 +2923,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/MapEntityType'
-          description: |+
+          description: |
             If supplied, entities that have the given Map Entity types will be excluded from the response. Passing Zone or Authority
             entity types will result in a Bad Request response.
 
@@ -2957,7 +2982,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/OnStreetParkingType'
-          description: |+
+          description: |
             If supplied, only on-street parking entities that have the given On-Street Parking types will be included in the response. If null,
             all types will be returned.
 
@@ -3109,7 +3134,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/MapEntityType'
-          description: |+
+          description: |
             If supplied, entities that have the given Map Entity types will be excluded from the response. Passing Zone or Authority
             entity types will result in a Bad Request response.
 
@@ -3280,7 +3305,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/OnStreetParkingType'
-          description: |+
+          description: |
             On Street Parking types for which to return state. Optional. If omitted, defaults are returned for all the on-street parking types
             in the zone for which they are defined.
 
@@ -3350,7 +3375,7 @@ components:
       - 3
       - 4
       type: integer
-      description: |+
+      description: |
         The different policies that may apply to sections of the kerb within a given area where no specific data is present.
 
         *Restricted (1) - Unspecified sections of kerb are restricted (no parking) for everyone.
@@ -3418,7 +3443,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/GeometryType'
-          description: |+
+          description: |
             List of the types of geometries you want to receive for this basemap
 
             *POI (1) - Point of interest: A single point, will be of type "Point"
@@ -3470,7 +3495,7 @@ components:
       - 2
       - 3
       type: integer
-      description: |+
+      description: |
         Different types of geometries that can be returned
 
         *POI (1) - Point of interest: A single point, will be of type "Point"
@@ -3573,7 +3598,7 @@ components:
       - 3
       - 4
       type: integer
-      description: |+
+      description: |
         Enumeration for the different types of Map Entity - objects returned by the API that can be drawn on a map.
 
         *OnStreet (1) - An on-street parking area
@@ -3654,7 +3679,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/OnStreetParkingType'
-          description: |+
+          description: |
             The types of road markings represented by this entity. This property is only present for On Street Parking entities.
 
             *StandardBay (1) - Standard bay (paid or free)
@@ -3750,7 +3775,7 @@ components:
       - 37
       - -1
       type: integer
-      description: |+
+      description: |
         Indicates the type of on an OnStreet bay.
 
         *StandardBay (1) - Standard bay (paid or free)
@@ -3822,7 +3847,7 @@ components:
       - 2
       - 3
       type: integer
-      description: |+
+      description: |
         Indicates the status of an open period
 
         *Free (1) - Free period
@@ -3875,7 +3900,7 @@ components:
       - 2
       - 3
       type: integer
-      description: |+
+      description: |
         Enum to indicate the different scenarios whereby parking may be allowed or denied.
 
         *FullSession (1) - Parking is allowed for the whole of the requested window
@@ -3936,7 +3961,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/OnStreetParkingType'
-          description: |+
+          description: |
             The types of road markings represented by this entity. This property is only present for On Street Parking entities.
 
             *StandardBay (1) - Standard bay (paid or free)
@@ -4442,7 +4467,7 @@ components:
       - 3
       - 4
       type: integer
-      description: |2+
+      description: |2
 
 
         *Restricted (1) - Unspecified sections of kerb are restricted (no parking) for everyone.
@@ -4482,7 +4507,7 @@ components:
       - 1
       - 2
       type: integer
-      description: |+
+      description: |
         Indicates how clients should interpret the value in a SurchargeDetails object - as a flat rate (absolute cost) or percentage of the original charge
 
         *FlatRate (1) - The value should be interpreted as an absolute amount
@@ -4748,7 +4773,7 @@ components:
       - 9
       - 10
       type: integer
-      description: |+
+      description: |
         Different types of Zone
 
         *ControlledParkingZone (1) - An ordinary zone in which authority-defined restrictions are in place.
