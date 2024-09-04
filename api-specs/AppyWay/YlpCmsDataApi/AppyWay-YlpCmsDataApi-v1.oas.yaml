@@ -80,6 +80,7 @@ paths:
                     acceptChargePointRequests: true
                     hideTariffsOnMapSchedules: true
                     hideTariffsOnStreets: true
+                    hideRestrictedSpeedLimitsOnStreets: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
@@ -141,6 +142,7 @@ paths:
                     acceptChargePointRequests: true
                     hideTariffsOnMapSchedules: true
                     hideTariffsOnStreets: true
+                    hideRestrictedSpeedLimitsOnStreets: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
@@ -305,7 +307,7 @@ paths:
                     properties: {}
                   setsUrl:
                     operatingHoursSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -319,8 +321,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-07-29
-                              end: 2024-07-29
+                            - start: 2024-09-04
+                              end: 2024-09-04
                             firstDate:
                               month: 0
                               day: 0
@@ -332,7 +334,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-07-29
+                          noReturnUntil: 2024-09-04
                         eventDays:
                         - ruleTime:
                             months:
@@ -342,8 +344,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-07-29
-                              end: 2024-07-29
+                            - start: 2024-09-04
+                              end: 2024-09-04
                             firstDate:
                               month: 0
                               day: 0
@@ -355,9 +357,9 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-07-29
+                          noReturnUntil: 2024-09-04
                     exemptionsSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -369,7 +371,7 @@ paths:
                         maxStay: 0
                         noReturn: 0
                     exceptionsSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -385,8 +387,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-07-29
-                                end: 2024-07-29
+                              - start: 2024-09-04
+                                end: 2024-09-04
                               firstDate:
                                 month: 0
                                 day: 0
@@ -398,7 +400,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-07-29
+                            noReturnUntil: 2024-09-04
                           eventDays:
                           - ruleTime:
                               months:
@@ -408,8 +410,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-07-29
-                                end: 2024-07-29
+                              - start: 2024-09-04
+                                end: 2024-09-04
                               firstDate:
                                 month: 0
                                 day: 0
@@ -421,7 +423,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-07-29
+                            noReturnUntil: 2024-09-04
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -435,8 +437,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-07-29
-                                  end: 2024-07-29
+                                - start: 2024-09-04
+                                  end: 2024-09-04
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -448,7 +450,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-07-29
+                              noReturnUntil: 2024-09-04
                             eventDays:
                             - ruleTime:
                                 months:
@@ -458,8 +460,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-07-29
-                                  end: 2024-07-29
+                                - start: 2024-09-04
+                                  end: 2024-09-04
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -471,9 +473,9 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-07-29
+                              noReturnUntil: 2024-09-04
                     tariffSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -505,8 +507,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-07-29
-                        timeTo: 2024-07-29
+                        timeFrom: 2024-09-04
+                        timeTo: 2024-09-04
                         firstDate:
                           month: 0
                           day: 0
@@ -519,7 +521,7 @@ paths:
                         - 0
                         timeType: 0
                     emissionsBandSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -544,6 +546,7 @@ paths:
                       authorityId: string
                       note: string
                       streetName: string
+                      guid: string
                     properties: {}
             text/json:
               schema:
@@ -668,7 +671,7 @@ paths:
                     properties: {}
                   setsUrl:
                     operatingHoursSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -682,8 +685,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-07-29
-                              end: 2024-07-29
+                            - start: 2024-09-04
+                              end: 2024-09-04
                             firstDate:
                               month: 0
                               day: 0
@@ -695,7 +698,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-07-29
+                          noReturnUntil: 2024-09-04
                         eventDays:
                         - ruleTime:
                             months:
@@ -705,8 +708,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-07-29
-                              end: 2024-07-29
+                            - start: 2024-09-04
+                              end: 2024-09-04
                             firstDate:
                               month: 0
                               day: 0
@@ -718,9 +721,9 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-07-29
+                          noReturnUntil: 2024-09-04
                     exemptionsSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -732,7 +735,7 @@ paths:
                         maxStay: 0
                         noReturn: 0
                     exceptionsSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -748,8 +751,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-07-29
-                                end: 2024-07-29
+                              - start: 2024-09-04
+                                end: 2024-09-04
                               firstDate:
                                 month: 0
                                 day: 0
@@ -761,7 +764,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-07-29
+                            noReturnUntil: 2024-09-04
                           eventDays:
                           - ruleTime:
                               months:
@@ -771,8 +774,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-07-29
-                                end: 2024-07-29
+                              - start: 2024-09-04
+                                end: 2024-09-04
                               firstDate:
                                 month: 0
                                 day: 0
@@ -784,7 +787,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-07-29
+                            noReturnUntil: 2024-09-04
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -798,8 +801,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-07-29
-                                  end: 2024-07-29
+                                - start: 2024-09-04
+                                  end: 2024-09-04
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -811,7 +814,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-07-29
+                              noReturnUntil: 2024-09-04
                             eventDays:
                             - ruleTime:
                                 months:
@@ -821,8 +824,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-07-29
-                                  end: 2024-07-29
+                                - start: 2024-09-04
+                                  end: 2024-09-04
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -834,9 +837,9 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-07-29
+                              noReturnUntil: 2024-09-04
                     tariffSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -868,8 +871,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-07-29
-                        timeTo: 2024-07-29
+                        timeFrom: 2024-09-04
+                        timeTo: 2024-09-04
                         firstDate:
                           month: 0
                           day: 0
@@ -882,7 +885,7 @@ paths:
                         - 0
                         timeType: 0
                     emissionsBandSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -907,6 +910,7 @@ paths:
                       authorityId: string
                       note: string
                       streetName: string
+                      guid: string
                     properties: {}
         "401":
           $ref: '#/components/responses/Unauthorized'
@@ -1155,6 +1159,7 @@ paths:
                     acceptChargePointRequests: true
                     hideTariffsOnMapSchedules: true
                     hideTariffsOnStreets: true
+                    hideRestrictedSpeedLimitsOnStreets: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
@@ -1216,6 +1221,7 @@ paths:
                     acceptChargePointRequests: true
                     hideTariffsOnMapSchedules: true
                     hideTariffsOnStreets: true
+                    hideRestrictedSpeedLimitsOnStreets: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
@@ -1322,6 +1328,7 @@ paths:
                     acceptChargePointRequests: true
                     hideTariffsOnMapSchedules: true
                     hideTariffsOnStreets: true
+                    hideRestrictedSpeedLimitsOnStreets: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
@@ -1391,6 +1398,7 @@ paths:
                     acceptChargePointRequests: true
                     hideTariffsOnMapSchedules: true
                     hideTariffsOnStreets: true
+                    hideRestrictedSpeedLimitsOnStreets: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
@@ -1606,7 +1614,7 @@ paths:
                     properties: {}
                   setsUrl:
                     operatingHoursSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -1620,8 +1628,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-07-29
-                              end: 2024-07-29
+                            - start: 2024-09-04
+                              end: 2024-09-04
                             firstDate:
                               month: 0
                               day: 0
@@ -1633,7 +1641,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-07-29
+                          noReturnUntil: 2024-09-04
                         eventDays:
                         - ruleTime:
                             months:
@@ -1643,8 +1651,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-07-29
-                              end: 2024-07-29
+                            - start: 2024-09-04
+                              end: 2024-09-04
                             firstDate:
                               month: 0
                               day: 0
@@ -1656,9 +1664,9 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-07-29
+                          noReturnUntil: 2024-09-04
                     exemptionsSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -1670,7 +1678,7 @@ paths:
                         maxStay: 0
                         noReturn: 0
                     exceptionsSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -1686,8 +1694,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-07-29
-                                end: 2024-07-29
+                              - start: 2024-09-04
+                                end: 2024-09-04
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1699,7 +1707,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-07-29
+                            noReturnUntil: 2024-09-04
                           eventDays:
                           - ruleTime:
                               months:
@@ -1709,8 +1717,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-07-29
-                                end: 2024-07-29
+                              - start: 2024-09-04
+                                end: 2024-09-04
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1722,7 +1730,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-07-29
+                            noReturnUntil: 2024-09-04
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -1736,8 +1744,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-07-29
-                                  end: 2024-07-29
+                                - start: 2024-09-04
+                                  end: 2024-09-04
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1749,7 +1757,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-07-29
+                              noReturnUntil: 2024-09-04
                             eventDays:
                             - ruleTime:
                                 months:
@@ -1759,8 +1767,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-07-29
-                                  end: 2024-07-29
+                                - start: 2024-09-04
+                                  end: 2024-09-04
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1772,9 +1780,9 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-07-29
+                              noReturnUntil: 2024-09-04
                     tariffSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -1806,8 +1814,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-07-29
-                        timeTo: 2024-07-29
+                        timeFrom: 2024-09-04
+                        timeTo: 2024-09-04
                         firstDate:
                           month: 0
                           day: 0
@@ -1820,7 +1828,7 @@ paths:
                         - 0
                         timeType: 0
                     emissionsBandSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -1845,6 +1853,7 @@ paths:
                       authorityId: string
                       note: string
                       streetName: string
+                      guid: string
                     properties: {}
             text/json:
               schema:
@@ -1969,7 +1978,7 @@ paths:
                     properties: {}
                   setsUrl:
                     operatingHoursSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -1983,8 +1992,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-07-29
-                              end: 2024-07-29
+                            - start: 2024-09-04
+                              end: 2024-09-04
                             firstDate:
                               month: 0
                               day: 0
@@ -1996,7 +2005,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-07-29
+                          noReturnUntil: 2024-09-04
                         eventDays:
                         - ruleTime:
                             months:
@@ -2006,8 +2015,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-07-29
-                              end: 2024-07-29
+                            - start: 2024-09-04
+                              end: 2024-09-04
                             firstDate:
                               month: 0
                               day: 0
@@ -2019,9 +2028,9 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-07-29
+                          noReturnUntil: 2024-09-04
                     exemptionsSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -2033,7 +2042,7 @@ paths:
                         maxStay: 0
                         noReturn: 0
                     exceptionsSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -2049,8 +2058,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-07-29
-                                end: 2024-07-29
+                              - start: 2024-09-04
+                                end: 2024-09-04
                               firstDate:
                                 month: 0
                                 day: 0
@@ -2062,7 +2071,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-07-29
+                            noReturnUntil: 2024-09-04
                           eventDays:
                           - ruleTime:
                               months:
@@ -2072,8 +2081,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-07-29
-                                end: 2024-07-29
+                              - start: 2024-09-04
+                                end: 2024-09-04
                               firstDate:
                                 month: 0
                                 day: 0
@@ -2085,7 +2094,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-07-29
+                            noReturnUntil: 2024-09-04
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -2099,8 +2108,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-07-29
-                                  end: 2024-07-29
+                                - start: 2024-09-04
+                                  end: 2024-09-04
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -2112,7 +2121,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-07-29
+                              noReturnUntil: 2024-09-04
                             eventDays:
                             - ruleTime:
                                 months:
@@ -2122,8 +2131,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-07-29
-                                  end: 2024-07-29
+                                - start: 2024-09-04
+                                  end: 2024-09-04
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -2135,9 +2144,9 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-07-29
+                              noReturnUntil: 2024-09-04
                     tariffSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -2169,8 +2178,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-07-29
-                        timeTo: 2024-07-29
+                        timeFrom: 2024-09-04
+                        timeTo: 2024-09-04
                         firstDate:
                           month: 0
                           day: 0
@@ -2183,7 +2192,7 @@ paths:
                         - 0
                         timeType: 0
                     emissionsBandSets:
-                    - setGuid: string
+                    - guid: string
                       setId: string
                       name: string
                       formattedName: string
@@ -2208,6 +2217,7 @@ paths:
                       authorityId: string
                       note: string
                       streetName: string
+                      guid: string
                     properties: {}
         "400":
           description: Bad Request
@@ -2752,6 +2762,8 @@ components:
           type: boolean
         hideTariffsOnStreets:
           type: boolean
+        hideRestrictedSpeedLimitsOnStreets:
+          type: boolean
       additionalProperties: false
     CarParkCmsBlob:
       type: object
@@ -3016,6 +3028,34 @@ components:
           nullable: true
         changeSetState:
           $ref: '#/components/schemas/ChangeSetState'
+      additionalProperties: false
+    ChangeSetItem:
+      type: object
+      properties:
+        entityIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+          nullable: true
+        id:
+          type: string
+          format: uuid
+        changeSetId:
+          type: string
+          format: uuid
+        entityType:
+          $ref: '#/components/schemas/EntityType'
+        date:
+          type: string
+          format: date-time
+        updatedDate:
+          type: string
+          format: date-time
+        inverseOf:
+          type: string
+          format: uuid
+          nullable: true
       additionalProperties: false
     ChangeSetState:
       enum:
@@ -3322,7 +3362,7 @@ components:
     EmissionsBandSet:
       type: object
       properties:
-        setGuid:
+        guid:
           type: string
           format: uuid
         setId:
@@ -3478,7 +3518,7 @@ components:
     ExceptionsSet:
       type: object
       properties:
-        setGuid:
+        guid:
           type: string
           format: uuid
         setId:
@@ -3526,7 +3566,7 @@ components:
     ExemptionsSet:
       type: object
       properties:
-        setGuid:
+        guid:
           type: string
           format: uuid
         setId:
@@ -3807,21 +3847,30 @@ components:
           nullable: true
         changeSetState:
           $ref: '#/components/schemas/ChangeSetState'
-        modifications:
-          type: array
-          items:
-            $ref: '#/components/schemas/Modification'
-          nullable: true
         additions:
           type: array
           items:
             $ref: '#/components/schemas/Addition'
+          nullable: true
+        modifications:
+          type: array
+          items:
+            $ref: '#/components/schemas/Modification'
           nullable: true
         revocations:
           type: array
           items:
             $ref: '#/components/schemas/Revocation'
           nullable: true
+        changeSetItems:
+          type: array
+          items:
+            $ref: '#/components/schemas/ChangeSetItem'
+          nullable: true
+          readOnly: true
+        isEmpty:
+          type: boolean
+          readOnly: true
       additionalProperties: false
     FullChangeSetResult:
       type: object
@@ -4188,6 +4237,10 @@ components:
         streetName:
           type: string
           nullable: true
+        guid:
+          type: string
+          format: uuid
+          readOnly: true
       additionalProperties: false
     MFeatureCollection:
       type: object
@@ -4398,7 +4451,7 @@ components:
     OperatingHoursSet:
       type: object
       properties:
-        setGuid:
+        guid:
           type: string
           format: uuid
         setId:
@@ -5781,7 +5834,7 @@ components:
     TariffSet:
       type: object
       properties:
-        setGuid:
+        guid:
           type: string
           format: uuid
         setId:

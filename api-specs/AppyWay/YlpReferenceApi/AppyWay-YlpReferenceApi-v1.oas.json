@@ -148,8 +148,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-07-29",
-                        "end": "2024-07-29"
+                        "start": "2024-09-04",
+                        "end": "2024-09-04"
                       }
                     ]
                   }
@@ -171,8 +171,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-07-29",
-                        "end": "2024-07-29"
+                        "start": "2024-09-04",
+                        "end": "2024-09-04"
                       }
                     ]
                   }
@@ -194,8 +194,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-07-29",
-                        "end": "2024-07-29"
+                        "start": "2024-09-04",
+                        "end": "2024-09-04"
                       }
                     ]
                   }
@@ -1199,8 +1199,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2024-07-29",
-                              "end": "2024-07-29"
+                              "start": "2024-09-04",
+                              "end": "2024-09-04"
                             }
                           ]
                         }
@@ -1547,8 +1547,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2024-07-29",
-                            "end": "2024-07-29"
+                            "start": "2024-09-04",
+                            "end": "2024-09-04"
                           }
                         ]
                       }
@@ -1823,6 +1823,14 @@
               "$ref": "#/components/schemas/MovingRestrictionType"
             },
             "description": "Restriction types for moving traffic features",
+            "nullable": true
+          },
+          "movingRestrictionTypeOptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovingRestrictionTypeOption"
+            },
+            "description": "Options for specifying more granular types of moving traffic feature",
             "nullable": true
           },
           "vehicleTypes": {

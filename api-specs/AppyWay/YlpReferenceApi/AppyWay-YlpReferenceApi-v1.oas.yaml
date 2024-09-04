@@ -96,8 +96,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2024-07-29
-                  end: 2024-07-29
+                  start: 2024-09-04
+                  end: 2024-09-04
               id: string
           text/json:
             schema:
@@ -110,8 +110,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2024-07-29
-                  end: 2024-07-29
+                  start: 2024-09-04
+                  end: 2024-09-04
               id: string
           application/*+json:
             schema:
@@ -124,8 +124,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2024-07-29
-                  end: 2024-07-29
+                  start: 2024-09-04
+                  end: 2024-09-04
               id: string
       responses:
         "200":
@@ -769,8 +769,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2024-07-29
-                      end: 2024-07-29
+                      start: 2024-09-04
+                      end: 2024-09-04
         "304":
           description: Not Modified
         "401":
@@ -994,8 +994,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2024-07-29
-                      end: 2024-07-29
+                      start: 2024-09-04
+                      end: 2024-09-04
         "304":
           description: Not Modified
         "400":
@@ -1187,6 +1187,12 @@ components:
           items:
             $ref: '#/components/schemas/MovingRestrictionType'
           description: Restriction types for moving traffic features
+          nullable: true
+        movingRestrictionTypeOptions:
+          type: array
+          items:
+            $ref: '#/components/schemas/MovingRestrictionTypeOption'
+          description: Options for specifying more granular types of moving traffic feature
           nullable: true
         vehicleTypes:
           type: array
