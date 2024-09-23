@@ -96,8 +96,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2024-09-10
-                  end: 2024-09-10
+                  start: 2024-09-23
+                  end: 2024-09-23
               id: string
           text/json:
             schema:
@@ -110,8 +110,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2024-09-10
-                  end: 2024-09-10
+                  start: 2024-09-23
+                  end: 2024-09-23
               id: string
           application/*+json:
             schema:
@@ -124,8 +124,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2024-09-10
-                  end: 2024-09-10
+                  start: 2024-09-23
+                  end: 2024-09-23
               id: string
       responses:
         "200":
@@ -769,8 +769,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2024-09-10
-                      end: 2024-09-10
+                      start: 2024-09-23
+                      end: 2024-09-23
         "304":
           description: Not Modified
         "401":
@@ -994,8 +994,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2024-09-10
-                      end: 2024-09-10
+                      start: 2024-09-23
+                      end: 2024-09-23
         "304":
           description: Not Modified
         "400":
@@ -1484,6 +1484,18 @@ components:
         fullName:
           type: string
           description: Full name
+          nullable: true
+      additionalProperties: false
+    CarParkPaymentMethodIReadOnlyCollectionOkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        result:
+          type: array
+          items:
+            $ref: '#/components/schemas/CarParkPaymentMethod'
           nullable: true
       additionalProperties: false
     CarParkSurfaceType:

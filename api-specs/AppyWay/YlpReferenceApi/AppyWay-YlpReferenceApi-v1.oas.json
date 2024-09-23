@@ -148,8 +148,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-09-10",
-                        "end": "2024-09-10"
+                        "start": "2024-09-23",
+                        "end": "2024-09-23"
                       }
                     ]
                   }
@@ -171,8 +171,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-09-10",
-                        "end": "2024-09-10"
+                        "start": "2024-09-23",
+                        "end": "2024-09-23"
                       }
                     ]
                   }
@@ -194,8 +194,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-09-10",
-                        "end": "2024-09-10"
+                        "start": "2024-09-23",
+                        "end": "2024-09-23"
                       }
                     ]
                   }
@@ -1199,8 +1199,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2024-09-10",
-                              "end": "2024-09-10"
+                              "start": "2024-09-23",
+                              "end": "2024-09-23"
                             }
                           ]
                         }
@@ -1547,8 +1547,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2024-09-10",
-                            "end": "2024-09-10"
+                            "start": "2024-09-23",
+                            "end": "2024-09-23"
                           }
                         ]
                       }
@@ -2226,6 +2226,23 @@
           "fullName": {
             "type": "string",
             "description": "Full name",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CarParkPaymentMethodIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CarParkPaymentMethod"
+            },
             "nullable": true
           }
         },
