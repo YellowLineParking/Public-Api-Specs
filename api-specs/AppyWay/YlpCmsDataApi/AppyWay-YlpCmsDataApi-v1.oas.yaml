@@ -84,6 +84,7 @@ paths:
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
+                  reviewTerminalIds: true
             text/json:
               schema:
                 $ref: '#/components/schemas/AuthorityListResult'
@@ -146,6 +147,7 @@ paths:
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
+                  reviewTerminalIds: true
         "401":
           $ref: '#/components/responses/Unauthorized'
         "403":
@@ -223,6 +225,8 @@ paths:
                             setGuid: string
                             setId: string
                           locationNumber: string
+                          terminalIds:
+                          - string
                           exemptionsSet:
                             setGuid: string
                             setId: string
@@ -321,8 +325,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-09-25
-                              end: 2024-09-25
+                            - start: 2024-10-10
+                              end: 2024-10-10
                             firstDate:
                               month: 0
                               day: 0
@@ -334,7 +338,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-09-25
+                          noReturnUntil: 2024-10-10
                         eventDays:
                         - ruleTime:
                             months:
@@ -344,8 +348,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-09-25
-                              end: 2024-09-25
+                            - start: 2024-10-10
+                              end: 2024-10-10
                             firstDate:
                               month: 0
                               day: 0
@@ -357,7 +361,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-09-25
+                          noReturnUntil: 2024-10-10
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -387,8 +391,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-09-25
-                                end: 2024-09-25
+                              - start: 2024-10-10
+                                end: 2024-10-10
                               firstDate:
                                 month: 0
                                 day: 0
@@ -400,7 +404,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-09-25
+                            noReturnUntil: 2024-10-10
                           eventDays:
                           - ruleTime:
                               months:
@@ -410,8 +414,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-09-25
-                                end: 2024-09-25
+                              - start: 2024-10-10
+                                end: 2024-10-10
                               firstDate:
                                 month: 0
                                 day: 0
@@ -423,7 +427,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-09-25
+                            noReturnUntil: 2024-10-10
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -437,8 +441,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-09-25
-                                  end: 2024-09-25
+                                - start: 2024-10-10
+                                  end: 2024-10-10
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -450,7 +454,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-09-25
+                              noReturnUntil: 2024-10-10
                             eventDays:
                             - ruleTime:
                                 months:
@@ -460,8 +464,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-09-25
-                                  end: 2024-09-25
+                                - start: 2024-10-10
+                                  end: 2024-10-10
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -473,7 +477,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-09-25
+                              noReturnUntil: 2024-10-10
                     tariffSets:
                     - guid: string
                       setId: string
@@ -507,8 +511,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-09-25
-                        timeTo: 2024-09-25
+                        timeFrom: 2024-10-10
+                        timeTo: 2024-10-10
                         firstDate:
                           month: 0
                           day: 0
@@ -587,6 +591,8 @@ paths:
                             setGuid: string
                             setId: string
                           locationNumber: string
+                          terminalIds:
+                          - string
                           exemptionsSet:
                             setGuid: string
                             setId: string
@@ -685,8 +691,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-09-25
-                              end: 2024-09-25
+                            - start: 2024-10-10
+                              end: 2024-10-10
                             firstDate:
                               month: 0
                               day: 0
@@ -698,7 +704,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-09-25
+                          noReturnUntil: 2024-10-10
                         eventDays:
                         - ruleTime:
                             months:
@@ -708,8 +714,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-09-25
-                              end: 2024-09-25
+                            - start: 2024-10-10
+                              end: 2024-10-10
                             firstDate:
                               month: 0
                               day: 0
@@ -721,7 +727,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-09-25
+                          noReturnUntil: 2024-10-10
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -751,8 +757,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-09-25
-                                end: 2024-09-25
+                              - start: 2024-10-10
+                                end: 2024-10-10
                               firstDate:
                                 month: 0
                                 day: 0
@@ -764,7 +770,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-09-25
+                            noReturnUntil: 2024-10-10
                           eventDays:
                           - ruleTime:
                               months:
@@ -774,8 +780,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-09-25
-                                end: 2024-09-25
+                              - start: 2024-10-10
+                                end: 2024-10-10
                               firstDate:
                                 month: 0
                                 day: 0
@@ -787,7 +793,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-09-25
+                            noReturnUntil: 2024-10-10
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -801,8 +807,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-09-25
-                                  end: 2024-09-25
+                                - start: 2024-10-10
+                                  end: 2024-10-10
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -814,7 +820,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-09-25
+                              noReturnUntil: 2024-10-10
                             eventDays:
                             - ruleTime:
                                 months:
@@ -824,8 +830,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-09-25
-                                  end: 2024-09-25
+                                - start: 2024-10-10
+                                  end: 2024-10-10
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -837,7 +843,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-09-25
+                              noReturnUntil: 2024-10-10
                     tariffSets:
                     - guid: string
                       setId: string
@@ -871,8 +877,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-09-25
-                        timeTo: 2024-09-25
+                        timeFrom: 2024-10-10
+                        timeTo: 2024-10-10
                         firstDate:
                           month: 0
                           day: 0
@@ -1163,6 +1169,7 @@ paths:
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
+                  reviewTerminalIds: true
             text/json:
               schema:
                 $ref: '#/components/schemas/AuthorityIReadOnlyCollectionOkResponse'
@@ -1225,6 +1232,7 @@ paths:
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
+                  reviewTerminalIds: true
         "401":
           $ref: '#/components/responses/Unauthorized'
         "403":
@@ -1332,6 +1340,7 @@ paths:
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
+                  reviewTerminalIds: true
                   shape:
                     type: string
                     crs:
@@ -1402,6 +1411,7 @@ paths:
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
+                  reviewTerminalIds: true
                   shape:
                     type: string
                     crs:
@@ -1530,6 +1540,8 @@ paths:
                             setGuid: string
                             setId: string
                           locationNumber: string
+                          terminalIds:
+                          - string
                           exemptionsSet:
                             setGuid: string
                             setId: string
@@ -1628,8 +1640,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-09-25
-                              end: 2024-09-25
+                            - start: 2024-10-10
+                              end: 2024-10-10
                             firstDate:
                               month: 0
                               day: 0
@@ -1641,7 +1653,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-09-25
+                          noReturnUntil: 2024-10-10
                         eventDays:
                         - ruleTime:
                             months:
@@ -1651,8 +1663,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-09-25
-                              end: 2024-09-25
+                            - start: 2024-10-10
+                              end: 2024-10-10
                             firstDate:
                               month: 0
                               day: 0
@@ -1664,7 +1676,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-09-25
+                          noReturnUntil: 2024-10-10
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -1694,8 +1706,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-09-25
-                                end: 2024-09-25
+                              - start: 2024-10-10
+                                end: 2024-10-10
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1707,7 +1719,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-09-25
+                            noReturnUntil: 2024-10-10
                           eventDays:
                           - ruleTime:
                               months:
@@ -1717,8 +1729,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-09-25
-                                end: 2024-09-25
+                              - start: 2024-10-10
+                                end: 2024-10-10
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1730,7 +1742,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-09-25
+                            noReturnUntil: 2024-10-10
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -1744,8 +1756,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-09-25
-                                  end: 2024-09-25
+                                - start: 2024-10-10
+                                  end: 2024-10-10
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1757,7 +1769,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-09-25
+                              noReturnUntil: 2024-10-10
                             eventDays:
                             - ruleTime:
                                 months:
@@ -1767,8 +1779,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-09-25
-                                  end: 2024-09-25
+                                - start: 2024-10-10
+                                  end: 2024-10-10
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1780,7 +1792,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-09-25
+                              noReturnUntil: 2024-10-10
                     tariffSets:
                     - guid: string
                       setId: string
@@ -1814,8 +1826,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-09-25
-                        timeTo: 2024-09-25
+                        timeFrom: 2024-10-10
+                        timeTo: 2024-10-10
                         firstDate:
                           month: 0
                           day: 0
@@ -1894,6 +1906,8 @@ paths:
                             setGuid: string
                             setId: string
                           locationNumber: string
+                          terminalIds:
+                          - string
                           exemptionsSet:
                             setGuid: string
                             setId: string
@@ -1992,8 +2006,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-09-25
-                              end: 2024-09-25
+                            - start: 2024-10-10
+                              end: 2024-10-10
                             firstDate:
                               month: 0
                               day: 0
@@ -2005,7 +2019,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-09-25
+                          noReturnUntil: 2024-10-10
                         eventDays:
                         - ruleTime:
                             months:
@@ -2015,8 +2029,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2024-09-25
-                              end: 2024-09-25
+                            - start: 2024-10-10
+                              end: 2024-10-10
                             firstDate:
                               month: 0
                               day: 0
@@ -2028,7 +2042,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2024-09-25
+                          noReturnUntil: 2024-10-10
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -2058,8 +2072,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-09-25
-                                end: 2024-09-25
+                              - start: 2024-10-10
+                                end: 2024-10-10
                               firstDate:
                                 month: 0
                                 day: 0
@@ -2071,7 +2085,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-09-25
+                            noReturnUntil: 2024-10-10
                           eventDays:
                           - ruleTime:
                               months:
@@ -2081,8 +2095,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2024-09-25
-                                end: 2024-09-25
+                              - start: 2024-10-10
+                                end: 2024-10-10
                               firstDate:
                                 month: 0
                                 day: 0
@@ -2094,7 +2108,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2024-09-25
+                            noReturnUntil: 2024-10-10
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -2108,8 +2122,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-09-25
-                                  end: 2024-09-25
+                                - start: 2024-10-10
+                                  end: 2024-10-10
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -2121,7 +2135,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-09-25
+                              noReturnUntil: 2024-10-10
                             eventDays:
                             - ruleTime:
                                 months:
@@ -2131,8 +2145,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2024-09-25
-                                  end: 2024-09-25
+                                - start: 2024-10-10
+                                  end: 2024-10-10
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -2144,7 +2158,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2024-09-25
+                              noReturnUntil: 2024-10-10
                     tariffSets:
                     - guid: string
                       setId: string
@@ -2178,8 +2192,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2024-09-25
-                        timeTo: 2024-09-25
+                        timeFrom: 2024-10-10
+                        timeTo: 2024-10-10
                         firstDate:
                           month: 0
                           day: 0
@@ -2254,6 +2268,22 @@ paths:
           $ref: '#/components/responses/Forbidden'
         "429":
           $ref: '#/components/responses/TooManyRequests'
+  /ping:
+    get:
+      tags:
+      - Status
+      summary: Ping
+      description: Returns Status (pong) of the API service
+      operationId: get-ping
+      responses:
+        "200":
+          description: Success
+        "429":
+          $ref: '#/components/responses/TooManyRequests'
+        "401":
+          $ref: '#/components/responses/Unauthorized'
+        "403":
+          $ref: '#/components/responses/Forbidden'
   /wfs:
     get:
       tags:
@@ -2477,6 +2507,8 @@ components:
           type: string
           format: date-time
           nullable: true
+        reviewTerminalIds:
+          type: boolean
       additionalProperties: false
     AuthorityConfiguration:
       type: object
@@ -2671,6 +2703,8 @@ components:
           nullable: true
         capabilitiesState:
           $ref: '#/components/schemas/CapabilitiesState'
+        reviewTerminalIds:
+          type: boolean
       additionalProperties: false
     AuthoritySnapshotInfoDoc:
       type: object
@@ -3104,6 +3138,7 @@ components:
       - 26
       - 27
       - 28
+      - 29
       type: integer
       description: |2
 
@@ -3137,6 +3172,7 @@ components:
         *CarParkInfo (26)
         *CarParkBayCounts (27)
         *EntityDocuments (28)
+        *TerminalIds (29)
       format: int32
     Crs:
       type: object
@@ -3818,6 +3854,8 @@ components:
           type: string
           format: date-time
           nullable: true
+        reviewTerminalIds:
+          type: boolean
         shape:
           $ref: '#/components/schemas/Polygon'
       additionalProperties: false
@@ -4734,6 +4772,7 @@ components:
 
             *Tro (0)
             *DataEdit (2)
+            *Consolidation (3)
             *Experimental (4)
           nullable: true
         states:
@@ -4805,6 +4844,7 @@ components:
       enum:
       - 0
       - 2
+      - 3
       - 4
       type: integer
       description: |2
@@ -4812,6 +4852,7 @@ components:
 
         *Tro (0)
         *DataEdit (2)
+        *Consolidation (3)
         *Experimental (4)
       format: int32
     OrderValidationState:
@@ -5291,6 +5332,12 @@ components:
         locationNumber:
           type: string
           description: Used in conjunction with the payment provider on the authority to determine how the charge the user
+          nullable: true
+        terminalIds:
+          type: array
+          items:
+            type: string
+          description: The IDs of the payment terminals available at this OSP.
           nullable: true
         exemptionsSet:
           $ref: '#/components/schemas/LinkedSet'
