@@ -148,8 +148,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-11-21",
-                        "end": "2024-11-21"
+                        "start": "2024-12-16",
+                        "end": "2024-12-16"
                       }
                     ]
                   }
@@ -171,8 +171,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-11-21",
-                        "end": "2024-11-21"
+                        "start": "2024-12-16",
+                        "end": "2024-12-16"
                       }
                     ]
                   }
@@ -194,8 +194,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-11-21",
-                        "end": "2024-11-21"
+                        "start": "2024-12-16",
+                        "end": "2024-12-16"
                       }
                     ]
                   }
@@ -916,6 +916,7 @@
                       "description": "string",
                       "code": "string",
                       "canHaveNoLoadingRules": true,
+                      "canHavePermits": true,
                       "canHaveTariff": true,
                       "canHaveEmptyEntitlements": true,
                       "defaultWidth": 0,
@@ -1199,8 +1200,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2024-11-21",
-                              "end": "2024-11-21"
+                              "start": "2024-12-16",
+                              "end": "2024-12-16"
                             }
                           ]
                         }
@@ -1251,6 +1252,7 @@
                       "description": "string",
                       "code": "string",
                       "canHaveNoLoadingRules": true,
+                      "canHavePermits": true,
                       "canHaveTariff": true,
                       "canHaveEmptyEntitlements": true,
                       "defaultWidth": 0,
@@ -1547,8 +1549,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2024-11-21",
-                            "end": "2024-11-21"
+                            "start": "2024-12-16",
+                            "end": "2024-12-16"
                           }
                         ]
                       }
@@ -3299,6 +3301,10 @@
           "canHaveNoLoadingRules": {
             "type": "boolean",
             "description": "Indicates whether there could be a loading rule attached to this restriction type"
+          },
+          "canHavePermits": {
+            "type": "boolean",
+            "description": "Indicates whether there could be a permit attached to this restriction type"
           },
           "canHaveTariff": {
             "type": "boolean",

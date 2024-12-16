@@ -96,8 +96,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2024-11-21
-                  end: 2024-11-21
+                  start: 2024-12-16
+                  end: 2024-12-16
               id: string
           text/json:
             schema:
@@ -110,8 +110,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2024-11-21
-                  end: 2024-11-21
+                  start: 2024-12-16
+                  end: 2024-12-16
               id: string
           application/*+json:
             schema:
@@ -124,8 +124,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2024-11-21
-                  end: 2024-11-21
+                  start: 2024-12-16
+                  end: 2024-12-16
               id: string
       responses:
         "200":
@@ -585,6 +585,7 @@ paths:
                   description: string
                   code: string
                   canHaveNoLoadingRules: true
+                  canHavePermits: true
                   canHaveTariff: true
                   canHaveEmptyEntitlements: true
                   defaultWidth: 0
@@ -769,8 +770,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2024-11-21
-                      end: 2024-11-21
+                      start: 2024-12-16
+                      end: 2024-12-16
         "304":
           description: Not Modified
         "401":
@@ -801,6 +802,7 @@ paths:
                   description: string
                   code: string
                   canHaveNoLoadingRules: true
+                  canHavePermits: true
                   canHaveTariff: true
                   canHaveEmptyEntitlements: true
                   defaultWidth: 0
@@ -994,8 +996,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2024-11-21
-                      end: 2024-11-21
+                      start: 2024-12-16
+                      end: 2024-12-16
         "304":
           description: Not Modified
         "400":
@@ -2282,6 +2284,9 @@ components:
         canHaveNoLoadingRules:
           type: boolean
           description: Indicates whether there could be a loading rule attached to this restriction type
+        canHavePermits:
+          type: boolean
+          description: Indicates whether there could be a permit attached to this restriction type
         canHaveTariff:
           type: boolean
           description: Indicates whether there could be a tariff attached to this restriction type
