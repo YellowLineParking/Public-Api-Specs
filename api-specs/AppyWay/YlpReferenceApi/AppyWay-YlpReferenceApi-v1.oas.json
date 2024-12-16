@@ -78,7 +78,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -207,7 +207,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -263,7 +263,7 @@
         "operationId": "post-fetchallactivitytypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -309,7 +309,7 @@
         "operationId": "post-fetchallauthoritytypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -355,7 +355,7 @@
         "operationId": "post-fetchallbasemaps",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -402,7 +402,7 @@
         "operationId": "post-fetchallcountries",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -474,7 +474,7 @@
         "operationId": "post-fetchallentitlementtypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -532,7 +532,7 @@
         "operationId": "post-fetchallexceptiontypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -576,7 +576,7 @@
         "operationId": "post-fetchallexemptiontimetypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -620,7 +620,7 @@
         "operationId": "post-fetchallexemptiontypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -664,7 +664,7 @@
         "operationId": "post-fetchallfacilitytypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -708,7 +708,7 @@
         "operationId": "post-fetchallfueltypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -752,7 +752,7 @@
         "operationId": "post-fetchallmovingexceptiontypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -804,7 +804,7 @@
         "operationId": "post-fetchallmovingrestrictiontypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -857,7 +857,7 @@
         "operationId": "post-fetchallnotevisibilitytypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -901,7 +901,7 @@
         "operationId": "post-fetchalloffstreetrestrictiontypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -954,7 +954,7 @@
         "operationId": "post-fetchallonstreetparkingtypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -998,7 +998,7 @@
         "operationId": "post-fetchallpaymentmethods",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1042,7 +1042,7 @@
         "operationId": "post-fetchallpaymentproviders",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1088,7 +1088,7 @@
         "operationId": "post-fetchallpermittedvehicles",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1134,7 +1134,7 @@
         "operationId": "post-fetchallpermittypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1178,7 +1178,7 @@
         "operationId": "post-fetchallregions",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1237,7 +1237,7 @@
         "operationId": "post-fetchallrestrictiontypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1290,7 +1290,7 @@
         "operationId": "post-fetchallvehicletypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1334,7 +1334,7 @@
         "operationId": "post-fetchallzonetypes",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1409,7 +1409,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1528,7 +1528,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1606,7 +1606,7 @@
         "operationId": "get-ping",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2716,6 +2716,114 @@
               "$ref": "#/components/schemas/FacilityType"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchAllReferenceTypesFilters": {
+        "type": "object",
+        "properties": {
+          "includeActivityTypes": {
+            "type": "boolean"
+          },
+          "includeAuthorityTypes": {
+            "type": "boolean"
+          },
+          "includeBaseMaps": {
+            "type": "boolean"
+          },
+          "includeCountries": {
+            "type": "boolean"
+          },
+          "includeEntitlementTypes": {
+            "type": "boolean"
+          },
+          "includeExceptionTypes": {
+            "type": "boolean"
+          },
+          "includeMovingExceptionTypes": {
+            "type": "boolean"
+          },
+          "includeExemptionTimeTypes": {
+            "type": "boolean"
+          },
+          "includeExemptionTypes": {
+            "type": "boolean"
+          },
+          "includeFacilityTypes": {
+            "type": "boolean"
+          },
+          "includeFuelTypes": {
+            "type": "boolean"
+          },
+          "includeNoteVisibilityTypes": {
+            "type": "boolean"
+          },
+          "includeOnStreetParkingTypes": {
+            "type": "boolean"
+          },
+          "includePaymentMethods": {
+            "type": "boolean"
+          },
+          "includePaymentProviders": {
+            "type": "boolean"
+          },
+          "includePermittedVehicles": {
+            "type": "boolean"
+          },
+          "includePermitTypes": {
+            "type": "boolean"
+          },
+          "includeRegions": {
+            "type": "boolean"
+          },
+          "includeRestrictionTypes": {
+            "type": "boolean"
+          },
+          "includeOffStreetRestrictionTypes": {
+            "type": "boolean"
+          },
+          "includeMovingRestrictionTypes": {
+            "type": "boolean"
+          },
+          "includeMovingRestrictionTypeOptions": {
+            "type": "boolean"
+          },
+          "includeVehicleTypes": {
+            "type": "boolean"
+          },
+          "includeZoneTypes": {
+            "type": "boolean"
+          },
+          "includeOrderBenefitTypes": {
+            "type": "boolean"
+          },
+          "includeAssetTypes": {
+            "type": "boolean"
+          },
+          "includeAssetSubtypes": {
+            "type": "boolean"
+          },
+          "includeSurfaceTypes": {
+            "type": "boolean"
+          },
+          "includeCarParkAttributes": {
+            "type": "boolean"
+          },
+          "includeCarParkBayTypes": {
+            "type": "boolean"
+          },
+          "includeCarParkPaymentMethods": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchAllReferenceTypesQuery": {
+        "type": "object",
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/FetchAllReferenceTypesFilters"
           }
         },
         "additionalProperties": false
