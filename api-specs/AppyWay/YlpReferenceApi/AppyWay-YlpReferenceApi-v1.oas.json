@@ -148,8 +148,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-12-16",
-                        "end": "2024-12-16"
+                        "start": "2025-02-17",
+                        "end": "2025-02-17"
                       }
                     ]
                   }
@@ -171,8 +171,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-12-16",
-                        "end": "2024-12-16"
+                        "start": "2025-02-17",
+                        "end": "2025-02-17"
                       }
                     ]
                   }
@@ -194,8 +194,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2024-12-16",
-                        "end": "2024-12-16"
+                        "start": "2025-02-17",
+                        "end": "2025-02-17"
                       }
                     ]
                   }
@@ -1078,21 +1078,21 @@
         }
       }
     },
-    "/fetchAllPermittedVehicles": {
+    "/fetchAllPermittedVehicleTypes": {
       "post": {
         "tags": [
-          "PermittedVehicles"
+          "PermittedVehicleTypes"
         ],
-        "summary": "Fetch All Permitted Vehicles",
-        "description": "Returns a list with all the permitted vehicles and associated moving restriction types.",
-        "operationId": "post-fetchallpermittedvehicles",
+        "summary": "Fetch All Permitted Vehicle Types",
+        "description": "Returns a list with all the permitted vehicle types and associated moving restriction types.",
+        "operationId": "post-fetchallpermittedvehicletypes",
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PermittedVehicleIReadOnlyCollectionOkResponse"
+                  "$ref": "#/components/schemas/PermittedVehicleTypeIReadOnlyCollectionOkResponse"
                 },
                 "example": {
                   "success": true,
@@ -1200,8 +1200,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2024-12-16",
-                              "end": "2024-12-16"
+                              "start": "2025-02-17",
+                              "end": "2025-02-17"
                             }
                           ]
                         }
@@ -1235,6 +1235,34 @@
         "summary": "Fetch All Restriction Types",
         "description": "Returns a list with all the restriction types.",
         "operationId": "post-fetchallrestrictiontypes",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchAllRestrictionTypesQuery"
+              },
+              "example": {
+                "localeCode": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchAllRestrictionTypesQuery"
+              },
+              "example": {
+                "localeCode": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchAllRestrictionTypesQuery"
+              },
+              "example": {
+                "localeCode": "string"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -1549,8 +1577,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2024-12-16",
-                            "end": "2024-12-16"
+                            "start": "2025-02-17",
+                            "end": "2025-02-17"
                           }
                         ]
                       }
@@ -1667,6 +1695,20 @@
             "description": "Activity Types types",
             "nullable": true
           },
+          "assetSubtypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AssetSubtype"
+            },
+            "nullable": true
+          },
+          "assetTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AssetType"
+            },
+            "nullable": true
+          },
           "authorityTypes": {
             "type": "array",
             "items": {
@@ -1681,6 +1723,34 @@
               "$ref": "#/components/schemas/BaseMap"
             },
             "description": "Base maps",
+            "nullable": true
+          },
+          "carParkAttributes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CarParkAttribute"
+            },
+            "nullable": true
+          },
+          "carParkBayTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CarParkBayType"
+            },
+            "nullable": true
+          },
+          "carParkPaymentMethods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CarParkPaymentMethod"
+            },
+            "nullable": true
+          },
+          "carParkSurfaceTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CarParkSurfaceType"
+            },
             "nullable": true
           },
           "countries": {
@@ -1705,14 +1775,6 @@
               "$ref": "#/components/schemas/ExceptionType"
             },
             "description": "Exception types",
-            "nullable": true
-          },
-          "movingExceptionTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MovingExceptionType"
-            },
-            "description": "Exception types for moving traffic features",
             "nullable": true
           },
           "exemptionTimeTypes": {
@@ -1747,6 +1809,22 @@
             "description": "Fuel types",
             "nullable": true
           },
+          "movingExceptionTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovingExceptionType"
+            },
+            "description": "Exception types for moving traffic features",
+            "nullable": true
+          },
+          "movingRestrictionTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovingRestrictionType"
+            },
+            "description": "Restriction types for moving traffic features",
+            "nullable": true
+          },
           "noteVisibilityTypes": {
             "type": "array",
             "items": {
@@ -1755,12 +1833,27 @@
             "description": "Note visibility types",
             "nullable": true
           },
+          "offStreetRestrictionTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RestrictionType"
+            },
+            "description": "Off-Street Restriction types",
+            "nullable": true
+          },
           "onStreetParkingTypes": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/OnStreetParkingType"
             },
             "description": "On-Street Parking Types",
+            "nullable": true
+          },
+          "orderBenefitTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrderBenefitType"
+            },
             "nullable": true
           },
           "paymentMethods": {
@@ -1779,12 +1872,12 @@
             "description": "Payment Providers",
             "nullable": true
           },
-          "permittedVehicles": {
+          "permittedVehicleTypes": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/PermittedVehicle"
+              "$ref": "#/components/schemas/PermittedVehicleType"
             },
-            "description": "Permitted vehicles",
+            "description": "Permitted vehicle types",
             "nullable": true
           },
           "permitTypes": {
@@ -1811,30 +1904,6 @@
             "description": "Restriction types",
             "nullable": true
           },
-          "offStreetRestrictionTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/RestrictionType"
-            },
-            "description": "OffStreet Restriction types",
-            "nullable": true
-          },
-          "movingRestrictionTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MovingRestrictionType"
-            },
-            "description": "Restriction types for moving traffic features",
-            "nullable": true
-          },
-          "movingRestrictionTypeOptions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MovingRestrictionTypeOption"
-            },
-            "description": "Options for specifying more granular types of moving traffic feature",
-            "nullable": true
-          },
           "vehicleTypes": {
             "type": "array",
             "items": {
@@ -1849,55 +1918,6 @@
               "$ref": "#/components/schemas/ZoneType"
             },
             "description": "Zone types",
-            "nullable": true
-          },
-          "orderBenefitTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/OrderBenefitType"
-            },
-            "nullable": true
-          },
-          "assetTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/AssetType"
-            },
-            "nullable": true
-          },
-          "assetSubtypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/AssetSubtype"
-            },
-            "nullable": true
-          },
-          "carParkAttributes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CarParkAttribute"
-            },
-            "nullable": true
-          },
-          "surfaceTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CarParkSurfaceType"
-            },
-            "nullable": true
-          },
-          "carParkBayTypes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CarParkBayType"
-            },
-            "nullable": true
-          },
-          "carParkPaymentMethods": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CarParkPaymentMethod"
-            },
             "nullable": true
           }
         },
@@ -2726,10 +2746,28 @@
           "includeActivityTypes": {
             "type": "boolean"
           },
+          "includeAssetSubtypes": {
+            "type": "boolean"
+          },
+          "includeAssetTypes": {
+            "type": "boolean"
+          },
           "includeAuthorityTypes": {
             "type": "boolean"
           },
           "includeBaseMaps": {
+            "type": "boolean"
+          },
+          "includeCarParkAttributes": {
+            "type": "boolean"
+          },
+          "includeCarParkBayTypes": {
+            "type": "boolean"
+          },
+          "includeCarParkPaymentMethods": {
+            "type": "boolean"
+          },
+          "includeCarParkSurfaceTypes": {
             "type": "boolean"
           },
           "includeCountries": {
@@ -2739,9 +2777,6 @@
             "type": "boolean"
           },
           "includeExceptionTypes": {
-            "type": "boolean"
-          },
-          "includeMovingExceptionTypes": {
             "type": "boolean"
           },
           "includeExemptionTimeTypes": {
@@ -2756,10 +2791,22 @@
           "includeFuelTypes": {
             "type": "boolean"
           },
+          "includeMovingExceptionTypes": {
+            "type": "boolean"
+          },
+          "includeMovingRestrictionTypes": {
+            "type": "boolean"
+          },
           "includeNoteVisibilityTypes": {
             "type": "boolean"
           },
+          "includeOffStreetRestrictionTypes": {
+            "type": "boolean"
+          },
           "includeOnStreetParkingTypes": {
+            "type": "boolean"
+          },
+          "includeOrderBenefitTypes": {
             "type": "boolean"
           },
           "includePaymentMethods": {
@@ -2768,7 +2815,7 @@
           "includePaymentProviders": {
             "type": "boolean"
           },
-          "includePermittedVehicles": {
+          "includePermittedVehicleTypes": {
             "type": "boolean"
           },
           "includePermitTypes": {
@@ -2780,40 +2827,10 @@
           "includeRestrictionTypes": {
             "type": "boolean"
           },
-          "includeOffStreetRestrictionTypes": {
-            "type": "boolean"
-          },
-          "includeMovingRestrictionTypes": {
-            "type": "boolean"
-          },
-          "includeMovingRestrictionTypeOptions": {
-            "type": "boolean"
-          },
           "includeVehicleTypes": {
             "type": "boolean"
           },
           "includeZoneTypes": {
-            "type": "boolean"
-          },
-          "includeOrderBenefitTypes": {
-            "type": "boolean"
-          },
-          "includeAssetTypes": {
-            "type": "boolean"
-          },
-          "includeAssetSubtypes": {
-            "type": "boolean"
-          },
-          "includeSurfaceTypes": {
-            "type": "boolean"
-          },
-          "includeCarParkAttributes": {
-            "type": "boolean"
-          },
-          "includeCarParkBayTypes": {
-            "type": "boolean"
-          },
-          "includeCarParkPaymentMethods": {
             "type": "boolean"
           }
         },
@@ -2824,6 +2841,22 @@
         "properties": {
           "filters": {
             "$ref": "#/components/schemas/FetchAllReferenceTypesFilters"
+          },
+          "localeCode": {
+            "type": "string",
+            "description": "IETF BCP 47 locale code (eg: en-GB, en-US, etc).",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchAllRestrictionTypesQuery": {
+        "type": "object",
+        "properties": {
+          "localeCode": {
+            "type": "string",
+            "description": "IETF BCP 47 locale code (eg: en-GB, en-US, etc).",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -3281,7 +3314,7 @@
         },
         "additionalProperties": false
       },
-      "PermittedVehicle": {
+      "PermittedVehicleType": {
         "type": "object",
         "properties": {
           "id": {
@@ -3307,7 +3340,7 @@
         "additionalProperties": false,
         "description": "Indicates what vehicle types are permitted to use a feature such as a bus or cycle lane."
       },
-      "PermittedVehicleIReadOnlyCollectionOkResponse": {
+      "PermittedVehicleTypeIReadOnlyCollectionOkResponse": {
         "type": "object",
         "properties": {
           "success": {
@@ -3317,7 +3350,7 @@
           "result": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/PermittedVehicle"
+              "$ref": "#/components/schemas/PermittedVehicleType"
             },
             "nullable": true
           }

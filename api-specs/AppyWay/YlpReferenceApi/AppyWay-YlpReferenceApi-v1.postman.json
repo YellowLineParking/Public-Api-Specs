@@ -1,7 +1,7 @@
 {
   "item": [
     {
-      "id": "050afb79-c9db-4bbd-8a8b-87ae2f405b37",
+      "id": "ab03187d-3c82-43a0-b552-976d50210019",
       "name": "Change Country Special Days",
       "request": {
         "name": "Change Country Special Days",
@@ -34,7 +34,7 @@
       },
       "response": [
         {
-          "id": "83e3f81e-fa99-401c-9813-b5be9ee0f560",
+          "id": "2f4a232c-dd15-487d-a29c-31d6e9846c05",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -66,7 +66,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "f53a7a67-8157-44c1-afba-09e846280353",
+          "id": "c6e6c913-0af9-435c-af08-2da06c74b7e6",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -98,7 +98,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "c02afa0b-e835-4298-923b-b764a6d1d12c",
+          "id": "243706d7-5e56-43f6-8ce9-300c892ebb84",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -130,7 +130,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "910ee43d-9ac4-44fc-9801-ac1088a05a86",
+          "id": "3f13ee59-25a3-4989-b7f3-6d61e8bf14c4",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -162,7 +162,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "d0936f01-3d56-46e9-9610-39036cf02e41",
+          "id": "98cc4565-3dad-4e17-bdcb-05d6e02e5e53",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -197,7 +197,7 @@
       "event": []
     },
     {
-      "id": "6ed691de-dd2f-49a6-be51-cf5cdbe705a1",
+      "id": "5fa59516-1721-4522-a8bb-b97000ec8c25",
       "name": "Change Region Venues",
       "request": {
         "name": "Change Region Venues",
@@ -230,7 +230,7 @@
       },
       "response": [
         {
-          "id": "ab4fcf1c-90dc-4a8e-a416-ee4ae5e5f998",
+          "id": "de0573e2-a35c-4889-b29e-22eab2205d21",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -246,7 +246,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2024-12-16\",\n                    \"end\": \"2024-12-16\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
+              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2025-02-17\",\n                    \"end\": \"2025-02-17\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
             }
           },
           "status": "OK",
@@ -262,7 +262,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "129fb879-7a57-4819-abdb-ba630454bda5",
+          "id": "edf55fa2-62c5-4672-b308-588730921e50",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -278,7 +278,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2024-12-16\",\n                    \"end\": \"2024-12-16\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
+              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2025-02-17\",\n                    \"end\": \"2025-02-17\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
             }
           },
           "status": "Bad Request",
@@ -294,7 +294,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "3eb1d7a9-fe71-4b63-9209-f1f525d7984d",
+          "id": "c5332f95-aee2-4c84-a68a-0380bd9c9381",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -310,7 +310,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2024-12-16\",\n                    \"end\": \"2024-12-16\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
+              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2025-02-17\",\n                    \"end\": \"2025-02-17\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
             }
           },
           "status": "Unauthorized",
@@ -326,7 +326,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8621410f-7b7f-407a-a0d8-e00b0047998f",
+          "id": "31624426-1eda-4880-8606-55684680d196",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -342,7 +342,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2024-12-16\",\n                    \"end\": \"2024-12-16\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
+              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2025-02-17\",\n                    \"end\": \"2025-02-17\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
             }
           },
           "status": "Forbidden",
@@ -358,7 +358,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "a6267c16-606d-4b2e-a35d-04c4b263a64c",
+          "id": "7a88eb05-1a79-48c6-a336-edc4782b8545",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -374,7 +374,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2024-12-16\",\n                    \"end\": \"2024-12-16\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
+              "raw": "{\n    \"venues\": [\n        {\n            \"id\": \"string\",\n            \"name\": \"string\",\n            \"eventsMustSupplyHours\": true,\n            \"events\": [\n                {\n                    \"name\": \"string\",\n                    \"date\": \"2020-01-20\",\n                    \"start\": \"2025-02-17\",\n                    \"end\": \"2025-02-17\"\n                }\n            ]\n        }\n    ],\n    \"id\": \"string\"\n}"
             }
           },
           "status": "Too Many Requests",
@@ -393,7 +393,7 @@
       "event": []
     },
     {
-      "id": "d079fa5e-b410-46a5-afb9-6b86aa57965b",
+      "id": "16a8c5e8-89b8-4c52-bd5f-fc4b2bb80806",
       "name": "Fetch All Activity Types",
       "request": {
         "name": "Fetch All Activity Types",
@@ -416,7 +416,7 @@
       },
       "response": [
         {
-          "id": "116fbde7-5f2a-48bc-91c3-06f7c9afdc0a",
+          "id": "04dc627c-d196-4078-9160-31e94e72a32e",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -445,7 +445,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "11ff5e62-5135-40e5-a634-1d0c37708b65",
+          "id": "b4e48910-467e-4d6d-968c-9718fd6617fb",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -474,7 +474,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8e77feea-daef-46ea-980b-5cee54ea82b3",
+          "id": "d314736d-5234-4e02-bb2a-4d1537b1553f",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -503,7 +503,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "0f685c67-f847-42b3-8b12-0d3b81294cee",
+          "id": "90055df0-3309-4972-a046-4d5b12e8b45f",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -532,7 +532,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "ea746ccb-6a78-481e-8c63-62e4efbfb935",
+          "id": "662d06b8-8a15-4359-bffd-81e235d1e8ff",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -564,7 +564,7 @@
       "event": []
     },
     {
-      "id": "691b29b8-55da-452f-a07f-afde6cd8b1c2",
+      "id": "0f407570-e4db-4659-a361-9aff94301a47",
       "name": "Fetch All Authority Types",
       "request": {
         "name": "Fetch All Authority Types",
@@ -587,7 +587,7 @@
       },
       "response": [
         {
-          "id": "9b28354b-0734-49f2-b42f-fa6b0f5fd366",
+          "id": "91b491e6-a247-4a1e-ab73-374aa2f215f4",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -616,7 +616,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "58aaf75e-a786-45f4-b832-d99a5cb1e743",
+          "id": "4762f6fa-2731-409b-b9f8-7c9dd62a2336",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -645,7 +645,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "dfb12b40-10f1-4d90-bcdd-cc7bf3c62893",
+          "id": "98c0fdef-df5a-4fd0-88da-49fca4bc1bf4",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -674,7 +674,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "29642975-f736-4f06-bfa6-6cf022ea4cc5",
+          "id": "eac9f43c-a595-427b-867e-81907f0ce7fa",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -703,7 +703,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "2e99fb69-8dc5-461c-af8e-317d1fe70b0f",
+          "id": "208304a5-4e62-4187-8cd4-dc066362124b",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -735,7 +735,7 @@
       "event": []
     },
     {
-      "id": "c395b2fe-d6bc-4034-9f8f-5df7a68c74b6",
+      "id": "c5ea0595-6bf1-4312-ac4d-4edac87b09ea",
       "name": "Fetch All Base Maps",
       "request": {
         "name": "Fetch All Base Maps",
@@ -758,7 +758,7 @@
       },
       "response": [
         {
-          "id": "20dc04f3-5f24-4cb7-bb16-07b2f11f2054",
+          "id": "0f753498-26fc-49f5-aa81-7cb0f3f992df",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -787,7 +787,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "5e05690e-c706-4a3e-9e70-6d131b436706",
+          "id": "da93da26-f37c-4d49-ba3a-711a88c1cb45",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -816,7 +816,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "e44e9835-c165-428c-adf5-47bd3cf1cc6c",
+          "id": "21b4a244-15a1-432a-b903-57c69c405643",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -845,7 +845,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f39bab74-61e2-47c3-b5ab-f3c60f4733c2",
+          "id": "4ef7359e-4b24-4a8b-bc3d-b611d72b2ab3",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -874,7 +874,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "043e2ff0-8f12-432e-82e0-a6c4ee61c2eb",
+          "id": "22691f46-ed9f-46fa-b959-6724459cb797",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -906,7 +906,7 @@
       "event": []
     },
     {
-      "id": "9b7a09f0-f574-4ea5-9631-d868a29242df",
+      "id": "32c6128f-f5fc-4469-9fd4-7e357b3732b5",
       "name": "Fetch All Countries",
       "request": {
         "name": "Fetch All Countries",
@@ -929,7 +929,7 @@
       },
       "response": [
         {
-          "id": "25753d16-a843-419c-8992-be015ab1855a",
+          "id": "fbb4a654-f744-4a31-935e-fe76c50375e4",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -958,7 +958,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "9983908d-9935-400c-9d6c-927b457bb350",
+          "id": "23c993a8-2a6f-4935-8c12-2a0cbbe6bf67",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -987,7 +987,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "58fd29a4-d847-4e57-895c-35fd3d84073b",
+          "id": "48202754-77f5-4f70-93af-536ed42e1826",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1016,7 +1016,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "47594c72-b581-4c1f-92c5-d13b42a10b40",
+          "id": "4f8fe592-3934-41fa-bf90-29508ea317c7",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1045,7 +1045,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "9a838cd5-27ea-4c68-87c6-e6dd73468d8f",
+          "id": "ede09328-df06-483d-9c1d-25ba4e549dbd",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1077,7 +1077,7 @@
       "event": []
     },
     {
-      "id": "0ecc8fd5-161e-42c0-bec5-a776746b318d",
+      "id": "4e876dd1-e353-4855-a6f4-aed65ad8dcb4",
       "name": "Fetch All Entitlement Types",
       "request": {
         "name": "Fetch All Entitlement Types",
@@ -1100,7 +1100,7 @@
       },
       "response": [
         {
-          "id": "8adabf34-6f65-4352-8aa8-a1324822c4e7",
+          "id": "ae9e9275-847b-4a11-ae9d-5af990311020",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1129,7 +1129,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "5549e262-9dc9-4d2f-9e38-a030d150344d",
+          "id": "eab84060-87c2-4daa-a93c-6bc49eb87502",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -1158,7 +1158,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "c3d64b9f-7eff-4012-9a54-f7a56732b7c5",
+          "id": "48c4d6d0-036b-4025-b711-3cf17e6f7bf9",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1187,7 +1187,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "fe0468f0-da3a-41d2-b92f-aecedd685427",
+          "id": "65d488e8-97c0-45d4-9393-f0d3cc42e192",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1216,7 +1216,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "e230583e-e0c3-439f-a757-7910f12b92b3",
+          "id": "46e55850-b5d9-4bba-8cd8-f470eceaf47e",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1248,7 +1248,7 @@
       "event": []
     },
     {
-      "id": "31f72248-f183-4981-ab28-66272b428493",
+      "id": "64222078-e3b0-40a1-bfc2-1e16616cbd3d",
       "name": "Fetch All Exception Types",
       "request": {
         "name": "Fetch All Exception Types",
@@ -1271,7 +1271,7 @@
       },
       "response": [
         {
-          "id": "034669d5-7b07-43bc-bf40-cf667929d410",
+          "id": "6d03e270-cba0-4a47-b5e5-4bb918539551",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1300,7 +1300,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "2f68c852-a702-4248-b448-2c3324fa4888",
+          "id": "763c6e05-0c67-4426-a4de-c07ca5b8d5b9",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -1329,7 +1329,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "a6680561-5618-4cf5-be7e-f25121131de0",
+          "id": "ad02eea6-cb37-4e66-b211-056dc7aa8ea7",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1358,7 +1358,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "2f53c932-c24c-437c-8da6-b90f3a2e9315",
+          "id": "a150016b-4b6e-4876-87df-fd3c0593eaef",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1387,7 +1387,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "a3cb7702-6d69-4e5b-84a5-3d286eebab4b",
+          "id": "defbd704-00a9-4570-9e01-6115ceaeaa3f",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1419,7 +1419,7 @@
       "event": []
     },
     {
-      "id": "12f74a89-bbbb-4fb6-b68b-c4592912965c",
+      "id": "5c592bf7-cd86-4c8d-8b42-a395f81fb0e2",
       "name": "Fetch All Exemption Time Types",
       "request": {
         "name": "Fetch All Exemption Time Types",
@@ -1442,7 +1442,7 @@
       },
       "response": [
         {
-          "id": "aadf5c50-bc49-4e38-a3a1-76d1362386b2",
+          "id": "44d6a160-29be-48b6-9c55-49969da3dd1a",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1471,7 +1471,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "ed262527-f4e5-4afd-b32b-b1cdc8d9f0f0",
+          "id": "4aed8b6c-90b4-4b67-8183-197aab609ff3",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -1500,7 +1500,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "d38eb1cd-3942-483c-a4ba-a1351f6eb71f",
+          "id": "e09bcb64-0a64-49b4-9c00-312bfcc20fb5",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1529,7 +1529,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8a7f7420-b2cd-4e5d-abd1-3fe3a68bd3de",
+          "id": "d888336f-0569-4d44-9d1a-7bfac278184f",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1558,7 +1558,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "bf152caf-78e2-4b8e-b874-c1a37f38d98b",
+          "id": "cf5984be-2e78-474b-82d5-84b54ee2e6ad",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1590,7 +1590,7 @@
       "event": []
     },
     {
-      "id": "a978abb5-3a68-4f84-90ab-ae8595b96255",
+      "id": "5a8e54f0-b7e2-49e4-b4ec-d09af5c0eff0",
       "name": "Fetch All Exemption Types",
       "request": {
         "name": "Fetch All Exemption Types",
@@ -1613,7 +1613,7 @@
       },
       "response": [
         {
-          "id": "33c38abe-748d-419e-a507-3a50cd7b025f",
+          "id": "5b5a2d48-bbcf-4061-b8d4-f9cee51f6538",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1642,7 +1642,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "d25cd0e9-23c8-414d-ae01-b699dacc0051",
+          "id": "20e3e4f3-2307-4548-ab98-f0a620be68e0",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -1671,7 +1671,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "cfaca893-72c8-4329-9469-36c45bc3a515",
+          "id": "72702e34-6ecd-4921-836c-56b4f31f7a95",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1700,7 +1700,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f4006bbf-c744-4a0b-8787-35c27c8c29b0",
+          "id": "3a334798-9f7d-479e-826e-26ac0b9199cd",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1729,7 +1729,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "21c0104e-4335-41d6-9f81-cf996e72af2e",
+          "id": "94a5c958-3652-4f95-b3ac-c41ed6fa61e7",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1761,7 +1761,7 @@
       "event": []
     },
     {
-      "id": "2d14a87b-1615-4173-aaa2-59164585de2f",
+      "id": "4a2ca600-5d1a-4c10-8df0-f50d44503505",
       "name": "Fetch All Facility Types",
       "request": {
         "name": "Fetch All Facility Types",
@@ -1784,7 +1784,7 @@
       },
       "response": [
         {
-          "id": "e95d7925-3ded-49ad-b98a-19c5bedc51b5",
+          "id": "de29c140-8d7f-4a67-b268-07fd70abaad0",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1813,7 +1813,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "32180aed-ef4d-4ac3-bdb0-0dc74fd34446",
+          "id": "41c8cf17-9176-47b9-8c8e-51a481190cd3",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -1842,7 +1842,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "05231405-1df6-4f37-9afb-2b8dab4b6bb8",
+          "id": "1bbf8029-b0d7-4cbb-ad46-5b786f19e81b",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1871,7 +1871,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "58e45842-b9ce-4fa6-9bdc-6c36c9372c8d",
+          "id": "292e3e7e-7d7c-4e0e-86ee-15ff5bfc3404",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1900,7 +1900,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "761729d6-8cab-4188-9a70-1982a6197ebc",
+          "id": "6264aa9c-5cec-4772-958d-c43d38ab9569",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1932,7 +1932,7 @@
       "event": []
     },
     {
-      "id": "f3b39ce7-c8af-4dbd-bbdc-ad93f54c60bf",
+      "id": "a4117081-5b5a-4a2f-a51f-16811b24c9e5",
       "name": "Fetch All Fuel Types",
       "request": {
         "name": "Fetch All Fuel Types",
@@ -1955,7 +1955,7 @@
       },
       "response": [
         {
-          "id": "0ccf084e-cdc3-4bfc-a70e-dc0b509bb4b5",
+          "id": "fb447e85-00eb-4cba-8d49-0f0500da6a25",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1984,7 +1984,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "d89f7212-b24f-4658-bf60-361a12132800",
+          "id": "255c20cf-2203-42b6-b30c-ca9f1843ff56",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -2013,7 +2013,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "07ba7ccd-eef3-4e89-a0de-26fadacfacf0",
+          "id": "e051f0ac-41b4-427b-99a1-527f0e14b1ba",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2042,7 +2042,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "733b6e8a-8806-4e96-96af-f92a8e56aca5",
+          "id": "85d28eda-d20e-42e9-978c-381e13a80e6e",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2071,7 +2071,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "6430134e-4802-4a13-a1d6-6f8c22f2ebd6",
+          "id": "447593fb-4e98-4717-96e5-30a7262dbfeb",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2103,7 +2103,7 @@
       "event": []
     },
     {
-      "id": "fb65b239-c303-4c43-a690-ccee799b954d",
+      "id": "59f6ab4a-db04-46f6-bb4c-7c8a586a606c",
       "name": "Fetch All Moving Exception Types",
       "request": {
         "name": "Fetch All Moving Exception Types",
@@ -2126,7 +2126,7 @@
       },
       "response": [
         {
-          "id": "676fac61-0bfb-4008-9552-7a32b64be5e5",
+          "id": "9337b099-73bc-4e45-935b-1ecedc7b52fc",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2155,7 +2155,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "2d63b7b4-0b8c-494b-aea1-bbc0b5c2a8ef",
+          "id": "c50a9223-a45f-4cad-b974-409bc27b3c4a",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -2184,7 +2184,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "68c996fe-233b-46fd-973a-2db90ba9bfb9",
+          "id": "9d7b09cd-c12a-47e4-b039-1228c897274c",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2213,7 +2213,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "3805f355-6698-481a-810f-0536e24729a4",
+          "id": "dcc80b03-93e1-4f79-9c62-09247a9d064e",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2242,7 +2242,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f9685bb4-673a-4036-957b-35428f36f2dd",
+          "id": "5971dd64-aef2-47d6-ba5b-2d2950429497",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2274,7 +2274,7 @@
       "event": []
     },
     {
-      "id": "8a11a0d2-d59f-44fd-9a81-fc771ec6e53f",
+      "id": "1c5926b9-5762-437a-8e24-04ab6e6bd9e8",
       "name": "Fetch All Moving Restriction Types",
       "request": {
         "name": "Fetch All Moving Restriction Types",
@@ -2297,7 +2297,7 @@
       },
       "response": [
         {
-          "id": "900e1c9a-39ab-444c-a0d8-4fa966c5c90b",
+          "id": "88d25101-269f-4f9d-b3fa-def9f84eae4b",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2326,7 +2326,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "f46a03dc-4bcf-4892-90d3-dc40ef18403e",
+          "id": "37bb7faa-9d33-4af5-806a-5b875a50d328",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -2355,7 +2355,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "4822c51a-4b02-4448-bad5-b2fa5763ecbb",
+          "id": "209228c4-1dab-46ac-a52e-df746a3340d9",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2384,7 +2384,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f9551de5-c8f8-4ace-8b9e-bf0ccac8019f",
+          "id": "eeb80489-1dcc-42ac-89e8-70e9f8c9cd7e",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2413,7 +2413,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "48c8b49e-7a08-4681-a042-dccbf1283835",
+          "id": "b016fc70-f462-4c71-85b6-704909e394a1",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2445,7 +2445,7 @@
       "event": []
     },
     {
-      "id": "bd716c2e-21c2-4412-9b69-b58e88ba8352",
+      "id": "0091245f-921d-4908-adcb-2f1c09f9da9c",
       "name": "Fetch All Note Visibility Types",
       "request": {
         "name": "Fetch All Note Visibility Types",
@@ -2468,7 +2468,7 @@
       },
       "response": [
         {
-          "id": "720e4b2d-3f64-4af9-a46e-310d5a19efa8",
+          "id": "696d0a09-6a44-4741-851d-2739ef5d4c36",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2497,7 +2497,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "154df924-fb08-4002-93a5-40b5e422b345",
+          "id": "d30d6965-bd39-41d5-ad1f-aad2bab821cf",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -2526,7 +2526,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "c16c0fc2-01e6-4321-9f74-6c3a04eda124",
+          "id": "d0d14662-f341-4df2-870b-d80bad25d640",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2555,7 +2555,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "6fae7f1c-ba95-4c3c-abc0-28d469a7ad91",
+          "id": "df82735f-7ef3-44bf-82d9-0ec9828456d6",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2584,7 +2584,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "729ffd2a-a8c3-4fc3-ab4b-60b2950e5cd3",
+          "id": "ace8423a-4f58-4bcf-8458-6164eae79845",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2616,7 +2616,7 @@
       "event": []
     },
     {
-      "id": "99ee1f39-86bf-498b-8fc6-c34b3ccd3b5a",
+      "id": "41d241f0-bc58-4482-a790-07d427f8fc2b",
       "name": "Fetch All OffStreet Restriction Types",
       "request": {
         "name": "Fetch All OffStreet Restriction Types",
@@ -2639,7 +2639,7 @@
       },
       "response": [
         {
-          "id": "f22d3880-8d6f-4072-a379-343096cd3aef",
+          "id": "28d3e772-e92c-41fd-a9d5-4650183de282",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2668,7 +2668,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "446257e5-3adb-4a50-bfda-e4cc88dc4a39",
+          "id": "58054650-5eb4-4de6-9f2f-b67c4b19d171",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -2697,7 +2697,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "2cd97a2b-7014-488c-aa5b-eebd74b2acba",
+          "id": "84ec05cc-6b07-4007-93d2-5852456288b0",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2726,7 +2726,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "ef179620-7eb7-4bd8-86ba-db004ab00a3a",
+          "id": "d129d61f-e753-4d68-b6bc-e40ac8087153",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2755,7 +2755,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "07be5f35-8db0-4379-9f81-01cb62ee75fe",
+          "id": "415e5ea2-7541-47a1-beef-63e7c31ad5ff",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2787,7 +2787,7 @@
       "event": []
     },
     {
-      "id": "e8c1bb88-c131-4bad-bf0a-ee8317f8c998",
+      "id": "1d01c35a-efef-4dcc-826f-876ad12c9cd6",
       "name": "Fetch All On-Street Parking Types",
       "request": {
         "name": "Fetch All On-Street Parking Types",
@@ -2810,7 +2810,7 @@
       },
       "response": [
         {
-          "id": "667056f5-e0a6-4b15-85de-5b5359f84dcf",
+          "id": "34475dda-ee99-4a4c-a89e-9d4505dc0b70",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2839,7 +2839,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "6f9121a9-52ef-41e2-99bc-ea0489aac238",
+          "id": "f617be23-2ee6-4e75-be2d-c0856fb22f9f",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -2868,7 +2868,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "fd063859-a3d9-4793-8717-caf829f255f1",
+          "id": "84111ade-0f2b-4e5c-8235-f747cb7ebc56",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2897,7 +2897,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "09d8e3aa-feae-452f-a8c6-82de5eb7b5bc",
+          "id": "f5352aa7-390a-4ab4-a2a8-47da51fd7e72",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2926,7 +2926,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "2bef91e1-4255-4860-a773-7bbdd0294aa9",
+          "id": "304de052-c756-496f-b3f1-d3693bf1c8cf",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2958,7 +2958,7 @@
       "event": []
     },
     {
-      "id": "e026719c-7efe-45b5-bc11-970a50556981",
+      "id": "f5c09ed3-1959-4bd9-a045-20c0bc59185b",
       "name": "Fetch All Payment Methods",
       "request": {
         "name": "Fetch All Payment Methods",
@@ -2981,7 +2981,7 @@
       },
       "response": [
         {
-          "id": "c86911a1-ddeb-486d-892a-bbf5c90e6e67",
+          "id": "a99f36b9-a8f1-4524-b952-2878e9987d13",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -3010,7 +3010,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "7dfa5a0d-91d1-4ac4-ab4f-8586a3604743",
+          "id": "d70f65fe-d7d1-4761-a7fb-b2c0d5c63742",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -3039,7 +3039,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "5c57c0a5-a247-4ba7-bf36-0b2df587f4ba",
+          "id": "d1a2d61a-917c-4454-b71b-10d193ee7171",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -3068,7 +3068,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f2f10e38-b444-4280-8374-9163af3d1b10",
+          "id": "d058815b-387e-44ed-beea-9af574c8cf3f",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -3097,7 +3097,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f1cf65b8-9fb6-4d3e-9ca8-3bb0657435bc",
+          "id": "4a3ddc76-3695-4db6-963b-4a3197a9a4f5",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -3129,7 +3129,7 @@
       "event": []
     },
     {
-      "id": "24c3234a-00bd-4b89-9605-0b1571160b61",
+      "id": "4d0115a0-28a9-438e-a9a6-61b7db4d9095",
       "name": "Fetch All Payment Providers",
       "request": {
         "name": "Fetch All Payment Providers",
@@ -3152,7 +3152,7 @@
       },
       "response": [
         {
-          "id": "5a41f3e7-ac8d-409c-8a6e-099a4ac8bda4",
+          "id": "382a22c5-62b5-42a4-9e09-3e61d0f01da5",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -3181,7 +3181,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "c13a181e-55f1-4563-a940-cec8a05d7777",
+          "id": "b75c0a76-9c85-405b-bf2e-7d4434305d32",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -3210,7 +3210,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f87cdd0c-93d4-48b7-9712-71d3f53faab6",
+          "id": "ab527994-b50c-4753-a8f9-6a1a154d385b",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -3239,7 +3239,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "b4b5c16b-6f5d-4df9-91a4-aa12b3e46e16",
+          "id": "c8756601-e47e-4428-8025-881479f1b96a",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -3268,7 +3268,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "cfe198ea-57db-4d57-87db-fa7b8d693b93",
+          "id": "f26d85d3-ef12-4afa-b23e-e9c0561a3264",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -3300,17 +3300,17 @@
       "event": []
     },
     {
-      "id": "e2f23c43-5261-4613-ad4b-88fe2b90f6a8",
-      "name": "Fetch All Permitted Vehicles",
+      "id": "97f60cb4-ea40-4835-a978-5014829c420e",
+      "name": "Fetch All Permitted Vehicle Types",
       "request": {
-        "name": "Fetch All Permitted Vehicles",
+        "name": "Fetch All Permitted Vehicle Types",
         "description": {
-          "content": "Returns a list with all the permitted vehicles and associated moving restriction types.",
+          "content": "Returns a list with all the permitted vehicle types and associated moving restriction types.",
           "type": "text/plain"
         },
         "url": {
           "path": [
-            "fetchAllPermittedVehicles"
+            "fetchAllPermittedVehicleTypes"
           ],
           "host": [
             "{{baseUrl}}"
@@ -3323,12 +3323,12 @@
       },
       "response": [
         {
-          "id": "89b42a49-458f-489d-96b1-07f31ed07e8f",
+          "id": "3c36bb33-306d-4f0b-98a5-76effd2d7bf0",
           "name": "OK",
           "originalRequest": {
             "url": {
               "path": [
-                "fetchAllPermittedVehicles"
+                "fetchAllPermittedVehicleTypes"
               ],
               "host": [
                 "{{baseUrl}}"
@@ -3352,12 +3352,12 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "42f168ce-6d6d-4d82-a004-07f69176e037",
+          "id": "e790d597-a39f-4528-bd6d-b2c679b3ae15",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
               "path": [
-                "fetchAllPermittedVehicles"
+                "fetchAllPermittedVehicleTypes"
               ],
               "host": [
                 "{{baseUrl}}"
@@ -3381,12 +3381,12 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "4815c459-884d-428c-8b1a-586e4a2fbd2d",
+          "id": "48c2e866-f93e-464f-8ffa-e5982ec611d8",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
               "path": [
-                "fetchAllPermittedVehicles"
+                "fetchAllPermittedVehicleTypes"
               ],
               "host": [
                 "{{baseUrl}}"
@@ -3410,12 +3410,12 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "1b13b3af-33ef-46f8-92ae-1aabc9476f25",
+          "id": "5a50d814-c3a7-4e0e-b68b-a4d1349b43ff",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
               "path": [
-                "fetchAllPermittedVehicles"
+                "fetchAllPermittedVehicleTypes"
               ],
               "host": [
                 "{{baseUrl}}"
@@ -3439,12 +3439,12 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "e7ceb6d8-c569-43ed-95c9-298d96715a16",
+          "id": "7bddbfa7-0c9f-4c50-811c-3b76c1d05efc",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
               "path": [
-                "fetchAllPermittedVehicles"
+                "fetchAllPermittedVehicleTypes"
               ],
               "host": [
                 "{{baseUrl}}"
@@ -3471,7 +3471,7 @@
       "event": []
     },
     {
-      "id": "8cb6fce7-bdc8-45dc-91a1-926c4487f1ff",
+      "id": "f6fd4dfe-45ee-49d0-abab-93befc36bb62",
       "name": "Fetch All Permit Types",
       "request": {
         "name": "Fetch All Permit Types",
@@ -3494,7 +3494,7 @@
       },
       "response": [
         {
-          "id": "ebbcda85-100c-400f-8144-8165a3d4ae85",
+          "id": "0185bc08-3d95-4547-bba9-dea6603d2492",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -3523,7 +3523,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "3813da0d-dc1e-49e9-901f-9001af2aeb7c",
+          "id": "5417d2ef-604f-43bb-a590-35a9c4f66d4a",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -3552,7 +3552,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "13e10764-17ee-4c2f-87ff-03bde189b305",
+          "id": "33ac038a-dc1d-44e0-af18-4738b8f0794c",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -3581,7 +3581,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "bddf84f9-1c56-4751-badb-c99f6f2f201c",
+          "id": "e282af74-1d81-4abe-99c2-a3f7b239cf00",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -3610,7 +3610,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "c0d8316e-95c7-414d-9f5e-d576c460c9cf",
+          "id": "189667a1-c713-4c81-baa2-041e56c3274a",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -3642,7 +3642,7 @@
       "event": []
     },
     {
-      "id": "7ca3a1da-a3ee-4747-9cc5-2332e328802c",
+      "id": "18537886-b19d-40b6-ae00-ec0a27d7372f",
       "name": "Fetch All Regions",
       "request": {
         "name": "Fetch All Regions",
@@ -3665,7 +3665,7 @@
       },
       "response": [
         {
-          "id": "bacd77c8-f91f-4d69-8389-20e651a8c561",
+          "id": "6e70d21b-0cd7-4230-9f5c-0ef3a451d045",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -3689,12 +3689,12 @@
               "value": "application/json"
             }
           ],
-          "body": "{\n \"success\": true,\n \"result\": [\n  {\n   \"id\": \"string\",\n   \"countryId\": \"string\",\n   \"name\": \"string\",\n   \"venues\": [\n    {\n     \"id\": \"string\",\n     \"name\": \"string\",\n     \"eventsMustSupplyHours\": true,\n     \"events\": [\n      {\n       \"name\": \"string\",\n       \"date\": \"2020-01-20\",\n       \"start\": \"2024-12-16\",\n       \"end\": \"2024-12-16\"\n      }\n     ]\n    }\n   ]\n  }\n ]\n}",
+          "body": "{\n \"success\": true,\n \"result\": [\n  {\n   \"id\": \"string\",\n   \"countryId\": \"string\",\n   \"name\": \"string\",\n   \"venues\": [\n    {\n     \"id\": \"string\",\n     \"name\": \"string\",\n     \"eventsMustSupplyHours\": true,\n     \"events\": [\n      {\n       \"name\": \"string\",\n       \"date\": \"2020-01-20\",\n       \"start\": \"2025-02-17\",\n       \"end\": \"2025-02-17\"\n      }\n     ]\n    }\n   ]\n  }\n ]\n}",
           "cookie": [],
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "1dbfaa90-c6bf-4c68-ae5c-848e1f010864",
+          "id": "a46dadaa-6b50-4f77-a8d7-180fbbc69c5c",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -3723,7 +3723,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "d3e073b6-9052-4712-9f20-b2bd3dc00bf0",
+          "id": "22db8555-99d8-445e-b86f-32deb923f300",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -3752,7 +3752,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "9eca523c-67cb-416f-aef3-a387f53bcdde",
+          "id": "f83e8d76-61bc-423a-8a49-13048e54912f",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -3781,7 +3781,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "0c86545f-54e7-461c-87e1-76d8cff4525e",
+          "id": "5cc57696-a974-4042-a1fc-71553378d1dd",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -3813,7 +3813,7 @@
       "event": []
     },
     {
-      "id": "c767e52c-3f92-4c26-932e-084a1771c744",
+      "id": "9189b0ea-b3d7-48a1-95c1-0310fe6a4477",
       "name": "Fetch All Restriction Types",
       "request": {
         "name": "Fetch All Restriction Types",
@@ -3831,12 +3831,22 @@
           "query": [],
           "variable": []
         },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
         "method": "POST",
-        "auth": null
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"localeCode\": \"<string>\"\n}"
+        }
       },
       "response": [
         {
-          "id": "5df4d69a-65f0-4a15-b5b3-898d3d1aaad7",
+          "id": "9c92e902-f0e5-44ef-87b0-df84608569dc",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -3850,7 +3860,10 @@
               "variable": []
             },
             "method": "POST",
-            "body": {}
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"localeCode\": \"string\"\n}"
+            }
           },
           "status": "OK",
           "code": 200,
@@ -3865,7 +3878,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "177a59f2-cab7-4987-907c-cea31780d1c2",
+          "id": "e149355a-b1b4-4bbd-948c-3a4e688ba436",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -3879,7 +3892,10 @@
               "variable": []
             },
             "method": "POST",
-            "body": {}
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"localeCode\": \"string\"\n}"
+            }
           },
           "status": "Not Modified",
           "code": 304,
@@ -3894,7 +3910,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f9947bbe-6dff-48e2-9bcf-47a96e92325f",
+          "id": "8b1c4608-5b88-478f-86d6-2c99e612d365",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -3908,7 +3924,10 @@
               "variable": []
             },
             "method": "POST",
-            "body": {}
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"localeCode\": \"string\"\n}"
+            }
           },
           "status": "Unauthorized",
           "code": 401,
@@ -3923,7 +3942,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "26f5af93-7211-404b-995a-8e16384dec10",
+          "id": "6f766b88-10e2-434a-beee-a6442a321cf6",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -3937,7 +3956,10 @@
               "variable": []
             },
             "method": "POST",
-            "body": {}
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"localeCode\": \"string\"\n}"
+            }
           },
           "status": "Forbidden",
           "code": 403,
@@ -3952,7 +3974,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8e2906e2-1a50-4425-9291-e41c6d0fcefb",
+          "id": "766de23b-1994-4e9b-a972-1fd4e37ca5ca",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -3966,7 +3988,10 @@
               "variable": []
             },
             "method": "POST",
-            "body": {}
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"localeCode\": \"string\"\n}"
+            }
           },
           "status": "Too Many Requests",
           "code": 429,
@@ -3984,7 +4009,7 @@
       "event": []
     },
     {
-      "id": "4b704faa-d8fa-4cf4-85b6-dba4e68e144a",
+      "id": "35c04f7d-d286-4461-a841-d2a69876a571",
       "name": "Fetch All Vehicle Types",
       "request": {
         "name": "Fetch All Vehicle Types",
@@ -4007,7 +4032,7 @@
       },
       "response": [
         {
-          "id": "33ec5ba1-e47b-4f43-92d7-11ce583bc57f",
+          "id": "0cfe47d3-de44-4095-bdc7-4f765ef65240",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -4036,7 +4061,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "58798484-888c-48ce-a52d-d31ba62cb976",
+          "id": "c4d59e62-0623-4a19-b97c-b9e045924a2c",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -4065,7 +4090,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "e119a0b0-1afa-4e4e-86fe-126765e2ff14",
+          "id": "3ed60a31-2af8-4fea-9e94-8eb434d72612",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -4094,7 +4119,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "b44fab57-3917-4b1b-a659-020e119d0ff7",
+          "id": "ab803ee3-d039-4f20-b5fb-79763ffe8086",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -4123,7 +4148,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "429bce66-dc8c-4af9-81a8-4f6de893a510",
+          "id": "88a81467-dd1f-4f03-afea-26ccd447f0e9",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -4155,7 +4180,7 @@
       "event": []
     },
     {
-      "id": "7df48a16-0d76-43d1-b0bc-f6bf24bb4a6c",
+      "id": "a1a310b5-aa6c-4e5e-9220-2e95feb68d44",
       "name": "Fetch All Zone Types",
       "request": {
         "name": "Fetch All Zone Types",
@@ -4178,7 +4203,7 @@
       },
       "response": [
         {
-          "id": "9ea4898a-5919-41a0-bae3-479aea38bbe7",
+          "id": "0c9064d3-4126-4c9d-af54-13fd57686733",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -4207,7 +4232,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "1c68ae24-bcd6-43c4-9aac-f93d539b28d5",
+          "id": "fe03330f-eb4e-490a-8929-460b3e2b7bc2",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -4236,7 +4261,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "5ce45e59-3c5c-451a-ab07-36be9568564c",
+          "id": "31b1d54b-3f4c-40c3-9b27-39360e305009",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -4265,7 +4290,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "d44eec05-e25e-45b9-a2a6-bf67a9eb022a",
+          "id": "f9f63036-1c37-476e-8df9-5105dee8741c",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -4294,7 +4319,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "17aab55e-f58b-4a0c-ab7c-feb8a3db40d8",
+          "id": "dccd4fb4-9d05-4885-8de9-c9738115721e",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -4326,7 +4351,7 @@
       "event": []
     },
     {
-      "id": "c7b173fd-75c3-4bf1-b2a6-824fc89f1c7f",
+      "id": "93a3f334-e0e0-4c29-912b-58558d42e7f0",
       "name": "Fetch Country By Id",
       "request": {
         "name": "Fetch Country By Id",
@@ -4359,7 +4384,7 @@
       },
       "response": [
         {
-          "id": "b07dbf87-a10d-40fe-a4b4-847fa2398446",
+          "id": "603e2169-149d-49ee-abec-8b6b86b8677d",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -4391,7 +4416,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "e2740304-f7ed-44ba-be7c-7122e27a9eb1",
+          "id": "32c45dae-2ee6-4c71-a9f1-73ac32bd34ae",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -4423,7 +4448,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "25bf9895-4fd3-4b58-b8b5-ebe49152a046",
+          "id": "d011b1a5-4111-44f6-8db2-b59f196a457b",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -4455,7 +4480,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "3bfabe2b-86da-455c-9446-1e8258c64149",
+          "id": "9c30779b-e4eb-4bdc-a291-a91480eb9ae7",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -4487,7 +4512,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "0bd4aeac-ede2-4c5c-9d33-4161641b3d2e",
+          "id": "f7a0e810-833f-4144-84cc-b6bab33c2382",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -4519,7 +4544,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "091ea0a8-4ac2-4cb0-bb72-85f3510603b2",
+          "id": "9c59f2cc-18e3-479e-a903-937d1623e907",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -4554,7 +4579,7 @@
       "event": []
     },
     {
-      "id": "93caed5b-7e31-4cab-b446-054a626de908",
+      "id": "964cb237-0bcb-4083-bbf5-8f1786ea073c",
       "name": "Fetches a Region By Id",
       "request": {
         "name": "Fetches a Region By Id",
@@ -4587,7 +4612,7 @@
       },
       "response": [
         {
-          "id": "13fcb2fa-e1ba-4f40-8afd-4c4d3899928d",
+          "id": "32d388e6-63e6-4d0a-9e36-5a102a054c52",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -4614,12 +4639,12 @@
               "value": "application/json"
             }
           ],
-          "body": "{\n \"success\": true,\n \"result\": {\n  \"id\": \"string\",\n  \"countryId\": \"string\",\n  \"name\": \"string\",\n  \"venues\": [\n   {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"eventsMustSupplyHours\": true,\n    \"events\": [\n     {\n      \"name\": \"string\",\n      \"date\": \"2020-01-20\",\n      \"start\": \"2024-12-16\",\n      \"end\": \"2024-12-16\"\n     }\n    ]\n   }\n  ]\n }\n}",
+          "body": "{\n \"success\": true,\n \"result\": {\n  \"id\": \"string\",\n  \"countryId\": \"string\",\n  \"name\": \"string\",\n  \"venues\": [\n   {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"eventsMustSupplyHours\": true,\n    \"events\": [\n     {\n      \"name\": \"string\",\n      \"date\": \"2020-01-20\",\n      \"start\": \"2025-02-17\",\n      \"end\": \"2025-02-17\"\n     }\n    ]\n   }\n  ]\n }\n}",
           "cookie": [],
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "f999cca2-7595-45ba-8dd4-fb9c72874b57",
+          "id": "42f4cc92-b548-4996-bada-f53eb1ddc382",
           "name": "Not Modified",
           "originalRequest": {
             "url": {
@@ -4651,7 +4676,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "963c9eca-49dc-44a3-80c7-8eb328cfec9b",
+          "id": "c9bbe157-c37e-4862-80c5-8a200356efe6",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -4683,7 +4708,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "9c560e91-418e-4090-ace2-e5d853372f32",
+          "id": "9f756e42-a78f-4da5-8f4e-498cfd63c26a",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -4715,7 +4740,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "efa8b71e-3185-4766-af3f-e35a24e05b96",
+          "id": "e8a2a6a0-2cc4-4c8c-b60b-9afaf8e16016",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -4747,7 +4772,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "2dbf5356-9ead-4fc4-988b-4e5943ddee71",
+          "id": "e3a78ed3-88da-4c85-a84f-a7ec20154e46",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -4782,7 +4807,7 @@
       "event": []
     },
     {
-      "id": "165df500-4007-4b7c-844d-285eb3de43db",
+      "id": "0f53661f-6722-443a-b207-d32f99e7aaf4",
       "name": "Ping",
       "request": {
         "name": "Ping",
@@ -4805,7 +4830,7 @@
       },
       "response": [
         {
-          "id": "d1ea8663-dfcb-46cc-a85e-687fb59f8b91",
+          "id": "e86d2521-fd58-4185-98fa-7a8e8514d942",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -4834,7 +4859,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "9f942bc5-b4e2-4db2-bc26-8c39083d0182",
+          "id": "2340da23-8096-482e-b453-b3f20eb9693f",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -4863,7 +4888,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "bd3bd82a-00e0-4ac6-817e-ea2aee287ce7",
+          "id": "ba9849d1-2daf-4e6c-9b35-6e449cf5f7cd",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -4892,7 +4917,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "79415c3a-2d59-438b-b9fd-2bf3a6df74c0",
+          "id": "2759edd0-c12b-46a7-9825-a9227231c5b1",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -4948,7 +4973,7 @@
     ]
   },
   "info": {
-    "_postman_id": "33bddfce-5388-4531-a940-83f3c5a99f67",
+    "_postman_id": "c3b667ce-127a-45c0-8a33-86f2d1639172",
     "name": "Reference (v1.0|LIVE|Public)",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {

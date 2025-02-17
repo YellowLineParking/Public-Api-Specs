@@ -31,7 +31,7 @@ paths:
               id: string
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -121,7 +121,7 @@ paths:
                 - 1
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -278,7 +278,7 @@ paths:
               endDate: 2020-01-20
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -333,6 +333,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               endDate: 2020-01-20
               startDate: 2020-01-20
           text/json:
@@ -352,6 +355,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               endDate: 2020-01-20
               startDate: 2020-01-20
           application/*+json:
@@ -371,11 +377,14 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               endDate: 2020-01-20
               startDate: 2020-01-20
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -396,9 +405,12 @@ paths:
                       fuelTypeId: 0
                       permits:
                       - permitTypeId: 0
+                      co2Emissions: 0
+                      vehicleYear: 0
+                      engineSize: 0
                     openPeriods:
-                    - start: 2024-12-16
-                      end: 2024-12-16
+                    - start: 2025-02-17
+                      end: 2025-02-17
                       date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
@@ -413,9 +425,18 @@ paths:
                       - 0
                       permits:
                       - permitTypeId: 0
+                      co2Emissions:
+                        start: 0
+                        end: 0
+                      vehicleYears:
+                        start: 0
+                        end: 0
+                      engineSize:
+                        start: 0
+                        end: 0
                     openPeriods:
-                    - start: 2024-12-16
-                      end: 2024-12-16
+                    - start: 2025-02-17
+                      end: 2025-02-17
                       date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
@@ -430,9 +451,18 @@ paths:
                       - 0
                       permits:
                       - permitTypeId: 0
+                      co2Emissions:
+                        start: 0
+                        end: 0
+                      vehicleYears:
+                        start: 0
+                        end: 0
+                      engineSize:
+                        start: 0
+                        end: 0
                     openPeriods:
-                    - start: 2024-12-16
-                      end: 2024-12-16
+                    - start: 2025-02-17
+                      end: 2025-02-17
                       date: 2020-01-20
                       status: 1
                   closedPeriods:
@@ -474,6 +504,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               date: 2020-01-20
               startDate: 2020-01-20
               endDate: 2020-01-20
@@ -494,6 +527,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               date: 2020-01-20
               startDate: 2020-01-20
               endDate: 2020-01-20
@@ -514,6 +550,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               date: 2020-01-20
               startDate: 2020-01-20
               endDate: 2020-01-20
@@ -524,7 +563,7 @@ paths:
               includeClosedPeriods: true
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -545,9 +584,12 @@ paths:
                       fuelTypeId: 0
                       permits:
                       - permitTypeId: 0
+                      co2Emissions: 0
+                      vehicleYear: 0
+                      engineSize: 0
                     openPeriods:
-                    - start: 2024-12-16
-                      end: 2024-12-16
+                    - start: 2025-02-17
+                      end: 2025-02-17
                       date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
@@ -562,9 +604,18 @@ paths:
                       - 0
                       permits:
                       - permitTypeId: 0
+                      co2Emissions:
+                        start: 0
+                        end: 0
+                      vehicleYears:
+                        start: 0
+                        end: 0
+                      engineSize:
+                        start: 0
+                        end: 0
                     openPeriods:
-                    - start: 2024-12-16
-                      end: 2024-12-16
+                    - start: 2025-02-17
+                      end: 2025-02-17
                       date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
@@ -579,9 +630,18 @@ paths:
                       - 0
                       permits:
                       - permitTypeId: 0
+                      co2Emissions:
+                        start: 0
+                        end: 0
+                      vehicleYears:
+                        start: 0
+                        end: 0
+                      engineSize:
+                        start: 0
+                        end: 0
                     openPeriods:
-                    - start: 2024-12-16
-                      end: 2024-12-16
+                    - start: 2025-02-17
+                      end: 2025-02-17
                       date: 2020-01-20
                       status: 1
                   closedPeriods:
@@ -619,7 +679,7 @@ paths:
               id: string
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -714,6 +774,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               duration: 3.17:25:30.5000000
               endTime: string
           text/json:
@@ -728,6 +791,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               duration: 3.17:25:30.5000000
               endTime: string
           application/*+json:
@@ -742,11 +808,14 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               duration: 3.17:25:30.5000000
               endTime: string
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -775,18 +844,10 @@ paths:
                       fuelTypeId: 0
                       permits:
                       - permitTypeId: 0
+                      co2Emissions: 0
+                      vehicleYear: 0
+                      engineSize: 0
                     rulesApplyUntil: string
-                    surcharge:
-                      value: 0
-                      valueType: 1
-                      criteria:
-                        vehicleOperatorContext:
-                          vehicleTypeId: 0
-                          activityTypeId: 0
-                          fuelTypeId: 0
-                          permits:
-                          - permitTypeId: 0
-                        maxVehicleManufactureYear: 0
                   distance: 0
                   parkingAllowed: 1
                   entityETag: string
@@ -829,6 +890,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               ids:
               - string
               endTime: string
@@ -844,6 +908,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               ids:
               - string
               endTime: string
@@ -859,12 +926,15 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               ids:
               - string
               endTime: string
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -896,18 +966,10 @@ paths:
                         fuelTypeId: 0
                         permits:
                         - permitTypeId: 0
+                        co2Emissions: 0
+                        vehicleYear: 0
+                        engineSize: 0
                       rulesApplyUntil: string
-                      surcharge:
-                        value: 0
-                        valueType: 1
-                        criteria:
-                          vehicleOperatorContext:
-                            vehicleTypeId: 0
-                            activityTypeId: 0
-                            fuelTypeId: 0
-                            permits:
-                            - permitTypeId: 0
-                          maxVehicleManufactureYear: 0
                     distance: 0
                     parkingAllowed: 1
                     entityETag: string
@@ -943,7 +1005,7 @@ paths:
               entityId: string
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -998,7 +1060,7 @@ paths:
               id: string
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -1083,7 +1145,7 @@ paths:
               endTime: string
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -1169,7 +1231,7 @@ paths:
                 - - - 0
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -1274,7 +1336,7 @@ paths:
                 - 1
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -1438,7 +1500,7 @@ paths:
                 - 1
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -1540,6 +1602,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1568,6 +1633,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1596,6 +1664,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1611,7 +1682,7 @@ paths:
                 lng: 0
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -1643,18 +1714,10 @@ paths:
                         fuelTypeId: 0
                         permits:
                         - permitTypeId: 0
+                        co2Emissions: 0
+                        vehicleYear: 0
+                        engineSize: 0
                       rulesApplyUntil: string
-                      surcharge:
-                        value: 0
-                        valueType: 1
-                        criteria:
-                          vehicleOperatorContext:
-                            vehicleTypeId: 0
-                            activityTypeId: 0
-                            fuelTypeId: 0
-                            permits:
-                            - permitTypeId: 0
-                          maxVehicleManufactureYear: 0
                     distance: 0
                     parkingAllowed: 1
                     entityETag: string
@@ -1706,6 +1769,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1738,6 +1804,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1770,6 +1839,9 @@ paths:
                 fuelTypeId: 0
                 permits:
                 - permitTypeId: 0
+                co2Emissions: 0
+                vehicleYear: 0
+                engineSize: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1785,7 +1857,7 @@ paths:
               endTime: string
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -1817,18 +1889,10 @@ paths:
                         fuelTypeId: 0
                         permits:
                         - permitTypeId: 0
+                        co2Emissions: 0
+                        vehicleYear: 0
+                        engineSize: 0
                       rulesApplyUntil: string
-                      surcharge:
-                        value: 0
-                        valueType: 1
-                        criteria:
-                          vehicleOperatorContext:
-                            vehicleTypeId: 0
-                            activityTypeId: 0
-                            fuelTypeId: 0
-                            permits:
-                            - permitTypeId: 0
-                          maxVehicleManufactureYear: 0
                     distance: 0
                     parkingAllowed: 1
                     entityETag: string
@@ -1923,7 +1987,7 @@ paths:
               - 1
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -1987,7 +2051,7 @@ paths:
       operationId: get-ping
       responses:
         "200":
-          description: Success
+          description: OK
         "429":
           $ref: '#/components/responses/TooManyRequests'
         "401":
@@ -3527,6 +3591,16 @@ components:
             $ref: '#/components/schemas/IndexDefinition'
           nullable: true
       additionalProperties: false
+    Int32Range:
+      type: object
+      properties:
+        start:
+          type: integer
+          format: int32
+        end:
+          type: integer
+          format: int32
+      additionalProperties: false
     LatLng:
       type: object
       properties:
@@ -4256,8 +4330,6 @@ components:
             Dates/times are returned in ISO8601 format: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)
           format: date-time
           nullable: true
-        surcharge:
-          $ref: '#/components/schemas/SurchargeDetails'
       additionalProperties: false
       description: A contextualized quote for a parking session, including related data such as No Return and Minimum Cost
     ParkingQuotesResponse:
@@ -4449,6 +4521,7 @@ components:
             type: array
             items:
               type: string
+            nullable: true
           nullable: true
       additionalProperties: false
     Suggestion:
@@ -4475,44 +4548,6 @@ components:
         *LikelyUnrestricted (3) - Unspecified sections of kerb are likely to be unrestricted (free parking)
         *Unknown (4) - We cannot say with confidence whether or not unspecified kerb sections are restricted.
       format: int32
-    SurchargeCriteria:
-      type: object
-      properties:
-        vehicleOperatorContext:
-          $ref: '#/components/schemas/VehicleOperatorContext'
-        maxVehicleManufactureYear:
-          type: integer
-          description: The latest year of manufacture of the vehicle for which the surcharge applies
-          format: int32
-          nullable: true
-      additionalProperties: false
-      description: The criteria for which a surcharge may be applied
-    SurchargeDetails:
-      type: object
-      properties:
-        value:
-          type: number
-          description: The amount of the surcharge
-          format: float
-        valueType:
-          $ref: '#/components/schemas/SurchargeValueType'
-        criteria:
-          $ref: '#/components/schemas/SurchargeCriteria'
-      additionalProperties: false
-      description: |-
-        Details of a surcharge that may be applied to a parking charge, including the amount of the surcharge
-        and the criteria under which it is applied.
-    SurchargeValueType:
-      enum:
-      - 1
-      - 2
-      type: integer
-      description: |
-        Indicates how clients should interpret the value in a SurchargeDetails object - as a flat rate (absolute cost) or percentage of the original charge
-
-        *FlatRate (1) - The value should be interpreted as an absolute amount
-        *Percentage (2) - The value should be interpreted as a percentage of the original cost (before surcharge)
-      format: int32
     VehicleOperatorContext:
       type: object
       properties:
@@ -4536,6 +4571,21 @@ components:
           items:
             $ref: '#/components/schemas/Permit'
           description: Any permits types held by the operator (e.g. blue disabled badge, car club permit). See the reference API for more information.
+          nullable: true
+        co2Emissions:
+          type: integer
+          description: Vehicle CO2 emissions in g/km
+          format: int32
+          nullable: true
+        vehicleYear:
+          type: integer
+          description: Vehicle registration year
+          format: int32
+          nullable: true
+        engineSize:
+          type: integer
+          description: Vehicle engine size in cc
+          format: int32
           nullable: true
       additionalProperties: false
       description: |-
@@ -4571,6 +4621,12 @@ components:
             $ref: '#/components/schemas/Permit'
           description: Any permits held by the operator (e.g. blue disabled badge, car club permit). See the reference API for more information.
           nullable: true
+        co2Emissions:
+          $ref: '#/components/schemas/Int32Range'
+        vehicleYears:
+          $ref: '#/components/schemas/Int32Range'
+        engineSize:
+          $ref: '#/components/schemas/Int32Range'
       additionalProperties: false
     Zone:
       type: object

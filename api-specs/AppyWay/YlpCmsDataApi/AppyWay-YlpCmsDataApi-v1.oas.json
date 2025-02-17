@@ -20,7 +20,7 @@
         "operationId": "get-authorities-getall",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
@@ -222,7 +222,7 @@
           "Authorities"
         ],
         "summary": "Get Full Authority By Slug",
-        "description": "Returns an object which has the location of the documents containing the full restrictions of an authority <br /> \n            The documentation provided here shows the model you will find at these locations. The initial object contains only the URL's. <br />\n            You will have to fetch the documents from the returned authority URL's",
+        "description": "Returns an object which has the location of the documents containing the full restrictions of an authority \r\n \r\n            The documentation provided here shows the model you will find at these locations. The initial object contains only the URL's. \r\n\r\n            You will have to fetch the documents from the returned authority URL's",
         "operationId": "get-authorities-getfullbyslug",
         "parameters": [
           {
@@ -245,7 +245,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
@@ -295,19 +295,6 @@
                               "restrictionTypeDetails": [
                                 {
                                   "restrictionTypeId": 0,
-                                  "operatingHoursSets": [
-                                    {
-                                      "setGuid": "string",
-                                      "setId": "string",
-                                      "parkingEntitlementTypeIds": [
-                                        0
-                                      ]
-                                    }
-                                  ],
-                                  "exceptionsSet": {
-                                    "setGuid": "string",
-                                    "setId": "string"
-                                  },
                                   "locationNumber": "string",
                                   "terminalIds": [
                                     "string"
@@ -327,7 +314,20 @@
                                         0
                                       ]
                                     }
-                                  ]
+                                  ],
+                                  "operatingHoursSets": [
+                                    {
+                                      "setGuid": "string",
+                                      "setId": "string",
+                                      "parkingEntitlementTypeIds": [
+                                        0
+                                      ]
+                                    }
+                                  ],
+                                  "exceptionsSet": {
+                                    "setGuid": "string",
+                                    "setId": "string"
+                                  }
                                 }
                               ],
                               "notes": [
@@ -421,6 +421,10 @@
                                 "exceptionsSet": {
                                   "setGuid": "string",
                                   "setId": "string"
+                                },
+                                "exemptionsSet": {
+                                  "setGuid": "string",
+                                  "setId": "string"
                                 }
                               }
                             ],
@@ -469,8 +473,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-12-16",
-                                      "end": "2024-12-16"
+                                      "start": "2025-02-17",
+                                      "end": "2025-02-17"
                                     }
                                   ],
                                   "firstDate": {
@@ -488,7 +492,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-12-16"
+                                "noReturnUntil": "2025-02-17"
                               }
                             ],
                             "eventDays": [
@@ -505,8 +509,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-12-16",
-                                      "end": "2024-12-16"
+                                      "start": "2025-02-17",
+                                      "end": "2025-02-17"
                                     }
                                   ],
                                   "firstDate": {
@@ -524,7 +528,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-12-16"
+                                "noReturnUntil": "2025-02-17"
                               }
                             ]
                           }
@@ -571,8 +575,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-12-16",
-                                        "end": "2024-12-16"
+                                        "start": "2025-02-17",
+                                        "end": "2025-02-17"
                                       }
                                     ],
                                     "firstDate": {
@@ -590,7 +594,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-12-16"
+                                  "noReturnUntil": "2025-02-17"
                                 }
                               ],
                               "eventDays": [
@@ -607,8 +611,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-12-16",
-                                        "end": "2024-12-16"
+                                        "start": "2025-02-17",
+                                        "end": "2025-02-17"
                                       }
                                     ],
                                     "firstDate": {
@@ -626,7 +630,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-12-16"
+                                  "noReturnUntil": "2025-02-17"
                                 }
                               ]
                             },
@@ -649,8 +653,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-12-16",
-                                            "end": "2024-12-16"
+                                            "start": "2025-02-17",
+                                            "end": "2025-02-17"
                                           }
                                         ],
                                         "firstDate": {
@@ -668,7 +672,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-12-16"
+                                      "noReturnUntil": "2025-02-17"
                                     }
                                   ],
                                   "eventDays": [
@@ -685,8 +689,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-12-16",
-                                            "end": "2024-12-16"
+                                            "start": "2025-02-17",
+                                            "end": "2025-02-17"
                                           }
                                         ],
                                         "firstDate": {
@@ -704,7 +708,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-12-16"
+                                      "noReturnUntil": "2025-02-17"
                                     }
                                   ]
                                 }
@@ -758,8 +762,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2024-12-16",
-                              "timeTo": "2024-12-16",
+                              "timeFrom": "2025-02-17",
+                              "timeTo": "2025-02-17",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -866,19 +870,6 @@
                               "restrictionTypeDetails": [
                                 {
                                   "restrictionTypeId": 0,
-                                  "operatingHoursSets": [
-                                    {
-                                      "setGuid": "string",
-                                      "setId": "string",
-                                      "parkingEntitlementTypeIds": [
-                                        0
-                                      ]
-                                    }
-                                  ],
-                                  "exceptionsSet": {
-                                    "setGuid": "string",
-                                    "setId": "string"
-                                  },
                                   "locationNumber": "string",
                                   "terminalIds": [
                                     "string"
@@ -898,7 +889,20 @@
                                         0
                                       ]
                                     }
-                                  ]
+                                  ],
+                                  "operatingHoursSets": [
+                                    {
+                                      "setGuid": "string",
+                                      "setId": "string",
+                                      "parkingEntitlementTypeIds": [
+                                        0
+                                      ]
+                                    }
+                                  ],
+                                  "exceptionsSet": {
+                                    "setGuid": "string",
+                                    "setId": "string"
+                                  }
                                 }
                               ],
                               "notes": [
@@ -992,6 +996,10 @@
                                 "exceptionsSet": {
                                   "setGuid": "string",
                                   "setId": "string"
+                                },
+                                "exemptionsSet": {
+                                  "setGuid": "string",
+                                  "setId": "string"
                                 }
                               }
                             ],
@@ -1040,8 +1048,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-12-16",
-                                      "end": "2024-12-16"
+                                      "start": "2025-02-17",
+                                      "end": "2025-02-17"
                                     }
                                   ],
                                   "firstDate": {
@@ -1059,7 +1067,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-12-16"
+                                "noReturnUntil": "2025-02-17"
                               }
                             ],
                             "eventDays": [
@@ -1076,8 +1084,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-12-16",
-                                      "end": "2024-12-16"
+                                      "start": "2025-02-17",
+                                      "end": "2025-02-17"
                                     }
                                   ],
                                   "firstDate": {
@@ -1095,7 +1103,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-12-16"
+                                "noReturnUntil": "2025-02-17"
                               }
                             ]
                           }
@@ -1142,8 +1150,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-12-16",
-                                        "end": "2024-12-16"
+                                        "start": "2025-02-17",
+                                        "end": "2025-02-17"
                                       }
                                     ],
                                     "firstDate": {
@@ -1161,7 +1169,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-12-16"
+                                  "noReturnUntil": "2025-02-17"
                                 }
                               ],
                               "eventDays": [
@@ -1178,8 +1186,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-12-16",
-                                        "end": "2024-12-16"
+                                        "start": "2025-02-17",
+                                        "end": "2025-02-17"
                                       }
                                     ],
                                     "firstDate": {
@@ -1197,7 +1205,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-12-16"
+                                  "noReturnUntil": "2025-02-17"
                                 }
                               ]
                             },
@@ -1220,8 +1228,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-12-16",
-                                            "end": "2024-12-16"
+                                            "start": "2025-02-17",
+                                            "end": "2025-02-17"
                                           }
                                         ],
                                         "firstDate": {
@@ -1239,7 +1247,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-12-16"
+                                      "noReturnUntil": "2025-02-17"
                                     }
                                   ],
                                   "eventDays": [
@@ -1256,8 +1264,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-12-16",
-                                            "end": "2024-12-16"
+                                            "start": "2025-02-17",
+                                            "end": "2025-02-17"
                                           }
                                         ],
                                         "firstDate": {
@@ -1275,7 +1283,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-12-16"
+                                      "noReturnUntil": "2025-02-17"
                                     }
                                   ]
                                 }
@@ -1329,8 +1337,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2024-12-16",
-                              "timeTo": "2024-12-16",
+                              "timeFrom": "2025-02-17",
+                              "timeTo": "2025-02-17",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -1448,7 +1456,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           },
           "401": {
             "$ref": "#/components/responses/Unauthorized"
@@ -1468,7 +1476,7 @@
           "GIS"
         ],
         "summary": "Export Authority static Restrictions as GeoJSON by ID",
-        "description": "Returns a GeoJSON containing the restrictions of an authority. <br />",
+        "description": "Returns a GeoJSON containing the restrictions of an authority. \n",
         "operationId": "get-exportauthorityrestrictionsbyid-authorityid-geojson",
         "parameters": [
           {
@@ -1497,7 +1505,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1516,16 +1524,7 @@
                 "example": {
                   "success": true,
                   "result": {
-                    "content": {
-                      "canRead": true,
-                      "canWrite": true,
-                      "canSeek": true,
-                      "canTimeout": true,
-                      "length": 0,
-                      "position": 0,
-                      "readTimeout": 0,
-                      "writeTimeout": 0
-                    },
+                    "content": "string",
                     "gZipped": true
                   }
                 }
@@ -1537,16 +1536,7 @@
                 "example": {
                   "success": true,
                   "result": {
-                    "content": {
-                      "canRead": true,
-                      "canWrite": true,
-                      "canSeek": true,
-                      "canTimeout": true,
-                      "length": 0,
-                      "position": 0,
-                      "readTimeout": 0,
-                      "writeTimeout": 0
-                    },
+                    "content": "string",
                     "gZipped": true
                   }
                 }
@@ -1646,7 +1636,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           },
           "401": {
             "$ref": "#/components/responses/Unauthorized"
@@ -1670,7 +1660,7 @@
         "operationId": "post-fetchallauthorities",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1912,7 +1902,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2189,7 +2179,7 @@
           "Authorities"
         ],
         "summary": "Fetch Full Authority By Slug",
-        "description": "Returns an object which has the location of the documents containing the full restrictions of an authority <br /> \n            The documentation provided here shows the model you will find at these locations. The initial object contains only the URL's. <br />\n            You will have to fetch the documents from the returned authority URL's",
+        "description": "Returns an object which has the location of the documents containing the full restrictions of an authority \r\n \r\n            The documentation provided here shows the model you will find at these locations. The initial object contains only the URL's. \r\n\r\n            You will have to fetch the documents from the returned authority URL's",
         "operationId": "post-fetchfullauthorityinfobyslug",
         "requestBody": {
           "content": {
@@ -2233,7 +2223,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2283,19 +2273,6 @@
                               "restrictionTypeDetails": [
                                 {
                                   "restrictionTypeId": 0,
-                                  "operatingHoursSets": [
-                                    {
-                                      "setGuid": "string",
-                                      "setId": "string",
-                                      "parkingEntitlementTypeIds": [
-                                        0
-                                      ]
-                                    }
-                                  ],
-                                  "exceptionsSet": {
-                                    "setGuid": "string",
-                                    "setId": "string"
-                                  },
                                   "locationNumber": "string",
                                   "terminalIds": [
                                     "string"
@@ -2315,7 +2292,20 @@
                                         0
                                       ]
                                     }
-                                  ]
+                                  ],
+                                  "operatingHoursSets": [
+                                    {
+                                      "setGuid": "string",
+                                      "setId": "string",
+                                      "parkingEntitlementTypeIds": [
+                                        0
+                                      ]
+                                    }
+                                  ],
+                                  "exceptionsSet": {
+                                    "setGuid": "string",
+                                    "setId": "string"
+                                  }
                                 }
                               ],
                               "notes": [
@@ -2409,6 +2399,10 @@
                                 "exceptionsSet": {
                                   "setGuid": "string",
                                   "setId": "string"
+                                },
+                                "exemptionsSet": {
+                                  "setGuid": "string",
+                                  "setId": "string"
                                 }
                               }
                             ],
@@ -2457,8 +2451,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-12-16",
-                                      "end": "2024-12-16"
+                                      "start": "2025-02-17",
+                                      "end": "2025-02-17"
                                     }
                                   ],
                                   "firstDate": {
@@ -2476,7 +2470,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-12-16"
+                                "noReturnUntil": "2025-02-17"
                               }
                             ],
                             "eventDays": [
@@ -2493,8 +2487,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-12-16",
-                                      "end": "2024-12-16"
+                                      "start": "2025-02-17",
+                                      "end": "2025-02-17"
                                     }
                                   ],
                                   "firstDate": {
@@ -2512,7 +2506,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-12-16"
+                                "noReturnUntil": "2025-02-17"
                               }
                             ]
                           }
@@ -2559,8 +2553,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-12-16",
-                                        "end": "2024-12-16"
+                                        "start": "2025-02-17",
+                                        "end": "2025-02-17"
                                       }
                                     ],
                                     "firstDate": {
@@ -2578,7 +2572,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-12-16"
+                                  "noReturnUntil": "2025-02-17"
                                 }
                               ],
                               "eventDays": [
@@ -2595,8 +2589,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-12-16",
-                                        "end": "2024-12-16"
+                                        "start": "2025-02-17",
+                                        "end": "2025-02-17"
                                       }
                                     ],
                                     "firstDate": {
@@ -2614,7 +2608,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-12-16"
+                                  "noReturnUntil": "2025-02-17"
                                 }
                               ]
                             },
@@ -2637,8 +2631,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-12-16",
-                                            "end": "2024-12-16"
+                                            "start": "2025-02-17",
+                                            "end": "2025-02-17"
                                           }
                                         ],
                                         "firstDate": {
@@ -2656,7 +2650,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-12-16"
+                                      "noReturnUntil": "2025-02-17"
                                     }
                                   ],
                                   "eventDays": [
@@ -2673,8 +2667,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-12-16",
-                                            "end": "2024-12-16"
+                                            "start": "2025-02-17",
+                                            "end": "2025-02-17"
                                           }
                                         ],
                                         "firstDate": {
@@ -2692,7 +2686,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-12-16"
+                                      "noReturnUntil": "2025-02-17"
                                     }
                                   ]
                                 }
@@ -2746,8 +2740,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2024-12-16",
-                              "timeTo": "2024-12-16",
+                              "timeFrom": "2025-02-17",
+                              "timeTo": "2025-02-17",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -2854,19 +2848,6 @@
                               "restrictionTypeDetails": [
                                 {
                                   "restrictionTypeId": 0,
-                                  "operatingHoursSets": [
-                                    {
-                                      "setGuid": "string",
-                                      "setId": "string",
-                                      "parkingEntitlementTypeIds": [
-                                        0
-                                      ]
-                                    }
-                                  ],
-                                  "exceptionsSet": {
-                                    "setGuid": "string",
-                                    "setId": "string"
-                                  },
                                   "locationNumber": "string",
                                   "terminalIds": [
                                     "string"
@@ -2886,7 +2867,20 @@
                                         0
                                       ]
                                     }
-                                  ]
+                                  ],
+                                  "operatingHoursSets": [
+                                    {
+                                      "setGuid": "string",
+                                      "setId": "string",
+                                      "parkingEntitlementTypeIds": [
+                                        0
+                                      ]
+                                    }
+                                  ],
+                                  "exceptionsSet": {
+                                    "setGuid": "string",
+                                    "setId": "string"
+                                  }
                                 }
                               ],
                               "notes": [
@@ -2980,6 +2974,10 @@
                                 "exceptionsSet": {
                                   "setGuid": "string",
                                   "setId": "string"
+                                },
+                                "exemptionsSet": {
+                                  "setGuid": "string",
+                                  "setId": "string"
                                 }
                               }
                             ],
@@ -3028,8 +3026,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-12-16",
-                                      "end": "2024-12-16"
+                                      "start": "2025-02-17",
+                                      "end": "2025-02-17"
                                     }
                                   ],
                                   "firstDate": {
@@ -3047,7 +3045,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-12-16"
+                                "noReturnUntil": "2025-02-17"
                               }
                             ],
                             "eventDays": [
@@ -3064,8 +3062,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2024-12-16",
-                                      "end": "2024-12-16"
+                                      "start": "2025-02-17",
+                                      "end": "2025-02-17"
                                     }
                                   ],
                                   "firstDate": {
@@ -3083,7 +3081,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2024-12-16"
+                                "noReturnUntil": "2025-02-17"
                               }
                             ]
                           }
@@ -3130,8 +3128,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-12-16",
-                                        "end": "2024-12-16"
+                                        "start": "2025-02-17",
+                                        "end": "2025-02-17"
                                       }
                                     ],
                                     "firstDate": {
@@ -3149,7 +3147,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-12-16"
+                                  "noReturnUntil": "2025-02-17"
                                 }
                               ],
                               "eventDays": [
@@ -3166,8 +3164,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2024-12-16",
-                                        "end": "2024-12-16"
+                                        "start": "2025-02-17",
+                                        "end": "2025-02-17"
                                       }
                                     ],
                                     "firstDate": {
@@ -3185,7 +3183,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2024-12-16"
+                                  "noReturnUntil": "2025-02-17"
                                 }
                               ]
                             },
@@ -3208,8 +3206,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-12-16",
-                                            "end": "2024-12-16"
+                                            "start": "2025-02-17",
+                                            "end": "2025-02-17"
                                           }
                                         ],
                                         "firstDate": {
@@ -3227,7 +3225,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-12-16"
+                                      "noReturnUntil": "2025-02-17"
                                     }
                                   ],
                                   "eventDays": [
@@ -3244,8 +3242,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2024-12-16",
-                                            "end": "2024-12-16"
+                                            "start": "2025-02-17",
+                                            "end": "2025-02-17"
                                           }
                                         ],
                                         "firstDate": {
@@ -3263,7 +3261,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2024-12-16"
+                                      "noReturnUntil": "2025-02-17"
                                     }
                                   ]
                                 }
@@ -3317,8 +3315,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2024-12-16",
-                              "timeTo": "2024-12-16",
+                              "timeFrom": "2025-02-17",
+                              "timeTo": "2025-02-17",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -3458,7 +3456,7 @@
         "operationId": "get-ping",
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           },
           "429": {
             "$ref": "#/components/responses/TooManyRequests"
@@ -3482,7 +3480,7 @@
         "operationId": "get-wfs",
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5415,6 +5413,21 @@
         },
         "additionalProperties": false
       },
+      "FetchLocksByAuthorityIdRegulationModeQuery": {
+        "type": "object",
+        "properties": {
+          "authorityId": {
+            "type": "string",
+            "description": "The authority id",
+            "format": "uuid"
+          },
+          "regulationMode": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "FuelTypeCms": {
         "enum": [
           1,
@@ -5777,7 +5790,9 @@
         "type": "object",
         "properties": {
           "content": {
-            "$ref": "#/components/schemas/Stream"
+            "type": "string",
+            "format": "binary",
+            "nullable": true
           },
           "gZipped": {
             "type": "boolean"
@@ -6090,6 +6105,62 @@
           },
           "centroid": {
             "$ref": "#/components/schemas/Point"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Lock": {
+        "type": "object",
+        "properties": {
+          "authorityId": {
+            "type": "string",
+            "description": "Partition on AuthorityId",
+            "format": "uuid"
+          },
+          "changeSetId": {
+            "type": "string",
+            "description": "This is the  in prior change sets.",
+            "format": "uuid"
+          },
+          "orderId": {
+            "type": "string",
+            "description": "main key Scope, keys owned by the Order can be supersceded, keys owned by other orders are exclusively locked.",
+            "format": "uuid"
+          },
+          "featureId": {
+            "type": "string",
+            "description": "The feature this lock is against",
+            "format": "uuid"
+          },
+          "entityType": {
+            "$ref": "#/components/schemas/EntityType"
+          },
+          "lockPath": {
+            "type": "string",
+            "description": "The path of the given property to lock, or * if the entire entity is locked",
+            "nullable": true
+          },
+          "lockDescription": {
+            "type": "string",
+            "description": "Human readable text description of the lock. (How will this work with internationalisation?)",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LockIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Lock"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -6979,6 +7050,9 @@
           },
           "centroid": {
             "$ref": "#/components/schemas/LatLng"
+          },
+          "address": {
+            "$ref": "#/components/schemas/PublicAddress"
           }
         },
         "additionalProperties": false
@@ -7152,6 +7226,28 @@
         },
         "additionalProperties": {}
       },
+      "PublicAddress": {
+        "type": "object",
+        "properties": {
+          "street": {
+            "type": "string",
+            "nullable": true
+          },
+          "postcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "PublicAuthoritySnapshotInfoDoc": {
         "type": "object",
         "properties": {
@@ -7209,6 +7305,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ExceptionsSet"
+            },
+            "nullable": true
+          },
+          "exemptionsSets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExemptionsSet"
             },
             "nullable": true
           },
@@ -7450,17 +7553,6 @@
             "description": "Type of the bay this restriction applies to. See the reference API for more information",
             "format": "int32"
           },
-          "operatingHoursSets": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LinkedEntitlementSet"
-            },
-            "description": "Indicates the hours of operation when the restriction is in effect.",
-            "nullable": true
-          },
-          "exceptionsSet": {
-            "$ref": "#/components/schemas/LinkedSet"
-          },
           "locationNumber": {
             "type": "string",
             "description": "Used in conjunction with the payment provider on the authority to determine how the charge the user",
@@ -7491,6 +7583,17 @@
             },
             "description": "Indicates the applicable tariffs in the case of restrictions that can have a tariff",
             "nullable": true
+          },
+          "operatingHoursSets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LinkedEntitlementSet"
+            },
+            "description": "Indicates the hours of operation when the restriction is in effect.",
+            "nullable": true
+          },
+          "exceptionsSet": {
+            "$ref": "#/components/schemas/LinkedSet"
           }
         },
         "additionalProperties": false
@@ -7793,45 +7896,6 @@
         },
         "additionalProperties": false
       },
-      "Stream": {
-        "type": "object",
-        "properties": {
-          "canRead": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "canWrite": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "canSeek": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "canTimeout": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "length": {
-            "type": "integer",
-            "format": "int64",
-            "readOnly": true
-          },
-          "position": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "readTimeout": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "writeTimeout": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
       "StringResult": {
         "type": "object",
         "properties": {
@@ -8066,7 +8130,7 @@
           },
           "amount": {
             "type": "integer",
-            "description": "Amout in pence by which to adjust the price. A positive value represents a surcharge, a negative value represents a discount.",
+            "description": "Amount in pence by which to adjust the price. A positive value represents a surcharge, a negative value represents a discount.",
             "format": "int32"
           },
           "surchargeDetail": {
@@ -8363,6 +8427,9 @@
             "nullable": true
           },
           "exceptionsSet": {
+            "$ref": "#/components/schemas/LinkedSet"
+          },
+          "exemptionsSet": {
             "$ref": "#/components/schemas/LinkedSet"
           }
         },
