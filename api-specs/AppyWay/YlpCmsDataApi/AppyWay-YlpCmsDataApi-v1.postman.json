@@ -1,11 +1,11 @@
 {
   "item": [
     {
-      "id": "27ff55c2-25bf-4e81-bc5c-51dee1aa83f7",
+      "id": "110162ef-120c-4955-8aac-497be3c070f8",
       "name": "authorities",
       "item": [
         {
-          "id": "45df4ba2-45f4-4483-9f48-17c6bc2de3d6",
+          "id": "3f49abe5-aaec-4b64-b955-df45403ac66e",
           "name": "Gets the basic authority information for all authorities that you are entitled to access",
           "request": {
             "name": "Gets the basic authority information for all authorities that you are entitled to access",
@@ -29,7 +29,7 @@
           },
           "response": [
             {
-              "id": "89a6633f-caec-4378-bbb4-48b1277789bd",
+              "id": "400d4db1-63c7-48fd-8fef-f6cc53afd30f",
               "name": "OK",
               "originalRequest": {
                 "url": {
@@ -59,7 +59,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "ce971f33-444a-4a66-b56b-9a91ec796d43",
+              "id": "e67142de-b488-4b84-9031-292cd3e7820a",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -89,7 +89,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "0380e1a8-d30c-461a-9325-9997abc7332b",
+              "id": "47bb3c90-96b7-46f6-acc7-679ca03cee39",
               "name": "Forbidden",
               "originalRequest": {
                 "url": {
@@ -119,7 +119,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "8c9de800-720e-4b08-87e1-655a8e165538",
+              "id": "f24c9716-f4a6-4e68-a0be-57a89d02b9a0",
               "name": "Too many requests",
               "originalRequest": {
                 "url": {
@@ -152,7 +152,7 @@
           "event": []
         },
         {
-          "id": "ff22c31c-f0d1-4132-a563-28c72be01cca",
+          "id": "c7d86271-5484-42ea-8a7f-1e4ddd51a49f",
           "name": "Get Full Authority By Slug",
           "request": {
             "name": "Get Full Authority By Slug",
@@ -187,7 +187,7 @@
           },
           "response": [
             {
-              "id": "ed0ff8a6-2edd-4740-bff4-5f4de517115c",
+              "id": "bb500bee-d2ff-4af5-8c09-722b353765b3",
               "name": "OK",
               "originalRequest": {
                 "url": {
@@ -221,12 +221,12 @@
                   "value": "application/json"
                 }
               ],
-              "body": "{\n \"success\": true,\n \"data\": {\n  \"ospsUrl\": [\n   {\n    \"type\": \"string\",\n    \"features\": [\n     {\n      \"type\": \"string\",\n      \"id\": \"string\",\n      \"geometry\": {\n       \"type\": \"string\",\n       \"crs\": {\n        \"type\": \"string\",\n        \"properties\": {\n         \"name\": \"string\"\n        }\n       }\n      },\n      \"properties\": {\n       \"onStreetParkingId\": \"string\",\n       \"zoneId\": \"string\",\n       \"authorityId\": \"string\",\n       \"address\": {\n        \"street\": \"string\",\n        \"postcode\": \"string\",\n        \"city\": \"string\",\n        \"country\": \"string\"\n       },\n       \"length\": 0,\n       \"bays\": 0,\n       \"restrictionTypeDetails\": [\n        {\n         \"restrictionTypeId\": 0,\n         \"locationNumber\": \"string\",\n         \"terminalIds\": [\n          \"string\"\n         ],\n         \"permitIds\": [\n          \"string\"\n         ],\n         \"exemptionsSet\": {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\"\n         },\n         \"tariffsSet\": [\n          {\n           \"setGuid\": \"string\",\n           \"setId\": \"string\",\n           \"parkingEntitlementTypeIds\": [\n            0\n           ]\n          }\n         ],\n         \"operatingHoursSets\": [\n          {\n           \"setGuid\": \"string\",\n           \"setId\": \"string\",\n           \"parkingEntitlementTypeIds\": [\n            0\n           ]\n          }\n         ],\n         \"exceptionsSet\": {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\"\n         }\n        }\n       ],\n       \"notes\": [\n        {\n         \"noteVisibilityTypeId\": 0,\n         \"appliesToRestrictionTypeIds\": [\n          0\n         ],\n         \"priority\": 0,\n         \"title\": \"string\",\n         \"message\": \"string\",\n         \"url\": \"string\",\n         \"telephone\": \"string\"\n        }\n       ],\n       \"electricPoint\": {\n        \"manufacturer\": \"string\",\n        \"manufacturerContactNumber\": \"string\",\n        \"chargeFee\": \"string\",\n        \"website\": \"string\",\n        \"electricConnections\": [\n         {\n          \"type\": 0,\n          \"name\": \"string\",\n          \"description\": \"string\",\n          \"quantity\": 0\n         }\n        ]\n       },\n       \"venueId\": \"string\",\n       \"sourceTag\": \"string\",\n       \"sensorIds\": [\n        \"string\"\n       ],\n       \"centroid\": {\n        \"latitude\": 0,\n        \"longitude\": 0\n       },\n       \"tags\": [\n        \"string\"\n       ],\n       \"linkedOspIds\": [\n        \"string\"\n       ]\n      }\n     }\n    ],\n    \"properties\": {}\n   }\n  ],\n  \"zonesUrl\": {\n   \"type\": \"string\",\n   \"features\": [\n    {\n     \"type\": \"string\",\n     \"id\": \"string\",\n     \"geometry\": {\n      \"type\": \"string\",\n      \"crs\": {\n       \"type\": \"string\",\n       \"properties\": {\n        \"name\": \"string\"\n       }\n      },\n      \"coordinates\": [\n       [\n        [\n         0\n        ]\n       ]\n      ]\n     },\n     \"properties\": {\n      \"zoneId\": \"string\",\n      \"authorityId\": \"string\",\n      \"parentZoneId\": \"string\",\n      \"type\": 1,\n      \"name\": \"string\",\n      \"restrictionTypeDetails\": [\n       {\n        \"restrictionTypeId\": 0,\n        \"operatingHoursSets\": [\n         {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\",\n          \"parkingEntitlementTypeIds\": [\n           0\n          ]\n         }\n        ],\n        \"exceptionsSet\": {\n         \"setGuid\": \"string\",\n         \"setId\": \"string\"\n        },\n        \"exemptionsSet\": {\n         \"setGuid\": \"string\",\n         \"setId\": \"string\"\n        }\n       }\n      ],\n      \"notes\": [\n       {\n        \"noteVisibilityTypeId\": 0,\n        \"appliesToRestrictionTypeIds\": [\n         0\n        ],\n        \"priority\": 0,\n        \"title\": \"string\",\n        \"message\": \"string\",\n        \"url\": \"string\",\n        \"telephone\": \"string\"\n       }\n      ],\n      \"venueId\": \"string\",\n      \"sourceTag\": \"string\",\n      \"tags\": [\n       \"string\"\n      ]\n     }\n    }\n   ],\n   \"properties\": {}\n  },\n  \"setsUrl\": {\n   \"operatingHoursSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"operatingHours\": {\n      \"standardDays\": [\n       {\n        \"ruleTime\": {\n         \"months\": [\n          0\n         ],\n         \"days\": [\n          0\n         ],\n         \"weekNumbers\": [\n          0\n         ],\n         \"hours\": [\n          {\n           \"start\": \"2025-02-17\",\n           \"end\": \"2025-02-17\"\n          }\n         ],\n         \"firstDate\": {\n          \"month\": 0,\n          \"day\": 0\n         },\n         \"lastDate\": {\n          \"month\": 0,\n          \"day\": 0\n         }\n        },\n        \"parkingEntitlementTypeIds\": [\n         0\n        ],\n        \"maxStay\": 0,\n        \"minStay\": 0,\n        \"noReturn\": 0,\n        \"noReturnUntil\": \"2025-02-17\"\n       }\n      ],\n      \"eventDays\": [\n       {\n        \"ruleTime\": {\n         \"months\": [\n          0\n         ],\n         \"days\": [\n          0\n         ],\n         \"weekNumbers\": [\n          0\n         ],\n         \"hours\": [\n          {\n           \"start\": \"2025-02-17\",\n           \"end\": \"2025-02-17\"\n          }\n         ],\n         \"firstDate\": {\n          \"month\": 0,\n          \"day\": 0\n         },\n         \"lastDate\": {\n          \"month\": 0,\n          \"day\": 0\n         }\n        },\n        \"parkingEntitlementTypeIds\": [\n         0\n        ],\n        \"maxStay\": 0,\n        \"minStay\": 0,\n        \"noReturn\": 0,\n        \"noReturnUntil\": \"2025-02-17\"\n       }\n      ]\n     }\n    }\n   ],\n   \"exemptionsSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"exemptions\": [\n      {\n       \"exemptionTypeId\": 0,\n       \"parkingEntitlementTypeId\": 0,\n       \"exemptionTimeTypeId\": 0,\n       \"exemptionApplies\": true,\n       \"maxStay\": 0,\n       \"noReturn\": 0\n      }\n     ]\n    }\n   ],\n   \"exceptionsSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"exceptions\": {\n      \"allHolidaysRestrictionExceptionTypeId\": 0,\n      \"allHolidaysOperatingHours\": {\n       \"standardDays\": [\n        {\n         \"ruleTime\": {\n          \"months\": [\n           0\n          ],\n          \"days\": [\n           0\n          ],\n          \"weekNumbers\": [\n           0\n          ],\n          \"hours\": [\n           {\n            \"start\": \"2025-02-17\",\n            \"end\": \"2025-02-17\"\n           }\n          ],\n          \"firstDate\": {\n           \"month\": 0,\n           \"day\": 0\n          },\n          \"lastDate\": {\n           \"month\": 0,\n           \"day\": 0\n          }\n         },\n         \"parkingEntitlementTypeIds\": [\n          0\n         ],\n         \"maxStay\": 0,\n         \"minStay\": 0,\n         \"noReturn\": 0,\n         \"noReturnUntil\": \"2025-02-17\"\n        }\n       ],\n       \"eventDays\": [\n        {\n         \"ruleTime\": {\n          \"months\": [\n           0\n          ],\n          \"days\": [\n           0\n          ],\n          \"weekNumbers\": [\n           0\n          ],\n          \"hours\": [\n           {\n            \"start\": \"2025-02-17\",\n            \"end\": \"2025-02-17\"\n           }\n          ],\n          \"firstDate\": {\n           \"month\": 0,\n           \"day\": 0\n          },\n          \"lastDate\": {\n           \"month\": 0,\n           \"day\": 0\n          }\n         },\n         \"parkingEntitlementTypeIds\": [\n          0\n         ],\n         \"maxStay\": 0,\n         \"minStay\": 0,\n         \"noReturn\": 0,\n         \"noReturnUntil\": \"2025-02-17\"\n        }\n       ]\n      },\n      \"daySpecificRestrictionExceptions\": [\n       {\n        \"publicHolidayOrNamedDayId\": \"string\",\n        \"restrictionExceptionTypeId\": 0,\n        \"operatingHours\": {\n         \"standardDays\": [\n          {\n           \"ruleTime\": {\n            \"months\": [\n             0\n            ],\n            \"days\": [\n             0\n            ],\n            \"weekNumbers\": [\n             0\n            ],\n            \"hours\": [\n             {\n              \"start\": \"2025-02-17\",\n              \"end\": \"2025-02-17\"\n             }\n            ],\n            \"firstDate\": {\n             \"month\": 0,\n             \"day\": 0\n            },\n            \"lastDate\": {\n             \"month\": 0,\n             \"day\": 0\n            }\n           },\n           \"parkingEntitlementTypeIds\": [\n            0\n           ],\n           \"maxStay\": 0,\n           \"minStay\": 0,\n           \"noReturn\": 0,\n           \"noReturnUntil\": \"2025-02-17\"\n          }\n         ],\n         \"eventDays\": [\n          {\n           \"ruleTime\": {\n            \"months\": [\n             0\n            ],\n            \"days\": [\n             0\n            ],\n            \"weekNumbers\": [\n             0\n            ],\n            \"hours\": [\n             {\n              \"start\": \"2025-02-17\",\n              \"end\": \"2025-02-17\"\n             }\n            ],\n            \"firstDate\": {\n             \"month\": 0,\n             \"day\": 0\n            },\n            \"lastDate\": {\n             \"month\": 0,\n             \"day\": 0\n            }\n           },\n           \"parkingEntitlementTypeIds\": [\n            0\n           ],\n           \"maxStay\": 0,\n           \"minStay\": 0,\n           \"noReturn\": 0,\n           \"noReturnUntil\": \"2025-02-17\"\n          }\n         ]\n        }\n       }\n      ]\n     }\n    }\n   ],\n   \"tariffSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"tariffs\": [\n      {\n       \"setName\": \"string\",\n       \"parkingEntitlementTypeIds\": [\n        0\n       ],\n       \"details\": [\n        {\n         \"price\": 0,\n         \"surchargeDetail\": {\n          \"surchargeType\": 0,\n          \"surchargeTypeEnum\": 0,\n          \"value\": 0,\n          \"notes\": \"string\",\n          \"ruleType\": 0\n         },\n         \"emissionsAdjustments\": {\n          \"emissionsBandSetId\": \"string\",\n          \"adjustments\": [\n           {\n            \"emissionsBandId\": \"string\",\n            \"amount\": 0,\n            \"surchargeDetail\": {\n             \"surchargeType\": 0,\n             \"surchargeTypeEnum\": 0,\n             \"value\": 0,\n             \"notes\": \"string\",\n             \"ruleType\": 0\n            }\n           }\n          ]\n         },\n         \"duration\": 0,\n         \"minimumPriceIncrement\": 0,\n         \"singlePaymentCanCrossMidnight\": true,\n         \"from\": 0,\n         \"upTo\": 0\n        }\n       ],\n       \"timeFrom\": \"2025-02-17\",\n       \"timeTo\": \"2025-02-17\",\n       \"firstDate\": {\n        \"month\": 0,\n        \"day\": 0\n       },\n       \"lastDate\": {\n        \"month\": 0,\n        \"day\": 0\n       },\n       \"months\": [\n        0\n       ],\n       \"days\": [\n        0\n       ],\n       \"timeType\": 0\n      }\n     ]\n    }\n   ],\n   \"emissionsBandSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"emissionsBands\": [\n      {\n       \"id\": \"string\",\n       \"name\": \"string\",\n       \"emissions\": {\n        \"min\": 0,\n        \"max\": 0\n       },\n       \"fuelTypes\": [\n        1\n       ],\n       \"registrationYears\": {\n        \"min\": 0,\n        \"max\": 0\n       },\n       \"engineSize\": {\n        \"min\": 0,\n        \"max\": 0\n       }\n      }\n     ]\n    }\n   ],\n   \"isEmpty\": true\n  },\n  \"mtfsUrl\": {\n   \"type\": \"string\",\n   \"features\": [\n    {\n     \"geoType\": \"string\",\n     \"featureId\": \"string\",\n     \"featureType\": 0,\n     \"authorityId\": \"string\",\n     \"note\": \"string\",\n     \"streetName\": \"string\",\n     \"guid\": \"string\"\n    }\n   ],\n   \"properties\": {}\n  }\n }\n}",
+              "body": "{\n \"success\": true,\n \"data\": {\n  \"ospsUrl\": [\n   {\n    \"type\": \"string\",\n    \"features\": [\n     {\n      \"type\": \"string\",\n      \"id\": \"string\",\n      \"geometry\": {\n       \"type\": \"string\",\n       \"crs\": {\n        \"type\": \"string\",\n        \"properties\": {\n         \"name\": \"string\"\n        }\n       }\n      },\n      \"properties\": {\n       \"onStreetParkingId\": \"string\",\n       \"zoneId\": \"string\",\n       \"authorityId\": \"string\",\n       \"address\": {\n        \"street\": \"string\",\n        \"postcode\": \"string\",\n        \"city\": \"string\",\n        \"country\": \"string\"\n       },\n       \"length\": 0,\n       \"bays\": 0,\n       \"restrictionTypeDetails\": [\n        {\n         \"restrictionTypeId\": 0,\n         \"locationNumber\": \"string\",\n         \"terminalIds\": [\n          \"string\"\n         ],\n         \"permitIds\": [\n          \"string\"\n         ],\n         \"exemptionsSet\": {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\"\n         },\n         \"tariffsSet\": [\n          {\n           \"setGuid\": \"string\",\n           \"setId\": \"string\",\n           \"parkingEntitlementTypeIds\": [\n            0\n           ]\n          }\n         ],\n         \"operatingHoursSets\": [\n          {\n           \"setGuid\": \"string\",\n           \"setId\": \"string\",\n           \"parkingEntitlementTypeIds\": [\n            0\n           ]\n          }\n         ],\n         \"exceptionsSet\": {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\"\n         }\n        }\n       ],\n       \"notes\": [\n        {\n         \"noteVisibilityTypeId\": 0,\n         \"appliesToRestrictionTypeIds\": [\n          0\n         ],\n         \"priority\": 0,\n         \"title\": \"string\",\n         \"message\": \"string\",\n         \"url\": \"string\",\n         \"telephone\": \"string\"\n        }\n       ],\n       \"electricPoint\": {\n        \"manufacturer\": \"string\",\n        \"manufacturerContactNumber\": \"string\",\n        \"chargeFee\": \"string\",\n        \"website\": \"string\",\n        \"electricConnections\": [\n         {\n          \"type\": 0,\n          \"name\": \"string\",\n          \"description\": \"string\",\n          \"quantity\": 0\n         }\n        ]\n       },\n       \"venueId\": \"string\",\n       \"sourceTag\": \"string\",\n       \"sensorIds\": [\n        \"string\"\n       ],\n       \"centroid\": {\n        \"latitude\": 0,\n        \"longitude\": 0\n       },\n       \"tags\": [\n        \"string\"\n       ],\n       \"linkedOspIds\": [\n        \"string\"\n       ]\n      }\n     }\n    ],\n    \"properties\": {}\n   }\n  ],\n  \"zonesUrl\": {\n   \"type\": \"string\",\n   \"features\": [\n    {\n     \"type\": \"string\",\n     \"id\": \"string\",\n     \"geometry\": {\n      \"type\": \"string\",\n      \"crs\": {\n       \"type\": \"string\",\n       \"properties\": {\n        \"name\": \"string\"\n       }\n      },\n      \"coordinates\": [\n       [\n        [\n         0\n        ]\n       ]\n      ]\n     },\n     \"properties\": {\n      \"zoneId\": \"string\",\n      \"authorityId\": \"string\",\n      \"parentZoneId\": \"string\",\n      \"type\": 1,\n      \"name\": \"string\",\n      \"restrictionTypeDetails\": [\n       {\n        \"restrictionTypeId\": 0,\n        \"operatingHoursSets\": [\n         {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\",\n          \"parkingEntitlementTypeIds\": [\n           0\n          ]\n         }\n        ],\n        \"exceptionsSet\": {\n         \"setGuid\": \"string\",\n         \"setId\": \"string\"\n        },\n        \"exemptionsSet\": {\n         \"setGuid\": \"string\",\n         \"setId\": \"string\"\n        }\n       }\n      ],\n      \"notes\": [\n       {\n        \"noteVisibilityTypeId\": 0,\n        \"appliesToRestrictionTypeIds\": [\n         0\n        ],\n        \"priority\": 0,\n        \"title\": \"string\",\n        \"message\": \"string\",\n        \"url\": \"string\",\n        \"telephone\": \"string\"\n       }\n      ],\n      \"venueId\": \"string\",\n      \"sourceTag\": \"string\",\n      \"tags\": [\n       \"string\"\n      ]\n     }\n    }\n   ],\n   \"properties\": {}\n  },\n  \"setsUrl\": {\n   \"operatingHoursSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"operatingHours\": {\n      \"standardDays\": [\n       {\n        \"ruleTime\": {\n         \"months\": [\n          0\n         ],\n         \"days\": [\n          0\n         ],\n         \"weekNumbers\": [\n          0\n         ],\n         \"hours\": [\n          {\n           \"start\": \"2025-02-25\",\n           \"end\": \"2025-02-25\"\n          }\n         ],\n         \"firstDate\": {\n          \"month\": 0,\n          \"day\": 0\n         },\n         \"lastDate\": {\n          \"month\": 0,\n          \"day\": 0\n         }\n        },\n        \"parkingEntitlementTypeIds\": [\n         0\n        ],\n        \"maxStay\": 0,\n        \"minStay\": 0,\n        \"noReturn\": 0,\n        \"noReturnUntil\": \"2025-02-25\"\n       }\n      ],\n      \"eventDays\": [\n       {\n        \"ruleTime\": {\n         \"months\": [\n          0\n         ],\n         \"days\": [\n          0\n         ],\n         \"weekNumbers\": [\n          0\n         ],\n         \"hours\": [\n          {\n           \"start\": \"2025-02-25\",\n           \"end\": \"2025-02-25\"\n          }\n         ],\n         \"firstDate\": {\n          \"month\": 0,\n          \"day\": 0\n         },\n         \"lastDate\": {\n          \"month\": 0,\n          \"day\": 0\n         }\n        },\n        \"parkingEntitlementTypeIds\": [\n         0\n        ],\n        \"maxStay\": 0,\n        \"minStay\": 0,\n        \"noReturn\": 0,\n        \"noReturnUntil\": \"2025-02-25\"\n       }\n      ]\n     }\n    }\n   ],\n   \"exemptionsSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"exemptions\": [\n      {\n       \"exemptionTypeId\": 0,\n       \"parkingEntitlementTypeId\": 0,\n       \"exemptionTimeTypeId\": 0,\n       \"exemptionApplies\": true,\n       \"maxStay\": 0,\n       \"noReturn\": 0\n      }\n     ]\n    }\n   ],\n   \"exceptionsSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"exceptions\": {\n      \"allHolidaysRestrictionExceptionTypeId\": 0,\n      \"allHolidaysOperatingHours\": {\n       \"standardDays\": [\n        {\n         \"ruleTime\": {\n          \"months\": [\n           0\n          ],\n          \"days\": [\n           0\n          ],\n          \"weekNumbers\": [\n           0\n          ],\n          \"hours\": [\n           {\n            \"start\": \"2025-02-25\",\n            \"end\": \"2025-02-25\"\n           }\n          ],\n          \"firstDate\": {\n           \"month\": 0,\n           \"day\": 0\n          },\n          \"lastDate\": {\n           \"month\": 0,\n           \"day\": 0\n          }\n         },\n         \"parkingEntitlementTypeIds\": [\n          0\n         ],\n         \"maxStay\": 0,\n         \"minStay\": 0,\n         \"noReturn\": 0,\n         \"noReturnUntil\": \"2025-02-25\"\n        }\n       ],\n       \"eventDays\": [\n        {\n         \"ruleTime\": {\n          \"months\": [\n           0\n          ],\n          \"days\": [\n           0\n          ],\n          \"weekNumbers\": [\n           0\n          ],\n          \"hours\": [\n           {\n            \"start\": \"2025-02-25\",\n            \"end\": \"2025-02-25\"\n           }\n          ],\n          \"firstDate\": {\n           \"month\": 0,\n           \"day\": 0\n          },\n          \"lastDate\": {\n           \"month\": 0,\n           \"day\": 0\n          }\n         },\n         \"parkingEntitlementTypeIds\": [\n          0\n         ],\n         \"maxStay\": 0,\n         \"minStay\": 0,\n         \"noReturn\": 0,\n         \"noReturnUntil\": \"2025-02-25\"\n        }\n       ]\n      },\n      \"daySpecificRestrictionExceptions\": [\n       {\n        \"publicHolidayOrNamedDayId\": \"string\",\n        \"restrictionExceptionTypeId\": 0,\n        \"operatingHours\": {\n         \"standardDays\": [\n          {\n           \"ruleTime\": {\n            \"months\": [\n             0\n            ],\n            \"days\": [\n             0\n            ],\n            \"weekNumbers\": [\n             0\n            ],\n            \"hours\": [\n             {\n              \"start\": \"2025-02-25\",\n              \"end\": \"2025-02-25\"\n             }\n            ],\n            \"firstDate\": {\n             \"month\": 0,\n             \"day\": 0\n            },\n            \"lastDate\": {\n             \"month\": 0,\n             \"day\": 0\n            }\n           },\n           \"parkingEntitlementTypeIds\": [\n            0\n           ],\n           \"maxStay\": 0,\n           \"minStay\": 0,\n           \"noReturn\": 0,\n           \"noReturnUntil\": \"2025-02-25\"\n          }\n         ],\n         \"eventDays\": [\n          {\n           \"ruleTime\": {\n            \"months\": [\n             0\n            ],\n            \"days\": [\n             0\n            ],\n            \"weekNumbers\": [\n             0\n            ],\n            \"hours\": [\n             {\n              \"start\": \"2025-02-25\",\n              \"end\": \"2025-02-25\"\n             }\n            ],\n            \"firstDate\": {\n             \"month\": 0,\n             \"day\": 0\n            },\n            \"lastDate\": {\n             \"month\": 0,\n             \"day\": 0\n            }\n           },\n           \"parkingEntitlementTypeIds\": [\n            0\n           ],\n           \"maxStay\": 0,\n           \"minStay\": 0,\n           \"noReturn\": 0,\n           \"noReturnUntil\": \"2025-02-25\"\n          }\n         ]\n        }\n       }\n      ]\n     }\n    }\n   ],\n   \"tariffSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"tariffs\": [\n      {\n       \"setName\": \"string\",\n       \"parkingEntitlementTypeIds\": [\n        0\n       ],\n       \"details\": [\n        {\n         \"price\": 0,\n         \"surchargeDetail\": {\n          \"surchargeType\": 0,\n          \"surchargeTypeEnum\": 0,\n          \"value\": 0,\n          \"notes\": \"string\",\n          \"ruleType\": 0\n         },\n         \"emissionsAdjustments\": {\n          \"emissionsBandSetId\": \"string\",\n          \"adjustments\": [\n           {\n            \"emissionsBandId\": \"string\",\n            \"amount\": 0,\n            \"surchargeDetail\": {\n             \"surchargeType\": 0,\n             \"surchargeTypeEnum\": 0,\n             \"value\": 0,\n             \"notes\": \"string\",\n             \"ruleType\": 0\n            }\n           }\n          ]\n         },\n         \"duration\": 0,\n         \"minimumPriceIncrement\": 0,\n         \"singlePaymentCanCrossMidnight\": true,\n         \"from\": 0,\n         \"upTo\": 0\n        }\n       ],\n       \"timeFrom\": \"2025-02-25\",\n       \"timeTo\": \"2025-02-25\",\n       \"firstDate\": {\n        \"month\": 0,\n        \"day\": 0\n       },\n       \"lastDate\": {\n        \"month\": 0,\n        \"day\": 0\n       },\n       \"months\": [\n        0\n       ],\n       \"days\": [\n        0\n       ],\n       \"timeType\": 0\n      }\n     ]\n    }\n   ],\n   \"emissionsBandSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"emissionsBands\": [\n      {\n       \"id\": \"string\",\n       \"name\": \"string\",\n       \"emissions\": {\n        \"min\": 0,\n        \"max\": 0\n       },\n       \"fuelTypes\": [\n        1\n       ],\n       \"registrationYears\": {\n        \"min\": 0,\n        \"max\": 0\n       },\n       \"engineSize\": {\n        \"min\": 0,\n        \"max\": 0\n       }\n      }\n     ]\n    }\n   ],\n   \"isEmpty\": true\n  },\n  \"mtfsUrl\": {\n   \"type\": \"string\",\n   \"features\": [\n    {\n     \"geoType\": \"string\",\n     \"featureId\": \"string\",\n     \"featureType\": 0,\n     \"authorityId\": \"string\",\n     \"note\": \"string\",\n     \"streetName\": \"string\",\n     \"guid\": \"string\"\n    }\n   ],\n   \"properties\": {}\n  }\n }\n}",
               "cookie": [],
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "e95b8032-2d57-42e9-972e-1806d6b56227",
+              "id": "92a958ab-0080-4bf8-bc5f-3e093509906d",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -265,7 +265,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "5ff02173-06e8-4c40-8991-be5934a64a1c",
+              "id": "4480229e-0d1d-4e88-9f6d-fe43e27fb9de",
               "name": "Forbidden",
               "originalRequest": {
                 "url": {
@@ -304,7 +304,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "c241824d-7281-4084-9cae-aad73ca3c1d7",
+              "id": "4aed0a4d-8bab-41fd-8507-4fb40ec3ed6f",
               "name": "Too many requests",
               "originalRequest": {
                 "url": {
@@ -349,7 +349,7 @@
       "event": []
     },
     {
-      "id": "3ba2ae84-2134-4b03-8601-3e9a103fef11",
+      "id": "b1cfee3c-e6c0-4cb7-955e-500e8d3a193c",
       "name": "Export Authority moving Restrictions as GeoJSON by ID",
       "request": {
         "name": "Export Authority moving Restrictions as GeoJSON by ID",
@@ -379,7 +379,7 @@
       },
       "response": [
         {
-          "id": "1d354cee-509d-4ea7-9d44-64195f1facc6",
+          "id": "cfb13d41-bbe9-4296-a972-f2d15477850f",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -414,7 +414,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f7d63114-2c21-420e-be80-d0d56777912c",
+          "id": "22f55164-a51e-49b3-84ac-1f4670f7690e",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -449,7 +449,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "ebd70599-88ff-41de-af6d-5a65ace4e74f",
+          "id": "d5150bbd-7064-4c83-aba5-0bcb2501b13d",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -484,7 +484,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "9a3614bb-d8ba-4639-8d24-8a39a69de058",
+          "id": "36888b32-ac24-4c4f-bc95-f172daa3918f",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -522,7 +522,7 @@
       "event": []
     },
     {
-      "id": "230a38b6-5ced-4a5a-8344-e86a6c8d6534",
+      "id": "a484c0d1-15b7-4d26-8d3b-a4f9f0d6c0a8",
       "name": "Export Authority static Restrictions as GeoJSON by ID",
       "request": {
         "name": "Export Authority static Restrictions as GeoJSON by ID",
@@ -552,7 +552,7 @@
       },
       "response": [
         {
-          "id": "84595143-279a-4b2e-a648-69f242bf8ecb",
+          "id": "70460ce9-35f0-46cc-9028-7149922868c2",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -587,7 +587,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "4c732585-a55f-4acd-958b-578d932dc946",
+          "id": "4dec3e9d-ac81-42e8-8d10-5db90b85efd3",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -622,7 +622,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "49414ae4-ad26-4792-9695-d5b9c4359aaa",
+          "id": "735b01c3-58d2-40e2-80a5-4ee37cc3f5e7",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -657,7 +657,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "29fb3106-7f00-4dd1-a9e9-de7ca2358869",
+          "id": "108cdf02-f8e6-4604-95a8-5aca7dcb0649",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -692,7 +692,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f0663cfd-e74b-4779-a3b1-8ac6cb85cb07",
+          "id": "61ca471d-4d14-4486-9876-a946161ce729",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -730,7 +730,7 @@
       "event": []
     },
     {
-      "id": "d67a16ca-d170-42f3-af5c-77a867f1012b",
+      "id": "c67b455c-be40-40bf-880d-002b87268d65",
       "name": "Export Authority static Restrictions as GeoJSON by a given slug.",
       "request": {
         "name": "Export Authority static Restrictions as GeoJSON by a given slug.",
@@ -760,7 +760,7 @@
       },
       "response": [
         {
-          "id": "92fa34cc-03a8-4a91-9336-6c95edba7e41",
+          "id": "6719eabf-0b5c-4150-8a5e-3c024cd3c2b1",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -795,7 +795,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "9c8a6a64-183e-4c44-b50b-6d0003ed67e4",
+          "id": "eda62ccc-cb33-4b12-962c-41fe58f4cf97",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -830,7 +830,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "0d95d5c7-000a-4f14-a7e5-0da04120b0c4",
+          "id": "417d1fc9-6512-4399-8770-d53ebd729b88",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -865,7 +865,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "77e7d09a-4269-49e3-a86c-8fbf80c55c58",
+          "id": "ddb1287d-9610-4dc3-86da-b473025f4208",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -903,7 +903,7 @@
       "event": []
     },
     {
-      "id": "37a015b1-e0bd-402b-a8aa-85de3fe87ab5",
+      "id": "5be0c711-fc36-4248-912a-a7c925a0b930",
       "name": "Fetch basic authority information for all authorities that you are entitled to access",
       "request": {
         "name": "Fetch basic authority information for all authorities that you are entitled to access",
@@ -926,7 +926,7 @@
       },
       "response": [
         {
-          "id": "f0565bd5-3b5f-4bc4-a52d-b4f1aae986c5",
+          "id": "04de7a76-a767-4568-b2f7-1f3c86bf6551",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -955,7 +955,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "83b2147c-cee1-428c-8602-f5d878da9f3a",
+          "id": "3a4ef318-2085-4fc8-8cf5-3e0f82782ecf",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -984,7 +984,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "737628b2-616e-4452-826f-6f8cf4fb2d89",
+          "id": "1b900263-920e-4007-a63e-3e4c8f554e25",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1013,7 +1013,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "3629b955-9b85-4c2a-be1d-c87e9c92bc29",
+          "id": "b4e1303c-d6ae-4490-9da2-ff42ddd99ed5",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1045,7 +1045,7 @@
       "event": []
     },
     {
-      "id": "13ce36ee-0e7d-4e67-9b0b-12d3e6d395db",
+      "id": "0f096a63-7b19-42d4-817c-adb3ef689609",
       "name": "Fetch the basic authority information by slug",
       "request": {
         "name": "Fetch the basic authority information by slug",
@@ -1078,7 +1078,7 @@
       },
       "response": [
         {
-          "id": "d93a2261-f47d-4afe-9e3c-8a6df5d85cfb",
+          "id": "ea41c0a0-ede4-4b57-9a2c-82c6171e0f42",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1110,7 +1110,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "c62da884-fd19-4f59-b1dc-1ffc2dd451b2",
+          "id": "8c9891c1-b4e8-4cdc-9d2d-131622caecb3",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -1142,7 +1142,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "a53a3bf3-0500-4642-8698-692cfeb2c579",
+          "id": "de67d2e3-8ce2-4ed0-978c-75d85842150d",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1174,7 +1174,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "1ca4422a-f7dc-4d27-b65b-e66ed335803a",
+          "id": "ae33f94b-2af0-4be8-ad8d-0cb47efd818f",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1206,7 +1206,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "1775576d-e103-497b-b1d1-b572131163f0",
+          "id": "f153acda-6a67-4546-a3a4-bc1aa1053ec5",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1241,7 +1241,7 @@
       "event": []
     },
     {
-      "id": "793b3bcb-b5e5-4b55-8448-f01e45963df2",
+      "id": "a7c73b26-0cde-4cc7-91b6-45b865f32d5e",
       "name": "Fetch Full Authority By Slug",
       "request": {
         "name": "Fetch Full Authority By Slug",
@@ -1274,7 +1274,7 @@
       },
       "response": [
         {
-          "id": "d12ff9ea-0e04-4c02-884e-57d380f94b55",
+          "id": "88f15c07-9d71-46ea-92bc-db8a3fac4e39",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1301,12 +1301,12 @@
               "value": "application/json"
             }
           ],
-          "body": "{\n \"success\": true,\n \"result\": {\n  \"ospsUrl\": [\n   {\n    \"type\": \"string\",\n    \"features\": [\n     {\n      \"type\": \"string\",\n      \"id\": \"string\",\n      \"geometry\": {\n       \"type\": \"string\",\n       \"crs\": {\n        \"type\": \"string\",\n        \"properties\": {\n         \"name\": \"string\"\n        }\n       }\n      },\n      \"properties\": {\n       \"onStreetParkingId\": \"string\",\n       \"zoneId\": \"string\",\n       \"authorityId\": \"string\",\n       \"address\": {\n        \"street\": \"string\",\n        \"postcode\": \"string\",\n        \"city\": \"string\",\n        \"country\": \"string\"\n       },\n       \"length\": 0,\n       \"bays\": 0,\n       \"restrictionTypeDetails\": [\n        {\n         \"restrictionTypeId\": 0,\n         \"locationNumber\": \"string\",\n         \"terminalIds\": [\n          \"string\"\n         ],\n         \"permitIds\": [\n          \"string\"\n         ],\n         \"exemptionsSet\": {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\"\n         },\n         \"tariffsSet\": [\n          {\n           \"setGuid\": \"string\",\n           \"setId\": \"string\",\n           \"parkingEntitlementTypeIds\": [\n            0\n           ]\n          }\n         ],\n         \"operatingHoursSets\": [\n          {\n           \"setGuid\": \"string\",\n           \"setId\": \"string\",\n           \"parkingEntitlementTypeIds\": [\n            0\n           ]\n          }\n         ],\n         \"exceptionsSet\": {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\"\n         }\n        }\n       ],\n       \"notes\": [\n        {\n         \"noteVisibilityTypeId\": 0,\n         \"appliesToRestrictionTypeIds\": [\n          0\n         ],\n         \"priority\": 0,\n         \"title\": \"string\",\n         \"message\": \"string\",\n         \"url\": \"string\",\n         \"telephone\": \"string\"\n        }\n       ],\n       \"electricPoint\": {\n        \"manufacturer\": \"string\",\n        \"manufacturerContactNumber\": \"string\",\n        \"chargeFee\": \"string\",\n        \"website\": \"string\",\n        \"electricConnections\": [\n         {\n          \"type\": 0,\n          \"name\": \"string\",\n          \"description\": \"string\",\n          \"quantity\": 0\n         }\n        ]\n       },\n       \"venueId\": \"string\",\n       \"sourceTag\": \"string\",\n       \"sensorIds\": [\n        \"string\"\n       ],\n       \"centroid\": {\n        \"latitude\": 0,\n        \"longitude\": 0\n       },\n       \"tags\": [\n        \"string\"\n       ],\n       \"linkedOspIds\": [\n        \"string\"\n       ]\n      }\n     }\n    ],\n    \"properties\": {}\n   }\n  ],\n  \"zonesUrl\": {\n   \"type\": \"string\",\n   \"features\": [\n    {\n     \"type\": \"string\",\n     \"id\": \"string\",\n     \"geometry\": {\n      \"type\": \"string\",\n      \"crs\": {\n       \"type\": \"string\",\n       \"properties\": {\n        \"name\": \"string\"\n       }\n      },\n      \"coordinates\": [\n       [\n        [\n         0\n        ]\n       ]\n      ]\n     },\n     \"properties\": {\n      \"zoneId\": \"string\",\n      \"authorityId\": \"string\",\n      \"parentZoneId\": \"string\",\n      \"type\": 1,\n      \"name\": \"string\",\n      \"restrictionTypeDetails\": [\n       {\n        \"restrictionTypeId\": 0,\n        \"operatingHoursSets\": [\n         {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\",\n          \"parkingEntitlementTypeIds\": [\n           0\n          ]\n         }\n        ],\n        \"exceptionsSet\": {\n         \"setGuid\": \"string\",\n         \"setId\": \"string\"\n        },\n        \"exemptionsSet\": {\n         \"setGuid\": \"string\",\n         \"setId\": \"string\"\n        }\n       }\n      ],\n      \"notes\": [\n       {\n        \"noteVisibilityTypeId\": 0,\n        \"appliesToRestrictionTypeIds\": [\n         0\n        ],\n        \"priority\": 0,\n        \"title\": \"string\",\n        \"message\": \"string\",\n        \"url\": \"string\",\n        \"telephone\": \"string\"\n       }\n      ],\n      \"venueId\": \"string\",\n      \"sourceTag\": \"string\",\n      \"tags\": [\n       \"string\"\n      ]\n     }\n    }\n   ],\n   \"properties\": {}\n  },\n  \"setsUrl\": {\n   \"operatingHoursSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"operatingHours\": {\n      \"standardDays\": [\n       {\n        \"ruleTime\": {\n         \"months\": [\n          0\n         ],\n         \"days\": [\n          0\n         ],\n         \"weekNumbers\": [\n          0\n         ],\n         \"hours\": [\n          {\n           \"start\": \"2025-02-17\",\n           \"end\": \"2025-02-17\"\n          }\n         ],\n         \"firstDate\": {\n          \"month\": 0,\n          \"day\": 0\n         },\n         \"lastDate\": {\n          \"month\": 0,\n          \"day\": 0\n         }\n        },\n        \"parkingEntitlementTypeIds\": [\n         0\n        ],\n        \"maxStay\": 0,\n        \"minStay\": 0,\n        \"noReturn\": 0,\n        \"noReturnUntil\": \"2025-02-17\"\n       }\n      ],\n      \"eventDays\": [\n       {\n        \"ruleTime\": {\n         \"months\": [\n          0\n         ],\n         \"days\": [\n          0\n         ],\n         \"weekNumbers\": [\n          0\n         ],\n         \"hours\": [\n          {\n           \"start\": \"2025-02-17\",\n           \"end\": \"2025-02-17\"\n          }\n         ],\n         \"firstDate\": {\n          \"month\": 0,\n          \"day\": 0\n         },\n         \"lastDate\": {\n          \"month\": 0,\n          \"day\": 0\n         }\n        },\n        \"parkingEntitlementTypeIds\": [\n         0\n        ],\n        \"maxStay\": 0,\n        \"minStay\": 0,\n        \"noReturn\": 0,\n        \"noReturnUntil\": \"2025-02-17\"\n       }\n      ]\n     }\n    }\n   ],\n   \"exemptionsSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"exemptions\": [\n      {\n       \"exemptionTypeId\": 0,\n       \"parkingEntitlementTypeId\": 0,\n       \"exemptionTimeTypeId\": 0,\n       \"exemptionApplies\": true,\n       \"maxStay\": 0,\n       \"noReturn\": 0\n      }\n     ]\n    }\n   ],\n   \"exceptionsSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"exceptions\": {\n      \"allHolidaysRestrictionExceptionTypeId\": 0,\n      \"allHolidaysOperatingHours\": {\n       \"standardDays\": [\n        {\n         \"ruleTime\": {\n          \"months\": [\n           0\n          ],\n          \"days\": [\n           0\n          ],\n          \"weekNumbers\": [\n           0\n          ],\n          \"hours\": [\n           {\n            \"start\": \"2025-02-17\",\n            \"end\": \"2025-02-17\"\n           }\n          ],\n          \"firstDate\": {\n           \"month\": 0,\n           \"day\": 0\n          },\n          \"lastDate\": {\n           \"month\": 0,\n           \"day\": 0\n          }\n         },\n         \"parkingEntitlementTypeIds\": [\n          0\n         ],\n         \"maxStay\": 0,\n         \"minStay\": 0,\n         \"noReturn\": 0,\n         \"noReturnUntil\": \"2025-02-17\"\n        }\n       ],\n       \"eventDays\": [\n        {\n         \"ruleTime\": {\n          \"months\": [\n           0\n          ],\n          \"days\": [\n           0\n          ],\n          \"weekNumbers\": [\n           0\n          ],\n          \"hours\": [\n           {\n            \"start\": \"2025-02-17\",\n            \"end\": \"2025-02-17\"\n           }\n          ],\n          \"firstDate\": {\n           \"month\": 0,\n           \"day\": 0\n          },\n          \"lastDate\": {\n           \"month\": 0,\n           \"day\": 0\n          }\n         },\n         \"parkingEntitlementTypeIds\": [\n          0\n         ],\n         \"maxStay\": 0,\n         \"minStay\": 0,\n         \"noReturn\": 0,\n         \"noReturnUntil\": \"2025-02-17\"\n        }\n       ]\n      },\n      \"daySpecificRestrictionExceptions\": [\n       {\n        \"publicHolidayOrNamedDayId\": \"string\",\n        \"restrictionExceptionTypeId\": 0,\n        \"operatingHours\": {\n         \"standardDays\": [\n          {\n           \"ruleTime\": {\n            \"months\": [\n             0\n            ],\n            \"days\": [\n             0\n            ],\n            \"weekNumbers\": [\n             0\n            ],\n            \"hours\": [\n             {\n              \"start\": \"2025-02-17\",\n              \"end\": \"2025-02-17\"\n             }\n            ],\n            \"firstDate\": {\n             \"month\": 0,\n             \"day\": 0\n            },\n            \"lastDate\": {\n             \"month\": 0,\n             \"day\": 0\n            }\n           },\n           \"parkingEntitlementTypeIds\": [\n            0\n           ],\n           \"maxStay\": 0,\n           \"minStay\": 0,\n           \"noReturn\": 0,\n           \"noReturnUntil\": \"2025-02-17\"\n          }\n         ],\n         \"eventDays\": [\n          {\n           \"ruleTime\": {\n            \"months\": [\n             0\n            ],\n            \"days\": [\n             0\n            ],\n            \"weekNumbers\": [\n             0\n            ],\n            \"hours\": [\n             {\n              \"start\": \"2025-02-17\",\n              \"end\": \"2025-02-17\"\n             }\n            ],\n            \"firstDate\": {\n             \"month\": 0,\n             \"day\": 0\n            },\n            \"lastDate\": {\n             \"month\": 0,\n             \"day\": 0\n            }\n           },\n           \"parkingEntitlementTypeIds\": [\n            0\n           ],\n           \"maxStay\": 0,\n           \"minStay\": 0,\n           \"noReturn\": 0,\n           \"noReturnUntil\": \"2025-02-17\"\n          }\n         ]\n        }\n       }\n      ]\n     }\n    }\n   ],\n   \"tariffSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"tariffs\": [\n      {\n       \"setName\": \"string\",\n       \"parkingEntitlementTypeIds\": [\n        0\n       ],\n       \"details\": [\n        {\n         \"price\": 0,\n         \"surchargeDetail\": {\n          \"surchargeType\": 0,\n          \"surchargeTypeEnum\": 0,\n          \"value\": 0,\n          \"notes\": \"string\",\n          \"ruleType\": 0\n         },\n         \"emissionsAdjustments\": {\n          \"emissionsBandSetId\": \"string\",\n          \"adjustments\": [\n           {\n            \"emissionsBandId\": \"string\",\n            \"amount\": 0,\n            \"surchargeDetail\": {\n             \"surchargeType\": 0,\n             \"surchargeTypeEnum\": 0,\n             \"value\": 0,\n             \"notes\": \"string\",\n             \"ruleType\": 0\n            }\n           }\n          ]\n         },\n         \"duration\": 0,\n         \"minimumPriceIncrement\": 0,\n         \"singlePaymentCanCrossMidnight\": true,\n         \"from\": 0,\n         \"upTo\": 0\n        }\n       ],\n       \"timeFrom\": \"2025-02-17\",\n       \"timeTo\": \"2025-02-17\",\n       \"firstDate\": {\n        \"month\": 0,\n        \"day\": 0\n       },\n       \"lastDate\": {\n        \"month\": 0,\n        \"day\": 0\n       },\n       \"months\": [\n        0\n       ],\n       \"days\": [\n        0\n       ],\n       \"timeType\": 0\n      }\n     ]\n    }\n   ],\n   \"emissionsBandSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"emissionsBands\": [\n      {\n       \"id\": \"string\",\n       \"name\": \"string\",\n       \"emissions\": {\n        \"min\": 0,\n        \"max\": 0\n       },\n       \"fuelTypes\": [\n        1\n       ],\n       \"registrationYears\": {\n        \"min\": 0,\n        \"max\": 0\n       },\n       \"engineSize\": {\n        \"min\": 0,\n        \"max\": 0\n       }\n      }\n     ]\n    }\n   ],\n   \"isEmpty\": true\n  },\n  \"mtfsUrl\": {\n   \"type\": \"string\",\n   \"features\": [\n    {\n     \"geoType\": \"string\",\n     \"featureId\": \"string\",\n     \"featureType\": 0,\n     \"authorityId\": \"string\",\n     \"note\": \"string\",\n     \"streetName\": \"string\",\n     \"guid\": \"string\"\n    }\n   ],\n   \"properties\": {}\n  }\n }\n}",
+          "body": "{\n \"success\": true,\n \"result\": {\n  \"ospsUrl\": [\n   {\n    \"type\": \"string\",\n    \"features\": [\n     {\n      \"type\": \"string\",\n      \"id\": \"string\",\n      \"geometry\": {\n       \"type\": \"string\",\n       \"crs\": {\n        \"type\": \"string\",\n        \"properties\": {\n         \"name\": \"string\"\n        }\n       }\n      },\n      \"properties\": {\n       \"onStreetParkingId\": \"string\",\n       \"zoneId\": \"string\",\n       \"authorityId\": \"string\",\n       \"address\": {\n        \"street\": \"string\",\n        \"postcode\": \"string\",\n        \"city\": \"string\",\n        \"country\": \"string\"\n       },\n       \"length\": 0,\n       \"bays\": 0,\n       \"restrictionTypeDetails\": [\n        {\n         \"restrictionTypeId\": 0,\n         \"locationNumber\": \"string\",\n         \"terminalIds\": [\n          \"string\"\n         ],\n         \"permitIds\": [\n          \"string\"\n         ],\n         \"exemptionsSet\": {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\"\n         },\n         \"tariffsSet\": [\n          {\n           \"setGuid\": \"string\",\n           \"setId\": \"string\",\n           \"parkingEntitlementTypeIds\": [\n            0\n           ]\n          }\n         ],\n         \"operatingHoursSets\": [\n          {\n           \"setGuid\": \"string\",\n           \"setId\": \"string\",\n           \"parkingEntitlementTypeIds\": [\n            0\n           ]\n          }\n         ],\n         \"exceptionsSet\": {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\"\n         }\n        }\n       ],\n       \"notes\": [\n        {\n         \"noteVisibilityTypeId\": 0,\n         \"appliesToRestrictionTypeIds\": [\n          0\n         ],\n         \"priority\": 0,\n         \"title\": \"string\",\n         \"message\": \"string\",\n         \"url\": \"string\",\n         \"telephone\": \"string\"\n        }\n       ],\n       \"electricPoint\": {\n        \"manufacturer\": \"string\",\n        \"manufacturerContactNumber\": \"string\",\n        \"chargeFee\": \"string\",\n        \"website\": \"string\",\n        \"electricConnections\": [\n         {\n          \"type\": 0,\n          \"name\": \"string\",\n          \"description\": \"string\",\n          \"quantity\": 0\n         }\n        ]\n       },\n       \"venueId\": \"string\",\n       \"sourceTag\": \"string\",\n       \"sensorIds\": [\n        \"string\"\n       ],\n       \"centroid\": {\n        \"latitude\": 0,\n        \"longitude\": 0\n       },\n       \"tags\": [\n        \"string\"\n       ],\n       \"linkedOspIds\": [\n        \"string\"\n       ]\n      }\n     }\n    ],\n    \"properties\": {}\n   }\n  ],\n  \"zonesUrl\": {\n   \"type\": \"string\",\n   \"features\": [\n    {\n     \"type\": \"string\",\n     \"id\": \"string\",\n     \"geometry\": {\n      \"type\": \"string\",\n      \"crs\": {\n       \"type\": \"string\",\n       \"properties\": {\n        \"name\": \"string\"\n       }\n      },\n      \"coordinates\": [\n       [\n        [\n         0\n        ]\n       ]\n      ]\n     },\n     \"properties\": {\n      \"zoneId\": \"string\",\n      \"authorityId\": \"string\",\n      \"parentZoneId\": \"string\",\n      \"type\": 1,\n      \"name\": \"string\",\n      \"restrictionTypeDetails\": [\n       {\n        \"restrictionTypeId\": 0,\n        \"operatingHoursSets\": [\n         {\n          \"setGuid\": \"string\",\n          \"setId\": \"string\",\n          \"parkingEntitlementTypeIds\": [\n           0\n          ]\n         }\n        ],\n        \"exceptionsSet\": {\n         \"setGuid\": \"string\",\n         \"setId\": \"string\"\n        },\n        \"exemptionsSet\": {\n         \"setGuid\": \"string\",\n         \"setId\": \"string\"\n        }\n       }\n      ],\n      \"notes\": [\n       {\n        \"noteVisibilityTypeId\": 0,\n        \"appliesToRestrictionTypeIds\": [\n         0\n        ],\n        \"priority\": 0,\n        \"title\": \"string\",\n        \"message\": \"string\",\n        \"url\": \"string\",\n        \"telephone\": \"string\"\n       }\n      ],\n      \"venueId\": \"string\",\n      \"sourceTag\": \"string\",\n      \"tags\": [\n       \"string\"\n      ]\n     }\n    }\n   ],\n   \"properties\": {}\n  },\n  \"setsUrl\": {\n   \"operatingHoursSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"operatingHours\": {\n      \"standardDays\": [\n       {\n        \"ruleTime\": {\n         \"months\": [\n          0\n         ],\n         \"days\": [\n          0\n         ],\n         \"weekNumbers\": [\n          0\n         ],\n         \"hours\": [\n          {\n           \"start\": \"2025-02-25\",\n           \"end\": \"2025-02-25\"\n          }\n         ],\n         \"firstDate\": {\n          \"month\": 0,\n          \"day\": 0\n         },\n         \"lastDate\": {\n          \"month\": 0,\n          \"day\": 0\n         }\n        },\n        \"parkingEntitlementTypeIds\": [\n         0\n        ],\n        \"maxStay\": 0,\n        \"minStay\": 0,\n        \"noReturn\": 0,\n        \"noReturnUntil\": \"2025-02-25\"\n       }\n      ],\n      \"eventDays\": [\n       {\n        \"ruleTime\": {\n         \"months\": [\n          0\n         ],\n         \"days\": [\n          0\n         ],\n         \"weekNumbers\": [\n          0\n         ],\n         \"hours\": [\n          {\n           \"start\": \"2025-02-25\",\n           \"end\": \"2025-02-25\"\n          }\n         ],\n         \"firstDate\": {\n          \"month\": 0,\n          \"day\": 0\n         },\n         \"lastDate\": {\n          \"month\": 0,\n          \"day\": 0\n         }\n        },\n        \"parkingEntitlementTypeIds\": [\n         0\n        ],\n        \"maxStay\": 0,\n        \"minStay\": 0,\n        \"noReturn\": 0,\n        \"noReturnUntil\": \"2025-02-25\"\n       }\n      ]\n     }\n    }\n   ],\n   \"exemptionsSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"exemptions\": [\n      {\n       \"exemptionTypeId\": 0,\n       \"parkingEntitlementTypeId\": 0,\n       \"exemptionTimeTypeId\": 0,\n       \"exemptionApplies\": true,\n       \"maxStay\": 0,\n       \"noReturn\": 0\n      }\n     ]\n    }\n   ],\n   \"exceptionsSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"exceptions\": {\n      \"allHolidaysRestrictionExceptionTypeId\": 0,\n      \"allHolidaysOperatingHours\": {\n       \"standardDays\": [\n        {\n         \"ruleTime\": {\n          \"months\": [\n           0\n          ],\n          \"days\": [\n           0\n          ],\n          \"weekNumbers\": [\n           0\n          ],\n          \"hours\": [\n           {\n            \"start\": \"2025-02-25\",\n            \"end\": \"2025-02-25\"\n           }\n          ],\n          \"firstDate\": {\n           \"month\": 0,\n           \"day\": 0\n          },\n          \"lastDate\": {\n           \"month\": 0,\n           \"day\": 0\n          }\n         },\n         \"parkingEntitlementTypeIds\": [\n          0\n         ],\n         \"maxStay\": 0,\n         \"minStay\": 0,\n         \"noReturn\": 0,\n         \"noReturnUntil\": \"2025-02-25\"\n        }\n       ],\n       \"eventDays\": [\n        {\n         \"ruleTime\": {\n          \"months\": [\n           0\n          ],\n          \"days\": [\n           0\n          ],\n          \"weekNumbers\": [\n           0\n          ],\n          \"hours\": [\n           {\n            \"start\": \"2025-02-25\",\n            \"end\": \"2025-02-25\"\n           }\n          ],\n          \"firstDate\": {\n           \"month\": 0,\n           \"day\": 0\n          },\n          \"lastDate\": {\n           \"month\": 0,\n           \"day\": 0\n          }\n         },\n         \"parkingEntitlementTypeIds\": [\n          0\n         ],\n         \"maxStay\": 0,\n         \"minStay\": 0,\n         \"noReturn\": 0,\n         \"noReturnUntil\": \"2025-02-25\"\n        }\n       ]\n      },\n      \"daySpecificRestrictionExceptions\": [\n       {\n        \"publicHolidayOrNamedDayId\": \"string\",\n        \"restrictionExceptionTypeId\": 0,\n        \"operatingHours\": {\n         \"standardDays\": [\n          {\n           \"ruleTime\": {\n            \"months\": [\n             0\n            ],\n            \"days\": [\n             0\n            ],\n            \"weekNumbers\": [\n             0\n            ],\n            \"hours\": [\n             {\n              \"start\": \"2025-02-25\",\n              \"end\": \"2025-02-25\"\n             }\n            ],\n            \"firstDate\": {\n             \"month\": 0,\n             \"day\": 0\n            },\n            \"lastDate\": {\n             \"month\": 0,\n             \"day\": 0\n            }\n           },\n           \"parkingEntitlementTypeIds\": [\n            0\n           ],\n           \"maxStay\": 0,\n           \"minStay\": 0,\n           \"noReturn\": 0,\n           \"noReturnUntil\": \"2025-02-25\"\n          }\n         ],\n         \"eventDays\": [\n          {\n           \"ruleTime\": {\n            \"months\": [\n             0\n            ],\n            \"days\": [\n             0\n            ],\n            \"weekNumbers\": [\n             0\n            ],\n            \"hours\": [\n             {\n              \"start\": \"2025-02-25\",\n              \"end\": \"2025-02-25\"\n             }\n            ],\n            \"firstDate\": {\n             \"month\": 0,\n             \"day\": 0\n            },\n            \"lastDate\": {\n             \"month\": 0,\n             \"day\": 0\n            }\n           },\n           \"parkingEntitlementTypeIds\": [\n            0\n           ],\n           \"maxStay\": 0,\n           \"minStay\": 0,\n           \"noReturn\": 0,\n           \"noReturnUntil\": \"2025-02-25\"\n          }\n         ]\n        }\n       }\n      ]\n     }\n    }\n   ],\n   \"tariffSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"tariffs\": [\n      {\n       \"setName\": \"string\",\n       \"parkingEntitlementTypeIds\": [\n        0\n       ],\n       \"details\": [\n        {\n         \"price\": 0,\n         \"surchargeDetail\": {\n          \"surchargeType\": 0,\n          \"surchargeTypeEnum\": 0,\n          \"value\": 0,\n          \"notes\": \"string\",\n          \"ruleType\": 0\n         },\n         \"emissionsAdjustments\": {\n          \"emissionsBandSetId\": \"string\",\n          \"adjustments\": [\n           {\n            \"emissionsBandId\": \"string\",\n            \"amount\": 0,\n            \"surchargeDetail\": {\n             \"surchargeType\": 0,\n             \"surchargeTypeEnum\": 0,\n             \"value\": 0,\n             \"notes\": \"string\",\n             \"ruleType\": 0\n            }\n           }\n          ]\n         },\n         \"duration\": 0,\n         \"minimumPriceIncrement\": 0,\n         \"singlePaymentCanCrossMidnight\": true,\n         \"from\": 0,\n         \"upTo\": 0\n        }\n       ],\n       \"timeFrom\": \"2025-02-25\",\n       \"timeTo\": \"2025-02-25\",\n       \"firstDate\": {\n        \"month\": 0,\n        \"day\": 0\n       },\n       \"lastDate\": {\n        \"month\": 0,\n        \"day\": 0\n       },\n       \"months\": [\n        0\n       ],\n       \"days\": [\n        0\n       ],\n       \"timeType\": 0\n      }\n     ]\n    }\n   ],\n   \"emissionsBandSets\": [\n    {\n     \"guid\": \"string\",\n     \"setId\": \"string\",\n     \"name\": \"string\",\n     \"formattedName\": \"string\",\n     \"emissionsBands\": [\n      {\n       \"id\": \"string\",\n       \"name\": \"string\",\n       \"emissions\": {\n        \"min\": 0,\n        \"max\": 0\n       },\n       \"fuelTypes\": [\n        1\n       ],\n       \"registrationYears\": {\n        \"min\": 0,\n        \"max\": 0\n       },\n       \"engineSize\": {\n        \"min\": 0,\n        \"max\": 0\n       }\n      }\n     ]\n    }\n   ],\n   \"isEmpty\": true\n  },\n  \"mtfsUrl\": {\n   \"type\": \"string\",\n   \"features\": [\n    {\n     \"geoType\": \"string\",\n     \"featureId\": \"string\",\n     \"featureType\": 0,\n     \"authorityId\": \"string\",\n     \"note\": \"string\",\n     \"streetName\": \"string\",\n     \"guid\": \"string\"\n    }\n   ],\n   \"properties\": {}\n  }\n }\n}",
           "cookie": [],
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "f867d3d9-2b26-4c5e-b854-a8daf9c8ef17",
+          "id": "2007bdd8-8d9a-49cb-8ced-1f9c0093e3d8",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -1338,7 +1338,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "d38c35a1-2f28-4a59-94c8-96941b4c4529",
+          "id": "7d38e8d5-ad6b-4f37-b8a2-218043a87ed2",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1370,7 +1370,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "b5c493da-2e37-4546-abe6-913059aa4884",
+          "id": "3218134e-80b4-4581-87ce-4fbc83e53ba8",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1402,7 +1402,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "573816ed-14f5-49b5-8736-0b4d4fab9bf6",
+          "id": "8f62e2d6-3d5d-4389-8ded-f0091f4a45c5",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1437,7 +1437,7 @@
       "event": []
     },
     {
-      "id": "2996d441-f10b-4080-9f62-3cfc2b39df2c",
+      "id": "269fad7f-8f93-4699-a01d-f9a1d299ef64",
       "name": "Ping",
       "request": {
         "name": "Ping",
@@ -1460,7 +1460,7 @@
       },
       "response": [
         {
-          "id": "39e370cb-c5ce-48c0-bf84-81e2a61d88ab",
+          "id": "646a8cfd-ece2-4bfd-b2a7-d0b7b4ddd248",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1489,7 +1489,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "09bdad24-787f-45be-aa97-e7492e2cdbd9",
+          "id": "dd18fbb5-d707-4aa1-ad11-ec2b5f66095a",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1518,7 +1518,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "c0efe2aa-f936-4e59-93bc-79352c975aee",
+          "id": "d0e421ca-1873-494b-911f-0504396c6343",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1547,7 +1547,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "7d593f81-2e5f-4354-946c-660844e83f1a",
+          "id": "78b35055-41fd-40f3-90cf-742a8356596b",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1579,7 +1579,7 @@
       "event": []
     },
     {
-      "id": "bb4268e0-b6ef-4940-9c15-5fd902538026",
+      "id": "c94a5edb-9f12-489a-ae28-d268366bcbd4",
       "name": "Executes a Web Feature Service (WFS) query.",
       "request": {
         "name": "Executes a Web Feature Service (WFS) query.",
@@ -1602,7 +1602,7 @@
       },
       "response": [
         {
-          "id": "4bc0ccc3-cc23-43c3-81ba-eab503026b17",
+          "id": "c3d9b333-1388-4d57-9766-9b3f9d34d109",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1631,7 +1631,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "7586c610-84d5-4eb2-adb7-6ae9cc36a462",
+          "id": "60fe0c39-d169-47fa-879f-4c0b55d8ad19",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -1660,7 +1660,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "f3708b74-4a76-44ae-b620-dd39628e8724",
+          "id": "1cc78f96-df4f-474a-aa51-179ffeae95c6",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1689,7 +1689,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "014f7a45-8058-4fbb-8044-814a3b28f330",
+          "id": "1c9fea90-7bcb-43f7-8d9f-60baf7849e65",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1718,7 +1718,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "6b6b6f1c-38ce-421c-bb9b-112203369528",
+          "id": "ab80255a-133f-49e6-b53a-e6b9fae42d38",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1792,7 +1792,7 @@
     ]
   },
   "info": {
-    "_postman_id": "34a40929-a500-4b3d-bac8-8042d77ffb2d",
+    "_postman_id": "b5026161-80ce-4bfe-825a-7c78bf06173a",
     "name": "Traffic Data (v1.0|LIVE|Public)",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {

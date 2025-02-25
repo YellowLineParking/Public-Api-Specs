@@ -615,8 +615,8 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2025-02-17",
-                            "end": "2025-02-17",
+                            "start": "2025-02-25",
+                            "end": "2025-02-25",
                             "date": "2020-01-20",
                             "status": 1
                           }
@@ -658,8 +658,8 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2025-02-17",
-                            "end": "2025-02-17",
+                            "start": "2025-02-25",
+                            "end": "2025-02-25",
                             "date": "2020-01-20",
                             "status": 1
                           }
@@ -701,8 +701,8 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2025-02-17",
-                            "end": "2025-02-17",
+                            "start": "2025-02-25",
+                            "end": "2025-02-25",
                             "date": "2020-01-20",
                             "status": 1
                           }
@@ -890,8 +890,8 @@
                           },
                           "openPeriods": [
                             {
-                              "start": "2025-02-17",
-                              "end": "2025-02-17",
+                              "start": "2025-02-25",
+                              "end": "2025-02-25",
                               "date": "2020-01-20",
                               "status": 1
                             }
@@ -933,8 +933,8 @@
                           },
                           "openPeriods": [
                             {
-                              "start": "2025-02-17",
-                              "end": "2025-02-17",
+                              "start": "2025-02-25",
+                              "end": "2025-02-25",
                               "date": "2020-01-20",
                               "status": 1
                             }
@@ -976,8 +976,8 @@
                           },
                           "openPeriods": [
                             {
-                              "start": "2025-02-17",
-                              "end": "2025-02-17",
+                              "start": "2025-02-25",
+                              "end": "2025-02-25",
                               "date": "2020-01-20",
                               "status": 1
                             }
@@ -3864,6 +3864,22 @@
         },
         "additionalProperties": false
       },
+      "FetchParkingEntityConfigurationsByIdQuery": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "vehicleOperatorContext": {
+            "$ref": "#/components/schemas/VehicleOperatorContext"
+          }
+        },
+        "additionalProperties": false
+      },
       "FetchParkingQuoteByIdQuery": {
         "required": [
           "entityId",
@@ -4916,6 +4932,16 @@
         },
         "additionalProperties": false,
         "description": "Models a note that can be attached to an entity"
+      },
+      "OkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
       },
       "OnStreetParking": {
         "type": "object",
