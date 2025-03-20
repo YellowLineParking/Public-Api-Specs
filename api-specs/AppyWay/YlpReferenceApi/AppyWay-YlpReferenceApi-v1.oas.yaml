@@ -96,8 +96,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2025-03-18
-                  end: 2025-03-18
+                  start: 2025-03-20
+                  end: 2025-03-20
               id: string
           text/json:
             schema:
@@ -110,8 +110,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2025-03-18
-                  end: 2025-03-18
+                  start: 2025-03-20
+                  end: 2025-03-20
               id: string
           application/*+json:
             schema:
@@ -124,8 +124,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2025-03-18
-                  end: 2025-03-18
+                  start: 2025-03-20
+                  end: 2025-03-20
               id: string
       responses:
         "200":
@@ -527,6 +527,8 @@ paths:
                   - id: 0
                     name: string
                     value: 0
+                  validOrderTypes:
+                  - 0
         "304":
           description: Not Modified
         "401":
@@ -592,6 +594,8 @@ paths:
                   isTroItem: true
                   legalName: string
                   hasBayCount: true
+                  validOrderTypes:
+                  - 0
         "304":
           description: Not Modified
         "401":
@@ -770,8 +774,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2025-03-18
-                      end: 2025-03-18
+                      start: 2025-03-20
+                      end: 2025-03-20
         "304":
           description: Not Modified
         "401":
@@ -826,6 +830,8 @@ paths:
                   isTroItem: true
                   legalName: string
                   hasBayCount: true
+                  validOrderTypes:
+                  - 0
         "304":
           description: Not Modified
         "401":
@@ -1013,8 +1019,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2025-03-18
-                      end: 2025-03-18
+                      start: 2025-03-20
+                      end: 2025-03-20
         "304":
           description: Not Modified
         "400":
@@ -2056,6 +2062,13 @@ components:
             $ref: '#/components/schemas/MovingRestrictionTypeOption'
           description: Options
           nullable: true
+        validOrderTypes:
+          type: array
+          items:
+            type: integer
+            format: int32
+          description: Valid Order Types
+          nullable: true
       additionalProperties: false
     MovingRestrictionTypeIReadOnlyCollectionOkResponse:
       type: object
@@ -2399,6 +2412,12 @@ components:
           nullable: true
         hasBayCount:
           type: boolean
+        validOrderTypes:
+          type: array
+          items:
+            type: integer
+            format: int32
+          nullable: true
       additionalProperties: false
     RestrictionTypeIReadOnlyCollectionOkResponse:
       type: object

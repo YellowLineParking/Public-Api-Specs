@@ -148,8 +148,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2025-03-18",
-                        "end": "2025-03-18"
+                        "start": "2025-03-20",
+                        "end": "2025-03-20"
                       }
                     ]
                   }
@@ -171,8 +171,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2025-03-18",
-                        "end": "2025-03-18"
+                        "start": "2025-03-20",
+                        "end": "2025-03-20"
                       }
                     ]
                   }
@@ -194,8 +194,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2025-03-18",
-                        "end": "2025-03-18"
+                        "start": "2025-03-20",
+                        "end": "2025-03-20"
                       }
                     ]
                   }
@@ -825,6 +825,9 @@
                           "name": "string",
                           "value": 0
                         }
+                      ],
+                      "validOrderTypes": [
+                        0
                       ]
                     }
                   ]
@@ -922,7 +925,10 @@
                       "defaultWidth": 0,
                       "isTroItem": true,
                       "legalName": "string",
-                      "hasBayCount": true
+                      "hasBayCount": true,
+                      "validOrderTypes": [
+                        0
+                      ]
                     }
                   ]
                 }
@@ -1200,8 +1206,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2025-03-18",
-                              "end": "2025-03-18"
+                              "start": "2025-03-20",
+                              "end": "2025-03-20"
                             }
                           ]
                         }
@@ -1286,7 +1292,10 @@
                       "defaultWidth": 0,
                       "isTroItem": true,
                       "legalName": "string",
-                      "hasBayCount": true
+                      "hasBayCount": true,
+                      "validOrderTypes": [
+                        0
+                      ]
                     }
                   ]
                 }
@@ -1577,8 +1586,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2025-03-18",
-                            "end": "2025-03-18"
+                            "start": "2025-03-20",
+                            "end": "2025-03-20"
                           }
                         ]
                       }
@@ -3009,6 +3018,15 @@
             },
             "description": "Options",
             "nullable": true
+          },
+          "validOrderTypes": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Valid Order Types",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -3471,6 +3489,14 @@
           },
           "hasBayCount": {
             "type": "boolean"
+          },
+          "validOrderTypes": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
