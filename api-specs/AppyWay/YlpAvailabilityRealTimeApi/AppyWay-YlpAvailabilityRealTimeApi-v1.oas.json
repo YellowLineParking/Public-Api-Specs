@@ -20,7 +20,7 @@
         "operationId": "get-ping",
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           },
           "429": {
             "$ref": "#/components/responses/TooManyRequests"
@@ -78,7 +78,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {

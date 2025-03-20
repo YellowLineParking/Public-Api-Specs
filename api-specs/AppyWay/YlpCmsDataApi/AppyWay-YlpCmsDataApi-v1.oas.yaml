@@ -4526,6 +4526,11 @@ components:
       - 20
       - 21
       - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
       type: integer
       description: |2
 
@@ -4553,6 +4558,11 @@ components:
         *HighOccupancyVehicleLane (20)
         *Route (21)
         *Greenway (22)
+        *RoadClosure (23)
+        *LaneClosure (24)
+        *FootwayClosure (25)
+        *Diversion (26)
+        *Contraflow (27)
       format: int32
     NewOrder:
       type: object

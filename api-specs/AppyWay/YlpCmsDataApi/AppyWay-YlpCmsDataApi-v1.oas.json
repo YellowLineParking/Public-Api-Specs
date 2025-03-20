@@ -6374,10 +6374,15 @@
           19,
           20,
           21,
-          22
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
         ],
         "type": "integer",
-        "description": "\n\n*WeightLimitEnvironmental (0)\n*HeightLimit (1)\n*WidthLimit (2)\n*LengthLimit (3)\n*SpeedLimit (4)\n*ProhibitedTurn (5)\n*ProhibitedEntry (6)\n*PrescribedTurn (7)\n*OneWay (8)\n*CycleLane (9)\n*BusLane (10)\n*YellowBoxJunction (11)\n*PlayStreetZone (12)\n*PedestrianZone (13)\n*PedestrianAndCycleZone (14)\n*SpeedLimitZone (15)\n*ProhibitedAccess (16)\n*ProhibitedOvertaking (17)\n*BusGate (18)\n*WeightLimitStructural (19)\n*HighOccupancyVehicleLane (20)\n*Route (21)\n*Greenway (22)\n",
+        "description": "\n\n*WeightLimitEnvironmental (0)\n*HeightLimit (1)\n*WidthLimit (2)\n*LengthLimit (3)\n*SpeedLimit (4)\n*ProhibitedTurn (5)\n*ProhibitedEntry (6)\n*PrescribedTurn (7)\n*OneWay (8)\n*CycleLane (9)\n*BusLane (10)\n*YellowBoxJunction (11)\n*PlayStreetZone (12)\n*PedestrianZone (13)\n*PedestrianAndCycleZone (14)\n*SpeedLimitZone (15)\n*ProhibitedAccess (16)\n*ProhibitedOvertaking (17)\n*BusGate (18)\n*WeightLimitStructural (19)\n*HighOccupancyVehicleLane (20)\n*Route (21)\n*Greenway (22)\n*RoadClosure (23)\n*LaneClosure (24)\n*FootwayClosure (25)\n*Diversion (26)\n*Contraflow (27)\n",
         "format": "int32"
       },
       "NewOrder": {

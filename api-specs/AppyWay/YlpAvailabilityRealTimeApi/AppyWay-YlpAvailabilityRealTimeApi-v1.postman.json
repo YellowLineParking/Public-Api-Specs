@@ -1,7 +1,7 @@
 {
   "item": [
     {
-      "id": "3ca50f7e-3154-4dc3-a926-5424e64f9189",
+      "id": "b32e77a7-ad93-4fed-942a-ac71c38ff6ae",
       "name": "Ping",
       "request": {
         "name": "Ping",
@@ -24,8 +24,8 @@
       },
       "response": [
         {
-          "id": "8cc330cd-641e-4e70-8285-7df6158cce77",
-          "name": "Success",
+          "id": "a4c4626f-ea74-49a0-b750-f2ec47662ec8",
+          "name": "OK",
           "originalRequest": {
             "url": {
               "path": [
@@ -53,7 +53,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "9aa63044-1826-4594-ace5-555f1f6d0c1c",
+          "id": "635e87c5-38eb-430e-ac48-91312319fff8",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -82,7 +82,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "fbac54db-0f5f-4ec4-a908-37337ac83734",
+          "id": "ce1792d8-4c4f-42c6-be29-22d2d2084bfd",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -111,7 +111,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "cdc89ccc-76ff-4ce1-9811-7cd844ee2f5c",
+          "id": "94b1ea18-a1fe-46fd-a585-70fdce27fdaa",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -143,7 +143,7 @@
       "event": []
     },
     {
-      "id": "8f9dcfe8-35b9-4e4c-a7e9-4663698be8a4",
+      "id": "ede70041-698d-484d-b26e-0d25509b4450",
       "name": "Fetch realtime availability by entity Ids",
       "request": {
         "name": "Fetch realtime availability by entity Ids",
@@ -177,8 +177,8 @@
       },
       "response": [
         {
-          "id": "4dd86799-3fa3-4225-b1d8-201e328ecd2a",
-          "name": "Success",
+          "id": "ba0ad4ed-961d-4995-b4e5-801e269ac8ca",
+          "name": "OK",
           "originalRequest": {
             "url": {
               "path": [
@@ -210,7 +210,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "f0ba9b26-6940-47d3-945a-3847b182b8b7",
+          "id": "6fdfa1ee-0da7-4261-ba9c-f28a58077711",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -243,7 +243,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "3ff6e0e8-b6a0-4721-9b7d-1bfad5855bd4",
+          "id": "52ed1305-992a-44ed-9bc8-d47b91a9d3f2",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -276,7 +276,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "5a649fbc-7cbc-47eb-a225-112dc20df251",
+          "id": "c08506c5-23ac-4ded-a606-9929ba329258",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -309,7 +309,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "56de9525-42e6-46e9-b9ca-c82bdf8a995d",
+          "id": "abf86aae-24e1-4999-a77d-8dd2fb412ee9",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -369,7 +369,7 @@
     ]
   },
   "info": {
-    "_postman_id": "f523fc8e-e701-4f67-b913-db9d27652c8b",
+    "_postman_id": "5802a1fc-8a31-439d-b02a-70a80fd2fab0",
     "name": "Availability RealTime (v1.0|LIVE|Public)",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {

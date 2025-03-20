@@ -14,7 +14,7 @@ paths:
       operationId: get-ping
       responses:
         "200":
-          description: Success
+          description: OK
         "429":
           $ref: '#/components/responses/TooManyRequests'
         "401":
@@ -50,7 +50,7 @@ paths:
               - string
       responses:
         "200":
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
