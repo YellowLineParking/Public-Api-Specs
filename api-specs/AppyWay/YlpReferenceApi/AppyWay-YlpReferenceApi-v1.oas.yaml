@@ -96,8 +96,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2025-03-26
-                  end: 2025-03-26
+                  start: 2025-03-27
+                  end: 2025-03-27
               id: string
           text/json:
             schema:
@@ -110,8 +110,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2025-03-26
-                  end: 2025-03-26
+                  start: 2025-03-27
+                  end: 2025-03-27
               id: string
           application/*+json:
             schema:
@@ -124,8 +124,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2025-03-26
-                  end: 2025-03-26
+                  start: 2025-03-27
+                  end: 2025-03-27
               id: string
       responses:
         "200":
@@ -774,8 +774,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2025-03-26
-                      end: 2025-03-26
+                      start: 2025-03-27
+                      end: 2025-03-27
         "304":
           description: Not Modified
         "401":
@@ -1019,8 +1019,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2025-03-26
-                      end: 2025-03-26
+                      start: 2025-03-27
+                      end: 2025-03-27
         "304":
           description: Not Modified
         "400":
