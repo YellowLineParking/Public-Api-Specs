@@ -96,8 +96,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2025-04-22
-                  end: 2025-04-22
+                  start: 2025-04-24
+                  end: 2025-04-24
               id: string
           text/json:
             schema:
@@ -110,8 +110,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2025-04-22
-                  end: 2025-04-22
+                  start: 2025-04-24
+                  end: 2025-04-24
               id: string
           application/*+json:
             schema:
@@ -124,8 +124,8 @@ paths:
                 events:
                 - name: string
                   date: 2020-01-20
-                  start: 2025-04-22
-                  end: 2025-04-22
+                  start: 2025-04-24
+                  end: 2025-04-24
               id: string
       responses:
         "200":
@@ -774,8 +774,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2025-04-22
-                      end: 2025-04-22
+                      start: 2025-04-24
+                      end: 2025-04-24
         "304":
           description: Not Modified
         "401":
@@ -1019,8 +1019,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2025-04-22
-                      end: 2025-04-22
+                      start: 2025-04-24
+                      end: 2025-04-24
         "304":
           description: Not Modified
         "400":
@@ -2583,13 +2583,6 @@ components:
       name: API-KEY
       in: header
       type: apiKey
-    oAuth2:
-      flows:
-        authorizationCode:
-          scopes: {}
-          authorizationUrl: https://auth.appyway.com/authorize
-          tokenUrl: https://auth.appyway.com/oauth/token
-      type: oauth2
   responses:
     TooManyRequests:
       description: Too many requests
@@ -2599,5 +2592,4 @@ components:
       description: Forbidden
 security:
 - apiKey: []
-- oAuth2: []
 

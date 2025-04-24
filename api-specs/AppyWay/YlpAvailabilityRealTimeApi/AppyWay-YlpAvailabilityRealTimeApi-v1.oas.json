@@ -417,16 +417,6 @@
         "name": "API-KEY",
         "in": "header",
         "type": "apiKey"
-      },
-      "oAuth2": {
-        "flows": {
-          "authorizationCode": {
-            "scopes": {},
-            "authorizationUrl": "https://auth.appyway.com/authorize",
-            "tokenUrl": "https://auth.appyway.com/oauth/token"
-          }
-        },
-        "type": "oauth2"
       }
     },
     "responses": {
@@ -444,9 +434,6 @@
   "security": [
     {
       "apiKey": []
-    },
-    {
-      "oAuth2": []
     }
   ]
 }

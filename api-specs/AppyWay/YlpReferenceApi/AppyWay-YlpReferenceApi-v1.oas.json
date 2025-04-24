@@ -148,8 +148,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2025-04-22",
-                        "end": "2025-04-22"
+                        "start": "2025-04-24",
+                        "end": "2025-04-24"
                       }
                     ]
                   }
@@ -171,8 +171,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2025-04-22",
-                        "end": "2025-04-22"
+                        "start": "2025-04-24",
+                        "end": "2025-04-24"
                       }
                     ]
                   }
@@ -194,8 +194,8 @@
                       {
                         "name": "string",
                         "date": "2020-01-20",
-                        "start": "2025-04-22",
-                        "end": "2025-04-22"
+                        "start": "2025-04-24",
+                        "end": "2025-04-24"
                       }
                     ]
                   }
@@ -1206,8 +1206,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2025-04-22",
-                              "end": "2025-04-22"
+                              "start": "2025-04-24",
+                              "end": "2025-04-24"
                             }
                           ]
                         }
@@ -1586,8 +1586,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2025-04-22",
-                            "end": "2025-04-22"
+                            "start": "2025-04-24",
+                            "end": "2025-04-24"
                           }
                         ]
                       }
@@ -3723,16 +3723,6 @@
         "name": "API-KEY",
         "in": "header",
         "type": "apiKey"
-      },
-      "oAuth2": {
-        "flows": {
-          "authorizationCode": {
-            "scopes": {},
-            "authorizationUrl": "https://auth.appyway.com/authorize",
-            "tokenUrl": "https://auth.appyway.com/oauth/token"
-          }
-        },
-        "type": "oauth2"
       }
     },
     "responses": {
@@ -3750,9 +3740,6 @@
   "security": [
     {
       "apiKey": []
-    },
-    {
-      "oAuth2": []
     }
   ]
 }
