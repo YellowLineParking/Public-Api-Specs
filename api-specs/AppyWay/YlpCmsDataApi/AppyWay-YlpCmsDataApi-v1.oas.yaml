@@ -269,10 +269,12 @@ paths:
                     hideEstatesOnStreets: true
                     showTemporaryRestrictionsOnStreets: true
                     enableFeedbackToggle: true
+                    simplifyFeedbackOptions: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
                   reviewTerminalIds: true
+                  swaCode: 0
             text/json:
               schema:
                 $ref: '#/components/schemas/AuthorityIReadOnlyCollectionOkResponse'
@@ -338,10 +340,12 @@ paths:
                     hideEstatesOnStreets: true
                     showTemporaryRestrictionsOnStreets: true
                     enableFeedbackToggle: true
+                    simplifyFeedbackOptions: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
                   reviewTerminalIds: true
+                  swaCode: 0
         "401":
           $ref: '#/components/responses/Unauthorized'
         "403":
@@ -452,10 +456,12 @@ paths:
                     hideEstatesOnStreets: true
                     showTemporaryRestrictionsOnStreets: true
                     enableFeedbackToggle: true
+                    simplifyFeedbackOptions: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
                   reviewTerminalIds: true
+                  swaCode: 0
                   shape:
                     type: string
                     crs:
@@ -529,10 +535,12 @@ paths:
                     hideEstatesOnStreets: true
                     showTemporaryRestrictionsOnStreets: true
                     enableFeedbackToggle: true
+                    simplifyFeedbackOptions: true
                   highwayAuthority: string
                   dataQuality: 1
                   lastTmoUpdate: string
                   reviewTerminalIds: true
+                  swaCode: 0
                   shape:
                     type: string
                     crs:
@@ -765,8 +773,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2025-06-16
-                              end: 2025-06-16
+                            - start: 2025-07-09
+                              end: 2025-07-09
                             firstDate:
                               month: 0
                               day: 0
@@ -778,7 +786,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2025-06-16
+                          noReturnUntil: 2025-07-09
                         eventDays:
                         - ruleTime:
                             months:
@@ -788,8 +796,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2025-06-16
-                              end: 2025-06-16
+                            - start: 2025-07-09
+                              end: 2025-07-09
                             firstDate:
                               month: 0
                               day: 0
@@ -801,7 +809,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2025-06-16
+                          noReturnUntil: 2025-07-09
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -831,8 +839,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2025-06-16
-                                end: 2025-06-16
+                              - start: 2025-07-09
+                                end: 2025-07-09
                               firstDate:
                                 month: 0
                                 day: 0
@@ -844,7 +852,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2025-06-16
+                            noReturnUntil: 2025-07-09
                           eventDays:
                           - ruleTime:
                               months:
@@ -854,8 +862,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2025-06-16
-                                end: 2025-06-16
+                              - start: 2025-07-09
+                                end: 2025-07-09
                               firstDate:
                                 month: 0
                                 day: 0
@@ -867,7 +875,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2025-06-16
+                            noReturnUntil: 2025-07-09
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -881,8 +889,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2025-06-16
-                                  end: 2025-06-16
+                                - start: 2025-07-09
+                                  end: 2025-07-09
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -894,7 +902,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2025-06-16
+                              noReturnUntil: 2025-07-09
                             eventDays:
                             - ruleTime:
                                 months:
@@ -904,8 +912,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2025-06-16
-                                  end: 2025-06-16
+                                - start: 2025-07-09
+                                  end: 2025-07-09
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -917,7 +925,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2025-06-16
+                              noReturnUntil: 2025-07-09
                     tariffSets:
                     - guid: string
                       setId: string
@@ -951,8 +959,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2025-06-16
-                        timeTo: 2025-06-16
+                        timeFrom: 2025-07-09
+                        timeTo: 2025-07-09
                         firstDate:
                           month: 0
                           day: 0
@@ -983,6 +991,7 @@ paths:
                         engineSize:
                           min: 0
                           max: 0
+                        euroStandard: 0
                     isEmpty: true
                   mtfsUrl:
                     type: string
@@ -1141,8 +1150,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2025-06-16
-                              end: 2025-06-16
+                            - start: 2025-07-09
+                              end: 2025-07-09
                             firstDate:
                               month: 0
                               day: 0
@@ -1154,7 +1163,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2025-06-16
+                          noReturnUntil: 2025-07-09
                         eventDays:
                         - ruleTime:
                             months:
@@ -1164,8 +1173,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2025-06-16
-                              end: 2025-06-16
+                            - start: 2025-07-09
+                              end: 2025-07-09
                             firstDate:
                               month: 0
                               day: 0
@@ -1177,7 +1186,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2025-06-16
+                          noReturnUntil: 2025-07-09
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -1207,8 +1216,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2025-06-16
-                                end: 2025-06-16
+                              - start: 2025-07-09
+                                end: 2025-07-09
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1220,7 +1229,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2025-06-16
+                            noReturnUntil: 2025-07-09
                           eventDays:
                           - ruleTime:
                               months:
@@ -1230,8 +1239,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2025-06-16
-                                end: 2025-06-16
+                              - start: 2025-07-09
+                                end: 2025-07-09
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1243,7 +1252,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2025-06-16
+                            noReturnUntil: 2025-07-09
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -1257,8 +1266,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2025-06-16
-                                  end: 2025-06-16
+                                - start: 2025-07-09
+                                  end: 2025-07-09
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1270,7 +1279,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2025-06-16
+                              noReturnUntil: 2025-07-09
                             eventDays:
                             - ruleTime:
                                 months:
@@ -1280,8 +1289,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2025-06-16
-                                  end: 2025-06-16
+                                - start: 2025-07-09
+                                  end: 2025-07-09
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1293,7 +1302,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2025-06-16
+                              noReturnUntil: 2025-07-09
                     tariffSets:
                     - guid: string
                       setId: string
@@ -1327,8 +1336,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2025-06-16
-                        timeTo: 2025-06-16
+                        timeFrom: 2025-07-09
+                        timeTo: 2025-07-09
                         firstDate:
                           month: 0
                           day: 0
@@ -1359,6 +1368,7 @@ paths:
                         engineSize:
                           min: 0
                           max: 0
+                        euroStandard: 0
                     isEmpty: true
                   mtfsUrl:
                     type: string
@@ -1596,6 +1606,25 @@ components:
         allowPublicFeedback:
           type: boolean
       additionalProperties: false
+    AmendValidityAndWorksPeriodsRequest:
+      type: object
+      properties:
+        authorityId:
+          type: string
+          format: uuid
+        orderId:
+          type: string
+          format: uuid
+        validityPeriodEnd:
+          type: string
+          format: date-time
+          nullable: true
+        worksPeriods:
+          type: array
+          items:
+            $ref: '#/components/schemas/WorksPeriod'
+          nullable: true
+      additionalProperties: false
     Authority:
       type: object
       properties:
@@ -1671,6 +1700,10 @@ components:
           nullable: true
         reviewTerminalIds:
           type: boolean
+        swaCode:
+          type: integer
+          format: int32
+          nullable: true
       additionalProperties: false
     AuthorityConfiguration:
       type: object
@@ -1867,6 +1900,10 @@ components:
           $ref: '#/components/schemas/CapabilitiesState'
         reviewTerminalIds:
           type: boolean
+        swaCode:
+          type: integer
+          format: int32
+          nullable: true
       additionalProperties: false
     AuthoritySnapshotInfoDoc:
       type: object
@@ -1980,6 +2017,8 @@ components:
         showTemporaryRestrictionsOnStreets:
           type: boolean
         enableFeedbackToggle:
+          type: boolean
+        simplifyFeedbackOptions:
           type: boolean
       additionalProperties: false
     CarParkCmsBlob:
@@ -2573,6 +2612,8 @@ components:
           $ref: '#/components/schemas/Int32Range'
         engineSize:
           $ref: '#/components/schemas/Int32Range'
+        euroStandard:
+          $ref: '#/components/schemas/EuroEmissionsStandard'
       additionalProperties: false
     EmissionsBandSet:
       type: object
@@ -2713,6 +2754,29 @@ components:
           type: string
           nullable: true
       additionalProperties: false
+    EuroEmissionsStandard:
+      enum:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      type: integer
+      description: |2
+
+
+        *NonEuroCompliant (0)
+        *Euro1 (1)
+        *Euro2 (2)
+        *Euro3 (3)
+        *Euro4 (4)
+        *Euro5 (5)
+        *Euro6 (6)
+        *Euro7 (7)
+      format: int32
     ExceptionsCms:
       type: object
       properties:
@@ -3075,6 +3139,10 @@ components:
           nullable: true
         reviewTerminalIds:
           type: boolean
+        swaCode:
+          type: integer
+          format: int32
+          nullable: true
         shape:
           $ref: '#/components/schemas/Polygon'
       additionalProperties: false
@@ -3156,6 +3224,8 @@ components:
         advertiseToPublic:
           type: boolean
         allowPublicFeedback:
+          type: boolean
+        hasSimplifiedFeedbackOptions:
           type: boolean
         orderType:
           $ref: '#/components/schemas/OrderType'
@@ -3745,6 +3815,7 @@ components:
       - 25
       - 26
       - 27
+      - 28
       type: integer
       description: |2
 
@@ -3777,6 +3848,7 @@ components:
         *FootwayClosure (25)
         *Diversion (26)
         *Contraflow (27)
+        *QuietLane (28)
       format: int32
     NewOrder:
       type: object
@@ -3875,6 +3947,8 @@ components:
         advertiseToPublic:
           type: boolean
         allowPublicFeedback:
+          type: boolean
+        hasSimplifiedFeedbackOptions:
           type: boolean
         orderType:
           $ref: '#/components/schemas/OrderType'

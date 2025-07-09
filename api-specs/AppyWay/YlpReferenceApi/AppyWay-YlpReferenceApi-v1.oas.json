@@ -10,249 +10,6 @@
     }
   ],
   "paths": {
-    "/changeCountrySpecialDays": {
-      "post": {
-        "tags": [
-          "Countries"
-        ],
-        "summary": "Change Country Special Days",
-        "description": "Change Country Special Days",
-        "operationId": "post-changecountryspecialdays",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangeCountrySpecialDaysCommand"
-              },
-              "example": {
-                "specialDays": [
-                  {
-                    "id": "string",
-                    "name": "string",
-                    "isHoliday": true,
-                    "dates": [
-                      "2020-01-20"
-                    ]
-                  }
-                ],
-                "id": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangeCountrySpecialDaysCommand"
-              },
-              "example": {
-                "specialDays": [
-                  {
-                    "id": "string",
-                    "name": "string",
-                    "isHoliday": true,
-                    "dates": [
-                      "2020-01-20"
-                    ]
-                  }
-                ],
-                "id": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangeCountrySpecialDaysCommand"
-              },
-              "example": {
-                "specialDays": [
-                  {
-                    "id": "string",
-                    "name": "string",
-                    "isHoliday": true,
-                    "dates": [
-                      "2020-01-20"
-                    ]
-                  }
-                ],
-                "id": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/StringOkResponse"
-                },
-                "example": {
-                  "success": true,
-                  "result": "string"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/BadRequestResponse"
-                },
-                "example": {
-                  "success": true,
-                  "message": "string",
-                  "errors": [
-                    {
-                      "property": "string",
-                      "code": "string",
-                      "message": "string"
-                    }
-                  ]
-                }
-              }
-            }
-          },
-          "401": {
-            "$ref": "#/components/responses/Unauthorized"
-          },
-          "403": {
-            "$ref": "#/components/responses/Forbidden"
-          },
-          "429": {
-            "$ref": "#/components/responses/TooManyRequests"
-          }
-        }
-      }
-    },
-    "/changeRegionVenues": {
-      "post": {
-        "tags": [
-          "Regions"
-        ],
-        "summary": "Change Region Venues",
-        "description": "Change Region Venues",
-        "operationId": "post-changeregionvenues",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangeRegionVenuesCommand"
-              },
-              "example": {
-                "venues": [
-                  {
-                    "id": "string",
-                    "name": "string",
-                    "eventsMustSupplyHours": true,
-                    "events": [
-                      {
-                        "name": "string",
-                        "date": "2020-01-20",
-                        "start": "2025-06-16",
-                        "end": "2025-06-16"
-                      }
-                    ]
-                  }
-                ],
-                "id": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangeRegionVenuesCommand"
-              },
-              "example": {
-                "venues": [
-                  {
-                    "id": "string",
-                    "name": "string",
-                    "eventsMustSupplyHours": true,
-                    "events": [
-                      {
-                        "name": "string",
-                        "date": "2020-01-20",
-                        "start": "2025-06-16",
-                        "end": "2025-06-16"
-                      }
-                    ]
-                  }
-                ],
-                "id": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangeRegionVenuesCommand"
-              },
-              "example": {
-                "venues": [
-                  {
-                    "id": "string",
-                    "name": "string",
-                    "eventsMustSupplyHours": true,
-                    "events": [
-                      {
-                        "name": "string",
-                        "date": "2020-01-20",
-                        "start": "2025-06-16",
-                        "end": "2025-06-16"
-                      }
-                    ]
-                  }
-                ],
-                "id": "string"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/StringOkResponse"
-                },
-                "example": {
-                  "success": true,
-                  "result": "string"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/BadRequestResponse"
-                },
-                "example": {
-                  "success": true,
-                  "message": "string",
-                  "errors": [
-                    {
-                      "property": "string",
-                      "code": "string",
-                      "message": "string"
-                    }
-                  ]
-                }
-              }
-            }
-          },
-          "401": {
-            "$ref": "#/components/responses/Unauthorized"
-          },
-          "403": {
-            "$ref": "#/components/responses/Forbidden"
-          },
-          "429": {
-            "$ref": "#/components/responses/TooManyRequests"
-          }
-        }
-      }
-    },
     "/fetchAllActivityTypes": {
       "post": {
         "tags": [
@@ -1206,8 +963,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2025-06-16",
-                              "end": "2025-06-16"
+                              "start": "2025-07-09",
+                              "end": "2025-07-09"
                             }
                           ]
                         }
@@ -1586,8 +1343,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2025-06-16",
-                            "end": "2025-06-16"
+                            "start": "2025-07-09",
+                            "end": "2025-07-09"
                           }
                         ]
                       }
@@ -1927,6 +1684,14 @@
               "$ref": "#/components/schemas/ZoneType"
             },
             "description": "Zone types",
+            "nullable": true
+          },
+          "euroEmissionsStandards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EuroEmissionsStandard"
+            },
+            "description": "Euro Emissions Standards",
             "nullable": true
           }
         },
@@ -2565,6 +2330,39 @@
         },
         "additionalProperties": false
       },
+      "EuroEmissionsStandard": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Euro Emissions Standard unique identifier",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EuroEmissionsStandardIReadOnlyCollectionOkResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EuroEmissionsStandard"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Event": {
         "type": "object",
         "properties": {
@@ -2840,6 +2638,9 @@
             "type": "boolean"
           },
           "includeZoneTypes": {
+            "type": "boolean"
+          },
+          "includeEuroEmissionsStandards": {
             "type": "boolean"
           }
         },

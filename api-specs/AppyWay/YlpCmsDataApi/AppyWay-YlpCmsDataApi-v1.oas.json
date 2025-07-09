@@ -387,12 +387,14 @@
                         "hideAssetsOnStreets": true,
                         "hideEstatesOnStreets": true,
                         "showTemporaryRestrictionsOnStreets": true,
-                        "enableFeedbackToggle": true
+                        "enableFeedbackToggle": true,
+                        "simplifyFeedbackOptions": true
                       },
                       "highwayAuthority": "string",
                       "dataQuality": 1,
                       "lastTmoUpdate": "string",
-                      "reviewTerminalIds": true
+                      "reviewTerminalIds": true,
+                      "swaCode": 0
                     }
                   ]
                 }
@@ -475,12 +477,14 @@
                         "hideAssetsOnStreets": true,
                         "hideEstatesOnStreets": true,
                         "showTemporaryRestrictionsOnStreets": true,
-                        "enableFeedbackToggle": true
+                        "enableFeedbackToggle": true,
+                        "simplifyFeedbackOptions": true
                       },
                       "highwayAuthority": "string",
                       "dataQuality": 1,
                       "lastTmoUpdate": "string",
-                      "reviewTerminalIds": true
+                      "reviewTerminalIds": true,
+                      "swaCode": 0
                     }
                   ]
                 }
@@ -634,12 +638,14 @@
                       "hideAssetsOnStreets": true,
                       "hideEstatesOnStreets": true,
                       "showTemporaryRestrictionsOnStreets": true,
-                      "enableFeedbackToggle": true
+                      "enableFeedbackToggle": true,
+                      "simplifyFeedbackOptions": true
                     },
                     "highwayAuthority": "string",
                     "dataQuality": 1,
                     "lastTmoUpdate": "string",
                     "reviewTerminalIds": true,
+                    "swaCode": 0,
                     "shape": {
                       "type": "string",
                       "crs": {
@@ -736,12 +742,14 @@
                       "hideAssetsOnStreets": true,
                       "hideEstatesOnStreets": true,
                       "showTemporaryRestrictionsOnStreets": true,
-                      "enableFeedbackToggle": true
+                      "enableFeedbackToggle": true,
+                      "simplifyFeedbackOptions": true
                     },
                     "highwayAuthority": "string",
                     "dataQuality": 1,
                     "lastTmoUpdate": "string",
                     "reviewTerminalIds": true,
+                    "swaCode": 0,
                     "shape": {
                       "type": "string",
                       "crs": {
@@ -1103,8 +1111,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2025-06-16",
-                                      "end": "2025-06-16"
+                                      "start": "2025-07-09",
+                                      "end": "2025-07-09"
                                     }
                                   ],
                                   "firstDate": {
@@ -1122,7 +1130,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2025-06-16"
+                                "noReturnUntil": "2025-07-09"
                               }
                             ],
                             "eventDays": [
@@ -1139,8 +1147,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2025-06-16",
-                                      "end": "2025-06-16"
+                                      "start": "2025-07-09",
+                                      "end": "2025-07-09"
                                     }
                                   ],
                                   "firstDate": {
@@ -1158,7 +1166,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2025-06-16"
+                                "noReturnUntil": "2025-07-09"
                               }
                             ]
                           }
@@ -1205,8 +1213,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2025-06-16",
-                                        "end": "2025-06-16"
+                                        "start": "2025-07-09",
+                                        "end": "2025-07-09"
                                       }
                                     ],
                                     "firstDate": {
@@ -1224,7 +1232,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2025-06-16"
+                                  "noReturnUntil": "2025-07-09"
                                 }
                               ],
                               "eventDays": [
@@ -1241,8 +1249,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2025-06-16",
-                                        "end": "2025-06-16"
+                                        "start": "2025-07-09",
+                                        "end": "2025-07-09"
                                       }
                                     ],
                                     "firstDate": {
@@ -1260,7 +1268,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2025-06-16"
+                                  "noReturnUntil": "2025-07-09"
                                 }
                               ]
                             },
@@ -1283,8 +1291,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2025-06-16",
-                                            "end": "2025-06-16"
+                                            "start": "2025-07-09",
+                                            "end": "2025-07-09"
                                           }
                                         ],
                                         "firstDate": {
@@ -1302,7 +1310,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2025-06-16"
+                                      "noReturnUntil": "2025-07-09"
                                     }
                                   ],
                                   "eventDays": [
@@ -1319,8 +1327,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2025-06-16",
-                                            "end": "2025-06-16"
+                                            "start": "2025-07-09",
+                                            "end": "2025-07-09"
                                           }
                                         ],
                                         "firstDate": {
@@ -1338,7 +1346,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2025-06-16"
+                                      "noReturnUntil": "2025-07-09"
                                     }
                                   ]
                                 }
@@ -1392,8 +1400,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2025-06-16",
-                              "timeTo": "2025-06-16",
+                              "timeFrom": "2025-07-09",
+                              "timeTo": "2025-07-09",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -1437,7 +1445,8 @@
                               "engineSize": {
                                 "min": 0,
                                 "max": 0
-                              }
+                              },
+                              "euroStandard": 0
                             }
                           ]
                         }
@@ -1681,8 +1690,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2025-06-16",
-                                      "end": "2025-06-16"
+                                      "start": "2025-07-09",
+                                      "end": "2025-07-09"
                                     }
                                   ],
                                   "firstDate": {
@@ -1700,7 +1709,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2025-06-16"
+                                "noReturnUntil": "2025-07-09"
                               }
                             ],
                             "eventDays": [
@@ -1717,8 +1726,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2025-06-16",
-                                      "end": "2025-06-16"
+                                      "start": "2025-07-09",
+                                      "end": "2025-07-09"
                                     }
                                   ],
                                   "firstDate": {
@@ -1736,7 +1745,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2025-06-16"
+                                "noReturnUntil": "2025-07-09"
                               }
                             ]
                           }
@@ -1783,8 +1792,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2025-06-16",
-                                        "end": "2025-06-16"
+                                        "start": "2025-07-09",
+                                        "end": "2025-07-09"
                                       }
                                     ],
                                     "firstDate": {
@@ -1802,7 +1811,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2025-06-16"
+                                  "noReturnUntil": "2025-07-09"
                                 }
                               ],
                               "eventDays": [
@@ -1819,8 +1828,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2025-06-16",
-                                        "end": "2025-06-16"
+                                        "start": "2025-07-09",
+                                        "end": "2025-07-09"
                                       }
                                     ],
                                     "firstDate": {
@@ -1838,7 +1847,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2025-06-16"
+                                  "noReturnUntil": "2025-07-09"
                                 }
                               ]
                             },
@@ -1861,8 +1870,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2025-06-16",
-                                            "end": "2025-06-16"
+                                            "start": "2025-07-09",
+                                            "end": "2025-07-09"
                                           }
                                         ],
                                         "firstDate": {
@@ -1880,7 +1889,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2025-06-16"
+                                      "noReturnUntil": "2025-07-09"
                                     }
                                   ],
                                   "eventDays": [
@@ -1897,8 +1906,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2025-06-16",
-                                            "end": "2025-06-16"
+                                            "start": "2025-07-09",
+                                            "end": "2025-07-09"
                                           }
                                         ],
                                         "firstDate": {
@@ -1916,7 +1925,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2025-06-16"
+                                      "noReturnUntil": "2025-07-09"
                                     }
                                   ]
                                 }
@@ -1970,8 +1979,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2025-06-16",
-                              "timeTo": "2025-06-16",
+                              "timeFrom": "2025-07-09",
+                              "timeTo": "2025-07-09",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -2015,7 +2024,8 @@
                               "engineSize": {
                                 "min": 0,
                                 "max": 0
-                              }
+                              },
+                              "euroStandard": 0
                             }
                           ]
                         }
@@ -2377,6 +2387,32 @@
         },
         "additionalProperties": false
       },
+      "AmendValidityAndWorksPeriodsRequest": {
+        "type": "object",
+        "properties": {
+          "authorityId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "orderId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "validityPeriodEnd": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "worksPeriods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WorksPeriod"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Authority": {
         "type": "object",
         "properties": {
@@ -2477,6 +2513,11 @@
           },
           "reviewTerminalIds": {
             "type": "boolean"
+          },
+          "swaCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2751,6 +2792,11 @@
           },
           "reviewTerminalIds": {
             "type": "boolean"
+          },
+          "swaCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2917,6 +2963,9 @@
             "type": "boolean"
           },
           "enableFeedbackToggle": {
+            "type": "boolean"
+          },
+          "simplifyFeedbackOptions": {
             "type": "boolean"
           }
         },
@@ -3620,6 +3669,9 @@
           },
           "engineSize": {
             "$ref": "#/components/schemas/Int32Range"
+          },
+          "euroStandard": {
+            "$ref": "#/components/schemas/EuroEmissionsStandard"
           }
         },
         "additionalProperties": false
@@ -3793,6 +3845,21 @@
           }
         },
         "additionalProperties": false
+      },
+      "EuroEmissionsStandard": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "type": "integer",
+        "description": "\n\n*NonEuroCompliant (0)\n*Euro1 (1)\n*Euro2 (2)\n*Euro3 (3)\n*Euro4 (4)\n*Euro5 (5)\n*Euro6 (6)\n*Euro7 (7)\n",
+        "format": "int32"
       },
       "ExceptionsCms": {
         "type": "object",
@@ -4273,6 +4340,11 @@
           "reviewTerminalIds": {
             "type": "boolean"
           },
+          "swaCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
           "shape": {
             "$ref": "#/components/schemas/Polygon"
           }
@@ -4386,6 +4458,9 @@
             "type": "boolean"
           },
           "allowPublicFeedback": {
+            "type": "boolean"
+          },
+          "hasSimplifiedFeedbackOptions": {
             "type": "boolean"
           },
           "orderType": {
@@ -5183,10 +5258,11 @@
           24,
           25,
           26,
-          27
+          27,
+          28
         ],
         "type": "integer",
-        "description": "\n\n*WeightLimitEnvironmental (0)\n*HeightLimit (1)\n*WidthLimit (2)\n*LengthLimit (3)\n*SpeedLimit (4)\n*ProhibitedTurn (5)\n*ProhibitedEntry (6)\n*PrescribedTurn (7)\n*OneWay (8)\n*CycleLane (9)\n*BusLane (10)\n*YellowBoxJunction (11)\n*PlayStreetZone (12)\n*PedestrianZone (13)\n*PedestrianAndCycleZone (14)\n*SpeedLimitZone (15)\n*ProhibitedAccess (16)\n*ProhibitedOvertaking (17)\n*BusGate (18)\n*WeightLimitStructural (19)\n*HighOccupancyVehicleLane (20)\n*Route (21)\n*Greenway (22)\n*RoadClosure (23)\n*LaneClosure (24)\n*FootwayClosure (25)\n*Diversion (26)\n*Contraflow (27)\n",
+        "description": "\n\n*WeightLimitEnvironmental (0)\n*HeightLimit (1)\n*WidthLimit (2)\n*LengthLimit (3)\n*SpeedLimit (4)\n*ProhibitedTurn (5)\n*ProhibitedEntry (6)\n*PrescribedTurn (7)\n*OneWay (8)\n*CycleLane (9)\n*BusLane (10)\n*YellowBoxJunction (11)\n*PlayStreetZone (12)\n*PedestrianZone (13)\n*PedestrianAndCycleZone (14)\n*SpeedLimitZone (15)\n*ProhibitedAccess (16)\n*ProhibitedOvertaking (17)\n*BusGate (18)\n*WeightLimitStructural (19)\n*HighOccupancyVehicleLane (20)\n*Route (21)\n*Greenway (22)\n*RoadClosure (23)\n*LaneClosure (24)\n*FootwayClosure (25)\n*Diversion (26)\n*Contraflow (27)\n*QuietLane (28)\n",
         "format": "int32"
       },
       "NewOrder": {
@@ -5321,6 +5397,9 @@
             "type": "boolean"
           },
           "allowPublicFeedback": {
+            "type": "boolean"
+          },
+          "hasSimplifiedFeedbackOptions": {
             "type": "boolean"
           },
           "orderType": {
