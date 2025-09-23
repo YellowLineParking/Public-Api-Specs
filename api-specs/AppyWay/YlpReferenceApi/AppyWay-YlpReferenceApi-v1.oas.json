@@ -849,6 +849,34 @@
         "summary": "Fetch All Permitted Vehicle Types",
         "description": "Returns a list with all the permitted vehicle types and associated moving restriction types.",
         "operationId": "post-fetchallpermittedvehicletypes",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchAllPermittedVehicleTypesQuery"
+              },
+              "example": {
+                "localeCode": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchAllPermittedVehicleTypesQuery"
+              },
+              "example": {
+                "localeCode": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FetchAllPermittedVehicleTypesQuery"
+              },
+              "example": {
+                "localeCode": "string"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -963,8 +991,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2025-07-23",
-                              "end": "2025-07-23"
+                              "start": "2025-09-23",
+                              "end": "2025-09-23"
                             }
                           ]
                         }
@@ -1343,8 +1371,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2025-07-23",
-                            "end": "2025-07-23"
+                            "start": "2025-09-23",
+                            "end": "2025-09-23"
                           }
                         ]
                       }
@@ -2542,6 +2570,28 @@
             "items": {
               "$ref": "#/components/schemas/FacilityType"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchAllOrderBenefitTypesQuery": {
+        "type": "object",
+        "properties": {
+          "localeCode": {
+            "type": "string",
+            "description": "IETF BCP 47 locale code (eg: en-GB, en-US, etc).",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FetchAllPermittedVehicleTypesQuery": {
+        "type": "object",
+        "properties": {
+          "localeCode": {
+            "type": "string",
+            "description": "IETF BCP 47 locale code (eg: en-GB, en-US, etc).",
             "nullable": true
           }
         },

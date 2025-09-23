@@ -336,6 +336,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               endDate: 2020-01-20
               startDate: 2020-01-20
           text/json:
@@ -358,6 +359,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               endDate: 2020-01-20
               startDate: 2020-01-20
           application/*+json:
@@ -380,6 +382,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               endDate: 2020-01-20
               startDate: 2020-01-20
       responses:
@@ -408,9 +411,10 @@ paths:
                       co2Emissions: 0
                       vehicleYear: 0
                       engineSize: 0
+                      euroStandardId: 0
                     openPeriods:
-                    - start: 2025-07-23
-                      end: 2025-07-23
+                    - start: 2025-09-23
+                      end: 2025-09-23
                       date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
@@ -434,9 +438,10 @@ paths:
                       engineSize:
                         start: 0
                         end: 0
+                      minimumEuroStandardId: 0
                     openPeriods:
-                    - start: 2025-07-23
-                      end: 2025-07-23
+                    - start: 2025-09-23
+                      end: 2025-09-23
                       date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
@@ -460,9 +465,10 @@ paths:
                       engineSize:
                         start: 0
                         end: 0
+                      minimumEuroStandardId: 0
                     openPeriods:
-                    - start: 2025-07-23
-                      end: 2025-07-23
+                    - start: 2025-09-23
+                      end: 2025-09-23
                       date: 2020-01-20
                       status: 1
                   closedPeriods:
@@ -507,6 +513,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               date: 2020-01-20
               startDate: 2020-01-20
               endDate: 2020-01-20
@@ -530,6 +537,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               date: 2020-01-20
               startDate: 2020-01-20
               endDate: 2020-01-20
@@ -553,6 +561,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               date: 2020-01-20
               startDate: 2020-01-20
               endDate: 2020-01-20
@@ -587,9 +596,10 @@ paths:
                       co2Emissions: 0
                       vehicleYear: 0
                       engineSize: 0
+                      euroStandardId: 0
                     openPeriods:
-                    - start: 2025-07-23
-                      end: 2025-07-23
+                    - start: 2025-09-23
+                      end: 2025-09-23
                       date: 2020-01-20
                       status: 1
                   notApplicableOperatingHours:
@@ -613,9 +623,10 @@ paths:
                       engineSize:
                         start: 0
                         end: 0
+                      minimumEuroStandardId: 0
                     openPeriods:
-                    - start: 2025-07-23
-                      end: 2025-07-23
+                    - start: 2025-09-23
+                      end: 2025-09-23
                       date: 2020-01-20
                       status: 1
                   applicableOperatingHoursDetail:
@@ -639,9 +650,10 @@ paths:
                       engineSize:
                         start: 0
                         end: 0
+                      minimumEuroStandardId: 0
                     openPeriods:
-                    - start: 2025-07-23
-                      end: 2025-07-23
+                    - start: 2025-09-23
+                      end: 2025-09-23
                       date: 2020-01-20
                       status: 1
                   closedPeriods:
@@ -777,6 +789,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               duration: 3.17:25:30.5000000
               endTime: string
           text/json:
@@ -794,6 +807,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               duration: 3.17:25:30.5000000
               endTime: string
           application/*+json:
@@ -811,6 +825,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               duration: 3.17:25:30.5000000
               endTime: string
       responses:
@@ -847,6 +862,7 @@ paths:
                       co2Emissions: 0
                       vehicleYear: 0
                       engineSize: 0
+                      euroStandardId: 0
                     rulesApplyUntil: string
                   distance: 0
                   parkingAllowed: 1
@@ -893,6 +909,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               ids:
               - string
               endTime: string
@@ -911,6 +928,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               ids:
               - string
               endTime: string
@@ -929,6 +947,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               ids:
               - string
               endTime: string
@@ -969,6 +988,7 @@ paths:
                         co2Emissions: 0
                         vehicleYear: 0
                         engineSize: 0
+                        euroStandardId: 0
                       rulesApplyUntil: string
                     distance: 0
                     parkingAllowed: 1
@@ -1605,6 +1625,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1636,6 +1657,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1667,6 +1689,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1717,6 +1740,7 @@ paths:
                         co2Emissions: 0
                         vehicleYear: 0
                         engineSize: 0
+                        euroStandardId: 0
                       rulesApplyUntil: string
                     distance: 0
                     parkingAllowed: 1
@@ -1772,6 +1796,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1807,6 +1832,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1842,6 +1868,7 @@ paths:
                 co2Emissions: 0
                 vehicleYear: 0
                 engineSize: 0
+                euroStandardId: 0
               filters:
                 excludeEntityTypes:
                 - 1
@@ -1892,6 +1919,7 @@ paths:
                         co2Emissions: 0
                         vehicleYear: 0
                         engineSize: 0
+                        euroStandardId: 0
                       rulesApplyUntil: string
                     distance: 0
                     parkingAllowed: 1
@@ -4605,6 +4633,11 @@ components:
           description: Vehicle engine size in cc
           format: int32
           nullable: true
+        euroStandardId:
+          type: integer
+          description: The Euro Emissions Standard that the vehicle is compliant with, if any. See the reference API euro emissions standards for more information.
+          format: int32
+          nullable: true
       additionalProperties: false
       description: |-
         A set of values that pertain to the driver looking to park (their vehicle, permits, intended activity)
@@ -4645,6 +4678,11 @@ components:
           $ref: '#/components/schemas/Int32Range'
         engineSize:
           $ref: '#/components/schemas/Int32Range'
+        minimumEuroStandardId:
+          type: integer
+          description: Minimum Euro Emissions Standard that the vehicle must meet to be eligible for parking. See the reference API euro emissions standards for more information.
+          format: int32
+          nullable: true
       additionalProperties: false
     Zone:
       type: object
