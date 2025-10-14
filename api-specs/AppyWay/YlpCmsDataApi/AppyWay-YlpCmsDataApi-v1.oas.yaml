@@ -1892,11 +1892,6 @@ components:
           description: The default Payment ProviderId for the authority. See the Reference API for more information.
           format: uuid
           nullable: true
-        defaultEntitlements:
-          type: array
-          items:
-            $ref: '#/components/schemas/EntitlementDefault'
-          nullable: true
         osLicenseKey:
           type: string
           nullable: true
@@ -2492,6 +2487,25 @@ components:
           type: string
           format: uuid
       additionalProperties: false
+    DtroApiSettings:
+      type: object
+      properties:
+        apiKey:
+          type: string
+          nullable: true
+        secret:
+          type: string
+          nullable: true
+      additionalProperties: false
+    DtroApiSettingsResult:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          $ref: '#/components/schemas/DtroApiSettings'
+      additionalProperties: false
     ElectricConnectionCms:
       type: object
       properties:
@@ -2643,19 +2657,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/EmissionsBandCms'
-          nullable: true
-      additionalProperties: false
-    EntitlementDefault:
-      type: object
-      properties:
-        restrictionTypeId:
-          type: integer
-          format: int32
-        entitlements:
-          type: array
-          items:
-            type: integer
-            format: int32
           nullable: true
       additionalProperties: false
     EntityDocumentMetadata:
@@ -5304,24 +5305,6 @@ components:
           items:
             $ref: '#/components/schemas/Period'
           nullable: true
-      additionalProperties: false
-    SuspensionData:
-      type: object
-      properties:
-        entityType:
-          $ref: '#/components/schemas/EntityType'
-        entityId:
-          type: string
-          format: uuid
-      additionalProperties: false
-    SuspensionDataResult:
-      type: object
-      properties:
-        success:
-          type: boolean
-          readOnly: true
-        data:
-          $ref: '#/components/schemas/SuspensionData'
       additionalProperties: false
     SuspensionTime:
       type: object
