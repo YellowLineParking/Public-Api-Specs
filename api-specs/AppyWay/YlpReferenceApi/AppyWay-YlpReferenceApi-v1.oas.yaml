@@ -133,6 +133,7 @@ paths:
                   currencyCode: string
                   languageCode: string
                   hasMetricSpeedLimits: true
+                  hasUsrnSupport: true
         "304":
           description: Not Modified
         "401":
@@ -640,8 +641,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2025-10-14
-                      end: 2025-10-14
+                      start: 2026-01-02
+                      end: 2026-01-02
         "304":
           description: Not Modified
         "401":
@@ -820,6 +821,7 @@ paths:
                   currencyCode: string
                   languageCode: string
                   hasMetricSpeedLimits: true
+                  hasUsrnSupport: true
         "304":
           description: Not Modified
         "400":
@@ -885,8 +887,8 @@ paths:
                     events:
                     - name: string
                       date: 2020-01-20
-                      start: 2025-10-14
-                      end: 2025-10-14
+                      start: 2026-01-02
+                      end: 2026-01-02
         "304":
           description: Not Modified
         "400":
@@ -1511,6 +1513,9 @@ components:
         hasMetricSpeedLimits:
           type: boolean
           description: Whether this country uses the metric system for speed limits
+        hasUsrnSupport:
+          type: boolean
+          description: Whether Unique Street Reference Number (USRN) lookup is supported for this country
       additionalProperties: false
     CountryIReadOnlyCollectionOkResponse:
       type: object

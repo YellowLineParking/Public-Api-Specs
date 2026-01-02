@@ -199,7 +199,8 @@
                       "countryCode": "string",
                       "currencyCode": "string",
                       "languageCode": "string",
-                      "hasMetricSpeedLimits": true
+                      "hasMetricSpeedLimits": true,
+                      "hasUsrnSupport": true
                     }
                   ]
                 }
@@ -991,8 +992,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2025-10-14",
-                              "end": "2025-10-14"
+                              "start": "2026-01-02",
+                              "end": "2026-01-02"
                             }
                           ]
                         }
@@ -1270,7 +1271,8 @@
                     "countryCode": "string",
                     "currencyCode": "string",
                     "languageCode": "string",
-                    "hasMetricSpeedLimits": true
+                    "hasMetricSpeedLimits": true,
+                    "hasUsrnSupport": true
                   }
                 }
               }
@@ -1371,8 +1373,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2025-10-14",
-                            "end": "2025-10-14"
+                            "start": "2026-01-02",
+                            "end": "2026-01-02"
                           }
                         ]
                       }
@@ -2232,6 +2234,10 @@
           "hasMetricSpeedLimits": {
             "type": "boolean",
             "description": "Whether this country uses the metric system for speed limits"
+          },
+          "hasUsrnSupport": {
+            "type": "boolean",
+            "description": "Whether Unique Street Reference Number (USRN) lookup is supported for this country"
           }
         },
         "additionalProperties": false

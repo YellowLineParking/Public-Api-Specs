@@ -929,6 +929,14 @@
                                 "city": "string",
                                 "country": "string"
                               },
+                              "streetReferences": [
+                                {
+                                  "usrn": 0,
+                                  "streetName": "string",
+                                  "roadNumber": "string",
+                                  "lastUpdated": "string"
+                                }
+                              ],
                               "length": 0,
                               "bays": 0,
                               "restrictionTypeDetails": [
@@ -966,10 +974,7 @@
                                   "exceptionsSet": {
                                     "setGuid": "string",
                                     "setId": "string"
-                                  },
-                                  "assignedSetIds": [
-                                    "string"
-                                  ]
+                                  }
                                 }
                               ],
                               "notes": [
@@ -1115,8 +1120,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2025-10-14",
-                                      "end": "2025-10-14"
+                                      "start": "2026-01-02",
+                                      "end": "2026-01-02"
                                     }
                                   ],
                                   "firstDate": {
@@ -1134,7 +1139,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2025-10-14"
+                                "noReturnUntil": "2026-01-02"
                               }
                             ],
                             "eventDays": [
@@ -1151,8 +1156,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2025-10-14",
-                                      "end": "2025-10-14"
+                                      "start": "2026-01-02",
+                                      "end": "2026-01-02"
                                     }
                                   ],
                                   "firstDate": {
@@ -1170,7 +1175,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2025-10-14"
+                                "noReturnUntil": "2026-01-02"
                               }
                             ]
                           }
@@ -1217,8 +1222,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2025-10-14",
-                                        "end": "2025-10-14"
+                                        "start": "2026-01-02",
+                                        "end": "2026-01-02"
                                       }
                                     ],
                                     "firstDate": {
@@ -1236,7 +1241,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2025-10-14"
+                                  "noReturnUntil": "2026-01-02"
                                 }
                               ],
                               "eventDays": [
@@ -1253,8 +1258,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2025-10-14",
-                                        "end": "2025-10-14"
+                                        "start": "2026-01-02",
+                                        "end": "2026-01-02"
                                       }
                                     ],
                                     "firstDate": {
@@ -1272,7 +1277,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2025-10-14"
+                                  "noReturnUntil": "2026-01-02"
                                 }
                               ]
                             },
@@ -1295,8 +1300,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2025-10-14",
-                                            "end": "2025-10-14"
+                                            "start": "2026-01-02",
+                                            "end": "2026-01-02"
                                           }
                                         ],
                                         "firstDate": {
@@ -1314,7 +1319,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2025-10-14"
+                                      "noReturnUntil": "2026-01-02"
                                     }
                                   ],
                                   "eventDays": [
@@ -1331,8 +1336,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2025-10-14",
-                                            "end": "2025-10-14"
+                                            "start": "2026-01-02",
+                                            "end": "2026-01-02"
                                           }
                                         ],
                                         "firstDate": {
@@ -1350,7 +1355,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2025-10-14"
+                                      "noReturnUntil": "2026-01-02"
                                     }
                                   ]
                                 }
@@ -1404,8 +1409,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2025-10-14",
-                              "timeTo": "2025-10-14",
+                              "timeFrom": "2026-01-02",
+                              "timeTo": "2026-01-02",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -1420,7 +1425,29 @@
                               "days": [
                                 0
                               ],
-                              "timeType": 0
+                              "timeType": 0,
+                              "emissionsBands": [
+                                {
+                                  "id": "string",
+                                  "name": "string",
+                                  "emissions": {
+                                    "min": 0,
+                                    "max": 0
+                                  },
+                                  "fuelTypes": [
+                                    1
+                                  ],
+                                  "registrationYears": {
+                                    "min": 0,
+                                    "max": 0
+                                  },
+                                  "engineSize": {
+                                    "min": 0,
+                                    "max": 0
+                                  },
+                                  "euroStandard": 0
+                                }
+                              ]
                             }
                           ]
                         }
@@ -1467,6 +1494,14 @@
                           "authorityId": "string",
                           "note": "string",
                           "streetName": "string",
+                          "streetReferences": [
+                            {
+                              "usrn": 0,
+                              "streetName": "string",
+                              "roadNumber": "string",
+                              "lastUpdated": "string"
+                            }
+                          ],
                           "guid": "string"
                         }
                       ],
@@ -1508,6 +1543,14 @@
                                 "city": "string",
                                 "country": "string"
                               },
+                              "streetReferences": [
+                                {
+                                  "usrn": 0,
+                                  "streetName": "string",
+                                  "roadNumber": "string",
+                                  "lastUpdated": "string"
+                                }
+                              ],
                               "length": 0,
                               "bays": 0,
                               "restrictionTypeDetails": [
@@ -1545,10 +1588,7 @@
                                   "exceptionsSet": {
                                     "setGuid": "string",
                                     "setId": "string"
-                                  },
-                                  "assignedSetIds": [
-                                    "string"
-                                  ]
+                                  }
                                 }
                               ],
                               "notes": [
@@ -1694,8 +1734,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2025-10-14",
-                                      "end": "2025-10-14"
+                                      "start": "2026-01-02",
+                                      "end": "2026-01-02"
                                     }
                                   ],
                                   "firstDate": {
@@ -1713,7 +1753,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2025-10-14"
+                                "noReturnUntil": "2026-01-02"
                               }
                             ],
                             "eventDays": [
@@ -1730,8 +1770,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2025-10-14",
-                                      "end": "2025-10-14"
+                                      "start": "2026-01-02",
+                                      "end": "2026-01-02"
                                     }
                                   ],
                                   "firstDate": {
@@ -1749,7 +1789,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2025-10-14"
+                                "noReturnUntil": "2026-01-02"
                               }
                             ]
                           }
@@ -1796,8 +1836,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2025-10-14",
-                                        "end": "2025-10-14"
+                                        "start": "2026-01-02",
+                                        "end": "2026-01-02"
                                       }
                                     ],
                                     "firstDate": {
@@ -1815,7 +1855,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2025-10-14"
+                                  "noReturnUntil": "2026-01-02"
                                 }
                               ],
                               "eventDays": [
@@ -1832,8 +1872,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2025-10-14",
-                                        "end": "2025-10-14"
+                                        "start": "2026-01-02",
+                                        "end": "2026-01-02"
                                       }
                                     ],
                                     "firstDate": {
@@ -1851,7 +1891,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2025-10-14"
+                                  "noReturnUntil": "2026-01-02"
                                 }
                               ]
                             },
@@ -1874,8 +1914,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2025-10-14",
-                                            "end": "2025-10-14"
+                                            "start": "2026-01-02",
+                                            "end": "2026-01-02"
                                           }
                                         ],
                                         "firstDate": {
@@ -1893,7 +1933,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2025-10-14"
+                                      "noReturnUntil": "2026-01-02"
                                     }
                                   ],
                                   "eventDays": [
@@ -1910,8 +1950,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2025-10-14",
-                                            "end": "2025-10-14"
+                                            "start": "2026-01-02",
+                                            "end": "2026-01-02"
                                           }
                                         ],
                                         "firstDate": {
@@ -1929,7 +1969,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2025-10-14"
+                                      "noReturnUntil": "2026-01-02"
                                     }
                                   ]
                                 }
@@ -1983,8 +2023,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2025-10-14",
-                              "timeTo": "2025-10-14",
+                              "timeFrom": "2026-01-02",
+                              "timeTo": "2026-01-02",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -1999,7 +2039,29 @@
                               "days": [
                                 0
                               ],
-                              "timeType": 0
+                              "timeType": 0,
+                              "emissionsBands": [
+                                {
+                                  "id": "string",
+                                  "name": "string",
+                                  "emissions": {
+                                    "min": 0,
+                                    "max": 0
+                                  },
+                                  "fuelTypes": [
+                                    1
+                                  ],
+                                  "registrationYears": {
+                                    "min": 0,
+                                    "max": 0
+                                  },
+                                  "engineSize": {
+                                    "min": 0,
+                                    "max": 0
+                                  },
+                                  "euroStandard": 0
+                                }
+                              ]
                             }
                           ]
                         }
@@ -2046,6 +2108,14 @@
                           "authorityId": "string",
                           "note": "string",
                           "streetName": "string",
+                          "streetReferences": [
+                            {
+                              "usrn": 0,
+                              "streetName": "string",
+                              "roadNumber": "string",
+                              "lastUpdated": "string"
+                            }
+                          ],
                           "guid": "string"
                         }
                       ],
@@ -2279,6 +2349,7 @@
             "format": "uuid"
           },
           "entityIds": {
+            "uniqueItems": true,
             "type": "array",
             "items": {
               "type": "string",
@@ -3355,6 +3426,7 @@
             "nullable": true
           },
           "entityIds": {
+            "uniqueItems": true,
             "type": "array",
             "items": {
               "type": "string",
@@ -5035,6 +5107,13 @@
           "address": {
             "$ref": "#/components/schemas/AddressCms"
           },
+          "streetReferences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StreetReference"
+            },
+            "nullable": true
+          },
           "line": {
             "$ref": "#/components/schemas/Geometry"
           },
@@ -5126,6 +5205,13 @@
             "type": "string",
             "nullable": true
           },
+          "streetReferences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StreetReference"
+            },
+            "nullable": true
+          },
           "guid": {
             "type": "string",
             "format": "uuid",
@@ -5207,6 +5293,7 @@
             "$ref": "#/components/schemas/ChangeType"
           },
           "entityIds": {
+            "uniqueItems": true,
             "type": "array",
             "items": {
               "type": "string",
@@ -5275,10 +5362,11 @@
           25,
           26,
           27,
-          28
+          28,
+          29
         ],
         "type": "integer",
-        "description": "\n\n*WeightLimitEnvironmental (0)\n*HeightLimit (1)\n*WidthLimit (2)\n*LengthLimit (3)\n*SpeedLimit (4)\n*ProhibitedTurn (5)\n*ProhibitedEntry (6)\n*PrescribedTurn (7)\n*OneWay (8)\n*CycleLane (9)\n*BusLane (10)\n*YellowBoxJunction (11)\n*PlayStreetZone (12)\n*PedestrianZone (13)\n*PedestrianAndCycleZone (14)\n*SpeedLimitZone (15)\n*ProhibitedAccess (16)\n*ProhibitedOvertaking (17)\n*BusGate (18)\n*WeightLimitStructural (19)\n*HighOccupancyVehicleLane (20)\n*Route (21)\n*Greenway (22)\n*RoadClosure (23)\n*LaneClosure (24)\n*FootwayClosure (25)\n*Diversion (26)\n*Contraflow (27)\n*QuietLane (28)\n",
+        "description": "\n\n*WeightLimitEnvironmental (0)\n*HeightLimit (1)\n*WidthLimit (2)\n*LengthLimit (3)\n*SpeedLimit (4)\n*ProhibitedTurn (5)\n*ProhibitedEntry (6)\n*PrescribedTurn (7)\n*OneWay (8)\n*CycleLane (9)\n*BusLane (10)\n*YellowBoxJunction (11)\n*PlayStreetZone (12)\n*PedestrianZone (13)\n*PedestrianAndCycleZone (14)\n*SpeedLimitZone (15)\n*ProhibitedAccess (16)\n*ProhibitedOvertaking (17)\n*BusGate (18)\n*WeightLimitStructural (19)\n*HighOccupancyVehicleLane (20)\n*Route (21)\n*Greenway (22)\n*RoadClosure (23)\n*LaneClosure (24)\n*FootwayClosure (25)\n*Diversion (26)\n*Contraflow (27)\n*QuietLane (28)\n*GiveWay (29)\n",
         "format": "int32"
       },
       "NewOrder": {
@@ -5823,6 +5911,7 @@
             "nullable": true
           },
           "changeSetIds": {
+            "uniqueItems": true,
             "type": "array",
             "items": {
               "type": "string",
@@ -5934,6 +6023,14 @@
           },
           "address": {
             "$ref": "#/components/schemas/AddressCms"
+          },
+          "streetReferences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StreetReference"
+            },
+            "description": "Details of the Unique Street Reference Number(s) (USRNs) of the underlying street",
+            "nullable": true
           },
           "length": {
             "type": "number",
@@ -6351,6 +6448,7 @@
             "format": "uuid"
           },
           "periods": {
+            "uniqueItems": true,
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PublicPeriod"
@@ -6358,6 +6456,7 @@
             "nullable": true
           },
           "entityIds": {
+            "uniqueItems": true,
             "type": "array",
             "items": {
               "type": "string",
@@ -6500,6 +6599,7 @@
             "format": "uuid"
           },
           "entityIds": {
+            "uniqueItems": true,
             "type": "array",
             "items": {
               "type": "string",
@@ -6691,16 +6791,6 @@
           },
           "exceptionsSet": {
             "$ref": "#/components/schemas/LinkedSet"
-          },
-          "assignedSetIds": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "uuid"
-            },
-            "description": "The IDs of the sets which are directly assigned to this restriction.",
-            "nullable": true,
-            "readOnly": true
           }
         },
         "additionalProperties": false
@@ -7059,6 +7149,28 @@
         },
         "additionalProperties": false
       },
+      "StreetReference": {
+        "type": "object",
+        "properties": {
+          "usrn": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "streetName": {
+            "type": "string",
+            "nullable": true
+          },
+          "roadNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastUpdated": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "StringResult": {
         "type": "object",
         "properties": {
@@ -7123,6 +7235,7 @@
             "nullable": true
           },
           "entityIds": {
+            "uniqueItems": true,
             "type": "array",
             "items": {
               "type": "string",
@@ -7139,6 +7252,7 @@
             "nullable": true
           },
           "periods": {
+            "uniqueItems": true,
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Period"
@@ -7363,6 +7477,13 @@
             "type": "integer",
             "description": "Indicates the Type of Tariff",
             "format": "int32",
+            "nullable": true
+          },
+          "emissionsBands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EmissionsBandCms"
+            },
             "nullable": true
           }
         },
@@ -7618,10 +7739,12 @@
           10,
           11,
           12,
-          13
+          13,
+          14,
+          15
         ],
         "type": "integer",
-        "description": "Known zone types.\n\n*ControlledParkingZone (1) - An ordinary zone in which authority-defined restrictions are in place.\n*RestrictedParkingZone (2) - A zone in which parking is never allowed.\n*FreeParking (3) - A zone in which parking is always allowed.\n*Private (4) - A region not under authority control (such as a shopping centre).\n*CongestionCharge (5) - A region in which congestion charges apply.\n*Container (7) - A zone that exists to contain OSPs that don't really belong in a zone.\n*ResidentsParkingScheme (8) - Same structure as a controlled parking zone\n*PermitParkingArea (9) - Area of residential streets where parking is reserved for permit holders Gn++n++ a sign at the entrance to the street will show that parking is for permit holders only. \nPPAs may not have signs or bay markings within them. Sometimes there may be small plates to remind motorists of the controls in place\n*PedestrianZone (10) - Area where no parking is allowed\n*PedestrianAndCycleZone (11) - Area where no parking is allowed\n*Estate (12) - A housing estate under authority control.\n*NoWaiting (13) - A zone in which no waiting is allowed\n",
+        "description": "Known zone types.\n\n*ControlledParkingZone (1) - An ordinary zone in which authority-defined restrictions are in place.\n*RestrictedParkingZone (2) - A zone in which parking is never allowed.\n*FreeParking (3) - A zone in which parking is always allowed.\n*Private (4) - A region not under authority control (such as a shopping centre).\n*CongestionCharge (5) - A region in which congestion charges apply.\n*Container (7) - A zone that exists to contain OSPs that don't really belong in a zone.\n*ResidentsParkingScheme (8) - Same structure as a controlled parking zone\n*PermitParkingArea (9) - Area of residential streets where parking is reserved for permit holders Gn++n++ a sign at the entrance to the street will show that parking is for permit holders only. \nPPAs may not have signs or bay markings within them. Sometimes there may be small plates to remind motorists of the controls in place\n*PedestrianZone (10) - Area where no parking is allowed\n*PedestrianAndCycleZone (11) - Area where no parking is allowed\n*Estate (12) - A housing estate under authority control.\n*NoWaiting (13) - A zone in which no waiting is allowed\n*ParkingScheme (14) - A zone used for a Parking Scheme\n*NoStopping (15) - A zone in which no stopping is allowed\n",
         "format": "int32"
       }
     },

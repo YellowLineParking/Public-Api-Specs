@@ -657,6 +657,11 @@ paths:
                           postcode: string
                           city: string
                           country: string
+                        streetReferences:
+                        - usrn: 0
+                          streetName: string
+                          roadNumber: string
+                          lastUpdated: string
                         length: 0
                         bays: 0
                         restrictionTypeDetails:
@@ -682,8 +687,6 @@ paths:
                           exceptionsSet:
                             setGuid: string
                             setId: string
-                          assignedSetIds:
-                          - string
                         notes:
                         - noteVisibilityTypeId: 0
                           appliesToRestrictionTypeIds:
@@ -777,8 +780,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2025-10-14
-                              end: 2025-10-14
+                            - start: 2026-01-02
+                              end: 2026-01-02
                             firstDate:
                               month: 0
                               day: 0
@@ -790,7 +793,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2025-10-14
+                          noReturnUntil: 2026-01-02
                         eventDays:
                         - ruleTime:
                             months:
@@ -800,8 +803,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2025-10-14
-                              end: 2025-10-14
+                            - start: 2026-01-02
+                              end: 2026-01-02
                             firstDate:
                               month: 0
                               day: 0
@@ -813,7 +816,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2025-10-14
+                          noReturnUntil: 2026-01-02
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -843,8 +846,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2025-10-14
-                                end: 2025-10-14
+                              - start: 2026-01-02
+                                end: 2026-01-02
                               firstDate:
                                 month: 0
                                 day: 0
@@ -856,7 +859,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2025-10-14
+                            noReturnUntil: 2026-01-02
                           eventDays:
                           - ruleTime:
                               months:
@@ -866,8 +869,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2025-10-14
-                                end: 2025-10-14
+                              - start: 2026-01-02
+                                end: 2026-01-02
                               firstDate:
                                 month: 0
                                 day: 0
@@ -879,7 +882,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2025-10-14
+                            noReturnUntil: 2026-01-02
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -893,8 +896,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2025-10-14
-                                  end: 2025-10-14
+                                - start: 2026-01-02
+                                  end: 2026-01-02
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -906,7 +909,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2025-10-14
+                              noReturnUntil: 2026-01-02
                             eventDays:
                             - ruleTime:
                                 months:
@@ -916,8 +919,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2025-10-14
-                                  end: 2025-10-14
+                                - start: 2026-01-02
+                                  end: 2026-01-02
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -929,7 +932,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2025-10-14
+                              noReturnUntil: 2026-01-02
                     tariffSets:
                     - guid: string
                       setId: string
@@ -963,8 +966,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2025-10-14
-                        timeTo: 2025-10-14
+                        timeFrom: 2026-01-02
+                        timeTo: 2026-01-02
                         firstDate:
                           month: 0
                           day: 0
@@ -976,6 +979,21 @@ paths:
                         days:
                         - 0
                         timeType: 0
+                        emissionsBands:
+                        - id: string
+                          name: string
+                          emissions:
+                            min: 0
+                            max: 0
+                          fuelTypes:
+                          - 1
+                          registrationYears:
+                            min: 0
+                            max: 0
+                          engineSize:
+                            min: 0
+                            max: 0
+                          euroStandard: 0
                     emissionsBandSets:
                     - guid: string
                       setId: string
@@ -1006,6 +1024,11 @@ paths:
                       authorityId: string
                       note: string
                       streetName: string
+                      streetReferences:
+                      - usrn: 0
+                        streetName: string
+                        roadNumber: string
+                        lastUpdated: string
                       guid: string
                     properties: {}
             text/json:
@@ -1034,6 +1057,11 @@ paths:
                           postcode: string
                           city: string
                           country: string
+                        streetReferences:
+                        - usrn: 0
+                          streetName: string
+                          roadNumber: string
+                          lastUpdated: string
                         length: 0
                         bays: 0
                         restrictionTypeDetails:
@@ -1059,8 +1087,6 @@ paths:
                           exceptionsSet:
                             setGuid: string
                             setId: string
-                          assignedSetIds:
-                          - string
                         notes:
                         - noteVisibilityTypeId: 0
                           appliesToRestrictionTypeIds:
@@ -1154,8 +1180,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2025-10-14
-                              end: 2025-10-14
+                            - start: 2026-01-02
+                              end: 2026-01-02
                             firstDate:
                               month: 0
                               day: 0
@@ -1167,7 +1193,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2025-10-14
+                          noReturnUntil: 2026-01-02
                         eventDays:
                         - ruleTime:
                             months:
@@ -1177,8 +1203,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2025-10-14
-                              end: 2025-10-14
+                            - start: 2026-01-02
+                              end: 2026-01-02
                             firstDate:
                               month: 0
                               day: 0
@@ -1190,7 +1216,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2025-10-14
+                          noReturnUntil: 2026-01-02
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -1220,8 +1246,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2025-10-14
-                                end: 2025-10-14
+                              - start: 2026-01-02
+                                end: 2026-01-02
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1233,7 +1259,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2025-10-14
+                            noReturnUntil: 2026-01-02
                           eventDays:
                           - ruleTime:
                               months:
@@ -1243,8 +1269,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2025-10-14
-                                end: 2025-10-14
+                              - start: 2026-01-02
+                                end: 2026-01-02
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1256,7 +1282,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2025-10-14
+                            noReturnUntil: 2026-01-02
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -1270,8 +1296,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2025-10-14
-                                  end: 2025-10-14
+                                - start: 2026-01-02
+                                  end: 2026-01-02
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1283,7 +1309,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2025-10-14
+                              noReturnUntil: 2026-01-02
                             eventDays:
                             - ruleTime:
                                 months:
@@ -1293,8 +1319,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2025-10-14
-                                  end: 2025-10-14
+                                - start: 2026-01-02
+                                  end: 2026-01-02
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1306,7 +1332,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2025-10-14
+                              noReturnUntil: 2026-01-02
                     tariffSets:
                     - guid: string
                       setId: string
@@ -1340,8 +1366,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2025-10-14
-                        timeTo: 2025-10-14
+                        timeFrom: 2026-01-02
+                        timeTo: 2026-01-02
                         firstDate:
                           month: 0
                           day: 0
@@ -1353,6 +1379,21 @@ paths:
                         days:
                         - 0
                         timeType: 0
+                        emissionsBands:
+                        - id: string
+                          name: string
+                          emissions:
+                            min: 0
+                            max: 0
+                          fuelTypes:
+                          - 1
+                          registrationYears:
+                            min: 0
+                            max: 0
+                          engineSize:
+                            min: 0
+                            max: 0
+                          euroStandard: 0
                     emissionsBandSets:
                     - guid: string
                       setId: string
@@ -1383,6 +1424,11 @@ paths:
                       authorityId: string
                       note: string
                       streetName: string
+                      streetReferences:
+                      - usrn: 0
+                        streetName: string
+                        roadNumber: string
+                        lastUpdated: string
                       guid: string
                     properties: {}
         "400":
@@ -1530,6 +1576,7 @@ components:
           type: string
           format: uuid
         entityIds:
+          uniqueItems: true
           type: array
           items:
             type: string
@@ -2308,6 +2355,7 @@ components:
           format: uuid
           nullable: true
         entityIds:
+          uniqueItems: true
           type: array
           items:
             type: string
@@ -3649,6 +3697,11 @@ components:
           $ref: '#/components/schemas/Geometry'
         address:
           $ref: '#/components/schemas/AddressCms'
+        streetReferences:
+          type: array
+          items:
+            $ref: '#/components/schemas/StreetReference'
+          nullable: true
         line:
           $ref: '#/components/schemas/Geometry'
         centroid:
@@ -3716,6 +3769,11 @@ components:
         streetName:
           type: string
           nullable: true
+        streetReferences:
+          type: array
+          items:
+            $ref: '#/components/schemas/StreetReference'
+          nullable: true
         guid:
           type: string
           format: uuid
@@ -3775,6 +3833,7 @@ components:
         changeType:
           $ref: '#/components/schemas/ChangeType'
         entityIds:
+          uniqueItems: true
           type: array
           items:
             type: string
@@ -3833,6 +3892,7 @@ components:
       - 26
       - 27
       - 28
+      - 29
       type: integer
       description: |2
 
@@ -3866,6 +3926,7 @@ components:
         *Diversion (26)
         *Contraflow (27)
         *QuietLane (28)
+        *GiveWay (29)
       format: int32
     NewOrder:
       type: object
@@ -4289,6 +4350,7 @@ components:
             *Terminated (10) - The temporary order has been terminated, the works are complete and the order is no longer enforceable.
           nullable: true
         changeSetIds:
+          uniqueItems: true
           type: array
           items:
             type: string
@@ -4402,6 +4464,12 @@ components:
           nullable: true
         address:
           $ref: '#/components/schemas/AddressCms'
+        streetReferences:
+          type: array
+          items:
+            $ref: '#/components/schemas/StreetReference'
+          description: Details of the Unique Street Reference Number(s) (USRNs) of the underlying street
+          nullable: true
         length:
           type: number
           description: Length in meters of the OSP. Can be null
@@ -4705,11 +4773,13 @@ components:
           type: string
           format: uuid
         periods:
+          uniqueItems: true
           type: array
           items:
             $ref: '#/components/schemas/PublicPeriod'
           nullable: true
         entityIds:
+          uniqueItems: true
           type: array
           items:
             type: string
@@ -4819,6 +4889,7 @@ components:
           type: string
           format: uuid
         entityIds:
+          uniqueItems: true
           type: array
           items:
             type: string
@@ -4961,14 +5032,6 @@ components:
           nullable: true
         exceptionsSet:
           $ref: '#/components/schemas/LinkedSet'
-        assignedSetIds:
-          type: array
-          items:
-            type: string
-            format: uuid
-          description: The IDs of the sets which are directly assigned to this restriction.
-          nullable: true
-          readOnly: true
       additionalProperties: false
     SetTerminatedAtRequest:
       type: object
@@ -5235,6 +5298,22 @@ components:
             matching the RestrictionTypeId of these defaults.
           nullable: true
       additionalProperties: false
+    StreetReference:
+      type: object
+      properties:
+        usrn:
+          type: integer
+          format: int64
+        streetName:
+          type: string
+          nullable: true
+        roadNumber:
+          type: string
+          nullable: true
+        lastUpdated:
+          type: string
+          format: date-time
+      additionalProperties: false
     StringResult:
       type: object
       properties:
@@ -5289,6 +5368,7 @@ components:
           format: uuid
           nullable: true
         entityIds:
+          uniqueItems: true
           type: array
           items:
             type: string
@@ -5301,6 +5381,7 @@ components:
           type: string
           nullable: true
         periods:
+          uniqueItems: true
           type: array
           items:
             $ref: '#/components/schemas/Period'
@@ -5499,6 +5580,11 @@ components:
           description: Indicates the Type of Tariff
           format: int32
           nullable: true
+        emissionsBands:
+          type: array
+          items:
+            $ref: '#/components/schemas/EmissionsBandCms'
+          nullable: true
       additionalProperties: false
       description: |-
         Contains tariff details applicable to a particular set of dates and
@@ -5692,6 +5778,8 @@ components:
       - 11
       - 12
       - 13
+      - 14
+      - 15
       type: integer
       description: |
         Known zone types.
@@ -5709,6 +5797,8 @@ components:
         *PedestrianAndCycleZone (11) - Area where no parking is allowed
         *Estate (12) - A housing estate under authority control.
         *NoWaiting (13) - A zone in which no waiting is allowed
+        *ParkingScheme (14) - A zone used for a Parking Scheme
+        *NoStopping (15) - A zone in which no stopping is allowed
       format: int32
   securitySchemes:
     apiKey:
