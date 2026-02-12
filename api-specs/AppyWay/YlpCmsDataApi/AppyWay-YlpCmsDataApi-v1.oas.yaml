@@ -256,6 +256,8 @@ paths:
                     inMaintenanceMode: true
                     enableAssets: true
                     enableTemporaryOrders: true
+                    enableDtroSubmission: true
+                    disableUsrns: true
                   capabilitiesState:
                     isStaticPubliclyViewable: true
                     isMovingPubliclyViewable: true
@@ -328,6 +330,8 @@ paths:
                     inMaintenanceMode: true
                     enableAssets: true
                     enableTemporaryOrders: true
+                    enableDtroSubmission: true
+                    disableUsrns: true
                   capabilitiesState:
                     isStaticPubliclyViewable: true
                     isMovingPubliclyViewable: true
@@ -445,6 +449,8 @@ paths:
                     inMaintenanceMode: true
                     enableAssets: true
                     enableTemporaryOrders: true
+                    enableDtroSubmission: true
+                    disableUsrns: true
                   capabilitiesState:
                     isStaticPubliclyViewable: true
                     isMovingPubliclyViewable: true
@@ -525,6 +531,8 @@ paths:
                     inMaintenanceMode: true
                     enableAssets: true
                     enableTemporaryOrders: true
+                    enableDtroSubmission: true
+                    disableUsrns: true
                   capabilitiesState:
                     isStaticPubliclyViewable: true
                     isMovingPubliclyViewable: true
@@ -780,8 +788,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2026-01-27
-                              end: 2026-01-27
+                            - start: 2026-02-12
+                              end: 2026-02-12
                             firstDate:
                               month: 0
                               day: 0
@@ -793,7 +801,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2026-01-27
+                          noReturnUntil: 2026-02-12
                         eventDays:
                         - ruleTime:
                             months:
@@ -803,8 +811,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2026-01-27
-                              end: 2026-01-27
+                            - start: 2026-02-12
+                              end: 2026-02-12
                             firstDate:
                               month: 0
                               day: 0
@@ -816,7 +824,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2026-01-27
+                          noReturnUntil: 2026-02-12
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -846,8 +854,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2026-01-27
-                                end: 2026-01-27
+                              - start: 2026-02-12
+                                end: 2026-02-12
                               firstDate:
                                 month: 0
                                 day: 0
@@ -859,7 +867,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2026-01-27
+                            noReturnUntil: 2026-02-12
                           eventDays:
                           - ruleTime:
                               months:
@@ -869,8 +877,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2026-01-27
-                                end: 2026-01-27
+                              - start: 2026-02-12
+                                end: 2026-02-12
                               firstDate:
                                 month: 0
                                 day: 0
@@ -882,7 +890,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2026-01-27
+                            noReturnUntil: 2026-02-12
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -896,8 +904,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2026-01-27
-                                  end: 2026-01-27
+                                - start: 2026-02-12
+                                  end: 2026-02-12
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -909,7 +917,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2026-01-27
+                              noReturnUntil: 2026-02-12
                             eventDays:
                             - ruleTime:
                                 months:
@@ -919,8 +927,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2026-01-27
-                                  end: 2026-01-27
+                                - start: 2026-02-12
+                                  end: 2026-02-12
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -932,7 +940,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2026-01-27
+                              noReturnUntil: 2026-02-12
                     tariffSets:
                     - guid: string
                       setId: string
@@ -966,8 +974,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2026-01-27
-                        timeTo: 2026-01-27
+                        timeFrom: 2026-02-12
+                        timeTo: 2026-02-12
                         firstDate:
                           month: 0
                           day: 0
@@ -1180,8 +1188,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2026-01-27
-                              end: 2026-01-27
+                            - start: 2026-02-12
+                              end: 2026-02-12
                             firstDate:
                               month: 0
                               day: 0
@@ -1193,7 +1201,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2026-01-27
+                          noReturnUntil: 2026-02-12
                         eventDays:
                         - ruleTime:
                             months:
@@ -1203,8 +1211,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2026-01-27
-                              end: 2026-01-27
+                            - start: 2026-02-12
+                              end: 2026-02-12
                             firstDate:
                               month: 0
                               day: 0
@@ -1216,7 +1224,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2026-01-27
+                          noReturnUntil: 2026-02-12
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -1246,8 +1254,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2026-01-27
-                                end: 2026-01-27
+                              - start: 2026-02-12
+                                end: 2026-02-12
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1259,7 +1267,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2026-01-27
+                            noReturnUntil: 2026-02-12
                           eventDays:
                           - ruleTime:
                               months:
@@ -1269,8 +1277,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2026-01-27
-                                end: 2026-01-27
+                              - start: 2026-02-12
+                                end: 2026-02-12
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1282,7 +1290,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2026-01-27
+                            noReturnUntil: 2026-02-12
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -1296,8 +1304,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2026-01-27
-                                  end: 2026-01-27
+                                - start: 2026-02-12
+                                  end: 2026-02-12
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1309,7 +1317,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2026-01-27
+                              noReturnUntil: 2026-02-12
                             eventDays:
                             - ruleTime:
                                 months:
@@ -1319,8 +1327,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2026-01-27
-                                  end: 2026-01-27
+                                - start: 2026-02-12
+                                  end: 2026-02-12
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1332,7 +1340,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2026-01-27
+                              noReturnUntil: 2026-02-12
                     tariffSets:
                     - guid: string
                       setId: string
@@ -1366,8 +1374,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2026-01-27
-                        timeTo: 2026-01-27
+                        timeFrom: 2026-02-12
+                        timeTo: 2026-02-12
                         firstDate:
                           month: 0
                           day: 0
@@ -1790,6 +1798,25 @@ components:
           format: date-time
           nullable: true
       additionalProperties: false
+    AuthorityDtroConfiguration:
+      type: object
+      properties:
+        dtroApiSettings:
+          $ref: '#/components/schemas/DtroApiSettings'
+        enableDtroSubmission:
+          type: boolean
+        disableUsrns:
+          type: boolean
+      additionalProperties: false
+    AuthorityDtroConfigurationResult:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        data:
+          $ref: '#/components/schemas/AuthorityDtroConfiguration'
+      additionalProperties: false
     AuthorityIReadOnlyCollectionOkResponse:
       type: object
       properties:
@@ -2035,6 +2062,10 @@ components:
         enableAssets:
           type: boolean
         enableTemporaryOrders:
+          type: boolean
+        enableDtroSubmission:
+          type: boolean
+        disableUsrns:
           type: boolean
       additionalProperties: false
     CapabilitiesState:
@@ -2411,6 +2442,7 @@ components:
       - 28
       - 29
       - 30
+      - 31
       type: integer
       description: |2
 
@@ -2446,6 +2478,7 @@ components:
         *EntityDocuments (28)
         *TerminalIds (29)
         *PermitIds (30)
+        *StreetReferences (31)
       format: int32
     Crs:
       type: object
@@ -3102,6 +3135,35 @@ components:
           format: date-time
           nullable: true
       additionalProperties: false
+    FetchStreetByUsrnQuery:
+      type: object
+      properties:
+        authorityId:
+          type: string
+          format: uuid
+        usrn:
+          type: integer
+          format: int64
+      additionalProperties: false
+    FetchStreetsInBoundingBoxQuery:
+      type: object
+      properties:
+        authorityId:
+          type: string
+          format: uuid
+        minX:
+          type: number
+          format: double
+        minY:
+          type: number
+          format: double
+        maxX:
+          type: number
+          format: double
+        maxY:
+          type: number
+          format: double
+      additionalProperties: false
     FuelTypeCms:
       enum:
       - 1
@@ -3405,6 +3467,15 @@ components:
           type: string
           format: uuid
           nullable: true
+        operationalDate:
+          type: string
+          format: date-time
+          nullable: true
+          readOnly: true
+        legalName:
+          type: string
+          nullable: true
+          readOnly: true
       additionalProperties: false
     FullOrderResult:
       type: object
@@ -3928,6 +3999,71 @@ components:
         *QuietLane (28)
         *GiveWay (29)
       format: int32
+    MultiLineString:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        crs:
+          $ref: '#/components/schemas/Crs'
+        coordinates:
+          type: array
+          items:
+            type: array
+            items:
+              type: array
+              items:
+                type: number
+                format: double
+          nullable: true
+      additionalProperties: false
+    MultiLineStringStreetCmsFeature:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        id:
+          type: string
+          nullable: true
+        geometry:
+          $ref: '#/components/schemas/MultiLineString'
+        properties:
+          $ref: '#/components/schemas/StreetCms'
+      additionalProperties: false
+    MultiLineStringStreetCmsFeatureCollection:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        features:
+          type: array
+          items:
+            $ref: '#/components/schemas/MultiLineStringStreetCmsFeature'
+          nullable: true
+        properties:
+          nullable: true
+      additionalProperties: false
+    MultiLineStringStreetCmsFeatureCollectionOkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        result:
+          $ref: '#/components/schemas/MultiLineStringStreetCmsFeatureCollection'
+      additionalProperties: false
+    MultiLineStringStreetCmsFeatureOkResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          readOnly: true
+        result:
+          $ref: '#/components/schemas/MultiLineStringStreetCmsFeature'
+      additionalProperties: false
     NewOrder:
       type: object
       properties:
@@ -4145,6 +4281,15 @@ components:
           type: string
           format: uuid
           nullable: true
+        operationalDate:
+          type: string
+          format: date-time
+          nullable: true
+          readOnly: true
+        legalName:
+          type: string
+          nullable: true
+          readOnly: true
       additionalProperties: false
     OrderArrayResult:
       type: object
@@ -4348,13 +4493,6 @@ components:
             *Reverted (8) - The changes in the order have been reverted.
             *MakingPermanent (9) - The experimental order is scheduled to be made permanent on the activation date, when its state will automatically be changed to Ylp.Cms.Core.Domain.Orders.Model.OrderState.Made.
             *Terminated (10) - The temporary order has been terminated, the works are complete and the order is no longer enforceable.
-          nullable: true
-        changeSetIds:
-          uniqueItems: true
-          type: array
-          items:
-            type: string
-            format: uuid
           nullable: true
       additionalProperties: false
     OrderRequest:
@@ -5188,6 +5326,13 @@ components:
           items:
             $ref: '#/components/schemas/OrderDocument'
           nullable: true
+        operationalDate:
+          type: string
+          format: date-time
+          nullable: true
+        orderLegalName:
+          type: string
+          nullable: true
       additionalProperties: false
     StateChangeInfo:
       type: object
@@ -5267,6 +5412,13 @@ components:
           items:
             type: string
           nullable: true
+        operationalDate:
+          type: string
+          format: date-time
+          nullable: true
+        orderLegalName:
+          type: string
+          nullable: true
       additionalProperties: false
       description: Payload for patching an order with a new state change.
     StaticRestrictionDefaults:
@@ -5296,6 +5448,25 @@ components:
           description: |-
             The parking permissions to be assigned by default to the next non-default set of operating hours assigned to OSP restriction types
             matching the RestrictionTypeId of these defaults.
+          nullable: true
+      additionalProperties: false
+    StreetCms:
+      type: object
+      properties:
+        usrn:
+          type: integer
+          format: int64
+        description:
+          type: string
+          nullable: true
+        streetName:
+          type: string
+          nullable: true
+        roadNumber:
+          type: string
+          nullable: true
+        city:
+          type: string
           nullable: true
       additionalProperties: false
     StreetReference:
