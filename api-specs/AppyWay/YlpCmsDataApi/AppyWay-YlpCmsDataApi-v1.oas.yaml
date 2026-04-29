@@ -258,6 +258,7 @@ paths:
                     enableTemporaryOrders: true
                     enableDtroSubmission: true
                     disableUsrns: true
+                    enableTextBasedOrders: true
                   capabilitiesState:
                     isStaticPubliclyViewable: true
                     isMovingPubliclyViewable: true
@@ -332,6 +333,7 @@ paths:
                     enableTemporaryOrders: true
                     enableDtroSubmission: true
                     disableUsrns: true
+                    enableTextBasedOrders: true
                   capabilitiesState:
                     isStaticPubliclyViewable: true
                     isMovingPubliclyViewable: true
@@ -451,6 +453,7 @@ paths:
                     enableTemporaryOrders: true
                     enableDtroSubmission: true
                     disableUsrns: true
+                    enableTextBasedOrders: true
                   capabilitiesState:
                     isStaticPubliclyViewable: true
                     isMovingPubliclyViewable: true
@@ -533,6 +536,7 @@ paths:
                     enableTemporaryOrders: true
                     enableDtroSubmission: true
                     disableUsrns: true
+                    enableTextBasedOrders: true
                   capabilitiesState:
                     isStaticPubliclyViewable: true
                     isMovingPubliclyViewable: true
@@ -723,6 +727,9 @@ paths:
                           longitude: 0
                         tags:
                         - string
+                        textDescriptions:
+                        - description: string
+                          languageCode: string
                         linkedOspIds:
                         - string
                     properties: {}
@@ -771,6 +778,9 @@ paths:
                         sourceTag: string
                         tags:
                         - string
+                        textDescriptions:
+                        - description: string
+                          languageCode: string
                     properties: {}
                   setsUrl:
                     operatingHoursSets:
@@ -788,8 +798,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2026-02-12
-                              end: 2026-02-12
+                            - start: 2026-04-29
+                              end: 2026-04-29
                             firstDate:
                               month: 0
                               day: 0
@@ -801,7 +811,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2026-02-12
+                          noReturnUntil: 2026-04-29
                         eventDays:
                         - ruleTime:
                             months:
@@ -811,8 +821,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2026-02-12
-                              end: 2026-02-12
+                            - start: 2026-04-29
+                              end: 2026-04-29
                             firstDate:
                               month: 0
                               day: 0
@@ -824,7 +834,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2026-02-12
+                          noReturnUntil: 2026-04-29
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -854,8 +864,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2026-02-12
-                                end: 2026-02-12
+                              - start: 2026-04-29
+                                end: 2026-04-29
                               firstDate:
                                 month: 0
                                 day: 0
@@ -867,7 +877,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2026-02-12
+                            noReturnUntil: 2026-04-29
                           eventDays:
                           - ruleTime:
                               months:
@@ -877,8 +887,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2026-02-12
-                                end: 2026-02-12
+                              - start: 2026-04-29
+                                end: 2026-04-29
                               firstDate:
                                 month: 0
                                 day: 0
@@ -890,7 +900,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2026-02-12
+                            noReturnUntil: 2026-04-29
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -904,8 +914,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2026-02-12
-                                  end: 2026-02-12
+                                - start: 2026-04-29
+                                  end: 2026-04-29
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -917,7 +927,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2026-02-12
+                              noReturnUntil: 2026-04-29
                             eventDays:
                             - ruleTime:
                                 months:
@@ -927,8 +937,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2026-02-12
-                                  end: 2026-02-12
+                                - start: 2026-04-29
+                                  end: 2026-04-29
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -940,7 +950,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2026-02-12
+                              noReturnUntil: 2026-04-29
                     tariffSets:
                     - guid: string
                       setId: string
@@ -974,8 +984,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2026-02-12
-                        timeTo: 2026-02-12
+                        timeFrom: 2026-04-29
+                        timeTo: 2026-04-29
                         firstDate:
                           month: 0
                           day: 0
@@ -1037,6 +1047,9 @@ paths:
                         streetName: string
                         roadNumber: string
                         lastUpdated: string
+                      textDescriptions:
+                      - description: string
+                        languageCode: string
                       guid: string
                     properties: {}
             text/json:
@@ -1123,6 +1136,9 @@ paths:
                           longitude: 0
                         tags:
                         - string
+                        textDescriptions:
+                        - description: string
+                          languageCode: string
                         linkedOspIds:
                         - string
                     properties: {}
@@ -1171,6 +1187,9 @@ paths:
                         sourceTag: string
                         tags:
                         - string
+                        textDescriptions:
+                        - description: string
+                          languageCode: string
                     properties: {}
                   setsUrl:
                     operatingHoursSets:
@@ -1188,8 +1207,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2026-02-12
-                              end: 2026-02-12
+                            - start: 2026-04-29
+                              end: 2026-04-29
                             firstDate:
                               month: 0
                               day: 0
@@ -1201,7 +1220,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2026-02-12
+                          noReturnUntil: 2026-04-29
                         eventDays:
                         - ruleTime:
                             months:
@@ -1211,8 +1230,8 @@ paths:
                             weekNumbers:
                             - 0
                             hours:
-                            - start: 2026-02-12
-                              end: 2026-02-12
+                            - start: 2026-04-29
+                              end: 2026-04-29
                             firstDate:
                               month: 0
                               day: 0
@@ -1224,7 +1243,7 @@ paths:
                           maxStay: 0
                           minStay: 0
                           noReturn: 0
-                          noReturnUntil: 2026-02-12
+                          noReturnUntil: 2026-04-29
                     exemptionsSets:
                     - guid: string
                       setId: string
@@ -1254,8 +1273,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2026-02-12
-                                end: 2026-02-12
+                              - start: 2026-04-29
+                                end: 2026-04-29
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1267,7 +1286,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2026-02-12
+                            noReturnUntil: 2026-04-29
                           eventDays:
                           - ruleTime:
                               months:
@@ -1277,8 +1296,8 @@ paths:
                               weekNumbers:
                               - 0
                               hours:
-                              - start: 2026-02-12
-                                end: 2026-02-12
+                              - start: 2026-04-29
+                                end: 2026-04-29
                               firstDate:
                                 month: 0
                                 day: 0
@@ -1290,7 +1309,7 @@ paths:
                             maxStay: 0
                             minStay: 0
                             noReturn: 0
-                            noReturnUntil: 2026-02-12
+                            noReturnUntil: 2026-04-29
                         daySpecificRestrictionExceptions:
                         - publicHolidayOrNamedDayId: string
                           restrictionExceptionTypeId: 0
@@ -1304,8 +1323,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2026-02-12
-                                  end: 2026-02-12
+                                - start: 2026-04-29
+                                  end: 2026-04-29
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1317,7 +1336,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2026-02-12
+                              noReturnUntil: 2026-04-29
                             eventDays:
                             - ruleTime:
                                 months:
@@ -1327,8 +1346,8 @@ paths:
                                 weekNumbers:
                                 - 0
                                 hours:
-                                - start: 2026-02-12
-                                  end: 2026-02-12
+                                - start: 2026-04-29
+                                  end: 2026-04-29
                                 firstDate:
                                   month: 0
                                   day: 0
@@ -1340,7 +1359,7 @@ paths:
                               maxStay: 0
                               minStay: 0
                               noReturn: 0
-                              noReturnUntil: 2026-02-12
+                              noReturnUntil: 2026-04-29
                     tariffSets:
                     - guid: string
                       setId: string
@@ -1374,8 +1393,8 @@ paths:
                           singlePaymentCanCrossMidnight: true
                           from: 0
                           upTo: 0
-                        timeFrom: 2026-02-12
-                        timeTo: 2026-02-12
+                        timeFrom: 2026-04-29
+                        timeTo: 2026-04-29
                         firstDate:
                           month: 0
                           day: 0
@@ -1437,6 +1456,9 @@ paths:
                         streetName: string
                         roadNumber: string
                         lastUpdated: string
+                      textDescriptions:
+                      - description: string
+                        languageCode: string
                       guid: string
                     properties: {}
         "400":
@@ -2067,6 +2089,8 @@ components:
           type: boolean
         disableUsrns:
           type: boolean
+        enableTextBasedOrders:
+          type: boolean
       additionalProperties: false
     CapabilitiesState:
       type: object
@@ -2358,9 +2382,6 @@ components:
         summary:
           type: string
           nullable: true
-        reason:
-          type: string
-          nullable: true
         changeSetState:
           $ref: '#/components/schemas/ChangeSetState'
       additionalProperties: false
@@ -2443,6 +2464,7 @@ components:
       - 29
       - 30
       - 31
+      - 32
       type: integer
       description: |2
 
@@ -2479,6 +2501,7 @@ components:
         *TerminalIds (29)
         *PermitIds (30)
         *StreetReferences (31)
+        *TextDescriptions (32)
       format: int32
     Crs:
       type: object
@@ -2546,6 +2569,8 @@ components:
       - 1
       - 2
       - 3
+      - 4
+      - 5
       type: integer
       description: |2
 
@@ -2554,6 +2579,8 @@ components:
         *PublicNoticeDocument (1) - Represents the 'Notice of Proposal' and 'Notice of Making' documents. May be uploaded by a user but is also system-generated.
         *WrittenOrderDocument (2) - Represents the order's motivation text. Users may opt to generate this from a template  but they may also upload their own instead or in addition to the system-generated document.
         *SupportingDocument (3) - Represents a general user-uploaded document.
+        *Dtro (4) - Represents a copy of the JSON that was sent to the D-TRO store for the order.
+        *TextSchedule (5) - A text-based schedule of the order's changes, as opposed to the usual map-based schedule.
       format: int32
     DownloadEntityDocumentQuery:
       type: object
@@ -3297,9 +3324,6 @@ components:
         summary:
           type: string
           nullable: true
-        reason:
-          type: string
-          nullable: true
         changeSetState:
           $ref: '#/components/schemas/ChangeSetState'
         additions:
@@ -3485,6 +3509,22 @@ components:
           readOnly: true
         data:
           $ref: '#/components/schemas/FullOrder'
+      additionalProperties: false
+    GenerateDraftScheduleRequest:
+      type: object
+      properties:
+        authorityId:
+          type: string
+          description: Required by Ylp.Cms.Web.Filters.CheckMaintenanceModeFilter.
+          format: uuid
+        orderId:
+          type: string
+          format: uuid
+        forceGenerate:
+          type: boolean
+          description: Explicitly request generation of a new document even if one already exists.
+        format:
+          $ref: '#/components/schemas/ScheduleFormat'
       additionalProperties: false
     GeoJsonExportStreamResult:
       type: object
@@ -3844,6 +3884,11 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/StreetReference'
+          nullable: true
+        textDescriptions:
+          type: array
+          items:
+            $ref: '#/components/schemas/TextDescription'
           nullable: true
         guid:
           type: string
@@ -4340,6 +4385,9 @@ components:
         language:
           type: string
           nullable: true
+        orderHash:
+          type: string
+          nullable: true
       additionalProperties: false
     OrderDocumentIEnumerableResult:
       type: object
@@ -4652,6 +4700,12 @@ components:
           type: array
           items:
             type: string
+          nullable: true
+        textDescriptions:
+          type: array
+          items:
+            $ref: '#/components/schemas/TextDescription'
+          description: Text descriptions of this OSP, supporting multiple languages
           nullable: true
         linkedOspIds:
           type: array
@@ -5100,6 +5154,17 @@ components:
         lastDate:
           $ref: '#/components/schemas/MonthAndDayCms'
       additionalProperties: false
+    ScheduleFormat:
+      enum:
+      - 0
+      - 1
+      type: integer
+      description: |2
+
+
+        *Map (0)
+        *Text (1)
+      format: int32
     SetCollection:
       type: object
       properties:
@@ -5333,6 +5398,9 @@ components:
         orderLegalName:
           type: string
           nullable: true
+        reason:
+          type: string
+          nullable: true
       additionalProperties: false
     StateChangeInfo:
       type: object
@@ -5351,8 +5419,13 @@ components:
         customMotivationPageHtml:
           type: string
           nullable: true
-        reason:
+        orderReason:
           type: string
+          description: The Statement of Reasons for the Order. Generally doesn't change from one state change to another, but can be amended if required.
+          nullable: true
+        stateChangeReason:
+          type: string
+          description: The reason for this state change.
           nullable: true
         summary:
           type: string
@@ -5782,6 +5855,16 @@ components:
             $ref: '#/components/schemas/TariffForTimesAndDatesCms'
           nullable: true
       additionalProperties: false
+    TextDescription:
+      type: object
+      properties:
+        description:
+          type: string
+          nullable: true
+        languageCode:
+          type: string
+          nullable: true
+      additionalProperties: false
     UpdateOrderParameters:
       type: object
       properties:
@@ -5887,6 +5970,12 @@ components:
           type: array
           items:
             type: string
+          nullable: true
+        textDescriptions:
+          type: array
+          items:
+            $ref: '#/components/schemas/TextDescription'
+          description: Text descriptions of this zone, supporting multiple languages
           nullable: true
       additionalProperties: false
     ZonePublicFeatureProperties:

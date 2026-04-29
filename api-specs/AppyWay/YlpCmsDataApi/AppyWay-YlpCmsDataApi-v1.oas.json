@@ -375,7 +375,8 @@
                         "enableAssets": true,
                         "enableTemporaryOrders": true,
                         "enableDtroSubmission": true,
-                        "disableUsrns": true
+                        "disableUsrns": true,
+                        "enableTextBasedOrders": true
                       },
                       "capabilitiesState": {
                         "isStaticPubliclyViewable": true,
@@ -468,7 +469,8 @@
                         "enableAssets": true,
                         "enableTemporaryOrders": true,
                         "enableDtroSubmission": true,
-                        "disableUsrns": true
+                        "disableUsrns": true,
+                        "enableTextBasedOrders": true
                       },
                       "capabilitiesState": {
                         "isStaticPubliclyViewable": true,
@@ -632,7 +634,8 @@
                       "enableAssets": true,
                       "enableTemporaryOrders": true,
                       "enableDtroSubmission": true,
-                      "disableUsrns": true
+                      "disableUsrns": true,
+                      "enableTextBasedOrders": true
                     },
                     "capabilitiesState": {
                       "isStaticPubliclyViewable": true,
@@ -739,7 +742,8 @@
                       "enableAssets": true,
                       "enableTemporaryOrders": true,
                       "enableDtroSubmission": true,
-                      "disableUsrns": true
+                      "disableUsrns": true,
+                      "enableTextBasedOrders": true
                     },
                     "capabilitiesState": {
                       "isStaticPubliclyViewable": true,
@@ -1024,6 +1028,12 @@
                               "tags": [
                                 "string"
                               ],
+                              "textDescriptions": [
+                                {
+                                  "description": "string",
+                                  "languageCode": "string"
+                                }
+                              ],
                               "linkedOspIds": [
                                 "string"
                               ]
@@ -1100,6 +1110,12 @@
                             "sourceTag": "string",
                             "tags": [
                               "string"
+                            ],
+                            "textDescriptions": [
+                              {
+                                "description": "string",
+                                "languageCode": "string"
+                              }
                             ]
                           }
                         }
@@ -1128,8 +1144,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2026-02-12",
-                                      "end": "2026-02-12"
+                                      "start": "2026-04-29",
+                                      "end": "2026-04-29"
                                     }
                                   ],
                                   "firstDate": {
@@ -1147,7 +1163,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2026-02-12"
+                                "noReturnUntil": "2026-04-29"
                               }
                             ],
                             "eventDays": [
@@ -1164,8 +1180,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2026-02-12",
-                                      "end": "2026-02-12"
+                                      "start": "2026-04-29",
+                                      "end": "2026-04-29"
                                     }
                                   ],
                                   "firstDate": {
@@ -1183,7 +1199,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2026-02-12"
+                                "noReturnUntil": "2026-04-29"
                               }
                             ]
                           }
@@ -1230,8 +1246,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2026-02-12",
-                                        "end": "2026-02-12"
+                                        "start": "2026-04-29",
+                                        "end": "2026-04-29"
                                       }
                                     ],
                                     "firstDate": {
@@ -1249,7 +1265,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2026-02-12"
+                                  "noReturnUntil": "2026-04-29"
                                 }
                               ],
                               "eventDays": [
@@ -1266,8 +1282,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2026-02-12",
-                                        "end": "2026-02-12"
+                                        "start": "2026-04-29",
+                                        "end": "2026-04-29"
                                       }
                                     ],
                                     "firstDate": {
@@ -1285,7 +1301,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2026-02-12"
+                                  "noReturnUntil": "2026-04-29"
                                 }
                               ]
                             },
@@ -1308,8 +1324,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2026-02-12",
-                                            "end": "2026-02-12"
+                                            "start": "2026-04-29",
+                                            "end": "2026-04-29"
                                           }
                                         ],
                                         "firstDate": {
@@ -1327,7 +1343,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2026-02-12"
+                                      "noReturnUntil": "2026-04-29"
                                     }
                                   ],
                                   "eventDays": [
@@ -1344,8 +1360,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2026-02-12",
-                                            "end": "2026-02-12"
+                                            "start": "2026-04-29",
+                                            "end": "2026-04-29"
                                           }
                                         ],
                                         "firstDate": {
@@ -1363,7 +1379,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2026-02-12"
+                                      "noReturnUntil": "2026-04-29"
                                     }
                                   ]
                                 }
@@ -1417,8 +1433,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2026-02-12",
-                              "timeTo": "2026-02-12",
+                              "timeFrom": "2026-04-29",
+                              "timeTo": "2026-04-29",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -1508,6 +1524,12 @@
                               "streetName": "string",
                               "roadNumber": "string",
                               "lastUpdated": "string"
+                            }
+                          ],
+                          "textDescriptions": [
+                            {
+                              "description": "string",
+                              "languageCode": "string"
                             }
                           ],
                           "guid": "string"
@@ -1638,6 +1660,12 @@
                               "tags": [
                                 "string"
                               ],
+                              "textDescriptions": [
+                                {
+                                  "description": "string",
+                                  "languageCode": "string"
+                                }
+                              ],
                               "linkedOspIds": [
                                 "string"
                               ]
@@ -1714,6 +1742,12 @@
                             "sourceTag": "string",
                             "tags": [
                               "string"
+                            ],
+                            "textDescriptions": [
+                              {
+                                "description": "string",
+                                "languageCode": "string"
+                              }
                             ]
                           }
                         }
@@ -1742,8 +1776,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2026-02-12",
-                                      "end": "2026-02-12"
+                                      "start": "2026-04-29",
+                                      "end": "2026-04-29"
                                     }
                                   ],
                                   "firstDate": {
@@ -1761,7 +1795,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2026-02-12"
+                                "noReturnUntil": "2026-04-29"
                               }
                             ],
                             "eventDays": [
@@ -1778,8 +1812,8 @@
                                   ],
                                   "hours": [
                                     {
-                                      "start": "2026-02-12",
-                                      "end": "2026-02-12"
+                                      "start": "2026-04-29",
+                                      "end": "2026-04-29"
                                     }
                                   ],
                                   "firstDate": {
@@ -1797,7 +1831,7 @@
                                 "maxStay": 0,
                                 "minStay": 0,
                                 "noReturn": 0,
-                                "noReturnUntil": "2026-02-12"
+                                "noReturnUntil": "2026-04-29"
                               }
                             ]
                           }
@@ -1844,8 +1878,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2026-02-12",
-                                        "end": "2026-02-12"
+                                        "start": "2026-04-29",
+                                        "end": "2026-04-29"
                                       }
                                     ],
                                     "firstDate": {
@@ -1863,7 +1897,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2026-02-12"
+                                  "noReturnUntil": "2026-04-29"
                                 }
                               ],
                               "eventDays": [
@@ -1880,8 +1914,8 @@
                                     ],
                                     "hours": [
                                       {
-                                        "start": "2026-02-12",
-                                        "end": "2026-02-12"
+                                        "start": "2026-04-29",
+                                        "end": "2026-04-29"
                                       }
                                     ],
                                     "firstDate": {
@@ -1899,7 +1933,7 @@
                                   "maxStay": 0,
                                   "minStay": 0,
                                   "noReturn": 0,
-                                  "noReturnUntil": "2026-02-12"
+                                  "noReturnUntil": "2026-04-29"
                                 }
                               ]
                             },
@@ -1922,8 +1956,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2026-02-12",
-                                            "end": "2026-02-12"
+                                            "start": "2026-04-29",
+                                            "end": "2026-04-29"
                                           }
                                         ],
                                         "firstDate": {
@@ -1941,7 +1975,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2026-02-12"
+                                      "noReturnUntil": "2026-04-29"
                                     }
                                   ],
                                   "eventDays": [
@@ -1958,8 +1992,8 @@
                                         ],
                                         "hours": [
                                           {
-                                            "start": "2026-02-12",
-                                            "end": "2026-02-12"
+                                            "start": "2026-04-29",
+                                            "end": "2026-04-29"
                                           }
                                         ],
                                         "firstDate": {
@@ -1977,7 +2011,7 @@
                                       "maxStay": 0,
                                       "minStay": 0,
                                       "noReturn": 0,
-                                      "noReturnUntil": "2026-02-12"
+                                      "noReturnUntil": "2026-04-29"
                                     }
                                   ]
                                 }
@@ -2031,8 +2065,8 @@
                                   "upTo": 0
                                 }
                               ],
-                              "timeFrom": "2026-02-12",
-                              "timeTo": "2026-02-12",
+                              "timeFrom": "2026-04-29",
+                              "timeTo": "2026-04-29",
                               "firstDate": {
                                 "month": 0,
                                 "day": 0
@@ -2122,6 +2156,12 @@
                               "streetName": "string",
                               "roadNumber": "string",
                               "lastUpdated": "string"
+                            }
+                          ],
+                          "textDescriptions": [
+                            {
+                              "description": "string",
+                              "languageCode": "string"
                             }
                           ],
                           "guid": "string"
@@ -3032,6 +3072,9 @@
           },
           "disableUsrns": {
             "type": "boolean"
+          },
+          "enableTextBasedOrders": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -3430,10 +3473,6 @@
             "type": "string",
             "nullable": true
           },
-          "reason": {
-            "type": "string",
-            "nullable": true
-          },
           "changeSetState": {
             "$ref": "#/components/schemas/ChangeSetState"
           }
@@ -3523,10 +3562,11 @@
           28,
           29,
           30,
-          31
+          31,
+          32
         ],
         "type": "integer",
-        "description": "\n\n*OperatingHoursSetAssignment (0)\n*TariffSetAssignment (1)\n*ExemptionSetAssignment (2)\n*ExceptionSetAssignment (3)\n*GeoSpatial (4)\n*BayCount (5)\n*StreetName (6)\n*AddRestriction (7)\n*RemoveRestriction (8)\n*LocationCode (9)\n*Tags (10)\n*SensorIds (11)\n*VenueId (12)\n*ZoneType (13)\n*ZoneName (14)\n*ParentZoneId (15)\n*MovingFeature (16)\n*OperatingHoursSetDefinition (17)\n*TariffSetDefinition (18)\n*ExemptionSetDefinition (19)\n*ExceptionSetDefinition (20)\n*AssetSubtype (21)\n*EmissionsBandSetDefinition (22)\n*PaymentMethod (23)\n*SurfaceType (24)\n*CarParkAttributes (25)\n*CarParkInfo (26)\n*CarParkBayCounts (27)\n*EntityDocuments (28)\n*TerminalIds (29)\n*PermitIds (30)\n*StreetReferences (31)\n",
+        "description": "\n\n*OperatingHoursSetAssignment (0)\n*TariffSetAssignment (1)\n*ExemptionSetAssignment (2)\n*ExceptionSetAssignment (3)\n*GeoSpatial (4)\n*BayCount (5)\n*StreetName (6)\n*AddRestriction (7)\n*RemoveRestriction (8)\n*LocationCode (9)\n*Tags (10)\n*SensorIds (11)\n*VenueId (12)\n*ZoneType (13)\n*ZoneName (14)\n*ParentZoneId (15)\n*MovingFeature (16)\n*OperatingHoursSetDefinition (17)\n*TariffSetDefinition (18)\n*ExemptionSetDefinition (19)\n*ExceptionSetDefinition (20)\n*AssetSubtype (21)\n*EmissionsBandSetDefinition (22)\n*PaymentMethod (23)\n*SurfaceType (24)\n*CarParkAttributes (25)\n*CarParkInfo (26)\n*CarParkBayCounts (27)\n*EntityDocuments (28)\n*TerminalIds (29)\n*PermitIds (30)\n*StreetReferences (31)\n*TextDescriptions (32)\n",
         "format": "int32"
       },
       "Crs": {
@@ -3598,10 +3638,12 @@
           0,
           1,
           2,
-          3
+          3,
+          4,
+          5
         ],
         "type": "integer",
-        "description": "\n\n*Maps (0) - Represents the 'Proposed Order' and 'Made Order' map documents. Older documents will include the Written Order document at the beginning. This is always system-generated and there should only be one document of this type per state change.\n*PublicNoticeDocument (1) - Represents the 'Notice of Proposal' and 'Notice of Making' documents. May be uploaded by a user but is also system-generated.\n*WrittenOrderDocument (2) - Represents the order's motivation text. Users may opt to generate this from a template  but they may also upload their own instead or in addition to the system-generated document.\n*SupportingDocument (3) - Represents a general user-uploaded document.\n",
+        "description": "\n\n*Maps (0) - Represents the 'Proposed Order' and 'Made Order' map documents. Older documents will include the Written Order document at the beginning. This is always system-generated and there should only be one document of this type per state change.\n*PublicNoticeDocument (1) - Represents the 'Notice of Proposal' and 'Notice of Making' documents. May be uploaded by a user but is also system-generated.\n*WrittenOrderDocument (2) - Represents the order's motivation text. Users may opt to generate this from a template  but they may also upload their own instead or in addition to the system-generated document.\n*SupportingDocument (3) - Represents a general user-uploaded document.\n*Dtro (4) - Represents a copy of the JSON that was sent to the D-TRO store for the order.\n*TextSchedule (5) - A text-based schedule of the order's changes, as opposed to the usual map-based schedule.\n",
         "format": "int32"
       },
       "DownloadEntityDocumentQuery": {
@@ -4554,10 +4596,6 @@
             "type": "string",
             "nullable": true
           },
-          "reason": {
-            "type": "string",
-            "nullable": true
-          },
           "changeSetState": {
             "$ref": "#/components/schemas/ChangeSetState"
           },
@@ -4805,6 +4843,28 @@
           },
           "data": {
             "$ref": "#/components/schemas/FullOrder"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GenerateDraftScheduleRequest": {
+        "type": "object",
+        "properties": {
+          "authorityId": {
+            "type": "string",
+            "description": "Required by Ylp.Cms.Web.Filters.CheckMaintenanceModeFilter.",
+            "format": "uuid"
+          },
+          "orderId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "forceGenerate": {
+            "type": "boolean",
+            "description": "Explicitly request generation of a new document even if one already exists."
+          },
+          "format": {
+            "$ref": "#/components/schemas/ScheduleFormat"
           }
         },
         "additionalProperties": false
@@ -5303,6 +5363,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/StreetReference"
+            },
+            "nullable": true
+          },
+          "textDescriptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TextDescription"
             },
             "nullable": true
           },
@@ -5924,6 +5991,10 @@
           "language": {
             "type": "string",
             "nullable": true
+          },
+          "orderHash": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -6278,6 +6349,14 @@
             "items": {
               "type": "string"
             },
+            "nullable": true
+          },
+          "textDescriptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TextDescription"
+            },
+            "description": "Text descriptions of this OSP, supporting multiple languages",
             "nullable": true
           },
           "linkedOspIds": {
@@ -6886,6 +6965,15 @@
         },
         "additionalProperties": false
       },
+      "ScheduleFormat": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "description": "\n\n*Map (0)\n*Text (1)\n",
+        "format": "int32"
+      },
       "SetCollection": {
         "type": "object",
         "properties": {
@@ -7204,6 +7292,10 @@
           "orderLegalName": {
             "type": "string",
             "nullable": true
+          },
+          "reason": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -7230,8 +7322,14 @@
             "type": "string",
             "nullable": true
           },
-          "reason": {
+          "orderReason": {
             "type": "string",
+            "description": "The Statement of Reasons for the Order. Generally doesn't change from one state change to another, but can be amended if required.",
+            "nullable": true
+          },
+          "stateChangeReason": {
+            "type": "string",
+            "description": "The reason for this state change.",
             "nullable": true
           },
           "summary": {
@@ -7753,6 +7851,20 @@
         },
         "additionalProperties": false
       },
+      "TextDescription": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "languageCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UpdateOrderParameters": {
         "type": "object",
         "properties": {
@@ -7892,6 +8004,14 @@
             "items": {
               "type": "string"
             },
+            "nullable": true
+          },
+          "textDescriptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TextDescription"
+            },
+            "description": "Text descriptions of this zone, supporting multiple languages",
             "nullable": true
           }
         },
