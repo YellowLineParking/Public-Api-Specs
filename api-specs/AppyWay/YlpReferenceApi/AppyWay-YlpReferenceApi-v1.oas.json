@@ -992,8 +992,8 @@
                             {
                               "name": "string",
                               "date": "2020-01-20",
-                              "start": "2026-09-29",
-                              "end": "2026-09-29"
+                              "start": "2026-10-01",
+                              "end": "2026-10-01"
                             }
                           ]
                         }
@@ -1373,8 +1373,8 @@
                           {
                             "name": "string",
                             "date": "2020-01-20",
-                            "start": "2026-09-29",
-                            "end": "2026-09-29"
+                            "start": "2026-10-01",
+                            "end": "2026-10-01"
                           }
                         ]
                       }
@@ -3594,6 +3594,83 @@
       }
     }
   },
+  "tags": [
+    {
+      "name": "Countries"
+    },
+    {
+      "name": "Regions"
+    },
+    {
+      "name": "Status"
+    },
+    {
+      "name": "Internal"
+    },
+    {
+      "name": "ActivityTypes"
+    },
+    {
+      "name": "AuthorityTypes"
+    },
+    {
+      "name": "BaseMaps"
+    },
+    {
+      "name": "EntitlementTypes"
+    },
+    {
+      "name": "ExceptionTypes"
+    },
+    {
+      "name": "ExemptionTimeTypes"
+    },
+    {
+      "name": "ExemptionTypes"
+    },
+    {
+      "name": "FacilityTypes"
+    },
+    {
+      "name": "FuelTypes"
+    },
+    {
+      "name": "MovingExceptionTypes"
+    },
+    {
+      "name": "MovingRestrictionTypes"
+    },
+    {
+      "name": "NoteVisibilityTypes"
+    },
+    {
+      "name": "OnStreetParkingTypes"
+    },
+    {
+      "name": "PaymentMethods"
+    },
+    {
+      "name": "PermitTypes"
+    },
+    {
+      "name": "RestrictionTypes"
+    },
+    {
+      "name": "VehicleTypes"
+    },
+    {
+      "name": "ZoneTypes"
+    },
+    {
+      "name": "PaymentProviders"
+    },
+    {
+      "name": "OffStreetRestrictionTypes"
+    },
+    {
+      "name": "PermittedVehicleTypes"
+    }
+  ],
   "security": [
     {
       "apiKey": []
