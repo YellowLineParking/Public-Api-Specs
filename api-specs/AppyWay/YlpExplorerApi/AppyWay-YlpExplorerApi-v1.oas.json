@@ -387,97 +387,6 @@
         }
       }
     },
-    "/fetchEventDatesById": {
-      "post": {
-        "tags": [
-          "Parking"
-        ],
-        "summary": "Fetch event dates by id",
-        "description": "Searches for event dates with the supplied entity ID.",
-        "operationId": "post-fetcheventdatesbyid",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FetchEventDatesByIdQuery"
-              },
-              "example": {
-                "entityId": "string",
-                "startDate": "2020-01-20",
-                "endDate": "2020-01-20"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FetchEventDatesByIdQuery"
-              },
-              "example": {
-                "entityId": "string",
-                "startDate": "2020-01-20",
-                "endDate": "2020-01-20"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/FetchEventDatesByIdQuery"
-              },
-              "example": {
-                "entityId": "string",
-                "startDate": "2020-01-20",
-                "endDate": "2020-01-20"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParkingEntityEventDatesResultOkResponse"
-                },
-                "example": {
-                  "success": true,
-                  "result": {
-                    "entityId": "string",
-                    "entityType": 1,
-                    "entityETag": "string",
-                    "timeZoneId": "string",
-                    "eventDates": [
-                      "2020-01-20"
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "401": {
-            "$ref": "#/components/responses/Unauthorized"
-          },
-          "403": {
-            "$ref": "#/components/responses/Forbidden"
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/NotFoundResponse"
-                },
-                "example": {
-                  "success": true,
-                  "message": "string"
-                }
-              }
-            }
-          },
-          "429": {
-            "$ref": "#/components/responses/TooManyRequests"
-          }
-        }
-      }
-    },
     "/fetchOperatingHoursById": {
       "post": {
         "tags": [
@@ -619,8 +528,8 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2026-10-26",
-                            "end": "2026-10-26",
+                            "start": "2026-11-04",
+                            "end": "2026-11-04",
                             "date": "2020-01-20",
                             "status": 1
                           }
@@ -663,8 +572,8 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2026-10-26",
-                            "end": "2026-10-26",
+                            "start": "2026-11-04",
+                            "end": "2026-11-04",
                             "date": "2020-01-20",
                             "status": 1
                           }
@@ -707,8 +616,8 @@
                         },
                         "openPeriods": [
                           {
-                            "start": "2026-10-26",
-                            "end": "2026-10-26",
+                            "start": "2026-11-04",
+                            "end": "2026-11-04",
                             "date": "2020-01-20",
                             "status": 1
                           }
@@ -900,8 +809,8 @@
                           },
                           "openPeriods": [
                             {
-                              "start": "2026-10-26",
-                              "end": "2026-10-26",
+                              "start": "2026-11-04",
+                              "end": "2026-11-04",
                               "date": "2020-01-20",
                               "status": 1
                             }
@@ -944,8 +853,8 @@
                           },
                           "openPeriods": [
                             {
-                              "start": "2026-10-26",
-                              "end": "2026-10-26",
+                              "start": "2026-11-04",
+                              "end": "2026-11-04",
                               "date": "2020-01-20",
                               "status": 1
                             }
@@ -988,8 +897,8 @@
                           },
                           "openPeriods": [
                             {
-                              "start": "2026-10-26",
-                              "end": "2026-10-26",
+                              "start": "2026-11-04",
+                              "end": "2026-11-04",
                               "date": "2020-01-20",
                               "status": 1
                             }

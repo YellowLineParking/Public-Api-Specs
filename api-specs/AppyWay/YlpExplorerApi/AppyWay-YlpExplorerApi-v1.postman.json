@@ -1,7 +1,7 @@
 {
   "item": [
     {
-      "id": "1ada9fd4-6d97-42a1-864f-69fa04534551",
+      "id": "52ccd78f-909a-4885-aa3e-7113be169e51",
       "name": "Fetch an authority by ID",
       "request": {
         "name": "Fetch an authority by ID",
@@ -34,7 +34,7 @@
       },
       "response": [
         {
-          "id": "4d1ff272-9565-48cf-915b-21d1681dd1ce",
+          "id": "e4898124-e8cc-4a9c-92fd-fe04a3a0f4d6",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -66,7 +66,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "ab625b76-ef2a-4f6a-9572-431092283f80",
+          "id": "e642a991-5d81-450d-8d93-bb16c1a9bba0",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -98,7 +98,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8a66fd4d-3318-4035-b624-6eacdddb1266",
+          "id": "5877192b-57b2-4ed6-a82e-16b6fa9b5916",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -130,7 +130,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "76b09999-5b50-4390-a70f-041d8c9125d7",
+          "id": "e837ec4c-549d-4022-b15a-505689fa1007",
           "name": "Not Found",
           "originalRequest": {
             "url": {
@@ -162,7 +162,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "634a4f9f-2e4e-42b8-b864-7d264a7d1725",
+          "id": "927362e3-2742-4f4a-a10c-1bb2bd6737a2",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -197,7 +197,7 @@
       "event": []
     },
     {
-      "id": "14199548-ae04-48a4-bd91-c3d0e119fd6a",
+      "id": "1a70b4a1-0c2f-46fc-9c64-273d1f932b0b",
       "name": "Fetches entities by their IDs",
       "request": {
         "name": "Fetches entities by their IDs",
@@ -230,7 +230,7 @@
       },
       "response": [
         {
-          "id": "1906e36d-61b1-4d67-a22b-1aa7dd74d29f",
+          "id": "2240e803-ad38-4bae-ab5a-bcc69d0dbe47",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -262,7 +262,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "1917fe70-bac1-4e7a-9639-79dcdef65165",
+          "id": "10c95102-02f0-429d-b8bc-eca8211b5b44",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -294,7 +294,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "f98d70a0-0ad8-4829-a559-27e5c8ce5ca2",
+          "id": "ef2651c9-be41-43a8-9c4a-11e202b0816c",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -326,7 +326,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "3f8d2b46-b344-45e4-b15b-3b8d562b29b6",
+          "id": "85e8ecea-7269-405e-8539-ed8a3c91920f",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -358,7 +358,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "a268713c-cdd8-4871-8e12-10fd9f0daf4f",
+          "id": "330cc48f-25e1-46ed-bc3d-40be8887f7da",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -393,203 +393,7 @@
       "event": []
     },
     {
-      "id": "fbe6ae20-6a80-4db4-b130-fdae4ebe870d",
-      "name": "Fetch event dates by id",
-      "request": {
-        "name": "Fetch event dates by id",
-        "description": {
-          "content": "Searches for event dates with the supplied entity ID.",
-          "type": "text/plain"
-        },
-        "url": {
-          "path": [
-            "fetchEventDatesById"
-          ],
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "query": [],
-          "variable": []
-        },
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "method": "POST",
-        "auth": null,
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"entityId\": \"<string>\",\n    \"startDate\": \"<string>\",\n    \"endDate\": \"<string>\"\n}"
-        }
-      },
-      "response": [
-        {
-          "id": "0f6c9841-c14e-4f35-b557-c0419dfa6c2a",
-          "name": "OK",
-          "originalRequest": {
-            "url": {
-              "path": [
-                "fetchEventDatesById"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": []
-            },
-            "method": "POST",
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"entityId\": \"string\",\n    \"startDate\": \"2020-01-20\",\n    \"endDate\": \"2020-01-20\"\n}"
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "body": "{\n \"success\": true,\n \"result\": {\n  \"entityId\": \"string\",\n  \"entityType\": 1,\n  \"entityETag\": \"string\",\n  \"timeZoneId\": \"string\",\n  \"eventDates\": [\n   \"2020-01-20\"\n  ]\n }\n}",
-          "cookie": [],
-          "_postman_previewlanguage": "json"
-        },
-        {
-          "id": "fad88eab-944a-4cac-a7a2-ef5fd8d6f4a3",
-          "name": "Unauthorized",
-          "originalRequest": {
-            "url": {
-              "path": [
-                "fetchEventDatesById"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": []
-            },
-            "method": "POST",
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"entityId\": \"string\",\n    \"startDate\": \"2020-01-20\",\n    \"endDate\": \"2020-01-20\"\n}"
-            }
-          },
-          "status": "Unauthorized",
-          "code": 401,
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "text/plain"
-            }
-          ],
-          "body": "",
-          "cookie": [],
-          "_postman_previewlanguage": "text"
-        },
-        {
-          "id": "c5ea1cc2-4da4-4ad4-ae3e-7fedede02f47",
-          "name": "Forbidden",
-          "originalRequest": {
-            "url": {
-              "path": [
-                "fetchEventDatesById"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": []
-            },
-            "method": "POST",
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"entityId\": \"string\",\n    \"startDate\": \"2020-01-20\",\n    \"endDate\": \"2020-01-20\"\n}"
-            }
-          },
-          "status": "Forbidden",
-          "code": 403,
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "text/plain"
-            }
-          ],
-          "body": "",
-          "cookie": [],
-          "_postman_previewlanguage": "text"
-        },
-        {
-          "id": "0fdf89de-036f-4736-80b5-93d9b60139fe",
-          "name": "Not Found",
-          "originalRequest": {
-            "url": {
-              "path": [
-                "fetchEventDatesById"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": []
-            },
-            "method": "POST",
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"entityId\": \"string\",\n    \"startDate\": \"2020-01-20\",\n    \"endDate\": \"2020-01-20\"\n}"
-            }
-          },
-          "status": "Not Found",
-          "code": 404,
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "body": "{\n \"success\": true,\n \"message\": \"string\"\n}",
-          "cookie": [],
-          "_postman_previewlanguage": "json"
-        },
-        {
-          "id": "9b1898cc-2d5a-4607-826b-66c663d7c741",
-          "name": "Too many requests",
-          "originalRequest": {
-            "url": {
-              "path": [
-                "fetchEventDatesById"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": []
-            },
-            "method": "POST",
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"entityId\": \"string\",\n    \"startDate\": \"2020-01-20\",\n    \"endDate\": \"2020-01-20\"\n}"
-            }
-          },
-          "status": "Too Many Requests",
-          "code": 429,
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "text/plain"
-            }
-          ],
-          "body": "",
-          "cookie": [],
-          "_postman_previewlanguage": "text"
-        }
-      ],
-      "event": []
-    },
-    {
-      "id": "837e7528-20f5-4ae6-a345-538a06f9e507",
+      "id": "4f11023d-2abc-4c75-bf56-cd7fdf515e53",
       "name": "Fetch operating hours by id",
       "request": {
         "name": "Fetch operating hours by id",
@@ -622,7 +426,7 @@
       },
       "response": [
         {
-          "id": "9a97757a-2126-4abd-9322-6df2a587abb1",
+          "id": "28a9c158-8f91-4a71-8c43-8fde9eeab8e3",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -649,12 +453,12 @@
               "value": "application/json"
             }
           ],
-          "body": "{\n \"success\": true,\n \"result\": {\n  \"entityId\": \"string\",\n  \"entityType\": 1,\n  \"entityETag\": \"string\",\n  \"timeZoneId\": \"string\",\n  \"operatingHours\": [\n   {\n    \"paymentMethodIds\": [\n     0\n    ],\n    \"permittedContext\": {\n     \"vehicleTypeId\": 0,\n     \"activityTypeId\": 0,\n     \"fuelTypeId\": 0,\n     \"permits\": [\n      {\n       \"permitTypeId\": 0\n      }\n     ],\n     \"co2Emissions\": 0,\n     \"vehicleYear\": 0,\n     \"engineSize\": 0,\n     \"euroStandardId\": 0\n    },\n    \"openPeriods\": [\n     {\n      \"start\": \"2026-10-26\",\n      \"end\": \"2026-10-26\",\n      \"date\": \"2020-01-20\",\n      \"status\": 1\n     }\n    ]\n   }\n  ],\n  \"notApplicableOperatingHours\": [\n   {\n    \"paymentMethodIds\": [\n     0\n    ],\n    \"requirements\": {\n     \"vehicleTypeIds\": [\n      0\n     ],\n     \"activityTypeIds\": [\n      0\n     ],\n     \"fuelTypeIds\": [\n      0\n     ],\n     \"permits\": [\n      {\n       \"permitTypeId\": 0\n      }\n     ],\n     \"co2Emissions\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"vehicleYears\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"engineSize\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"minimumEuroStandardId\": 0\n    },\n    \"openPeriods\": [\n     {\n      \"start\": \"2026-10-26\",\n      \"end\": \"2026-10-26\",\n      \"date\": \"2020-01-20\",\n      \"status\": 1\n     }\n    ]\n   }\n  ],\n  \"applicableOperatingHoursDetail\": [\n   {\n    \"paymentMethodIds\": [\n     0\n    ],\n    \"requirements\": {\n     \"vehicleTypeIds\": [\n      0\n     ],\n     \"activityTypeIds\": [\n      0\n     ],\n     \"fuelTypeIds\": [\n      0\n     ],\n     \"permits\": [\n      {\n       \"permitTypeId\": 0\n      }\n     ],\n     \"co2Emissions\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"vehicleYears\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"engineSize\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"minimumEuroStandardId\": 0\n    },\n    \"openPeriods\": [\n     {\n      \"start\": \"2026-10-26\",\n      \"end\": \"2026-10-26\",\n      \"date\": \"2020-01-20\",\n      \"status\": 1\n     }\n    ]\n   }\n  ],\n  \"closedPeriods\": [\n   {\n    \"start\": \"2020-01-20T00:00:00.0000000+00:00\",\n    \"end\": \"2020-01-20T00:00:00.0000000+00:00\"\n   }\n  ]\n }\n}",
+          "body": "{\n \"success\": true,\n \"result\": {\n  \"entityId\": \"string\",\n  \"entityType\": 1,\n  \"entityETag\": \"string\",\n  \"timeZoneId\": \"string\",\n  \"operatingHours\": [\n   {\n    \"paymentMethodIds\": [\n     0\n    ],\n    \"permittedContext\": {\n     \"vehicleTypeId\": 0,\n     \"activityTypeId\": 0,\n     \"fuelTypeId\": 0,\n     \"permits\": [\n      {\n       \"permitTypeId\": 0\n      }\n     ],\n     \"co2Emissions\": 0,\n     \"vehicleYear\": 0,\n     \"engineSize\": 0,\n     \"euroStandardId\": 0\n    },\n    \"openPeriods\": [\n     {\n      \"start\": \"2026-11-04\",\n      \"end\": \"2026-11-04\",\n      \"date\": \"2020-01-20\",\n      \"status\": 1\n     }\n    ]\n   }\n  ],\n  \"notApplicableOperatingHours\": [\n   {\n    \"paymentMethodIds\": [\n     0\n    ],\n    \"requirements\": {\n     \"vehicleTypeIds\": [\n      0\n     ],\n     \"activityTypeIds\": [\n      0\n     ],\n     \"fuelTypeIds\": [\n      0\n     ],\n     \"permits\": [\n      {\n       \"permitTypeId\": 0\n      }\n     ],\n     \"co2Emissions\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"vehicleYears\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"engineSize\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"minimumEuroStandardId\": 0\n    },\n    \"openPeriods\": [\n     {\n      \"start\": \"2026-11-04\",\n      \"end\": \"2026-11-04\",\n      \"date\": \"2020-01-20\",\n      \"status\": 1\n     }\n    ]\n   }\n  ],\n  \"applicableOperatingHoursDetail\": [\n   {\n    \"paymentMethodIds\": [\n     0\n    ],\n    \"requirements\": {\n     \"vehicleTypeIds\": [\n      0\n     ],\n     \"activityTypeIds\": [\n      0\n     ],\n     \"fuelTypeIds\": [\n      0\n     ],\n     \"permits\": [\n      {\n       \"permitTypeId\": 0\n      }\n     ],\n     \"co2Emissions\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"vehicleYears\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"engineSize\": {\n      \"start\": 0,\n      \"end\": 0\n     },\n     \"minimumEuroStandardId\": 0\n    },\n    \"openPeriods\": [\n     {\n      \"start\": \"2026-11-04\",\n      \"end\": \"2026-11-04\",\n      \"date\": \"2020-01-20\",\n      \"status\": 1\n     }\n    ]\n   }\n  ],\n  \"closedPeriods\": [\n   {\n    \"start\": \"2020-01-20T00:00:00.0000000+00:00\",\n    \"end\": \"2020-01-20T00:00:00.0000000+00:00\"\n   }\n  ]\n }\n}",
           "cookie": [],
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "290a7f64-4b6c-48dd-a61d-f21456ee4ae5",
+          "id": "36351436-96fc-4d98-a385-16c1e9edb9ec",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -686,7 +490,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8b543e88-e48e-4be9-842e-0e801dfa14fa",
+          "id": "5809fd8a-2baa-42d7-889a-11e828c00abc",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -718,7 +522,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "535bcece-8ec0-4787-bbb6-664e20693746",
+          "id": "f113d523-72fd-4d12-a1b5-718ff0f99f76",
           "name": "Not Found",
           "originalRequest": {
             "url": {
@@ -750,7 +554,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "519c9681-9217-4228-9cd2-67e903d9e74b",
+          "id": "f7b6582b-f0b7-42e1-805d-bfd39551eba2",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -785,7 +589,7 @@
       "event": []
     },
     {
-      "id": "97071084-b5c7-4901-a3b2-be6c448bd024",
+      "id": "7872f982-6a69-41bf-b2f9-c40b0612c65d",
       "name": "Fetch operating hours by ids",
       "request": {
         "name": "Fetch operating hours by ids",
@@ -818,7 +622,7 @@
       },
       "response": [
         {
-          "id": "2544cd49-e40c-4240-b89d-787d377a5c80",
+          "id": "b452b10e-120c-4e4a-a322-298fcab96f10",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -845,12 +649,12 @@
               "value": "application/json"
             }
           ],
-          "body": "{\n \"success\": true,\n \"result\": [\n  {\n   \"entityId\": \"string\",\n   \"entityType\": 1,\n   \"entityETag\": \"string\",\n   \"timeZoneId\": \"string\",\n   \"operatingHours\": [\n    {\n     \"paymentMethodIds\": [\n      0\n     ],\n     \"permittedContext\": {\n      \"vehicleTypeId\": 0,\n      \"activityTypeId\": 0,\n      \"fuelTypeId\": 0,\n      \"permits\": [\n       {\n        \"permitTypeId\": 0\n       }\n      ],\n      \"co2Emissions\": 0,\n      \"vehicleYear\": 0,\n      \"engineSize\": 0,\n      \"euroStandardId\": 0\n     },\n     \"openPeriods\": [\n      {\n       \"start\": \"2026-10-26\",\n       \"end\": \"2026-10-26\",\n       \"date\": \"2020-01-20\",\n       \"status\": 1\n      }\n     ]\n    }\n   ],\n   \"notApplicableOperatingHours\": [\n    {\n     \"paymentMethodIds\": [\n      0\n     ],\n     \"requirements\": {\n      \"vehicleTypeIds\": [\n       0\n      ],\n      \"activityTypeIds\": [\n       0\n      ],\n      \"fuelTypeIds\": [\n       0\n      ],\n      \"permits\": [\n       {\n        \"permitTypeId\": 0\n       }\n      ],\n      \"co2Emissions\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"vehicleYears\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"engineSize\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"minimumEuroStandardId\": 0\n     },\n     \"openPeriods\": [\n      {\n       \"start\": \"2026-10-26\",\n       \"end\": \"2026-10-26\",\n       \"date\": \"2020-01-20\",\n       \"status\": 1\n      }\n     ]\n    }\n   ],\n   \"applicableOperatingHoursDetail\": [\n    {\n     \"paymentMethodIds\": [\n      0\n     ],\n     \"requirements\": {\n      \"vehicleTypeIds\": [\n       0\n      ],\n      \"activityTypeIds\": [\n       0\n      ],\n      \"fuelTypeIds\": [\n       0\n      ],\n      \"permits\": [\n       {\n        \"permitTypeId\": 0\n       }\n      ],\n      \"co2Emissions\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"vehicleYears\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"engineSize\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"minimumEuroStandardId\": 0\n     },\n     \"openPeriods\": [\n      {\n       \"start\": \"2026-10-26\",\n       \"end\": \"2026-10-26\",\n       \"date\": \"2020-01-20\",\n       \"status\": 1\n      }\n     ]\n    }\n   ],\n   \"closedPeriods\": [\n    {\n     \"start\": \"2020-01-20T00:00:00.0000000+00:00\",\n     \"end\": \"2020-01-20T00:00:00.0000000+00:00\"\n    }\n   ]\n  }\n ]\n}",
+          "body": "{\n \"success\": true,\n \"result\": [\n  {\n   \"entityId\": \"string\",\n   \"entityType\": 1,\n   \"entityETag\": \"string\",\n   \"timeZoneId\": \"string\",\n   \"operatingHours\": [\n    {\n     \"paymentMethodIds\": [\n      0\n     ],\n     \"permittedContext\": {\n      \"vehicleTypeId\": 0,\n      \"activityTypeId\": 0,\n      \"fuelTypeId\": 0,\n      \"permits\": [\n       {\n        \"permitTypeId\": 0\n       }\n      ],\n      \"co2Emissions\": 0,\n      \"vehicleYear\": 0,\n      \"engineSize\": 0,\n      \"euroStandardId\": 0\n     },\n     \"openPeriods\": [\n      {\n       \"start\": \"2026-11-04\",\n       \"end\": \"2026-11-04\",\n       \"date\": \"2020-01-20\",\n       \"status\": 1\n      }\n     ]\n    }\n   ],\n   \"notApplicableOperatingHours\": [\n    {\n     \"paymentMethodIds\": [\n      0\n     ],\n     \"requirements\": {\n      \"vehicleTypeIds\": [\n       0\n      ],\n      \"activityTypeIds\": [\n       0\n      ],\n      \"fuelTypeIds\": [\n       0\n      ],\n      \"permits\": [\n       {\n        \"permitTypeId\": 0\n       }\n      ],\n      \"co2Emissions\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"vehicleYears\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"engineSize\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"minimumEuroStandardId\": 0\n     },\n     \"openPeriods\": [\n      {\n       \"start\": \"2026-11-04\",\n       \"end\": \"2026-11-04\",\n       \"date\": \"2020-01-20\",\n       \"status\": 1\n      }\n     ]\n    }\n   ],\n   \"applicableOperatingHoursDetail\": [\n    {\n     \"paymentMethodIds\": [\n      0\n     ],\n     \"requirements\": {\n      \"vehicleTypeIds\": [\n       0\n      ],\n      \"activityTypeIds\": [\n       0\n      ],\n      \"fuelTypeIds\": [\n       0\n      ],\n      \"permits\": [\n       {\n        \"permitTypeId\": 0\n       }\n      ],\n      \"co2Emissions\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"vehicleYears\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"engineSize\": {\n       \"start\": 0,\n       \"end\": 0\n      },\n      \"minimumEuroStandardId\": 0\n     },\n     \"openPeriods\": [\n      {\n       \"start\": \"2026-11-04\",\n       \"end\": \"2026-11-04\",\n       \"date\": \"2020-01-20\",\n       \"status\": 1\n      }\n     ]\n    }\n   ],\n   \"closedPeriods\": [\n    {\n     \"start\": \"2020-01-20T00:00:00.0000000+00:00\",\n     \"end\": \"2020-01-20T00:00:00.0000000+00:00\"\n    }\n   ]\n  }\n ]\n}",
           "cookie": [],
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "cd5a20dc-29af-462e-936a-b802d4fa8a4e",
+          "id": "bcfb2279-399f-4343-a80c-ad772c365e07",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -882,7 +686,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "342cfa7a-cf5e-4d81-86ce-51582746a101",
+          "id": "197d72ec-e7b5-4edd-9748-67a72f453872",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -914,7 +718,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8aeeb472-0f78-410c-ac49-8a1d04156ff4",
+          "id": "aea1f0c3-6a92-4227-948b-42ee49fedf4c",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -949,7 +753,7 @@
       "event": []
     },
     {
-      "id": "6eaa8cbc-3b05-42d8-a68b-ae72c4fb5f2d",
+      "id": "8da9c8a2-b3f0-42fa-bb47-ebb43cb7cb42",
       "name": "Fetch a parking Entity by ID",
       "request": {
         "name": "Fetch a parking Entity by ID",
@@ -982,7 +786,7 @@
       },
       "response": [
         {
-          "id": "1ee29300-9ac5-4883-9ea4-2976afa96b4d",
+          "id": "2a9c2361-0049-4b2e-8d5d-d1133e46dddb",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1014,7 +818,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "a7ae3dae-31cb-42b0-be74-0727bb616a62",
+          "id": "218d511f-df30-4804-8b34-9c449df1bae2",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1046,7 +850,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "97b6769b-d35c-460f-a6c6-773044b8dff7",
+          "id": "073e7042-aaa3-40e2-99ad-d9c7914458b0",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1078,7 +882,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "2e584929-ca3d-41a6-a45f-42c1f24d776d",
+          "id": "15e1e922-d407-4077-8b40-10a2fa346fdb",
           "name": "Not Found",
           "originalRequest": {
             "url": {
@@ -1110,7 +914,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "02a7c650-a356-4e02-baaa-18ec7571ea26",
+          "id": "06083d08-c8e8-41e3-948d-4d8f2c9ff955",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1145,7 +949,7 @@
       "event": []
     },
     {
-      "id": "8a7c76a7-7845-4760-ab08-34a8e18516b3",
+      "id": "7949c28f-c808-43ca-997e-7284b4c45c89",
       "name": "Fetch a parking quote by id",
       "request": {
         "name": "Fetch a parking quote by id",
@@ -1178,7 +982,7 @@
       },
       "response": [
         {
-          "id": "e906dd28-c997-4a30-ae94-c9cc6e61d03a",
+          "id": "b5be4995-f45b-4c09-ade3-fafa93790adf",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1210,7 +1014,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "3e3eb1d1-d389-4d71-b1f3-4fd6fe46ed4f",
+          "id": "b78ddf22-9d3c-4814-a8e6-f11b931c2efe",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1242,7 +1046,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "2952b628-8e7d-4f8e-af89-f4c69a13e017",
+          "id": "88be422b-7eb7-45fa-bd19-15e8ddda9b96",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1274,7 +1078,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "4cf8989c-db11-4d79-951f-05381dde02cb",
+          "id": "369d1350-93c7-4c18-8d05-05d7a45f150c",
           "name": "Not Found",
           "originalRequest": {
             "url": {
@@ -1306,7 +1110,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "bfd1f612-0de7-4988-8a56-02d8d68183a6",
+          "id": "dd4ebd3c-763e-4822-8dc2-79697683d41c",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1341,7 +1145,7 @@
       "event": []
     },
     {
-      "id": "6016acdb-74cf-4b3d-8a05-35fb7080a477",
+      "id": "a84f5471-e44b-44d7-aa99-fe1f32920407",
       "name": "Fetch parking quotes by ids",
       "request": {
         "name": "Fetch parking quotes by ids",
@@ -1374,7 +1178,7 @@
       },
       "response": [
         {
-          "id": "f8e240b1-46fc-4068-9ad3-6f1f8d925b06",
+          "id": "9049fb90-be34-4ee5-a333-6fddf319c7dc",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1406,7 +1210,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "c67374a3-47d6-424e-a026-5b0a7d5e1323",
+          "id": "9cd336d1-7c07-4b34-a1cc-e2051d01b940",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1438,7 +1242,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "c4e8d5ce-5c02-43db-ae51-c9c8d44a735c",
+          "id": "bb86e788-3425-4418-8f24-88fa374f4b18",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1470,7 +1274,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "541f32ed-d51b-4c45-bef4-96445123337e",
+          "id": "038ccf9e-51aa-4d27-9148-7522ba3de340",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1505,7 +1309,7 @@
       "event": []
     },
     {
-      "id": "d9ddca56-e261-4e2d-85b0-14c8a81351af",
+      "id": "ad7f9294-1e2e-4e4a-a5a4-f55e111651bd",
       "name": "Fetch payment providers by parking entity ID",
       "request": {
         "name": "Fetch payment providers by parking entity ID",
@@ -1538,7 +1342,7 @@
       },
       "response": [
         {
-          "id": "b1204cc8-50ba-4b61-ab9a-f8ebd2fbb0c7",
+          "id": "a0f97e93-75e5-4e22-9a1f-297e051b0fdf",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1570,7 +1374,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "5ec1b429-cd4a-479d-aff7-90064d7ef6a8",
+          "id": "39d73143-07bb-4f92-b105-2051d1e6faff",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1602,7 +1406,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "5606f311-6b4a-45ec-9196-b4a410fdff80",
+          "id": "5b8fad65-f01f-4d95-aeaa-8525ada2ed17",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1634,7 +1438,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "cb4b673a-b453-4808-9e3f-ee94530dec23",
+          "id": "19cba402-7ea4-496a-9d63-21b6c1e987c1",
           "name": "Not Found",
           "originalRequest": {
             "url": {
@@ -1666,7 +1470,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "c88e3168-dde3-40ad-a1ad-1033a217e4bb",
+          "id": "41053f2d-4f6b-40cb-9e3a-60ce2d9f2bc0",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1701,7 +1505,7 @@
       "event": []
     },
     {
-      "id": "48a6e352-8db4-462b-9cc3-f83489ca98b0",
+      "id": "99911ecb-94ac-4a2f-aa3a-708918aad74a",
       "name": "Fetch a zone by ID",
       "request": {
         "name": "Fetch a zone by ID",
@@ -1734,7 +1538,7 @@
       },
       "response": [
         {
-          "id": "644c8f72-1ce7-42be-9072-149e6407f18b",
+          "id": "c87bd6f7-109f-42c8-b823-48389c2081be",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1766,7 +1570,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "2c62dd86-0125-4040-ad60-8b209dca2c2a",
+          "id": "10080a58-cf66-4b95-8730-d7f78ef45d91",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -1798,7 +1602,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "07eac428-62e5-433d-978a-cb7b2594c6d3",
+          "id": "7bb104c3-5160-4edf-9ed8-6f7c0d2108bc",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -1830,7 +1634,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "a9e349c2-d358-40ea-be88-9503dd3c2517",
+          "id": "e0cbad05-b503-4c9e-9307-e15988ee8ec7",
           "name": "Not Found",
           "originalRequest": {
             "url": {
@@ -1862,7 +1666,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "1a84e0b8-5f3a-4ed6-80ec-7bce1cde503e",
+          "id": "38372de0-fb09-4546-8804-28348bcce59b",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -1897,7 +1701,7 @@
       "event": []
     },
     {
-      "id": "b5ecf954-aaff-4edd-b4f5-5a2d14683fb0",
+      "id": "6ba0f6f3-4fd3-4b0d-80e6-e5ab08660c47",
       "name": "Fetch zone default rules by id",
       "request": {
         "name": "Fetch zone default rules by id",
@@ -1930,7 +1734,7 @@
       },
       "response": [
         {
-          "id": "504848bc-6663-45ac-bca8-6c93d3284fc4",
+          "id": "20f54e05-a91e-41c5-bae5-5ff13c82820d",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -1962,7 +1766,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "21ec1358-f319-4dd6-92bf-21c532d7ecbe",
+          "id": "2c6e3dc1-9630-40f6-afb6-623447d5c1b8",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -1994,7 +1798,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "deb11028-0f4a-4b65-99be-034088b93284",
+          "id": "f0f337dc-31ac-481f-bebf-dec2c043baca",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2026,7 +1830,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "772085c8-a2d0-48c8-be7d-11a5f78a2797",
+          "id": "05ff6dac-fd70-4429-8711-bfcb7406cb15",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2058,7 +1862,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "f715cc2e-791b-4959-90e1-e77a26bda0ae",
+          "id": "07d29aa8-ff2d-4963-80d8-4190d8bbae28",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2093,7 +1897,7 @@
       "event": []
     },
     {
-      "id": "d020fb8c-16c5-4204-be7f-d4164dfa0207",
+      "id": "53008a11-57fc-4414-9554-149bbb64659a",
       "name": "Find authority ids by viewport",
       "request": {
         "name": "Find authority ids by viewport",
@@ -2126,7 +1930,7 @@
       },
       "response": [
         {
-          "id": "bbe777b9-24ec-4f75-9189-d4906e367fdc",
+          "id": "c8876866-8ff2-4ee5-b95e-0dfbe730f243",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2158,7 +1962,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "5727bb20-1b37-4e92-9941-97f5f036332f",
+          "id": "7d1bb904-3401-4a91-a00d-0bc9a657a75e",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -2190,7 +1994,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "599d1a00-b0b9-4be2-af82-f637b8186649",
+          "id": "37a91d87-0a51-48a2-a9f8-f30a2c3f84e4",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2222,7 +2026,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "a32e4a6c-6f9b-4d28-bd1e-206cc96f2b5a",
+          "id": "0b3d763f-80de-4061-888e-89fe7c07e5b2",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2254,7 +2058,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "b036eeb4-35ac-4de6-9c89-74ef0c522764",
+          "id": "3706483a-10ca-4335-a112-0d38227f8b3c",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2289,7 +2093,7 @@
       "event": []
     },
     {
-      "id": "e1dfb3c1-1299-4162-a189-0c3fd15c3bcc",
+      "id": "57d92ca9-9d74-4fc3-93fa-416bb885169a",
       "name": "Find parking entities by centre and viewport size",
       "request": {
         "name": "Find parking entities by centre and viewport size",
@@ -2322,7 +2126,7 @@
       },
       "response": [
         {
-          "id": "a573c61d-fb4f-4382-9b16-8a8bee2f8661",
+          "id": "ee276607-6d57-4474-9dc7-2ac1d3517327",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2354,7 +2158,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "247a2827-ce81-46a8-9165-4c21e0125da5",
+          "id": "77a28931-2bf5-4eea-95fb-795a451d6101",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -2386,7 +2190,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "cb0cd7c0-bb5b-4575-a960-bda19becee02",
+          "id": "ebd282d7-d1a9-4864-b3cb-3b117d1169ad",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2418,7 +2222,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "bf9f47b8-4d28-42e2-8809-8164ce18f549",
+          "id": "382098dd-3ea9-4148-a121-f64aa031cb41",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2450,7 +2254,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "0484f524-586d-4fd7-a27b-a8d2adfad3d3",
+          "id": "cab3990f-a2e4-4d77-8d3c-08731916c5ae",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2485,7 +2289,7 @@
       "event": []
     },
     {
-      "id": "b0ee0319-2da2-4ec3-bbc5-b25f43ecf946",
+      "id": "64adcb51-c862-41ad-a151-754dd3a9c555",
       "name": "Find parking entities by viewport",
       "request": {
         "name": "Find parking entities by viewport",
@@ -2518,7 +2322,7 @@
       },
       "response": [
         {
-          "id": "bd493021-1e96-4ffa-90f3-1746e8a21bd5",
+          "id": "41e5bb9d-4250-4c8a-951e-7dba6423b9d1",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2550,7 +2354,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "f0bee411-add7-454a-abc7-e91e29d11ac4",
+          "id": "c5fe5591-79dc-42e9-8be7-fc6359d2dd50",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -2582,7 +2386,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "6bd9009a-a2c3-4693-9999-ce4c16605d9f",
+          "id": "44d04f9a-e11d-43b8-b782-0cd8b5ad0508",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2614,7 +2418,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8c3dd94b-bb02-48e8-bdb5-f876f517c874",
+          "id": "cbc83062-0a1a-4f9c-9f52-b372d5be8f0f",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2646,7 +2450,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "2cb0f420-cc2a-43fc-83ef-8e99e86028fe",
+          "id": "c579610f-f1da-4961-99a3-a9d11b3df0b3",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2681,7 +2485,7 @@
       "event": []
     },
     {
-      "id": "74abb6d2-6a71-4195-835e-8fda8384dbbf",
+      "id": "656c7e50-1046-4f26-a9be-fbd62b0e77c7",
       "name": "Find parking quotes by centre and viewport size",
       "request": {
         "name": "Find parking quotes by centre and viewport size",
@@ -2714,7 +2518,7 @@
       },
       "response": [
         {
-          "id": "42561ab2-29e9-4f26-a544-1defc0bc0be9",
+          "id": "a967f798-4691-4d05-9983-8df79c8ddca2",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2746,7 +2550,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "8716f428-47d6-46e9-a1ec-881a6ea38aff",
+          "id": "b31a2c94-8554-4d92-9bd7-5910e98ae6cd",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -2778,7 +2582,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "724de4a4-7cc5-435d-80ce-cb5b34b4f06e",
+          "id": "189a3c57-4e54-44a9-8106-87dfc9b1e72c",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -2810,7 +2614,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "e1ff3d2e-6d6d-4cb7-8127-e707c9d1b625",
+          "id": "dde49356-3181-4188-a4c8-70417f402bee",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -2842,7 +2646,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "0ff0a696-edb2-4e2e-976e-5ea26098c8b7",
+          "id": "5e840d5a-56e5-4caf-9e8c-2f1734b38f91",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -2877,7 +2681,7 @@
       "event": []
     },
     {
-      "id": "69f039e5-78e9-4521-a993-7fc2f07b4130",
+      "id": "984bf4a7-062e-40c5-886a-20e8c27d2d69",
       "name": "Find parking quotes by viewport",
       "request": {
         "name": "Find parking quotes by viewport",
@@ -2910,7 +2714,7 @@
       },
       "response": [
         {
-          "id": "ea0c9909-f19a-4bc1-8da3-1139877db0d1",
+          "id": "35af083b-eb34-4b41-af29-da194201824b",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -2942,7 +2746,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "7a70d1d7-075f-4246-899d-e7d5e31e287b",
+          "id": "23979bab-3484-4247-b2e8-ad29067f12fe",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -2974,7 +2778,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "2746d2e3-97f9-41b4-a4cb-266de48e4eba",
+          "id": "75b75da6-554a-4fe1-a296-eff6f6be0a5c",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -3006,7 +2810,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "1644db5a-d607-4f73-8b66-1662773fa3fd",
+          "id": "e775113e-d101-4aa1-a157-9530e46467fa",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -3038,7 +2842,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "03416284-0826-425a-b046-bccd8cfa9c08",
+          "id": "6cca3b29-f16e-445d-95e1-68382ab72d1a",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -3073,7 +2877,7 @@
       "event": []
     },
     {
-      "id": "4390df33-68b7-43cb-8e4c-e91097dce7bb",
+      "id": "17ac1640-3c95-4631-aea0-27deb6483113",
       "name": "Find zone default rules by viewport",
       "request": {
         "name": "Find zone default rules by viewport",
@@ -3106,7 +2910,7 @@
       },
       "response": [
         {
-          "id": "8ebf7d79-cc6a-4170-8672-85fcbf3831e2",
+          "id": "13057427-6be3-4956-b1d9-18edc6f8ef43",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -3138,7 +2942,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "322a3514-4018-4a5d-a5e2-a62df8131a5f",
+          "id": "8f96465c-daed-4269-962a-e98a4e820b04",
           "name": "Bad Request",
           "originalRequest": {
             "url": {
@@ -3170,7 +2974,7 @@
           "_postman_previewlanguage": "json"
         },
         {
-          "id": "2e74cc63-1412-49d5-8595-f33eacb80f19",
+          "id": "c93d7080-f2bf-469d-8595-884e1f4654dd",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -3202,7 +3006,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "fec902c3-9b94-4103-bb18-67c499fbc434",
+          "id": "1d23cfc2-6e92-4ee2-947c-0e62b98e4655",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -3234,7 +3038,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "ce0a3d7b-98e4-4d71-bd4b-f546f4f5951c",
+          "id": "cc1c766f-101f-46df-82b9-0a9d331a86cc",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -3269,7 +3073,7 @@
       "event": []
     },
     {
-      "id": "b49222ee-17a9-4c4e-a99a-5130254b71c3",
+      "id": "4257eae3-d81c-4806-a9db-20b33c004740",
       "name": "Ping",
       "request": {
         "name": "Ping",
@@ -3292,7 +3096,7 @@
       },
       "response": [
         {
-          "id": "0215bdb4-6c8c-43e7-8465-00a22772c2b1",
+          "id": "5c763541-3c8a-4ef2-b212-af714e37257e",
           "name": "OK",
           "originalRequest": {
             "url": {
@@ -3321,7 +3125,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "7f691f5b-1077-49a4-be5d-f6dc05362d16",
+          "id": "1829839d-f309-4909-9f83-26892d8e1d30",
           "name": "Unauthorized",
           "originalRequest": {
             "url": {
@@ -3350,7 +3154,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8b6d55be-aeaa-4fda-b810-43fd622e33b9",
+          "id": "fa259275-a843-4dee-b179-b71723d82f52",
           "name": "Forbidden",
           "originalRequest": {
             "url": {
@@ -3379,7 +3183,7 @@
           "_postman_previewlanguage": "text"
         },
         {
-          "id": "8de10293-3e52-431d-82ac-fd6d3112d589",
+          "id": "128a635c-4e92-4b25-b191-b4134001fbb2",
           "name": "Too many requests",
           "originalRequest": {
             "url": {
@@ -3435,7 +3239,7 @@
     ]
   },
   "info": {
-    "_postman_id": "395f5a43-200a-4152-8bb9-d602f8185055",
+    "_postman_id": "cc206736-4d31-43b2-9694-72abfe6d7239",
     "name": "Explorer (v1.0|LIVE|Public)",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
